@@ -1,0 +1,36 @@
+# Tutorials
+
+These concise tutorials execute supported paths and clearly identify research gates.
+The tutorials on autodiff, learned instruments, GKP and CVMuTA describe current
+limitations; their prerequisite examples do not complete those research stages.
+
+- [What is MB-QML?](01.md)
+- [MuTA from the paper](02.md)
+- [First MuTA model](03.md)
+- [Triangle neuron anatomy](04.md)
+- [Multi-wire MuTA](05.md)
+- [Multi-layer MuTA](06.md)
+- [Trainable measurement angles](07.md)
+- [Classical feature encoding](08.md)
+- [Quantum state inputs](09.md)
+- [Gate learning](10.md)
+- [State classification](11.md)
+- [Classical classification](12.md)
+- [Quantum instrument learning](13.md)
+- [MuTA quantum kernel](14.md)
+- [Training with Adam](15.md)
+- [Finite-difference validation](16.md)
+- [Autodiff training](17.md)
+- [Noise and finite squeezing](18.md)
+- [GKP logical MuTA](19.md)
+- [MentPy cross-validation](20.md)
+- [Expressivity vs depth](21.md)
+- [Tunable entanglement](22.md)
+- [Bias engineering](23.md)
+- [Fisher information](24.md)
+- [Model serialization](25.md)
+- [Custom observable readout](26.md)
+- [Custom loss](27.md)
+- [Training callbacks](28.md)
+- [CV-native MuTA](29.md)
+- [Comparing qubit, GKP and CV MuTA](30.md)

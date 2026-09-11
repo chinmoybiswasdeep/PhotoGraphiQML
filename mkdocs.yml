@@ -1,0 +1,9 @@
+site_name: PhotoGraphiQML
+site_description: Logical MuTA models and controlled photonic GKP research
+theme:
+  name: mkdocs
+docs_dir: docs
+site_dir: site
+markdown_extensions:
+  - tables
+  - fenced_code
