@@ -1,9 +1,10 @@
 """Controlled GKP resource bridge; no implicit qubit-to-homodyne substitution."""
 
 from dataclasses import dataclass
+from functools import cached_property
 
 import numpy as np
-from photographiq.gkp import GKPResource, superposition
+import photographiq as pg
 
 from .logical import execute, statevector
 
@@ -33,12 +34,14 @@ class GKPBridge:
 
     def encode(self, logical_state):
         vector = statevector(logical_state, 1)
-        return superposition(*vector, cutoff=self.cutoff, **self.resource_options)
+        return self.code.encode(*vector)
+
+    @cached_property
+    def code(self):
+        return pg.GKPCode(cutoff=self.cutoff, **self.resource_options)
 
     def diagnostics(self):
-        projections = [
-            GKPResource(bit, **self.resource_options).project(self.cutoff) for bit in (0, 1)
-        ]
+        projections = [self.code.resource(bit).project(self.cutoff) for bit in (0, 1)]
         basis = np.column_stack([p[0].amplitudes for p in projections])
         gram = basis.conj().T @ basis
         return {
@@ -53,7 +56,32 @@ class GKPBridge:
         """Execute ideal MuTA; result remains labeled logical, never finite GKP."""
         return execute(model, input_state, model._parameters.bind(parameters))
 
-    def run(self, *args, **kwargs):
-        raise NotImplementedError(
-            "Finite-energy GKP MuTA needs a validated logical XY measurement/injection protocol and decoder; resource preparation alone does not implement it"
+    def run(self, model, input_state=None, parameters=None, *, config=None, **options):
+        from .lowering import GKPPhysicalConfig
+        from .physical import run_physical
+
+        if model.representation in ("gkp", "gkp-resource"):
+            raise NotImplementedError(
+                "Legacy resource models retain their safety boundary; explicitly choose PhysicalMuTA or validate a fixed logical model through the supported signed-X protocol"
+            )
+        config = (
+            config
+            or getattr(model, "physical_config", None)
+            or GKPPhysicalConfig(cutoff=self.cutoff, **self.resource_options)
         )
+        return run_physical(model, input_state, parameters, config=config, **options)
+
+    def resource_readout(self, basis="Z", *, decoder="nearest"):
+        """Calibrated one-mode ensemble readout; soft posteriors are not universal."""
+        if basis not in ("X", "Z") or decoder not in ("nearest", "soft"):
+            raise ValueError("Resource readout requires X/Z and nearest/soft")
+        selected = (
+            pg.NearestCellDecoder()
+            if decoder == "nearest"
+            else pg.SoftDecisionDecoder(self.code, basis=basis)
+        )
+        return self.code.logical_measurement(basis, decoder=selected)
+
+    def measurement_convergence(self, values, **options):
+        """Upstream one-resource study, distinct from whole-model convergence."""
+        return pg.measurement_convergence(self.code, values, **options)

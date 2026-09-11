@@ -3,7 +3,7 @@
 from collections.abc import Mapping
 
 import numpy as np
-from photographiq.expressions import Parameter
+from photographiq import Parameter
 
 
 class ParameterStore:

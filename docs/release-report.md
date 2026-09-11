@@ -1,185 +1,159 @@
-# Release assessment
+# PhotoGraphiQML 0.2.0 release assessment
 
-**Research foundation, not a complete physical v0.1 release.** The faithful
-logical MuTA stage is implemented and tested. The GKP stage provides actual
-PhotoGraphiQ finite-resource preparation and diagnostics, but general physical
-MuTA execution remains unsupported. CVMuTA is a separate derivation proposal.
-The missing logical measurement/injection and decoding protocols are a
-scientific blocker to claiming the full requested stack is complete.
+This release adds capability-aware physical execution of the signed-X MuTA subset.
+Unsupported logical XY angles still fail before finite GKP projection or Fock
+simulation. Logical MuTA remains the independently validated reference model;
+CVMuTA remains a separate derivation proposal. This is an experimental restricted
+physical capability, not full arbitrary-angle physical MuTA. The
+[v0.1 assessment](release-report-v0.1.md) is retained as history.
 
-## Repository and changed files
+## Changed files
 
-```text
-src/photographiqml/
-  ansatz/triangle.py         one paper layer and semantic geometry
-  ansatz/muta.py             composed logical model, flow and serialization
-  logical.py                Appendix B ideal logical target execution
-  parameters.py             metadata around PhotoGraphiQ Parameter
-  gkp.py                    finite resource bridge and explicit stage boundary
-  training.py               deterministic Adam/SGD/L-BFGS and histories
-  models.py                 encoding, classifiers, regressors and instruments
-  kernels.py                paper Eq. 5 kernel
-  diagnostics.py            logical concurrence and pure-state QFI
-  expressivity.py           Pauli Lie closure and local state Fisher matrix
-  validation.py             independent contraction and optional MentPy adapter
-tests/                      logical, training, GKP and reference tests
-docs/research/              paper analysis, both audits, mapping, design plan
-docs/tutorials/             30 concise tutorials, including research boundaries
-examples/tutorials/         30 executable examples
-notebooks/                  5 executed notebooks
-experiments/
-  paper_reproduction/       two Fig. 3 logical gate targets, 20 seeds each
-  kernel_classification/    three datasets with classical baselines, 3 seeds
-scripts/                    figures, learning materials and validation
-paper/PhotoGraphiQML.tex     research draft
-.github/workflows/ci.yml     core Python matrix and pinned-reference job
-```
+The [exact changed-file manifest](physical/changed-files.json) lists every modified
+and added file. Production additions are `lowering.py`, `physical.py` and
+`physical_training.py`. Integration changes are in `gkp.py`, `ansatz/muta.py`,
+`models.py`, public exports and parameter imports. The logical execution,
+continuous trainer, Eq. 5 kernel and MentPy reference test files are unchanged.
+Other changes cover dependency/CI metadata, release validation, cross-layer tests,
+documentation, tutorials, physical evidence and version 0.2.0 metadata.
 
-The [file manifest](file-manifest.txt) records the exact changed/created
-repository paths. README.md was modified. The pre-existing license and supplied
-paper PDF were preserved. The `.venv` and `.references` directories are local,
-ignored tooling/resources; upstream source is not copied into this package.
+## Architecture and dependency
 
-## Paper mapping and reference matrix
+The implementation binds and audits all logical angles, validates the resource,
+decoder, backend and allocation policy, and lowers supported graphs to public
+PhotoGraphiQ `Pattern` commands. Just-in-time preparation limits the live Fock
+frontier. Signed-X homodyne decoding feeds classical flow signals and virtual
+`LogicalPauliFrame` metadata. Final statistics come from the full multimode POVM.
 
-The [paper notes](research/muta-paper-notes.md) cover all main sections and
-Appendices A–E. The [mapping table](research/muta-mapping.md) connects each
-concept to implementation and validation. The paper's bias is architectural
-and measurement-angle restriction, not a hidden classical offset.
+The dependency is `photographiq>=0.3.1,<0.4`; both CI jobs pin
+`db07f9f9bf47da841bfa6b206562c5a3ffb121d3`. Local execution uses the clean sibling
+checkout at that commit. All new physical primitives and `Parameter` are imported
+through the public package API. See [architecture](physical/architecture.md),
+[lowering](physical/lowering.md) and the [preimplementation design](research/physical-gkp-design.md).
 
-| Comparison | Cases | Outcome |
-|---|---|---|
-| Exact semantic edges, inputs, outputs, node counts | (1,1), (2,1), (3,1), (2,2), (3,2), both one_column settings | Pass |
-| Measurement ordering | All structural cases | Reference total order satisfies our flow dependency DAG |
-| Unrestricted trainability | All structural cases | Exact agreement |
-| Restricted trainability | Both flags and all structural cases | Expected upstream discrepancy explicitly asserted |
-| Logical density matrices | 12 width/depth/restriction configurations | Pass at 1e-10 tolerance |
-| Kernel overlaps | Two independent feature inputs | MentPy agreement |
-| Instrument branch probabilities and states | Final Z instrument | MentPy agreement; not learned teleportation |
-| Adaptive outcomes | Every one of 256 branches of a two-wire cell | Corrected states agree, probabilities sum to one |
-| Table I and depth inclusion | XX gate, Euler gate, widths 1–3 | Pass |
-| Raw CV states vs MentPy | None | Deliberately not a valid comparison |
+## Representations and capability boundary
 
-MentPy commit: `63c3d83e495696b4491c9d376dab7e3e6cf6c863` (0.1.0a15).
-PhotoGraphiQ commit: `f15957d297f65f1e4761007e189f11119282dfdd` (0.3.0).
-Piquasso: 8.0.1. See [MentPy audit](research/mentpy-audit.md).
+| Representation | Meaning |
+| --- | --- |
+| `logical` | Ideal qubit MuTA, including continuous logical XY |
+| `gkp` | Deprecated legacy resource-only intent; execution still raises |
+| `gkp-resource` | Explicit finite-resource/ideal-target workflow |
+| `gkp-physical` via `PhysicalMuTA` | Audited finite GKP execution of signed-X patterns |
 
-The upstream restriction mutates only a trainable-node list. Cross-edge
-insertion and stacking rebuild that list from still-trainable Ment objects.
-This package fixes the measurement values explicitly and preserves those
-constraints. Numerical reference comparisons explicitly repair reference
-measurements to compare identical logical models. This discrepancy is never
-silently interpreted as faithful agreement with the unmodified template.
+Supported intermediate angles are 0/pi modulo 2pi at upstream absolute tolerance
+1e-14. Final readout supports X or Z. Y, pi/4, arbitrary XY, entangled input
+encoding, adaptive soft-ensemble decoding, physical Eq. 5 kernels and physical
+quantum-output instruments remain unsupported. Invalid seeds/modes/shots,
+infeasible allocation estimates and unsupported backends fail before projection.
+Numerically inadequate cutoffs can also fail later at the strict backend norm guard.
+No trained angle is snapped; no logical angle is substituted for a homodyne angle.
+Schema-1 resource models never become physical models implicitly.
 
-## Validation and CI
+## Executed physical cases and errors
 
-- 88 tests passed on Windows with Python 3.14.4.
-- Line coverage: 96.09% (565 of 588 executable statements).
-- Core execution tested in a subprocess that deliberately blocks MentPy imports.
-  Separately, 54 tests passed with the reference directory excluded and 90.82%
-  coverage, confirming the core CI job can meet its threshold without reference tests.
-- All 30 example scripts and five notebook kernels executed successfully.
-- Ruff lint, formatting, mypy, wheel/sdist build, strict documentation build,
-  tutorial execution and notebook execution all passed. Every check returned
-  zero in the repository-root `validation-results.json`.
-- Python 3.11, 3.12 and 3.13 are configured in CI, not locally executed here.
-- Hosted GitHub CI, publication and deployment have not been performed.
+The reproducible [evidence JSON](physical/evidence.json) was generated by
+`experiments/restricted_physical.py`. The baseline uses width/envelope 0.9, four
+lattice peaks, grid 1025 and cutoff 24. These broad, overlapping finite codewords
+are intentionally small execution examples, not high-fidelity encoded qubits.
 
-`coverage.json` records the measured coverage. The release script checks the
-90% threshold and fails on nonzero check statuses. Optional MentPy tests skip
-when absent; core import does not load MentPy. The TeX draft is provided as
-source; compilation of that draft is not a release check.
+| Conditional case | Paper layers | Peak modes / dimension | Wall seconds | Readout seconds | Decoded TV from ideal | Marginal leakage |
+| --- | --- | --- | --- | --- | --- | --- |
+| One wire, zero angles | 1 | 2 / 300 | 0.583 | 0.196 | 0.172849 | 0.000218 |
+| Two wires, zero angles | 2 | 3 / 2600 | 14.319 | 0.286 | 0.342182 | 0.004512, 0.004815 |
 
-## Tutorials, projects, notebooks and figures
+Both cases condition every quadrature on analog zero. The two-wire result retains
+four joint probabilities and connected correlations. A default two-wire requested
+layer contains two paper layers, following MentPy's convention. Runtimes are
+observations on this Windows host, not comparisons to the logical simulator.
+Memory fields are analytic allocation estimates, not measured peak process memory.
+Gate/preparation diagnostics are saved per stage.
 
-There are **30 concise tutorials**, **30 corresponding runnable scripts**,
-**five executed curated notebooks**, and **two configured larger experiment
-projects**. The ten larger projects requested in the brief are not complete.
-Autodiff, paper instrument learning, full physical GKP and CVMuTA tutorials
-explain missing capabilities and execute prerequisite/contract examples;
-their presence is not evidence those features are implemented.
+Additional tests execute pi measurements, independently construct a public upstream
+one-wire Pattern and check shot repeatability. Mixed Fock execution is rejected
+before allocation: profiling the attempted parity study found quadratic upstream
+instruction validation over a dense preparation list, making this path impractical
+at the tested resource size. It is not advertised as validated physical support.
+No qubit/Fock vector overlap is used as fidelity. Joint code-subspace leakage and
+hard-decoder confidence remain unknown. Marginal leakage uses the code projector.
 
-Six SVG figures were generated from scripts: logical triangle, composed MuTA,
-concurrence, GKP resource projection, gate-learning curves and kernel
-classification. All outputs are retained. No figure claims quantum advantage.
+## Convergence and shot statistics
 
-## Reproduced targets and observed results
+At fixed width/envelope 0.9, the whole one-wire conditional cutoff study gives:
 
-Logical gate learning follows Fig. 3's target families, ten Haar states and
-7/3 split, with **20 independent seeds per target** and 120 Adam steps.
-The explicit learning rate and finite-difference gradient are local choices.
-Mean final held-out infidelity (population standard deviation over runs):
+| Cutoff | Decoded TV from ideal | Maximum probability change from previous point |
+| --- | --- | --- |
+| 20 | 0.173038 | — |
+| 24 | 0.172849 | 1.895e-4 |
+| 28 | 0.172767 | 8.158e-5 |
 
-| Target | Mean | Standard deviation |
-|---|---:|---:|
-| Haar single-qubit gate on first wire | 3.3990e-5 | 1.3028e-4 |
-| IsingXX(pi/2) | 3.3963e-6 | 2.0807e-6 |
+Separate grid 513→1025 and peaks 3→4 sweeps changed probabilities by about
+2.2e-16 and 1.1e-16. Width .85→.9 changed them by 0.013036; envelope .85→.9 by
+0.0002155. Those last axes change the physical resource. All studies remain
+**uncertified**. Numerical grid stability does not remove finite-resource error.
+An upstream single-resource cutoff study is saved separately from whole-pattern studies.
 
-All individual runs remain in
-`experiments/paper_reproduction/results/gate_learning.json`, including the
-less-converged Haar seed 19. The largest MentPy checkpoint density discrepancy
-is **1.67e-15**. MentPy was evaluated at checkpoints, not independently retrained;
-these are numerical model comparisons, not separate optimizer replications.
-The 40 training runs took about 75 seconds total in this local environment.
+The 16-shot seed-2026 study at cutoff 24 failed with retained norm 0.99869564;
+the guard remained enabled. At cutoff 40 it completed, giving mean conditional
+decoded probabilities (0.578559, 0.421441), each with standard error 0.060752.
+Sampled final-bit frequencies were (0.5625, 0.4375), with plug-in binomial errors
+0.124020. These are different estimators and neither certifies resource accuracy.
+No failed trajectory was silently discarded from an average.
 
-Kernel classification uses Eq. 5 with 160/40 splits and three seeds. Mean
-held-out accuracy with raw feature coordinates:
+## Training evidence
 
-| Dataset | MuTA kernel | RBF SVM | Logistic regression |
-|---|---:|---:|---:|
-| Circles | 0.9583 | 1.0000 | 0.4583 |
-| Blobs | 0.5750 | 1.0000 | 1.0000 |
-| Moons | 0.7750 | 1.0000 | 0.8750 |
+The classifier/regressor extract decoded Z probabilities, then fit a classical
+head. Physical angles use bounded categorical 0/pi coordinate search. Logical
+continuous optimizers and the Eq. 5 logical kernel are unchanged.
 
-These are locally specified generators, not an exact Fig. 8 reconstruction.
-The poor blobs result is retained; a periodic feature map on unscaled
-coordinates need not preserve the class geometry. Tiny negative Gram
-eigenvalues (order 1e-14) are roundoff. Per-seed confusion matrices and metrics
-are in `experiments/kernel_classification/results/metrics.json`.
+The classifier demonstration used seeds 7 and 19, two shots per input, cutoff 40
+and one coordinate sweep. Independent validation trajectories on the same four
+training inputs scored 0/4 and 4/4 respectively. This variability does not support
+a robust learning or generalization claim. The example demonstrates execution and
+preserves uncertainty, configurations and search evaluations. See
+[physical training](physical/physical-training.md) for the family's relabeling limit.
 
-The paper's noisy-label/resource plots, trained QFI classifier, learned
-teleportation instrument and discrete HEA search/DQN have not been reproduced.
+## Validation and documentation
 
-## GKP and CV limitations
+The final full suite passed 127 tests at 97.58% statement coverage on Python 3.14.
+Python 3.11–3.13 each passed 93 core tests at 94.64% coverage; their two optional
+MentPy test modules were skipped because MentPy was not installed. Python 3.14
+executed all 34 pinned MentPy comparisons. Final checks include mixed-backend
+rejection and allocation-free visualization. Logical validation also
+independently contracts all 256 signed-X branches of a two-wire paper layer with
+virtual frames. MentPy remains an ideal logical oracle, never a finite-GKP oracle.
 
-GKPResource projection, finite superposition preparation and a PhotoGraphiQ
-Fock execution of a prepared resource are tested. Separate one-mode cutoff
-and grid refinement checks pass. At cutoff 48 for width=envelope=0.4,
-captured weights exceed 0.9999996, while the normalized codeword overlap is
-about 0.0130. High captured weight therefore does not imply orthogonal
-codewords or an ideal encoding channel.
+| Local Python | Tests passed | Optional modules skipped | Coverage | CI-equivalent checks |
+| --- | --- | --- | --- | --- |
+| 3.11.16 | 93 | 2 MentPy modules | 94.64% | All 7 passed |
+| 3.12.14 | 93 | 2 MentPy modules | 94.64% | All 7 passed |
+| 3.13.15 | 93 | 2 MentPy modules | 94.64% | All 7 passed |
+| 3.14.4 | 127 | 0 | 97.58% | All 7 passed |
 
-No arbitrary logical XY physical instrument, magic-state injection lowering,
-full decoder, correlated multimode gate convergence or logical confusion
-matrix is supplied. General `representation='gkp'` execution raises an
-actionable error; `GKPBridge.logical_target` is explicitly labeled logical.
-The [CV proposal](research/muta-mapping.md) derives only a teleportation-step
-ingredient. There is no exported CVMuTA implementation, Gaussian universality
-claim or finite-resource monotonic-expressivity claim.
+The [machine-readable matrix](physical/validation-matrix.json) records dependency
+versions, coverage totals and every command's return status. Checks comprise
+pytest/coverage, Ruff lint, Ruff formatting, mypy, wheel/sdist build, strict MkDocs
+build and execution of all tutorials/notebooks. Coverage-tool versions differ
+between environments; every environment independently clears the 90% requirement.
 
-## Training and scaling limitations
+There are eight physical guide pages, 44 executable tutorial scripts/pages with
+14 new physical tutorials, five existing executable notebooks, a lowering SVG,
+and a reproducible physical experiment. Tutorials include captured stdout,
+assertions, physical interpretation and limitations.
 
-Training is deterministic and full-batch. Automatic differentiation,
-score-function estimators, physical noisy training, tied parameter groups,
-parameter bounds, mixed logical inputs, wrapper/optimizer persistence and
-general intermediate instrument controls are pending. Pure-state metrics
-are not extended to unsupported representations. The simple supervised
-wrapper uses one Z readout plus an affine/logistic head.
+The last observed hosted baseline passed at pre-change SHA
+`b3b26078d5cc30fb1fad5a1f71bb714169d44639`:
+[Tests run 34558868151](https://github.com/chinmoybiswasdeep/PhotoGraphiQML/actions/runs/34558868151).
+The [saved observation](physical/hosted-ci.json) is historical evidence, not a
+claim that these unpushed v0.2 changes passed hosted CI.
 
-Local statevector runs ranged from approximately 0.13–0.20 ms for one wire
-at small depth to 10.3 ms for six wires and four requested layers (24 paper
-layers, 582 graph nodes, 576 parameters). Measurements use a logical frontier,
-so statevector storage is 16*2^n bytes; the six-wire vector occupies 1024 bytes.
-This excludes graph metadata, temporary arrays and process overhead; it is
-not a measured peak-memory claim. Dense unitary extraction scales as 4^n and
-is capped at ten wires. Fock multimode performance is not benchmarked here.
+## Release recommendation and next blocker
 
-## Recommended next work
+Local checks pass. This is ready for review as an experimental signed-X execution
+release; hosted CI must still run on the new commit. Do not label it arbitrary physical MuTA,
+validated high-fidelity computation or demonstrated quantum advantage.
 
-The critical next step is a validated GKP logical measurement/injection and
-decoding protocol in PhotoGraphiQ. Keep physical lowering disabled until
-that exists, then validate decoded statistics and independent convergence
-axes. In parallel, complete the remaining logical paper reproductions and
-model-training contracts. Introduce CVMuTA only as a separate mathematically
-derived family after the GKP stage. See the repository ROADMAP.md for the
-remaining release acceptance work.
+The exact next blocker is a public, validated logical equatorial measurement
+synthesis/injection instrument with its resource state, adaptive feed-forward,
+finite-energy channel/error model and convergence evidence. General homodyne
+rotation is insufficient. CVMuTA needs its own explicit cell/channel derivation;
+it does not follow by replacing qubits with modes.

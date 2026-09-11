@@ -1,6 +1,7 @@
 """Small logical supervised models and a quantum-output instrument."""
 
 from dataclasses import dataclass
+from typing import Any
 
 import numpy as np
 
@@ -22,10 +23,26 @@ def angle_encode(features):
 class MuTARegressor:
     """Scalar affine head on first-wire Z expectation, for classical inputs."""
 
-    def __init__(self, model, *, trainer=None, seed=0):
-        if model.representation != "logical":
+    def __init__(self, model, *, trainer=None, seed=0, physical_options=None):
+        if model.representation not in ("logical", "gkp-physical"):
             raise ValueError("This supervised wrapper currently requires logical MuTA")
-        self.model, self.trainer, self.seed = model, trainer or Trainer(), seed
+        if model.representation == "gkp-physical":
+            from .physical_training import DiscreteSearch
+
+            if trainer is not None and not isinstance(trainer, DiscreteSearch):
+                raise ValueError(
+                    "Physical angles require DiscreteSearch; Adam cannot optimize categorical measurements"
+                )
+            trainer = trainer or DiscreteSearch(seed=seed)
+            if physical_options is None or physical_options.get("mode") != "physical-shots":
+                raise ValueError(
+                    "Physical supervised models require explicit physical_options with mode='physical-shots', shots and seed"
+                )
+            if "shots" not in physical_options or "seed" not in physical_options:
+                raise ValueError("Declare physical shots and seed explicitly")
+        self.physical_options = dict(physical_options or {})
+        self.trainer: Any = trainer or Trainer()
+        self.model, self.seed = model, seed
         self.weights = None
 
     def _inputs(self, X):
@@ -35,10 +52,20 @@ class MuTARegressor:
         return np.array([angle_encode(x) for x in X]).reshape(-1, 2**self.model.n_wires)
 
     def _predict(self, states, weights):
+        if self.model.representation == "gkp-physical":
+            z, _ = self._physical_features(states, weights[:-2])
+            return weights[-2] * z + weights[-1]
         output = self.model.run_batch(states, weights[:-2])
         half = 2 ** (self.model.n_wires - 1)
         z = np.sum(abs(output[:, :half]) ** 2, axis=1) - np.sum(abs(output[:, half:]) ** 2, axis=1)
         return weights[-2] * z + weights[-1]
+
+    def _physical_features(self, states, angles):
+        results = [self.model.run(state, angles, **self.physical_options) for state in states]
+        probabilities = [r.decoded_marginals[self.model.output_nodes[0]] for r in results]
+        self.physical_diagnostics = [r.diagnostics for r in results]
+        self.convergence = [r.convergence for r in results]
+        return np.array([p[0] - p[1] for p in probabilities]), results
 
     def _loss(self, prediction, y):
         return float(np.mean((prediction - y) ** 2))
@@ -48,6 +75,32 @@ class MuTARegressor:
         y = np.asarray(y, dtype=float)
         if y.shape != (len(states),) or not len(y) or not np.isfinite(y).all():
             raise ValueError("Targets must have shape (N,) and be finite and nonempty")
+        if self.model.representation == "gkp-physical":
+            from scipy.optimize import minimize
+
+            heads = {}
+            diagnostics = {}
+
+            def objective(angles):
+                z, _ = self._physical_features(states, angles)
+                # This continuous optimization is classical readout-head fitting only.
+                fitted = minimize(
+                    lambda head: self._loss(head[0] * z + head[1], y) + 1e-4 * np.sum(head**2),
+                    [1.0, 0.0],
+                    method="BFGS",
+                )
+                heads[tuple(angles)] = fitted.x
+                diagnostics[tuple(angles)] = (self.physical_diagnostics, self.convergence)
+                return float(fitted.fun)
+
+            self.history = self.trainer.fit(
+                self.model, objective, initial=np.zeros(self.model.n_parameters)
+            )
+            self.weights = np.r_[self.history.parameters, heads[tuple(self.history.parameters)]]
+            self.physical_diagnostics, self.convergence = diagnostics[
+                tuple(self.history.parameters)
+            ]
+            return self
         initial = np.r_[list(self.model.initialize(self.seed).values()), 1.0, 0.0]
         self.weights, self.history = self.trainer.fit(
             lambda p: self._loss(self._predict(states, p), y), initial
@@ -103,6 +156,10 @@ class QuantumInstrumentModel:
     """
 
     def __init__(self, model, measured_wire=0):
+        if model.representation != "logical":
+            raise NotImplementedError(
+                "QuantumInstrumentModel requires logical MuTA; a physical quantum-output instrument needs a separately validated post-measurement map"
+            )
         if (
             isinstance(measured_wire, bool)
             or not isinstance(measured_wire, int)

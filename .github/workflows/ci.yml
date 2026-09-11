@@ -11,7 +11,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '${{ matrix.python }}'
-      - run: python -m pip install 'photographiq @ git+https://github.com/chinmoybiswasdeep/PhotoGraphiQ.git@f15957d297f65f1e4761007e189f11119282dfdd'
+      - run: python -m pip install 'photographiq @ git+https://github.com/chinmoybiswasdeep/PhotoGraphiQ.git@db07f9f9bf47da841bfa6b206562c5a3ffb121d3'
       - run: python -m pip install -e '.[dev,docs]'
       - run: python scripts/validate_release.py
       - uses: actions/upload-artifact@v4
@@ -28,6 +28,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m pip install 'photographiq @ git+https://github.com/chinmoybiswasdeep/PhotoGraphiQ.git@f15957d297f65f1e4761007e189f11119282dfdd'
+      - run: python -m pip install 'photographiq @ git+https://github.com/chinmoybiswasdeep/PhotoGraphiQ.git@db07f9f9bf47da841bfa6b206562c5a3ffb121d3'
       - run: python -m pip install -e '.[dev,docs]' -r tests/mentpy_reference/requirements.txt
       - run: python -m pytest tests/mentpy_reference -v

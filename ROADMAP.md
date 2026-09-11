@@ -4,10 +4,11 @@
    Implement tied measurement groups, bounds, mixed quantum inputs, noisier
    resource branches and the learned teleportation instrument. Independently
    train the pinned MentPy reference, rather than compare only checkpoints.
-2. Specify and validate GKP logical measurement/injection instruments,
-   a decoder with explicit leakage and failure outcomes, correlated input
-   preparation, and separate cutoff, grid, peak, envelope and energy studies.
-   Only then enable general `representation="gkp"` forward execution.
+2. Extend the v0.2 signed-X bridge with validated arbitrary logical XY
+   measurement/injection instruments, correlated input preparation and joint
+   code-subspace leakage. Expand the independent resource and whole-pattern
+   convergence studies. Legacy `representation="gkp"` remains resource-only;
+   physical execution uses explicit `PhysicalMuTA`.
 3. Derive and implement CVMuTA independently. Prove the ideal cell map,
    characterize its finite-resource channel, establish identity embeddings in
    the appropriate regime, and validate against direct PhotoGraphiQ physics.

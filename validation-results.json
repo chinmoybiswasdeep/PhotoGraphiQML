@@ -50,7 +50,9 @@
     {
       "command": [
         "-m",
-        "build"
+        "build",
+        "--outdir",
+        "dist"
       ],
       "returncode": 0
     },
@@ -59,7 +61,9 @@
         "-m",
         "mkdocs",
         "build",
-        "--strict"
+        "--strict",
+        "--site-dir",
+        "D:\\Research\\QML\\results_1\\cvqc\\thesis_part_2\\softwares\\PhotoGraphiQML\\site"
       ],
       "returncode": 0
     },

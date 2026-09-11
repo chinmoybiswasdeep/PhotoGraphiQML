@@ -123,7 +123,7 @@ LESSONS = [
     (
         "GKP logical MuTA",
         "The bridge distinguishes an ideal logical target from a finite-energy resource. Full GKP MuTA must fail explicitly until a measurement/injection instrument and decoder are available.",
-        "m = pqml.MuTA(1,representation='gkp')\nr = pqml.GKPBridge().logical_target(m,[1,0])\nassert r.representation == 'logical'\ntry:\n    m.run([1,0])\nexcept NotImplementedError:\n    print('Physical GKP MuTA is unsupported; ideal target remains logical')\nelse:\n    raise AssertionError('Unexpected physical execution')",
+        "m = pqml.MuTA(1,representation='gkp')\nr = pqml.GKPBridge().logical_target(m,[1,0])\nassert r.representation == 'logical'\ntry:\n    m.run([1,0])\nexcept NotImplementedError:\n    print('Legacy resource-only execution is unsupported; ideal target remains logical')\nelse:\n    raise AssertionError('Unexpected physical execution')",
         "A finite resource and a logical target do not constitute validated finite-energy execution.",
     ),
     (

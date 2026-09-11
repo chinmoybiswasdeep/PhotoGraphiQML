@@ -1,6 +1,7 @@
 """Faithful logical MuTA geometry and flow with explicit representation boundaries."""
 
 import json
+import warnings
 from pathlib import Path
 
 import networkx as nx
@@ -34,8 +35,16 @@ class MuTA:
         positive_integer(n_layers, "n_layers")
         if not isinstance(one_column, bool) or not isinstance(restrict_trainable, bool):
             raise ValueError("one_column and restrict_trainable must be booleans")
-        if representation not in ("logical", "gkp"):
-            raise ValueError("Choose logical or gkp; CVMuTA is a separate research proposal")
+        if representation not in ("logical", "gkp", "gkp-resource"):
+            raise ValueError(
+                "Choose logical or gkp-resource; use PhysicalMuTA for gkp-physical. CVMuTA is a separate proposal"
+            )
+        if representation == "gkp":
+            warnings.warn(
+                "Legacy 'gkp' remains resource-only. Use 'gkp-resource' or explicitly construct PhysicalMuTA for the supported physical subset.",
+                DeprecationWarning,
+                stacklevel=2,
+            )
         if connections is not None and not one_column:
             raise ValueError("Custom connections require one_column=True")
         self.n_wires, self.n_layers = n_wires, n_layers
@@ -119,7 +128,7 @@ class MuTA:
         )
 
     def run(self, input_state, parameters=None):
-        if self.representation == "gkp":
+        if self.representation in ("gkp", "gkp-resource"):
             raise NotImplementedError(
                 "Physical GKP MuTA requires a validated logical XY measurement/injection instrument and decoder; use GKPBridge.logical_target explicitly for ideal targets"
             )
@@ -159,15 +168,41 @@ class MuTA:
     @classmethod
     def load(cls, path):
         data = json.loads(Path(path).read_text(encoding="utf-8"))
-        if data["schema"] != 1:
+        if data["schema"] not in (1, 2):
             raise ValueError("Unsupported model schema")
-        model = cls(**data["config"])
+        model: MuTA
+        if data["schema"] == 2 and data["config"]["representation"] == "gkp-physical":
+            from ..lowering import GKPPhysicalConfig
+            from ..physical import PhysicalMuTA
+
+            model = PhysicalMuTA(
+                **data["config"],
+                physical_config=GKPPhysicalConfig(**data["physical_config"]),
+                measurement_family=data["measurement_family"],
+            )
+        else:
+            # Loading through a subclass must not reinterpret schema-1 resources.
+            model = MuTA(**data["config"])
         if set(data["values"]) != set(model.parameters()):
             raise ValueError("Serialized parameter names do not match topology")
         model._parameters.frozen.clear()
         model._parameters.values = model._parameters.bind(data["values"])
         model.freeze(data["frozen"])
         return model
+
+    def physical_capabilities(self, parameters=None, *, config=None):
+        from ..lowering import physical_capabilities
+
+        return physical_capabilities(
+            self, parameters, config=config or getattr(self, "physical_config", None)
+        )
+
+    def draw_physical(self, parameters=None, *, config=None, ax=None):
+        from ..lowering import visualize_lowering
+
+        return visualize_lowering(
+            self, parameters, config=config or getattr(self, "physical_config", None), ax=ax
+        )
 
     def summary(self):
         return f"MuTA ({self.representation})\nWires: {self.n_wires}\nRequested layers: {self.n_layers}\nPaper layers: {self.paper_depth}\nTrainable parameters: {self.n_parameters}\nResource nodes: {len(self.graph)}\nMeasurements: {len(self.flow)}\nCZ edges: {self.graph.number_of_edges()}\nCausal dependencies: {self.dependency_graph.number_of_edges()}"

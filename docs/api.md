@@ -37,7 +37,25 @@ two-feature measurement map. Quantum inputs bypass the classical encoder.
 Raw Gaussian/Fock states can be passed directly to PhotoGraphiQ. They cannot
 be passed as logical MuTA states. The bridge's finite GKP superposition is a
 preparation prescription with nonorthogonal codewords, not an exact isometry.
-No general decoded density-matrix API or GKP classifier is currently claimed.
+No general decoded density-matrix API is claimed. Physical supervised wrappers
+use decoded output probabilities and explicit shot settings.
+
+## Physical v0.2 APIs
+
+| API | Input | Output |
+| --- | --- | --- |
+| PhysicalMuTA.run | normalized product vector (2**n,) or factors (n,2), signed-X parameters, explicit mode/shots/seed | PhysicalMuTAResult; raw physical state(s), decoded joint/marginal probabilities, separate ideal target, frames and diagnostics |
+| GKPBridge.run | fixed logical model or PhysicalMuTA; same physical options | Same capability-audited physical result; legacy resource models still reject execution |
+| MuTA.physical_capabilities | bound parameters and optional GKPPhysicalConfig | Allocation-free angle audit and resource estimates |
+| lower_muta_to_gkp | model, bound parameters, configuration | Inspectable Pattern and logical/physical/signal mappings; allocates codewords only after audit |
+| PhysicalMuTA.initialize | seed | Categorical 0/pi parameter dictionary |
+| DiscreteSearch.fit | PhysicalMuTA, scalar physical objective, optional categorical initial vector | DiscreteSearchResult with chosen parameters, loss and evaluations |
+| PhysicalMuTA.physical_convergence | product input, increasing values, one axis and execution settings | Whole-pattern study; no automatic certification |
+| GKPBridge.resource_readout | X/Z and nearest/soft | Public physical GKP readout; soft ensemble assumptions apply |
+| compare_logical_physical | PhysicalMuTAResult | Decoded TV distance, observable differences and leakage; no invented state fidelity |
+
+See [execution modes](physical/execution-modes.md) for conditional versus shot
+semantics. `MuTAKernel` and `QuantumInstrumentModel` remain logical only.
 
 Trainer accepts a derivative callable; default central differences apply to
 deterministic scalar objectives only. `History` stores loss, optional validation

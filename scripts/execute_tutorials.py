@@ -35,7 +35,7 @@ def main():
             kernel = KernelManager(kernel_name="pgml", kernel_spec_manager=manager)
             try:
                 NotebookClient(notebook, km=kernel, timeout=120).execute()
-                nbformat.write(notebook, path)
+                # Validation must not mutate checked-in notebook outputs.
             finally:
                 if kernel.has_kernel:
                     kernel.shutdown_kernel(now=True)
