@@ -1,0 +1,23 @@
+{
+  "timestamp_utc": "2026-09-17T02:01:49.780981+00:00",
+  "git_commit": "9c08023d07005ebc0150324c539ea942b8c8ba01",
+  "git_branch": "manuscript-experiments",
+  "git_dirty": true,
+  "python_version": "3.14.4",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu_model": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+  "packages": {
+    "photographiqml": "0.2.0",
+    "photographiq": "0.3.1",
+    "mentpy": "0.1.0a15",
+    "piquasso": "8.0.1",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "networkx": "3.6.1",
+    "matplotlib": "3.11.1",
+    "scikit-learn": "1.9.1"
+  },
+  "experiment_id": "R3",
+  "oracle_class": "A",
+  "status": "pass"
+}

@@ -1,0 +1,52 @@
+{
+  "rows": [
+    {
+      "n_wires": 1,
+      "graph_vertices": 5,
+      "graph_edges": 4,
+      "n_parameters": 4,
+      "photographiqml_median_seconds": 6.189999839989468e-05,
+      "photographiqml_iqr_seconds": 5.950001650489867e-06,
+      "photographiqml_min_seconds": 5.5999997130129486e-05,
+      "photographiqml_max_seconds": 6.910000229254365e-05,
+      "mentpy_median_seconds": 0.0031626999989384785,
+      "mentpy_iqr_seconds": 0.0001929499994730577,
+      "mentpy_min_seconds": 0.002388300003076438,
+      "mentpy_max_seconds": 0.003486399997200351
+    },
+    {
+      "n_wires": 2,
+      "graph_vertices": 10,
+      "graph_edges": 10,
+      "n_parameters": 8,
+      "photographiqml_median_seconds": 0.0006828999976278283,
+      "photographiqml_iqr_seconds": 9.44500025070738e-05,
+      "photographiqml_min_seconds": 0.0003873000023304485,
+      "photographiqml_max_seconds": 0.000981800003501121,
+      "mentpy_median_seconds": 0.010663299995940179,
+      "mentpy_iqr_seconds": 0.0009434000021428801,
+      "mentpy_min_seconds": 0.009084999997867271,
+      "mentpy_max_seconds": 0.012383599998429418
+    },
+    {
+      "n_wires": 3,
+      "graph_vertices": 15,
+      "graph_edges": 16,
+      "n_parameters": 12,
+      "photographiqml_median_seconds": 0.0008347999973921105,
+      "photographiqml_iqr_seconds": 1.965000046766363e-05,
+      "photographiqml_min_seconds": 0.0008186999984900467,
+      "photographiqml_max_seconds": 0.0008617999992566183,
+      "mentpy_median_seconds": 0.03725599999597762,
+      "mentpy_iqr_seconds": 0.0033279999988735653,
+      "mentpy_min_seconds": 0.030484599999908824,
+      "mentpy_max_seconds": 0.04512350000004517
+    }
+  ],
+  "protocol": "Matched-workload PhotoGraphiQML.run vs. raw MentPy PatternSimulator.run, repeated timings",
+  "oracle_class": "N/A",
+  "status_category": "statistical",
+  "acceptance_condition": "N/A (descriptive performance measurement)",
+  "status": "pass",
+  "machine_note": "Single Windows host, single process; local observation only, not a general performance claim"
+}

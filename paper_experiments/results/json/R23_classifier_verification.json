@@ -1,0 +1,66 @@
+{
+  "rows": [
+    {
+      "split": 0,
+      "accuracy": 1.0,
+      "majority_baseline_accuracy": 0.5555555555555556,
+      "final_train_loss": 0.06520910154011592
+    },
+    {
+      "split": 1,
+      "accuracy": 1.0,
+      "majority_baseline_accuracy": 0.5555555555555556,
+      "final_train_loss": 0.07728795990437937
+    },
+    {
+      "split": 2,
+      "accuracy": 0.9444444444444444,
+      "majority_baseline_accuracy": 0.5555555555555556,
+      "final_train_loss": 0.074669421068585
+    },
+    {
+      "split": 3,
+      "accuracy": 0.9444444444444444,
+      "majority_baseline_accuracy": 0.5555555555555556,
+      "final_train_loss": 0.05386759697369269
+    },
+    {
+      "split": 4,
+      "accuracy": 1.0,
+      "majority_baseline_accuracy": 0.5555555555555556,
+      "final_train_loss": 0.08621089186002484
+    }
+  ],
+  "protocol": "MuTAClassifier on synthetic cos(x0)+cos(x1)>0 boundary, repeated stratified splits",
+  "oracle_class": "A",
+  "status_category": "statistical",
+  "n_splits": 5,
+  "accuracy_bootstrap_ci": {
+    "point": 0.9777777777777779,
+    "low": 0.9555555555555555,
+    "high": 1.0,
+    "n_boot": 2000,
+    "alpha": 0.05,
+    "n": 5
+  },
+  "paired_difference_vs_majority_baseline_ci": {
+    "point": 0.42222222222222217,
+    "low": 0.39999999999999997,
+    "high": 0.4444444444444445,
+    "n_boot": 2000,
+    "alpha": 0.05,
+    "n": 5
+  },
+  "confusion_matrix": [
+    [
+      50,
+      0
+    ],
+    [
+      2,
+      38
+    ]
+  ],
+  "acceptance_condition": "median accuracy >= 0.85 and paired improvement over majority baseline > 0",
+  "status": "pass"
+}
