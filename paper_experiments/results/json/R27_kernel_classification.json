@@ -362,5 +362,8 @@
   },
   "min_gram_eigenvalue_overall": -3.30788976935803e-14,
   "acceptance_condition": "structural: every accuracy in [0,1] and every training Gram matrix PSD within declared tolerance; scientific outcome: descriptive, no performance threshold",
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "claim_supported": "structural contract only",
+  "claim_not_supported": "no scientific performance conclusion"
 }

@@ -159,5 +159,10 @@
   "tolerance": 2.220446049250313e-14,
   "acceptance_condition": "max probability-sum error < 2.220e-14; always 2 branches; None iff probability<1e-15",
   "max_probability_sum_error": 3.219646771412954e-15,
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

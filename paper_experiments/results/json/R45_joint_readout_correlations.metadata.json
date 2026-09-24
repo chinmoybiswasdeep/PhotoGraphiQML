@@ -1,8 +1,13 @@
 {
-  "timestamp_utc": "2026-09-17T00:54:47.390824+00:00",
-  "git_commit": "9c08023d07005ebc0150324c539ea942b8c8ba01",
+  "timestamp_utc": "2026-09-24T21:42:35.192385+00:00",
+  "git_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
   "git_branch": "manuscript-experiments",
-  "git_dirty": true,
+  "git_dirty": false,
+  "worktree_dirty": true,
+  "source_dirty": false,
+  "source_dirty_paths": [],
+  "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+  "provenance_schema_version": 3,
   "python_version": "3.14.4",
   "platform": "Windows-11-10.0.26200-SP0",
   "cpu_model": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
@@ -17,7 +22,23 @@
     "matplotlib": "3.11.1",
     "scikit-learn": "1.9.1"
   },
+  "package_import_origins": {
+    "photographiqml": "D:\\Research\\QML\\results_1\\cvqc\\thesis_part_2\\softwares\\PhotoGraphiQML\\src\\photographiqml\\__init__.py",
+    "photographiq": "D:\\Research\\QML\\results_1\\cvqc\\thesis_part_2\\softwares\\PhotoGraphiQ\\src\\photographiq\\__init__.py",
+    "mentpy": "D:\\Research\\QML\\results_1\\cvqc\\thesis_part_2\\softwares\\PhotoGraphiQML\\.references\\mentpy\\mentpy\\__init__.py",
+    "piquasso": "D:\\Research\\QML\\results_1\\cvqc\\thesis_part_2\\softwares\\PhotoGraphiQML\\.venv\\Lib\\site-packages\\piquasso\\__init__.py"
+  },
+  "upstream_repositories": {
+    "PhotoGraphiQ": {
+      "path": "D:\\Research\\QML\\results_1\\cvqc\\thesis_part_2\\softwares\\PhotoGraphiQ",
+      "commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+      "dirty": false
+    }
+  },
   "experiment_id": "R45",
   "oracle_class": "A/E",
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive"
 }

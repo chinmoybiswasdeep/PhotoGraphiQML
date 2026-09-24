@@ -50,5 +50,10 @@
   "oracle_class": "A/E",
   "status_category": "exact",
   "acceptance_condition": "0 violations in every category; Fock dimension exact match; pattern validates",
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

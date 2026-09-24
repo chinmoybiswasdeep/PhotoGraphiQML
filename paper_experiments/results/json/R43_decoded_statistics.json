@@ -46,5 +46,10 @@
     "max_matrix_bytes": 256000000
   },
   "acceptance_condition": "TV distance and leakage in [0,1]; finite_state_fidelity always None; convergence never silently certified",
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

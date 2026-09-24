@@ -21,5 +21,10 @@
   "tolerance": 2.220446049250313e-14,
   "acceptance_condition": "max error over all 256 branches < 2.220e-14",
   "max_error": 1.4748069831526271e-15,
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

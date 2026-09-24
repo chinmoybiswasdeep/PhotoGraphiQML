@@ -92,5 +92,10 @@
   "tolerance": 2.220446049250313e-12,
   "acceptance_condition": "max amplitude-vector error < 2.220e-12",
   "max_error": 4.918754554516266e-16,
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

@@ -123,5 +123,10 @@
   "acceptance_condition": "certified False for every axis; numerical axes (cutoff, grid_points) show decreasing successive-point delta",
   "all_uncertified": true,
   "numerical_axes_ok": true,
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

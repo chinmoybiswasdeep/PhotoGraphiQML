@@ -87,5 +87,19 @@
   "distinct_selected_configurations": 2,
   "acceptance_condition": "all accuracies finite and in [0,1]; every selected configuration exactly categorical {0,pi}",
   "finding": "Selected configurations and their fresh-trajectory accuracy vary across training seeds; this documents instability, not a robust classifier-performance claim (per docs/physical/physical-training.md).",
-  "status": "pass"
+  "structural_status": "pass",
+  "scientific_outcome": "negative",
+  "claim_supported": "Fresh-trajectory physical-training instability was observed under the declared six-seed protocol.",
+  "claim_not_supported": "Robust physical classifier performance is not demonstrated.",
+  "seeds": [
+    7,
+    19,
+    23,
+    31,
+    42,
+    101
+  ],
+  "uncertainty_method": "six-seed empirical instability rate (small-n; no population CI claim)",
+  "status": "pass",
+  "execution_status": "completed"
 }

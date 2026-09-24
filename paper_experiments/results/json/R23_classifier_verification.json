@@ -39,6 +39,13 @@
   "oracle_class": "A",
   "status_category": "statistical",
   "n_splits": 5,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
   "accuracy_bootstrap_ci": {
     "point": 1.0,
     "low": 0.9444444444444444,

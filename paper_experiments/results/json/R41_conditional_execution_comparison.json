@@ -63,5 +63,10 @@
   "tolerance": 2.220446049250313e-10,
   "acceptance_condition": "max joint-probability difference < 2.220e-10",
   "max_error": 0.0,
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

@@ -23,5 +23,10 @@
   "tolerance": 2.220446049250313e-12,
   "acceptance_condition": "max |1-fidelity| < 2.220e-12",
   "max_infidelity": 4.440892098500626e-16,
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

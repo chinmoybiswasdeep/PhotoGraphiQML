@@ -127,5 +127,10 @@
   "upstream_tolerance": 1e-14,
   "acceptance_condition": "classification matches documented 1e-14 boundary for every declared case",
   "n_incorrect": 0,
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

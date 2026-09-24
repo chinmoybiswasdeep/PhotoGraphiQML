@@ -55,5 +55,10 @@
     "Soft ensemble posteriors are not calibrated for adaptive MuTA node states; use nearest for flow and resource_readout for calibrated soft features"
   ],
   "acceptance_condition": "nearest confidence always None; soft confidence non-increasing toward boundary; soft rejected before allocation",
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

@@ -67,5 +67,10 @@
   "tolerance": 4.440892098500626e-14,
   "acceptance_condition": "max density-matrix error < 4.441e-14",
   "max_error": 2.2562366424003522e-15,
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

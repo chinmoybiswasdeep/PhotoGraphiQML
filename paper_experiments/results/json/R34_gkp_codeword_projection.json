@@ -76,5 +76,10 @@
   "status_category": "exact/statistical",
   "tolerance": 2.220446049250313e-13,
   "acceptance_condition": "captured weights in [0,1]; Gram matrix PSD; physical_muta_validated always False",
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

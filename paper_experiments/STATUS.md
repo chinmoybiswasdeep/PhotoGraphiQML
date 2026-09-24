@@ -1,25 +1,42 @@
 # Suite execution status
 
-## Current source fingerprint
+## Accepted publication evidence
 
-- Commit: `b2afd24376ef37665c36f04416601ca4f99fa65b`
+- Accepted: `True`
+- Run identifier: `864af1b907a9-20260924T211728Z`
+- Source commit: `864af1b907a9c2875965744c352ae373f15cb3ea`
+- Source-tree fingerprint: `60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b`
+- Evidence commit: `pending evidence commit`
 - Branch: `manuscript-experiments`
-- Source files dirty (generated evidence excluded): `True`
-- Dirty source paths: `['paper_experiments/12_performance/49_aggregate_performance_figure.py', 'paper_experiments/EXPERIMENT_INDEX.md', 'paper_experiments/build_manifest.py', 'paper_experiments/common.py', 'paper_experiments/run_all_full.py', 'tests/paper_experiments/test_experiment_consistency.py', '.gitattributes', 'paper_experiments/generate_status.py', 'paper_experiments/publication.py']`
+- Started: `2026-09-24T21:17:28.563557+00:00`
+- Completed: `2026-09-24T22:13:53.573068+00:00`
+- Experiments completed or hash-resumed: `59` / `59`
+- Executed in this run: `59`
+- Hash-resumed: `0`
+- Failed: `0`
+- Skipped: `0`
+- Manifest SHA-256: `f12462cf19b10004e12f976d71c9692034123bba02bb7ed4428f5966738785b6`
 
-## Current publication evidence
+## Scientific outcomes
 
-No clean-source publication run at this source fingerprint is accepted as final evidence.
-Historical or dirty-source artifacts remain inspectable but are not final publication evidence.
+- descriptive: `12`
+- negative: `2`
+- positive: `45`
 
-## Outcome interpretation
+Structural pass means execution and declared checks passed; it is not a positive scientific finding.
+R48 retains the observed physical-training instability as a negative result.
 
-- Positive: only results with a completed execution and an explicit positive scientific outcome.
-- Negative: retained explicitly (notably R48 physical-training instability).
-- Descriptive: runtime, scaling, and comparison studies do not imply performance success.
-- Unsupported: arbitrary-angle physical XY, general physical MuTA, native CVMuTA, soft flow decoding, and entangled physical inputs remain unsupported unless a current experiment demonstrates otherwise.
+## Quality gates
 
-## Remaining blockers
+- `generate_tables`: `pass` (0.3 s; log `results/logs/publication_generate_tables.log`)
+- `build_notebook`: `pass` (0.5 s; log `results/logs/publication_build_notebook.log`)
+- `build_manifest`: `pass` (1.1 s; log `results/logs/publication_build_manifest.log`)
+- `verify_evidence_pre_status`: `pass` (0.7 s; log `results/logs/publication_verify_evidence_pre_status.log`)
+- `repository_validation`: `pass` (118.2 s; log `results/logs/publication_repository_validation.log`)
+- `notebook_validation`: `pass` (0.3 s; log `results/logs/publication_notebook_validation.log`)
+- `clean_install`: `pass` (6.7 s; log `results/logs/publication_clean_install.log`)
+- `installed_import_smoke`: `pass` (2.4 s; log `results/logs/publication_installed_import_smoke.log`)
 
-- A clean-source fingerprint-aware `--publication` run has not yet completed.
-- Heavy physical experiments must be executed by that run; no skip is accepted in publication mode.
+## Capability boundary
+
+Arbitrary-angle physical XY measurements, general physical MuTA, native CVMuTA, loss/detector-noise models, soft adaptive flow decoding, and physical MuTA kernels remain unsupported. No experiment is described as quantum advantage.

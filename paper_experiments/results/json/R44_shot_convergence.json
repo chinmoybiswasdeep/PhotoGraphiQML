@@ -107,6 +107,23 @@
   "reference_shots": 64,
   "coverage_shots": 16,
   "coverage_rate": 1.0,
+  "seeds": [
+    2026,
+    999,
+    1000,
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007
+  ],
   "acceptance_condition": "shots=32 SE < shots=4 SE; coverage rate in [0.5,1.0] (loose n=8 sanity band)",
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

@@ -217,5 +217,10 @@
   "tolerance": 8.881784197001252e-14,
   "acceptance_condition": "max error < 8.882e-14",
   "max_error": 4.263256414560601e-14,
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

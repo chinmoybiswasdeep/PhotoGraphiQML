@@ -200,6 +200,20 @@
     }
   ],
   "protocol": "One-axis-at-a-time robustness sweep + leakage-safe nested C selection, moons dataset",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "sweep_seeds": [
+    0,
+    1,
+    2,
+    3
+  ],
   "oracle_class": "N/A",
   "status_category": "statistical",
   "structural_status": "pass",
@@ -273,5 +287,8 @@
     }
   ],
   "acceptance_condition": "structural: reported accuracies finite and in [0,1]; scientific outcome: descriptive, no performance threshold",
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "claim_supported": "structural contract only",
+  "claim_not_supported": "no scientific performance conclusion"
 }

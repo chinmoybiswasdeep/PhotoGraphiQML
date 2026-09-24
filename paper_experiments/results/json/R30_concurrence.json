@@ -261,5 +261,10 @@
   "max_error": 1.1102230246251565e-16,
   "separable_value": 0.0,
   "bell_value": 0.9999999999999998,
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

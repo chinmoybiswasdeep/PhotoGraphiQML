@@ -127,5 +127,10 @@
   ],
   "acceptance_condition": "min eigenvalue > -8.882e-12; convergence error monotonically decreases from step=1e-2 to 1e-5",
   "min_eigenvalue_overall": -4.543411725661932e-16,
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

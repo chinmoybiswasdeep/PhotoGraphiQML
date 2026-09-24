@@ -57,5 +57,10 @@
   "max_symmetry_error": 4.440892098500626e-16,
   "max_diagonal_error": 4.440892098500626e-15,
   "min_eigenvalue_overall": -1.2198544144939099e-14,
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }
