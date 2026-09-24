@@ -131,6 +131,10 @@ def save_figure(fig, name: str, *, tight: bool = True, svg: bool = True) -> dict
     if svg:
         svg_path = FIG_SVG / f"{name}.svg"
         fig.savefig(svg_path, bbox_inches="tight")
+        # Matplotlib opens SVG output in platform text mode.  Normalize it
+        # before hashing so Git's ``eol=lf`` checkout policy cannot change the
+        # bytes recorded by the evidence manifest on Windows.
+        publication.atomic_write_text(svg_path, svg_path.read_text(encoding="utf-8"))
         paths["svg"] = svg_path
     return paths
 
