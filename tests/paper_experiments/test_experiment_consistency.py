@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import ast
 import copy
+import hashlib
 import json
 import re
 import subprocess
@@ -217,3 +218,18 @@ def test_git_attributes_define_cross_platform_text_and_binary_policy():
         ).stdout
         assert f"text: {attributes[1]}" in output
         assert f"eol: {attributes[3]}" in output
+
+
+def test_source_hash_normalizes_declared_text_line_endings(tmp_path, monkeypatch):
+    source = tmp_path / "source.py"
+    source.write_bytes(b"first\r\nsecond\r\n")
+    monkeypatch.setattr(publication, "REPO", tmp_path)
+    monkeypatch.setattr(
+        publication.subprocess,
+        "run",
+        lambda *args, **kwargs: subprocess.CompletedProcess(
+            args=args, returncode=0, stdout=b"source.py\0text\0set\0"
+        ),
+    )
+    expected = hashlib.sha256(b"first\nsecond\n").hexdigest()
+    assert publication.source_sha256(source) == expected

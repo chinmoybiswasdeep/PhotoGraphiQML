@@ -39,6 +39,22 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def source_sha256(path: Path) -> str:
+    """Hash source bytes after applying Git's declared text normalization."""
+    relative = str(path.relative_to(REPO)).replace("\\", "/")
+    attributes = subprocess.run(
+        ["git", "check-attr", "-z", "text", "--", relative],
+        cwd=REPO,
+        capture_output=True,
+        check=True,
+    ).stdout.split(b"\0")
+    text_attribute = attributes[2].decode("utf-8") if len(attributes) >= 3 else "unspecified"
+    data = path.read_bytes()
+    if text_attribute in {"set", "auto"}:
+        data = data.replace(b"\r\n", b"\n")
+    return hashlib.sha256(data).hexdigest()
+
+
 def atomic_write_text(path: Path, text: str) -> None:
     """Atomically replace a UTF-8 text artifact in its destination directory."""
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -144,7 +160,12 @@ def sibling_dirty(name: str) -> bool | None:
 
 def scientifically_relevant_files() -> list[Path]:
     """Tracked inputs defining experiments, package behavior, and environment."""
-    tracked = (git("ls-files") or "").splitlines()
+    process = subprocess.run(["git", "ls-files", "-z"], cwd=REPO, capture_output=True, check=True)
+    tracked = [
+        value.decode("utf-8", errors="surrogateescape")
+        for value in process.stdout.split(b"\0")
+        if value
+    ]
     excluded = tuple(prefix.rstrip("/") for prefix in GENERATED_PREFIXES)
     files = []
     for relative in tracked:
@@ -159,7 +180,7 @@ def scientifically_relevant_files() -> list[Path]:
 
 def source_tree_fingerprint() -> dict:
     entries = {
-        str(path.relative_to(REPO)).replace("\\", "/"): sha256(path)
+        str(path.relative_to(REPO)).replace("\\", "/"): source_sha256(path)
         for path in scientifically_relevant_files()
     }
     return {"sha256": fingerprint_hash(entries), "files": entries}
@@ -180,10 +201,10 @@ def fingerprint(script: Path) -> dict:
         "schema_version": SCHEMA_VERSION,
         "source_commit": git("rev-parse", "HEAD"),
         "source_tree_fingerprint": source_tree_fingerprint()["sha256"],
-        "script_sha256": sha256(script),
-        "common_sha256": sha256(ROOT / "common.py"),
-        "metadata_sha256": sha256(ROOT / "metadata.py"),
-        "contract_sha256": sha256(contracts) if contracts.exists() else None,
+        "script_sha256": source_sha256(script),
+        "common_sha256": source_sha256(ROOT / "common.py"),
+        "metadata_sha256": source_sha256(ROOT / "metadata.py"),
+        "contract_sha256": source_sha256(contracts) if contracts.exists() else None,
         "expected_artifacts": artifacts,
         "python": sys.version,
         "package_versions": package_versions(),

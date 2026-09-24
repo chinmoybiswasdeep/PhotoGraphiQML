@@ -1,4 +1,5 @@
 # Cross-platform publication evidence: normalized text, explicit binary assets.
+* text=auto eol=lf
 .gitattributes text eol=lf
 *.py text eol=lf
 *.md text eol=lf
@@ -6,5 +7,5 @@
 *.csv text eol=lf
 *.svg text eol=lf whitespace=-trailing-space
 *.ipynb text eol=lf
-*.pdf binary
-*.png binary
+*.pdf binary !eol
+*.png binary !eol
