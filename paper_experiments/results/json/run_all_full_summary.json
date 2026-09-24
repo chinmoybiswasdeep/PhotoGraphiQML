@@ -4,7 +4,7 @@
   "run_identifier": "864af1b907a9-20260924T211728Z",
   "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
   "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
-  "evidence_commit": null,
+  "evidence_commit": "02c41761043e91ebb3e2ed65fcb5bb71d3bbc184",
   "branch": "manuscript-experiments",
   "dirty_source_paths": [],
   "environment": {
@@ -4442,7 +4442,7 @@
       "log": "results/logs/publication_installed_import_smoke.log"
     }
   ],
-  "manifest_sha256": "f12462cf19b10004e12f976d71c9692034123bba02bb7ed4428f5966738785b6",
+  "manifest_sha256": "590cd80fa7bdbb9a38928f80b80fb4d95c0069a29de4bd053e5cd6b1565e643f",
   "total_wall_seconds": 3358.1578072999837,
   "overall_acceptance": true,
   "rejection_reasons": []
