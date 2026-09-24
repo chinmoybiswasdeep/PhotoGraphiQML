@@ -201,10 +201,31 @@ def write_metadata(name: str, **extra) -> Path:
 def save_result(
     rows: list[dict], name: str, *, extra: dict | None = None, meta_extra: dict | None = None
 ) -> None:
-    """Save CSV rows, a JSON mirror and a metadata companion for one experiment."""
+    """Save evidence with separate execution, structural, and scientific status.
+
+    ``status`` remains a compatibility alias for the structural contract only;
+    it must never be read as an ML-performance claim for a descriptive study.
+    """
+    extra = dict(extra or {})
+    structural = extra.get("structural_status", extra.get("status", "unknown"))
+    descriptive = extra.get("oracle_class") == "N/A"
+    outcome = extra.get("scientific_outcome")
+    if outcome is None:
+        outcome = "negative" if name.startswith("R48_") else "descriptive" if descriptive else "positive" if structural == "pass" else "inconclusive"
+    extra.setdefault("execution_status", "completed")
+    extra.setdefault("structural_status", structural)
+    extra.setdefault("scientific_outcome", outcome)
+    extra.setdefault("claim_supported", "structural contract only" if descriptive else "declared experiment contract")
+    extra.setdefault("claim_not_supported", "no scientific performance conclusion" if descriptive else "no claim beyond declared protocol")
+    meta_extra = dict(meta_extra or {})
+    meta_extra.update({
+        "execution_status": extra["execution_status"],
+        "structural_status": extra["structural_status"],
+        "scientific_outcome": extra["scientific_outcome"],
+    })
     save_csv(rows, name)
-    save_json({"rows": rows, **(extra or {})}, name)
-    write_metadata(name, **(meta_extra or {}))
+    save_json({"rows": rows, **extra}, name)
+    write_metadata(name, **meta_extra)
 
 
 # ---------------------------------------------------------------------------

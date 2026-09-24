@@ -488,5 +488,10 @@
   "acceptance_condition": "max Frobenius error < 2.220e-15",
   "max_full_sequence_error": 1.068950062446767e-15,
   "max_single_column_error": 8.599750569898517e-16,
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

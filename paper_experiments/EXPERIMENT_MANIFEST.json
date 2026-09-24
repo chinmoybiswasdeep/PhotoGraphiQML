@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_utc": "2026-09-24T16:37:18.859797+00:00",
+  "generated_utc": "2026-09-24T17:29:52.913385+00:00",
   "source": "EXPERIMENT_INDEX.md",
   "experiments": [
     {
@@ -9,19 +9,72 @@
       "scientific_question": "Does TriangleNeuron/MuTA graph anatomy match closed-form node/edge/parameter counts?",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`TriangleNeuron`, `MuTA.__init__`",
+      "layer": "logical",
       "oracle": "Hand-derived formulas",
       "oracle_class": "A",
       "metric": "max count error",
       "acceptance_condition": "0",
+      "result_protocol": "TriangleNeuron/MuTA graph anatomy vs. closed-form node/edge/parameter counts",
+      "result_acceptance_condition": "max_node_error == max_edge_error == max_trainable_error == 0; DAG acyclic and topologically consistent",
       "result_kind": "exact",
       "estimated_cost": "light",
       "manuscript_destination": "Main (Fig.1)/Table I",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R1_*.csv",
-        "json": "results/json/R1_*.json",
-        "metadata": "results/json/R1_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Does TriangleNeuron/MuTA graph anatomy match closed-form node/edge/parameter counts?",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R1_triangle_anatomy.csv",
+          "exists": true,
+          "sha256": "be593c67b035c46bb48253185a2ccfb6490b744da38adf9c45c730a57eef84bc"
+        },
+        {
+          "path": "results\\json\\R1_triangle_anatomy.json",
+          "exists": true,
+          "sha256": "bdfd948f660ae0b7ed811e0f206344c4abac26fa759333f4f018d2e96adaa849"
+        },
+        {
+          "path": "results\\json\\R1_triangle_anatomy.metadata.json",
+          "exists": true,
+          "sha256": "b304b27eb45bc42113e7a5fedb7cdb8894fbd9c5d314890ec6de14d918fc1895"
+        },
+        {
+          "path": "figures\\pdf\\R1_triangle_anatomy.pdf",
+          "exists": true,
+          "sha256": "1ef48bbb926d48a3bea6a620c50ddd695238c11ca4694170b2662f423c00b0f6"
+        },
+        {
+          "path": "figures\\png\\R1_triangle_anatomy.png",
+          "exists": true,
+          "sha256": "7b08ecde3eb68fa7ed4c4d42ac6e34aabbe20ea4d15888dbff8c9ce284793331"
+        },
+        {
+          "path": "figures\\svg\\R1_triangle_anatomy.svg",
+          "exists": true,
+          "sha256": "c4a7a98d2733c31ac9c9ebc846cfe3c71535b13467c101eda698aff4d109cd86"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "787d61ffdc5b73e81ad51883e5467865bb86d7d983f0734cf0a86dca50e46675",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -30,19 +83,72 @@
       "scientific_question": "Does a single wire implement the Table-I Euler rotation sequence?",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`MuTA.unitary` (1 wire)",
+      "layer": "logical",
       "oracle": "`scipy.linalg.expm`",
       "oracle_class": "A",
       "metric": "Frobenius error",
-      "acceptance_condition": "< 2.2e-8",
+      "acceptance_condition": "< 2.2e-15",
+      "result_protocol": "Single-wire Table-I Euler decomposition vs. scipy.linalg.expm reference",
+      "result_acceptance_condition": "max Frobenius error < 2.220e-15",
       "result_kind": "exact",
       "estimated_cost": "light",
       "manuscript_destination": "Main/Table I",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R2_*.csv",
-        "json": "results/json/R2_*.json",
-        "metadata": "results/json/R2_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "declared experiment contract",
+      "claim_not_supported": "no claim beyond declared protocol",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R2_table_one_identities.csv",
+          "exists": true,
+          "sha256": "9487bd40900563330130f4d825db5ff341495e4a954146a7d5a0edf877de120a"
+        },
+        {
+          "path": "results\\json\\R2_table_one_identities.json",
+          "exists": true,
+          "sha256": "aef876edae7fb50680866fa9019349e89369dcd24a96a0c823a63f7d6b3f40d3"
+        },
+        {
+          "path": "results\\json\\R2_table_one_identities.metadata.json",
+          "exists": true,
+          "sha256": "b442cd0c97f50272a2fb67e6c01dcaffa697b30ce65e89311870406cfff9a741"
+        },
+        {
+          "path": "figures\\pdf\\R2_table_one_identities.pdf",
+          "exists": true,
+          "sha256": "274ed0a44e27255c5a4fa4eca04f4fcfb67e00701b0f86a28517c03155d2c479"
+        },
+        {
+          "path": "figures\\png\\R2_table_one_identities.png",
+          "exists": true,
+          "sha256": "a36053db2bd56d400e57837a3156ed16ff33c5ec5f644eeee383636ce1d0f0df"
+        },
+        {
+          "path": "figures\\svg\\R2_table_one_identities.svg",
+          "exists": true,
+          "sha256": "a4b05b732ddfe51ac5306cf7c5d1c06408fbf35442356a1e45a3bba2606b2d25"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "2b1b89ed239425aba5f5c9e7eb68fb65686716bd73b932d5905ce9e7e03288d9",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -51,19 +157,72 @@
       "scientific_question": "Does the pivot coupling implement exp(i\u00b7phi\u00b7XX/2)?",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`MuTA.unitary` (2 wire)",
+      "layer": "logical",
       "oracle": "`scipy.linalg.expm`",
       "oracle_class": "A",
       "metric": "Frobenius/concurrence error",
       "acceptance_condition": "< 2.2e-15",
+      "result_protocol": "Two-wire pivot coupling vs. exp(i*phi*XX/2) (scipy.linalg.expm)",
+      "result_acceptance_condition": "max Frobenius error and max concurrence error < 2.220e-15",
       "result_kind": "exact",
       "estimated_cost": "light",
       "manuscript_destination": "Main/Table I",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R3_*.csv",
-        "json": "results/json/R3_*.json",
-        "metadata": "results/json/R3_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Does the pivot coupling implement exp(i\u00b7phi\u00b7XX/2)?",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R3_entangling_identity.csv",
+          "exists": true,
+          "sha256": "2a7108d01e2472d76faf3dd004b510acbadbcc120935cca2ad1334c002ed17df"
+        },
+        {
+          "path": "results\\json\\R3_entangling_identity.json",
+          "exists": true,
+          "sha256": "b7bc235cb7b7af31c3e68e01653ab7b75d67efad35af099446a56b8e99ca6c4c"
+        },
+        {
+          "path": "results\\json\\R3_entangling_identity.metadata.json",
+          "exists": true,
+          "sha256": "5aaa5228f39b23cfd4b08dba4848b72d8027dfc3cab1554235621b147ca40923"
+        },
+        {
+          "path": "figures\\pdf\\R3_entangling_identity.pdf",
+          "exists": true,
+          "sha256": "4b90bb85938152935597432a5bef269e9a5057753e4827944822192c4c93ab4d"
+        },
+        {
+          "path": "figures\\png\\R3_entangling_identity.png",
+          "exists": true,
+          "sha256": "15b48561344e0efe24c2ea1d8c9437cc0e438019bd7ba6e2f258140964bd27a7"
+        },
+        {
+          "path": "figures\\svg\\R3_entangling_identity.svg",
+          "exists": true,
+          "sha256": "50e7f6b001cf68d9b02719cb6eca72b72a83dc355384d259624f822293b5ad1b"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "04f207e721275719151d601ed4336e78b4c1cfb1c163452f995e63f99f64e84f",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -72,19 +231,72 @@
       "scientific_question": "Do all branches of small graphs reproduce the target after correction?",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`validation.contract_branch`",
+      "layer": "logical",
       "oracle": "independent full contraction (validation.py)",
       "oracle_class": "D",
       "metric": "max branch error, \u03a3p-1",
       "acceptance_condition": "< 2.2e-14",
+      "result_protocol": "Exhaustive branch contraction (contract_branch) vs. MuTA.run target, 1- and 2-wire models",
+      "result_acceptance_condition": "max branch error and |sum(p)-1| < 2.220e-14; min probability > -tol",
       "result_kind": "exact",
       "estimated_cost": "light",
       "manuscript_destination": "Appendix",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R4_*.csv",
-        "json": "results/json/R4_*.json",
-        "metadata": "results/json/R4_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Do all branches of small graphs reproduce the target after correction?",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R4_adaptive_branches.csv",
+          "exists": true,
+          "sha256": "c2b8e5f67b69fd8c9b9c4f5e4655dc67c26576be614435d45416ff4f66047c09"
+        },
+        {
+          "path": "results\\json\\R4_adaptive_branches.json",
+          "exists": true,
+          "sha256": "76825d0b80f6382dbff18a92607e42ef9accdd7ae9cd4aec72d46a3dad9bd34e"
+        },
+        {
+          "path": "results\\json\\R4_adaptive_branches.metadata.json",
+          "exists": true,
+          "sha256": "4e052f2e020d4796b0b4ea3dd0ae62d639f500df36c4af83daf0913052efc698"
+        },
+        {
+          "path": "figures\\pdf\\R4_adaptive_branches.pdf",
+          "exists": true,
+          "sha256": "526360dff23e037cf7587db1966651398a6a74a394ac83cee84c605ece360f76"
+        },
+        {
+          "path": "figures\\png\\R4_adaptive_branches.png",
+          "exists": true,
+          "sha256": "554c302cd74525373d487a221c6923ac6cdfb0d8cdd607540f211186b12f0592"
+        },
+        {
+          "path": "figures\\svg\\R4_adaptive_branches.svg",
+          "exists": true,
+          "sha256": "ae97b9e692eb54f8d8ea6733359703a835ee43f68a990ebd9421fdbbc60473fc"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "988e78cfc5c3d131a1b41998a48692128d4b53f861e0a40a226155e6f3fd7381",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -93,19 +305,72 @@
       "scientific_question": "Does `MuTA.run` agree with a fresh kron/tensor-reshape contraction on larger random models?",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`MuTA.run`",
+      "layer": "logical",
       "oracle": "independent kron/reshape contraction (fresh code)",
       "oracle_class": "D",
       "metric": "density-matrix error",
       "acceptance_condition": "< 4.4e-14",
+      "result_protocol": "MuTA.run vs. freshly written kron/tensor-reshape zero-branch contraction",
+      "result_acceptance_condition": "max density-matrix error < 4.441e-14",
       "result_kind": "exact",
       "estimated_cost": "light-moderate",
       "manuscript_destination": "Appendix",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R5_*.csv",
-        "json": "results/json/R5_*.json",
-        "metadata": "results/json/R5_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Does `MuTA.run` agree with a fresh kron/tensor-reshape contraction on larger random models?",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R5_brute_force_agreement.csv",
+          "exists": true,
+          "sha256": "f2c752cf0958a4bb3c630c70f5e5236c4d642fac1c25f273ec53b1350bfbe5bc"
+        },
+        {
+          "path": "results\\json\\R5_brute_force_agreement.json",
+          "exists": true,
+          "sha256": "5d7aada6366341c75b8e02f3be28c4663ac2d270163c8e348eeb43a358761e03"
+        },
+        {
+          "path": "results\\json\\R5_brute_force_agreement.metadata.json",
+          "exists": true,
+          "sha256": "dbb7640fa54b7d856c1aae705cb96fd85d027fbba3d54011718ba1b4157d7cb6"
+        },
+        {
+          "path": "figures\\pdf\\R5_brute_force_agreement.pdf",
+          "exists": true,
+          "sha256": "cbf63197e7a13a4ce9dc8884bf253b6bdc356db500568e2743ecd26620d901b5"
+        },
+        {
+          "path": "figures\\png\\R5_brute_force_agreement.png",
+          "exists": true,
+          "sha256": "2875d02d47a8a1af2ad145dda084b47272c51c3a0b3ec5334b8bb0f0a4af1145"
+        },
+        {
+          "path": "figures\\svg\\R5_brute_force_agreement.svg",
+          "exists": true,
+          "sha256": "4dce935f835e9e46b3a1fccdd5d02ae3680c059b65b4681844f86d92727d9dc0"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "de34e8f09b834e66c4c3f3fb8dd131aee173eae87ba85efaef18e1b0812ef497",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -114,19 +379,72 @@
       "scientific_question": "Does `run_batch` match repeated `run`, incl. empty batch?",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`MuTA.run_batch`",
+      "layer": "logical",
       "oracle": "`MuTA.run` (self)",
       "oracle_class": "E",
       "metric": "Frobenius error",
       "acceptance_condition": "0 (bitwise)",
+      "result_protocol": "run_batch vs. repeated scalar run, including n_batch=0 edge case",
+      "result_acceptance_condition": "max_error == 0 (bitwise) and all output shapes correct",
       "result_kind": "exact",
       "estimated_cost": "light",
       "manuscript_destination": "Appendix",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R6_*.csv",
-        "json": "results/json/R6_*.json",
-        "metadata": "results/json/R6_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Does `run_batch` match repeated `run`, incl. empty batch?",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R6_batch_consistency.csv",
+          "exists": true,
+          "sha256": "e2b0f6a45c2e43e655ab52a85cc24d5b66b3395b9936bb967b410fe095e33cbb"
+        },
+        {
+          "path": "results\\json\\R6_batch_consistency.json",
+          "exists": true,
+          "sha256": "fcab662aea2fe6f009f7877d262155cbc122309e92c91afb060a69592c0201d3"
+        },
+        {
+          "path": "results\\json\\R6_batch_consistency.metadata.json",
+          "exists": true,
+          "sha256": "8f6d37f536c28c2e60c4064035d8f316448a4dbe261cb31f5511e6a4aaebb572"
+        },
+        {
+          "path": "figures\\pdf\\R6_batch_consistency.pdf",
+          "exists": true,
+          "sha256": "8f9704383913bdf9d84587d64aa7fcc6d818678918899500648f387956ff5ab6"
+        },
+        {
+          "path": "figures\\png\\R6_batch_consistency.png",
+          "exists": true,
+          "sha256": "efd331089ab574d3d9d23c2d486fdfeabc8559e5176f9cd288e303906a1d5b09"
+        },
+        {
+          "path": "figures\\svg\\R6_batch_consistency.svg",
+          "exists": true,
+          "sha256": "e6518c892a832675cd426deb3d39d49d315bc3044ddb8a4bb1da96c9cbee3fe1"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "258abe8fbbfc850fbee6b0b1ea624d9dd5ac75f0e444c23ac34b483bc3b5451f",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -135,19 +453,72 @@
       "scientific_question": "Does MuTA's graph match MentPy's, in semantic coordinates?",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`MuTA.graph`",
+      "layer": "logical",
       "oracle": "`mentpy.templates.muta`",
       "oracle_class": "B",
       "metric": "edge symmetric difference",
       "acceptance_condition": "0",
+      "result_protocol": "MuTA.graph vs. MentPy templates.muta, compared via semantic (wire,column) mapping",
+      "result_acceptance_condition": "symmetric_difference == 0 and input/output ordering matches for every configuration",
       "result_kind": "exact",
       "estimated_cost": "light",
       "manuscript_destination": "Main (Fig.2-3)/Table II",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R7_*.csv",
-        "json": "results/json/R7_*.json",
-        "metadata": "results/json/R7_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Does MuTA's graph match MentPy's, in semantic coordinates?",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R7_semantic_topology.csv",
+          "exists": true,
+          "sha256": "61f929b15d65666788977b43342f3ca0ba578e57b3e6b42efe55568b78b3a107"
+        },
+        {
+          "path": "results\\json\\R7_semantic_topology.json",
+          "exists": true,
+          "sha256": "172515bfb94ce7ce4726758e6fd4aca64f4ffebdc67453948f30c6167e28f0ca"
+        },
+        {
+          "path": "results\\json\\R7_semantic_topology.metadata.json",
+          "exists": true,
+          "sha256": "29f79aa10f3e03930d1da9e1618a715621dbc205c8473242d2d4b15654261024"
+        },
+        {
+          "path": "figures\\pdf\\R7_semantic_topology.pdf",
+          "exists": true,
+          "sha256": "8df983ea80e5ddf1b134a291a44977428b91859d7288a398af91e95c8c570f00"
+        },
+        {
+          "path": "figures\\png\\R7_semantic_topology.png",
+          "exists": true,
+          "sha256": "85188034e66cf17109fa90c264a0e8d0a1d9676829a325e6535982c39d6edbf1"
+        },
+        {
+          "path": "figures\\svg\\R7_semantic_topology.svg",
+          "exists": true,
+          "sha256": "9aaac5c997b69415e3bbce89150b6b60fb0ba6b7c4e57ff772a560aa36738ab9"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "79adbdcf64199be13d926804ed53ef957c00e2aac7ae272ecf28ea120c4f8aed",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -156,19 +527,72 @@
       "scientific_question": "Do flow/correction sets and causal order agree with MentPy?",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`MuTA.corrections`/`dependency_graph`",
+      "layer": "logical",
       "oracle": "`mentpy.Flow`",
       "oracle_class": "B",
       "metric": "order violations, correction mismatches",
       "acceptance_condition": "0",
+      "result_protocol": "MentPy causal flow/correction_op vs. MuTA.corrections and dependency_graph",
+      "result_acceptance_condition": "order_violations == 0 and correction_mismatches == 0 for every configuration",
       "result_kind": "exact",
       "estimated_cost": "light",
       "manuscript_destination": "Main/Table II",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R8_*.csv",
-        "json": "results/json/R8_*.json",
-        "metadata": "results/json/R8_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Do flow/correction sets and causal order agree with MentPy?",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R8_flow_dependency_order.csv",
+          "exists": true,
+          "sha256": "792fe54ab7dc585b6ce05e2858ecb742c0e2365112df5d320e849557a289d954"
+        },
+        {
+          "path": "results\\json\\R8_flow_dependency_order.json",
+          "exists": true,
+          "sha256": "d0450f2f05d1ff16c37ef1aa48b5d7df08573961225aae1baaaadc0586e83a64"
+        },
+        {
+          "path": "results\\json\\R8_flow_dependency_order.metadata.json",
+          "exists": true,
+          "sha256": "0a30c0a7656f7718011ad3c811a633db701a320616395adf40ce1abe555d33ff"
+        },
+        {
+          "path": "figures\\pdf\\R8_flow_dependency_order.pdf",
+          "exists": true,
+          "sha256": "5dd7eec8f648aa013beb2c0208e4839d604d47f16e225583eac6b2156b673cba"
+        },
+        {
+          "path": "figures\\png\\R8_flow_dependency_order.png",
+          "exists": true,
+          "sha256": "abb7ec737f168ea1fd65d0f1ab9927a5897eb8a8f469006b878d6bb96da64a5a"
+        },
+        {
+          "path": "figures\\svg\\R8_flow_dependency_order.svg",
+          "exists": true,
+          "sha256": "65a803f7bca248bfbcf6b6bf8aa2e2e8fcec38c4a5a9c64e25026c4c869ce791"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "8217e19b097cf2c47b4bea3870dfdabe0b5b646d959a91c1a702e25fc735848c",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -177,19 +601,72 @@
       "scientific_question": "Do random states' density matrices agree with MentPy?",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`MuTA.run`",
+      "layer": "logical",
       "oracle": "`mentpy.PatternSimulator`",
       "oracle_class": "B",
       "metric": "max density-matrix error",
       "acceptance_condition": "< 2.2e-13",
+      "result_protocol": "compare_mentpy: MuTA.run vs. MentPy PatternSimulator (numpy-sv, output_form=dm)",
+      "result_acceptance_condition": "max density-matrix error < 2.220e-13",
       "result_kind": "exact",
       "estimated_cost": "light",
       "manuscript_destination": "Main (Fig.3)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R9_*.csv",
-        "json": "results/json/R9_*.json",
-        "metadata": "results/json/R9_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Do random states' density matrices agree with MentPy?",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R9_state_density_agreement.csv",
+          "exists": true,
+          "sha256": "08ee69b7195851efc0fbf220c52a32cc596f5b2e9ae8fca20bb3baf2e027bdce"
+        },
+        {
+          "path": "results\\json\\R9_state_density_agreement.json",
+          "exists": true,
+          "sha256": "53490027d460fb10072830a826c27e99708f3f26d218ddcfbf5f0967683fba1b"
+        },
+        {
+          "path": "results\\json\\R9_state_density_agreement.metadata.json",
+          "exists": true,
+          "sha256": "882b7fa8861b6ce7997401001ed682e7e74e01c947f304283d847c95cd59664d"
+        },
+        {
+          "path": "figures\\pdf\\R9_state_density_agreement.pdf",
+          "exists": true,
+          "sha256": "1b259b0888e1b22f5279f5c0f110db7f886c7a69d4e4b86fc6a639c9d6253592"
+        },
+        {
+          "path": "figures\\png\\R9_state_density_agreement.png",
+          "exists": true,
+          "sha256": "2d640668c08a6c0252bd755a5efcf83bbf80b00ad8d2bf0885b1b501d31dce58"
+        },
+        {
+          "path": "figures\\svg\\R9_state_density_agreement.svg",
+          "exists": true,
+          "sha256": "f96e2f77ecb7578c46d95cd8b2cb3f34d6c00235bfb713e83bf92158a391c526"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "1ea3126f6dcd45d1fa8b5af77abe52ba71977e958021c483cde5b4a28e740c02",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -198,19 +675,72 @@
       "scientific_question": "Is PhotoGraphiQML's freeze robust despite MentPy's fragile restrict_trainable?",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`ParameterStore.freeze`",
+      "layer": "logical",
       "oracle": "`mentpy` raw `Ment`/`trainable_nodes`",
       "oracle_class": "B/E",
       "metric": "override-rejection rate",
       "acceptance_condition": "100% robust",
+      "result_protocol": "MentPy raw restrict_trainable list/Ment audit vs. PhotoGraphiQML ParameterStore freeze robustness",
+      "result_acceptance_condition": "photographiqml_robust True for every configuration (MentPy's own pattern is descriptive, not a pass/fail criterion)",
       "result_kind": "exact",
       "estimated_cost": "light",
       "manuscript_destination": "Appendix",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R10_*.csv",
-        "json": "results/json/R10_*.json",
-        "metadata": "results/json/R10_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Is PhotoGraphiQML's freeze robust despite MentPy's fragile restrict_trainable?",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R10_trainability_audit.csv",
+          "exists": true,
+          "sha256": "fc43b0eabc2e8d183ae0b0873e2a29affc1424bdcd8b7443297218fd47d0bbf5"
+        },
+        {
+          "path": "results\\json\\R10_trainability_audit.json",
+          "exists": true,
+          "sha256": "7bdd170759b30bf2a3cb62b51b2d8b3a471e93d69c0811caa52ce3383649f894"
+        },
+        {
+          "path": "results\\json\\R10_trainability_audit.metadata.json",
+          "exists": true,
+          "sha256": "4e16b113c391f7eae1438008139f0973f9d61e097a8d5cc6bfb093d65ab6e94d"
+        },
+        {
+          "path": "figures\\pdf\\R10_trainability_audit.pdf",
+          "exists": true,
+          "sha256": "fec74bd7702ddc3006b554d0e07d4d8d626c4a742a50779d5807814b374c3da7"
+        },
+        {
+          "path": "figures\\png\\R10_trainability_audit.png",
+          "exists": true,
+          "sha256": "fe0b2ea178f1940958478a358a2d66d82b7cab35158bfd70bb597b6b1cff84a0"
+        },
+        {
+          "path": "figures\\svg\\R10_trainability_audit.svg",
+          "exists": true,
+          "sha256": "5035e1a8c5a7f71aaf901b8d5e73b63f70ba78072a7ecb54ca56d4b7e11474e2"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "c24ee6973e858c9ee48b89c679f9bb73812809a73f4e7003be30f39291e74d5e",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -219,19 +749,72 @@
       "scientific_question": "Does the Eq.5 kernel state/Gram agree with MentPy?",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`MuTAKernel`",
+      "layer": "logical",
       "oracle": "`mentpy.PatternSimulator`",
       "oracle_class": "B",
       "metric": "state/Gram error",
       "acceptance_condition": "< 2.2e-13",
+      "result_protocol": "MuTAKernel.features/gram_matrix vs. independently executed MentPy PatternSimulator",
+      "result_acceptance_condition": "max density-matrix error and max Gram-matrix error < 2.220e-13",
       "result_kind": "exact",
       "estimated_cost": "light",
       "manuscript_destination": "Main (Fig.4)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R11_*.csv",
-        "json": "results/json/R11_*.json",
-        "metadata": "results/json/R11_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Does the Eq.5 kernel state/Gram agree with MentPy?",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R11_kernel_gram_agreement.csv",
+          "exists": true,
+          "sha256": "ae00417c55702a22f6be8473888771e98c3e98fae78691e24a54e363d2178c2d"
+        },
+        {
+          "path": "results\\json\\R11_kernel_gram_agreement.json",
+          "exists": true,
+          "sha256": "9ebcc4a1e9427839b01bd3f6871a922ca764c2444808bc6056ac8263c9028b32"
+        },
+        {
+          "path": "results\\json\\R11_kernel_gram_agreement.metadata.json",
+          "exists": true,
+          "sha256": "f2ec44411cc7625135b6d56dd521ba90204057eb2c2cfc8e91943bae1151b7f6"
+        },
+        {
+          "path": "figures\\pdf\\R11_kernel_gram_agreement.pdf",
+          "exists": true,
+          "sha256": "c79ba7c97fc8f0c3f3d67b056f7b985779f72809e36cf68caa7381e385c54c62"
+        },
+        {
+          "path": "figures\\png\\R11_kernel_gram_agreement.png",
+          "exists": true,
+          "sha256": "5ebc679cc8102a2395204bfb071f8968602d2a567a9ead7934a67f17c92212f7"
+        },
+        {
+          "path": "figures\\svg\\R11_kernel_gram_agreement.svg",
+          "exists": true,
+          "sha256": "57e12bff090b8fad68e98f22ad1fd3e57c454604678a6244e318d14d3d9e3ace"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "56c46fadd1af6c5c66c43b05533ec50bc5df2bafb07faf731aefd65c50312a74",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -240,19 +823,72 @@
       "scientific_question": "Do instrument branch probabilities/states agree with MentPy?",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`QuantumInstrumentModel`",
+      "layer": "logical",
       "oracle": "projection of MentPy density matrix",
       "oracle_class": "B",
       "metric": "probability/state error",
       "acceptance_condition": "< 2.2e-13",
+      "result_protocol": "QuantumInstrumentModel vs. independent projection of MentPy-executed density matrix",
+      "result_acceptance_condition": "max branch-probability error, max conditional-state error and trace-preservation error all < 2.220e-13",
       "result_kind": "exact",
       "estimated_cost": "light",
       "manuscript_destination": "Appendix",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R12_*.csv",
-        "json": "results/json/R12_*.json",
-        "metadata": "results/json/R12_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Do instrument branch probabilities/states agree with MentPy?",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R12_instrument_agreement.csv",
+          "exists": true,
+          "sha256": "b6e4ee8e59240ede809d0956e6a9cbb0e2b1b58fdfab7d9de686b6749c2d1cfc"
+        },
+        {
+          "path": "results\\json\\R12_instrument_agreement.json",
+          "exists": true,
+          "sha256": "5df454fb86545a8a0b52ccf411b85533a493ad2d7e344e61236bf207ce051e80"
+        },
+        {
+          "path": "results\\json\\R12_instrument_agreement.metadata.json",
+          "exists": true,
+          "sha256": "9b28b75eeca2d27c00d8a1bcc155ce2d3024b48b3c08da52a3c28424d541ce44"
+        },
+        {
+          "path": "figures\\pdf\\R12_instrument_agreement.pdf",
+          "exists": true,
+          "sha256": "3553c3edac2cbf8079db4e3733d0c0cead99ddfdf5b1b3ecee39335017aa6180"
+        },
+        {
+          "path": "figures\\png\\R12_instrument_agreement.png",
+          "exists": true,
+          "sha256": "41fbb79cddbd01427bdfbb8f1db25b08f94b438a709f017c1cb9919ff3da3f73"
+        },
+        {
+          "path": "figures\\svg\\R12_instrument_agreement.svg",
+          "exists": true,
+          "sha256": "872ef4de8eff8ee41f1c84396e2d475a12431776a4917836e40bc1d584e5aac6"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "a250a99225334e333079cded614c079c074050e7aebc53ccdc4616db8edd8d58",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -261,19 +897,72 @@
       "scientific_question": "Matched-workload runtime, PhotoGraphiQML vs MentPy",
       "hypothesis": "descriptive; no directional performance hypothesis",
       "api": "`MuTA.run`",
+      "layer": "logical",
       "oracle": "`mentpy.PatternSimulator`",
       "oracle_class": "N/A",
       "metric": "median seconds",
       "acceptance_condition": "n/a",
+      "result_protocol": "Matched-workload PhotoGraphiQML.run vs. raw MentPy PatternSimulator.run, repeated timings",
+      "result_acceptance_condition": "N/A (descriptive performance measurement)",
       "result_kind": "statistical",
       "estimated_cost": "light-moderate",
       "manuscript_destination": "Appendix/Fig.13",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R13_*.csv",
-        "json": "results/json/R13_*.json",
-        "metadata": "results/json/R13_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "descriptive",
+      "claim_supported": "Matched-workload runtime, PhotoGraphiQML vs MentPy",
+      "claim_not_supported": "No general performance claim",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R13_runtime_scaling.csv",
+          "exists": true,
+          "sha256": "ce2aa0ba087de5816f9279843dc9e65a5020c16012cf029fe3c2d8ff837e9248"
+        },
+        {
+          "path": "results\\json\\R13_runtime_scaling.json",
+          "exists": true,
+          "sha256": "918d9d361d716908de1a11062a7da5b4a2b89aaeb94cc42391982f5aa2086918"
+        },
+        {
+          "path": "results\\json\\R13_runtime_scaling.metadata.json",
+          "exists": true,
+          "sha256": "d217a8b3a31c939ffcf196d50d5d9b29f17704e4221b658ed13a92577cdf6e7d"
+        },
+        {
+          "path": "figures\\pdf\\R13_runtime_scaling.pdf",
+          "exists": true,
+          "sha256": "c655f71d969ebdc3a4d148f4dffe6c3e9c4e3bb058641699c054748f1fdbdb3d"
+        },
+        {
+          "path": "figures\\png\\R13_runtime_scaling.png",
+          "exists": true,
+          "sha256": "10cd84d0979681ec2473f64ef644b526dc9e54aa20f76ce580228eb5200e97cb"
+        },
+        {
+          "path": "figures\\svg\\R13_runtime_scaling.svg",
+          "exists": true,
+          "sha256": "238ad3d3636131065c14f0f520bcc69a8d9ec7c035f6468140ef7ff28c43d984"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "e0634cc7e9586d43217d394cb2b0e6eef939ca266abf6a916cedf5cdce3aa17f",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -282,19 +971,72 @@
       "scientific_question": "Parameter ordering/binding/freeze contract",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`ParameterStore`",
+      "layer": "logical",
       "oracle": "self (documented contract)",
       "oracle_class": "E",
       "metric": "failed sub-checks",
       "acceptance_condition": "0",
+      "result_protocol": "ParameterStore/MuTA public parameter-contract checklist",
+      "result_acceptance_condition": "0 failed sub-checks",
       "result_kind": "exact",
       "estimated_cost": "light",
       "manuscript_destination": "Appendix",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R14_*.csv",
-        "json": "results/json/R14_*.json",
-        "metadata": "results/json/R14_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Parameter ordering/binding/freeze contract",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R14_parameter_contracts.csv",
+          "exists": true,
+          "sha256": "b5f0064bc2c84614814782e81f86c97466b626cfdc722573fc0e2a3ff6721565"
+        },
+        {
+          "path": "results\\json\\R14_parameter_contracts.json",
+          "exists": true,
+          "sha256": "a1a396736dccc49029985691334ecbb8a93cd59f9b8f2fde57d64956fb5d926f"
+        },
+        {
+          "path": "results\\json\\R14_parameter_contracts.metadata.json",
+          "exists": true,
+          "sha256": "bab2b3a21d8ee20d5763f987bfc7a35c13a9b24d6d21448fb160c731d6bba24f"
+        },
+        {
+          "path": "figures\\pdf\\R14_parameter_contracts.pdf",
+          "exists": true,
+          "sha256": "c849174d17242125a2c2c3ba1df86708773f59d051d17143bda83c9738501c70"
+        },
+        {
+          "path": "figures\\png\\R14_parameter_contracts.png",
+          "exists": true,
+          "sha256": "d84b6b9a2debc7f33292b991bfd5ec132509b471190313f9c8dadcf2556b9baa"
+        },
+        {
+          "path": "figures\\svg\\R14_parameter_contracts.svg",
+          "exists": true,
+          "sha256": "36d15e851bbb9a0284e69451eb5c888ca4d34130581b930c3c9d3b86a1d2462d"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "78b07db1cf4dc766a145e8f36e67c001170834812ec0c239c1e3a204992a3040",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -303,19 +1045,72 @@
       "scientific_question": "Save/load round trip + schema rejection",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`MuTA.save/load`",
+      "layer": "logical",
       "oracle": "self",
       "oracle_class": "E",
       "metric": "execution error",
       "acceptance_condition": "0",
+      "result_protocol": "MuTA/PhysicalMuTA save/load round trip and unsupported-schema rejection",
+      "result_acceptance_condition": "max_execution_error == 0; all config/values/frozen match; unsupported schema raises ValueError",
       "result_kind": "exact",
       "estimated_cost": "light",
       "manuscript_destination": "Appendix",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R15_*.csv",
-        "json": "results/json/R15_*.json",
-        "metadata": "results/json/R15_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Save/load round trip + schema rejection",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R15_persistence_roundtrip.csv",
+          "exists": true,
+          "sha256": "847015a16ecb684d46fbf1eae809f94df5febdc4235aaf6cef75b017ba973447"
+        },
+        {
+          "path": "results\\json\\R15_persistence_roundtrip.json",
+          "exists": true,
+          "sha256": "7d3a39868b6c5311e0298e8856535b2c8c372983b170d96b1f756f5b7ea356dc"
+        },
+        {
+          "path": "results\\json\\R15_persistence_roundtrip.metadata.json",
+          "exists": true,
+          "sha256": "cb57bfecd34579cbb1e182485e4c9e6b3cbdd02ed5feee2bd08d21c19bb4a3e5"
+        },
+        {
+          "path": "figures\\pdf\\R15_persistence_roundtrip.pdf",
+          "exists": true,
+          "sha256": "8157ea3d2598aa1375c7fde8de992047ab356796bf6c613aed2c79c0f52de517"
+        },
+        {
+          "path": "figures\\png\\R15_persistence_roundtrip.png",
+          "exists": true,
+          "sha256": "c54e49f5fe8d7876eb6ddef2ab884fa8e5c05c48c6cfb8b0082a107e0a08f509"
+        },
+        {
+          "path": "figures\\svg\\R15_persistence_roundtrip.svg",
+          "exists": true,
+          "sha256": "9e52b22e6732a6173b9c88acb1828e2d5e50e4e7f125331bd50064cd5b47fb28"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "1c818a8282ac9e1ac634be91e77a3aba0f691d3aaa2f3ab33d89a65cdb169569",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -324,19 +1119,72 @@
       "scientific_question": "Fail-fast matrix across invalid inputs",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "validation across API",
+      "layer": "logical",
       "oracle": "self (documented contract)",
       "oracle_class": "E",
       "metric": "cases not raising",
       "acceptance_condition": "0",
+      "result_protocol": "Fail-fast matrix across public API validation paths",
+      "result_acceptance_condition": "0 cases where the expected exception was not raised",
       "result_kind": "exact",
       "estimated_cost": "light",
       "manuscript_destination": "Appendix/Table III",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R16_*.csv",
-        "json": "results/json/R16_*.json",
-        "metadata": "results/json/R16_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Fail-fast matrix across invalid inputs",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R16_invalid_input_matrix.csv",
+          "exists": true,
+          "sha256": "f343f2ca3db9bc65dc14dfad719a785f1363f69f738f34148153c6fe383f0377"
+        },
+        {
+          "path": "results\\json\\R16_invalid_input_matrix.json",
+          "exists": true,
+          "sha256": "dc01c4913925cc71c208587cc508db6e7341350d61a3db53d83faddedc07fb44"
+        },
+        {
+          "path": "results\\json\\R16_invalid_input_matrix.metadata.json",
+          "exists": true,
+          "sha256": "303a17cc84c9b1d183dd902fb96249e07534245e6a0b350ffd570e1ffd70fa9a"
+        },
+        {
+          "path": "figures\\pdf\\R16_invalid_input_matrix.pdf",
+          "exists": true,
+          "sha256": "03ac5566b1f18d2029aef718ccaa2dd4ecc878f0dab1cd3f9cb1875bf07accd7"
+        },
+        {
+          "path": "figures\\png\\R16_invalid_input_matrix.png",
+          "exists": true,
+          "sha256": "d90ce56b4d6ad1e652d5ffddeecf514d655d4954c613484d20c4d91b41069550"
+        },
+        {
+          "path": "figures\\svg\\R16_invalid_input_matrix.svg",
+          "exists": true,
+          "sha256": "570095335973ce3294c87b6dab42b9cf81bd0ed297c652dfd2aaa09570a75d2b"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "ab777234142c2a611c25ea972068f4485fce78aacea72f5a7f47eec20211beaa",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -345,19 +1193,72 @@
       "scientific_question": "Same-seed reproducibility, different-seed distinctness",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`initialize`, `PhysicalMuTA.run`",
+      "layer": "logical",
       "oracle": "self",
       "oracle_class": "E",
       "metric": "same-seed diff",
       "acceptance_condition": "0",
+      "result_protocol": "Same-seed reproducibility and different-seed distinctness, logical + physical",
+      "result_acceptance_condition": "same-seed max diff == 0 in every case; different-seed logical init differs",
       "result_kind": "exact/statistical",
       "estimated_cost": "light",
       "manuscript_destination": "Appendix",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R17_*.csv",
-        "json": "results/json/R17_*.json",
-        "metadata": "results/json/R17_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Same-seed reproducibility, different-seed distinctness",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R17_seeded_reproducibility.csv",
+          "exists": true,
+          "sha256": "01442a02822bb18c2029703ae6f982e53e4ce213c43fc1673d7e66999127ec54"
+        },
+        {
+          "path": "results\\json\\R17_seeded_reproducibility.json",
+          "exists": true,
+          "sha256": "ca5930ab74ad5ad3329c0eaf9b9f3cdf2d642a25185e47b72b67d4803d0bec15"
+        },
+        {
+          "path": "results\\json\\R17_seeded_reproducibility.metadata.json",
+          "exists": true,
+          "sha256": "8f2d1f99d6abe4e0233630d54b1ed55a617933ca561239af873b9b676ea06d37"
+        },
+        {
+          "path": "figures\\pdf\\R17_seeded_reproducibility.pdf",
+          "exists": true,
+          "sha256": "c314e34b31fc8bd600aa8474ef4bbb3dd6444425ee7331ceb292f583a173d84e"
+        },
+        {
+          "path": "figures\\png\\R17_seeded_reproducibility.png",
+          "exists": true,
+          "sha256": "5aabf3f603618fd9e72a472b0996f4c4bcb4a43e53bab80c1d7da79bc6e37887"
+        },
+        {
+          "path": "figures\\svg\\R17_seeded_reproducibility.svg",
+          "exists": true,
+          "sha256": "7fe399431a6a658ac5d1d4360c4438cb336d4afd2718c9d3374cd39f77768f96"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "008c9f5fa3de40edb8f5f56f5ba6429c103f3eb35f1bda080466e3b0da91a849",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -366,19 +1267,72 @@
       "scientific_question": "Central-FD gradient converges to analytic parameter-shift rule",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`training.finite_difference`",
+      "layer": "logical",
       "oracle": "parameter-shift rule (fresh code)",
       "oracle_class": "A",
       "metric": "\u2016fd-analytic\u2016",
       "acceptance_condition": "< 2.2e-8",
+      "result_protocol": "Central finite differences vs. analytic parameter-shift rule, MuTA expectation objective",
+      "result_acceptance_condition": "min(fd_error over step grid) < 2.220e-08 for every trial",
       "result_kind": "exact",
       "estimated_cost": "light",
       "manuscript_destination": "Main (Fig.5)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R18_*.csv",
-        "json": "results/json/R18_*.json",
-        "metadata": "results/json/R18_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Central-FD gradient converges to analytic parameter-shift rule",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R18_parameter_shift_vs_fd.csv",
+          "exists": true,
+          "sha256": "78631188532a9d10ce98bcd9b6d8e06c291cf6049e1a1261a46c604b54a3a873"
+        },
+        {
+          "path": "results\\json\\R18_parameter_shift_vs_fd.json",
+          "exists": true,
+          "sha256": "ad2c97b111f93974b4891dd4478048c1e8c070c27cefa76e8419f5ed2fc6d3be"
+        },
+        {
+          "path": "results\\json\\R18_parameter_shift_vs_fd.metadata.json",
+          "exists": true,
+          "sha256": "b8cf6b334a80f56614a0dc1997e0f8284f94c444ee4ac095a13fa4e715817c30"
+        },
+        {
+          "path": "figures\\pdf\\R18_parameter_shift_vs_fd.pdf",
+          "exists": true,
+          "sha256": "1861bce2d75dce4d61ee3fc730e01ea0514d13437ee9e44dd27dd99505745bfb"
+        },
+        {
+          "path": "figures\\png\\R18_parameter_shift_vs_fd.png",
+          "exists": true,
+          "sha256": "e689d62dac330f8e0e88cdc60d506395fff57573975ba884e063e677eb36165d"
+        },
+        {
+          "path": "figures\\svg\\R18_parameter_shift_vs_fd.svg",
+          "exists": true,
+          "sha256": "2eb4f1fecbf96022cc815192a348021208e83dab5d38814cc80d006a01be500f"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "baf2ddf8977379dce9b491d18979e537f320f6912dbd56cad318c0ece50c207d",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -387,19 +1341,72 @@
       "scientific_question": "Adam/SGD/L-BFGS converge on analytic objectives",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`Trainer`",
+      "layer": "resource",
       "oracle": "quadratic bowl / Rosenbrock",
       "oracle_class": "A",
       "metric": "final loss",
       "acceptance_condition": "< declared threshold",
+      "result_protocol": "Trainer(adam/sgd/lbfgs).fit on quadratic bowl and Rosenbrock, vs. analytic minimum",
+      "result_acceptance_condition": "final_loss < declared threshold for every (objective, optimizer) pair",
       "result_kind": "approximate",
       "estimated_cost": "light",
       "manuscript_destination": "Appendix",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R19_*.csv",
-        "json": "results/json/R19_*.json",
-        "metadata": "results/json/R19_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Adam/SGD/L-BFGS converge on analytic objectives",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R19_optimizer_convergence.csv",
+          "exists": true,
+          "sha256": "2227c775a1fb138d9c268d0d97f018de8411e518a2387f6e27e62fe621905529"
+        },
+        {
+          "path": "results\\json\\R19_optimizer_convergence.json",
+          "exists": true,
+          "sha256": "384848f153caacc602a325b4c74bc91816f1c251d8e312c89e83c61bd640452c"
+        },
+        {
+          "path": "results\\json\\R19_optimizer_convergence.metadata.json",
+          "exists": true,
+          "sha256": "e1f44ab6d27db0612cae15038bfea9c698f6c8d6105ac5218eb0c78b221066da"
+        },
+        {
+          "path": "figures\\pdf\\R19_optimizer_convergence.pdf",
+          "exists": true,
+          "sha256": "9fea2eb887c66997f1d96b44a4a75d9dd5c0f0a224559d5e510ba129cddcecb2"
+        },
+        {
+          "path": "figures\\png\\R19_optimizer_convergence.png",
+          "exists": true,
+          "sha256": "1f1858bb04e5c70b89b05e74677a9890f50369e44f415fa9c24cefbfa2e9e830"
+        },
+        {
+          "path": "figures\\svg\\R19_optimizer_convergence.svg",
+          "exists": true,
+          "sha256": "efc5f10ca5e3b1638fc5c4001ccf49128667639a80692eb13c5747847a83fb40"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "61cb70c37719f0d0153f41d623efa1103104e45a6767343f13be290eb6a2597c",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -408,19 +1415,98 @@
       "scientific_question": "Haar single-wire gate learning, 20 seeds",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`Trainer`, `MuTA.unitary`",
+      "layer": "logical",
       "oracle": "Haar target (scipy) + MentPy checkpoint",
       "oracle_class": "A/B",
       "metric": "median test infidelity",
       "acceptance_condition": "< 0.05",
+      "result_protocol": "Adam-trained MuTA(2,one_column=True) vs. Haar single-wire target, 20 seeds",
+      "result_acceptance_condition": "median final test infidelity < 0.05; max MentPy checkpoint error < 2.220e-13",
       "result_kind": "statistical",
       "estimated_cost": "moderate",
       "manuscript_destination": "Main (Fig.6)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R20_*.csv",
-        "json": "results/json/R20_*.json",
-        "metadata": "results/json/R20_*.metadata.json"
+      "seed_set": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "configuration": {
+        "n_states": 12,
+        "n_train": 8,
+        "epochs": 120,
+        "learning_rate": 0.05
+      },
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Haar single-wire gate learning, 20 seeds",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R20_haar_gate_learning.csv",
+          "exists": true,
+          "sha256": "cf5b6a2a269fa26932ea0dfe8e523bad6afd8e39487e3a5dce84629d352fb6e2"
+        },
+        {
+          "path": "results\\json\\R20_haar_gate_learning.json",
+          "exists": true,
+          "sha256": "68afacc7f6f67a56e2eaa09308b08489ac97c02a1156776aebd52cba5d580be5"
+        },
+        {
+          "path": "results\\json\\R20_haar_gate_learning.metadata.json",
+          "exists": true,
+          "sha256": "f8b749baeb3536c47c1ed19776b8baff6f279dea117072e1a5fd2316d97d599a"
+        },
+        {
+          "path": "figures\\pdf\\R20_haar_gate_learning.pdf",
+          "exists": true,
+          "sha256": "e9c6817673760a8b29136f3f280e816fa52249d96bbb19c1912a201dec732281"
+        },
+        {
+          "path": "figures\\png\\R20_haar_gate_learning.png",
+          "exists": true,
+          "sha256": "114872a197076522a9e9fcd0f5ce9f7529db9899ffbeefa0faf218b04180ccc6"
+        },
+        {
+          "path": "figures\\svg\\R20_haar_gate_learning.svg",
+          "exists": true,
+          "sha256": "26006c7bee3bf86768a14caba9030d9e1fb0201e4d0451eb622c4431e1ba34c6"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "67d909e03f2a7abde9c35c31923fd4e528aa9795d01a8559ef8679257f0c657f",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -429,19 +1515,98 @@
       "scientific_question": "Ising-XX gate learning, 20 seeds",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`Trainer`, `MuTA.unitary`",
+      "layer": "logical",
       "oracle": "expm target + MentPy checkpoint",
       "oracle_class": "A/B",
       "metric": "median test infidelity",
       "acceptance_condition": "< 0.05",
+      "result_protocol": "Adam-trained MuTA(2,one_column=True) vs. Ising-XX target, 20 seeds",
+      "result_acceptance_condition": "median final test infidelity < 0.05; max MentPy checkpoint error < 2.220e-13",
       "result_kind": "statistical",
       "estimated_cost": "moderate",
       "manuscript_destination": "Main (Fig.6)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R21_*.csv",
-        "json": "results/json/R21_*.json",
-        "metadata": "results/json/R21_*.metadata.json"
+      "seed_set": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "configuration": {
+        "n_states": 12,
+        "n_train": 8,
+        "epochs": 120,
+        "learning_rate": 0.05
+      },
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Ising-XX gate learning, 20 seeds",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R21_ising_gate_learning.csv",
+          "exists": true,
+          "sha256": "d73880e1a5ffdeda42c3822d4e536749a887242dc5aa28d51c2ff6f84bc064f4"
+        },
+        {
+          "path": "results\\json\\R21_ising_gate_learning.json",
+          "exists": true,
+          "sha256": "5fef2c11d81f56f4d7b01ca5e33a41fd2af9365931c4c02e38eca8f8e6ac5e43"
+        },
+        {
+          "path": "results\\json\\R21_ising_gate_learning.metadata.json",
+          "exists": true,
+          "sha256": "998d0376487a1e70bfc80aeb155fe7a4438a59c71924f04e9ae4bda8fbd236a9"
+        },
+        {
+          "path": "figures\\pdf\\R21_ising_gate_learning.pdf",
+          "exists": true,
+          "sha256": "2cee628a6582e3c20640caea43a35aa750941c87683eb9dc91c8c1973ff750bd"
+        },
+        {
+          "path": "figures\\png\\R21_ising_gate_learning.png",
+          "exists": true,
+          "sha256": "6e2e92ef4f1ce44ac36f2bbf6db425200ce02ef9c9970c63deed7dbecfd5ab8a"
+        },
+        {
+          "path": "figures\\svg\\R21_ising_gate_learning.svg",
+          "exists": true,
+          "sha256": "a8375d6dcedfc86eb3b2f18214cb70a8c9b48b4c1ec70587cccbf06a117f4776"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "074bcb9aa1f2b1d1953fbb84e29a67830bc98c283ce3c4c323475a3f2e63c40a",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -450,19 +1615,72 @@
       "scientific_question": "Sensitivity to train size/depth/init scale",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`Trainer`",
+      "layer": "logical",
       "oracle": "Haar target (scipy)",
       "oracle_class": "A",
       "metric": "failure rate",
       "acceptance_condition": "n/a (descriptive)",
+      "result_protocol": "Held-out gate-learning failure rate vs. train size / depth / init scale",
+      "result_acceptance_condition": "every grid cell has a well-defined failure rate in [0,1] (descriptive sensitivity study)",
       "result_kind": "statistical",
       "estimated_cost": "moderate",
       "manuscript_destination": "Appendix (Fig.6)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R22_*.csv",
-        "json": "results/json/R22_*.json",
-        "metadata": "results/json/R22_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Sensitivity to train size/depth/init scale",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R22_gate_learning_sensitivity.csv",
+          "exists": true,
+          "sha256": "a0131377581cbb37183357efce4cc797b0ed99ddba90702925b2e52af92672b5"
+        },
+        {
+          "path": "results\\json\\R22_gate_learning_sensitivity.json",
+          "exists": true,
+          "sha256": "923f70f0e365648644d89dd3a0714d7bba38ecc6944d100df471228fd75bf6d8"
+        },
+        {
+          "path": "results\\json\\R22_gate_learning_sensitivity.metadata.json",
+          "exists": true,
+          "sha256": "16ecc0c6b50188c4275a4800d297a40a1f53ef7e78910a5944edfaa452ac4485"
+        },
+        {
+          "path": "figures\\pdf\\R22_gate_learning_sensitivity.pdf",
+          "exists": true,
+          "sha256": "fa3b462bfd7fc3534574c0080f5a75e6f2f00eebed03f35d98d222754e84bd15"
+        },
+        {
+          "path": "figures\\png\\R22_gate_learning_sensitivity.png",
+          "exists": true,
+          "sha256": "6ede3ae4bb41d280052f890585094d60acf49b888fd072968f6251345d81ca26"
+        },
+        {
+          "path": "figures\\svg\\R22_gate_learning_sensitivity.svg",
+          "exists": true,
+          "sha256": "8c97261cfd5bb8f8be2523b8c30c3e75ab1fa522779c17352fb33f999663c8d0"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "0a8a24edae05bc213beda9f269174bfbaabd72e9590f0d01d09d9ddb964a0a4d",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -471,19 +1689,72 @@
       "scientific_question": "One-dimensional threshold y=1[x<pi/2], repeated splits",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`MuTAClassifier`",
+      "layer": "logical",
       "oracle": "synthetic threshold rule",
       "oracle_class": "A",
       "metric": "median accuracy",
       "acceptance_condition": ">= 0.85",
+      "result_protocol": "MuTAClassifier on the one-dimensional threshold y=1[x < pi/2], repeated stratified splits",
+      "result_acceptance_condition": "median accuracy >= 0.85 and paired improvement over majority baseline > 0",
       "result_kind": "statistical",
       "estimated_cost": "light",
       "manuscript_destination": "Main (Fig.7)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R23_*.csv",
-        "json": "results/json/R23_*.json",
-        "metadata": "results/json/R23_*.metadata.json"
+      "seed_set": 5,
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "One-dimensional threshold y=1[x<pi/2], repeated splits",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R23_classifier_verification.csv",
+          "exists": true,
+          "sha256": "0c5c6f40cf034623f60b90f8f948fefcf6ae0bcd9f6c64ecfb3304851005ba84"
+        },
+        {
+          "path": "results\\json\\R23_classifier_verification.json",
+          "exists": true,
+          "sha256": "fddc411fb565c2f10fb5aa9d71ee9a9da1462c48330e2c4a6c76b885981af415"
+        },
+        {
+          "path": "results\\json\\R23_classifier_verification.metadata.json",
+          "exists": true,
+          "sha256": "d2286e6645ba1e719d7daeeebb2e51f7360eb15cba35f4c5fabbef55d2ff85b6"
+        },
+        {
+          "path": "figures\\pdf\\R23_classifier_verification.pdf",
+          "exists": true,
+          "sha256": "607b4126b95609c9fb53097841b767cd27b34cc4bf1c74c54f1bb5d8f72e86de"
+        },
+        {
+          "path": "figures\\png\\R23_classifier_verification.png",
+          "exists": true,
+          "sha256": "875a7cb5fcc588ac1cdd26ff66ceed18c6fdbdd4dd9509b03bbd1eb057b6a5b5"
+        },
+        {
+          "path": "figures\\svg\\R23_classifier_verification.svg",
+          "exists": true,
+          "sha256": "e2fe2ea97b788db8ab3fc5f7ec3df19b9606330b97d57d2d98f0352a94e8948b"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "3adb2e9080ad4339e0cbb8c37443790b179805aa3a51444fe198b0753b53a916",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -492,19 +1763,72 @@
       "scientific_question": "Regressor verification + residual calibration",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`MuTARegressor`",
+      "layer": "logical",
       "oracle": "sin(x) target",
       "oracle_class": "A",
       "metric": "median R^2",
       "acceptance_condition": ">= 0.9",
+      "result_protocol": "MuTARegressor on sin(x) target, repeated held-out splits + residual calibration",
+      "result_acceptance_condition": "median R^2 >= 0.9; |mean residual| < 0.1; |corr(residual,prediction)| < 0.5 (only when overall MSE >= 1e-4)",
       "result_kind": "statistical",
       "estimated_cost": "light-moderate",
       "manuscript_destination": "Main (Fig.7)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R24_*.csv",
-        "json": "results/json/R24_*.json",
-        "metadata": "results/json/R24_*.metadata.json"
+      "seed_set": 5,
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Regressor verification + residual calibration",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R24_regressor_verification.csv",
+          "exists": true,
+          "sha256": "b99ba9416f2e32ce6ac722b75d04d6980fa60a1e036a82f571dbd5b459652a86"
+        },
+        {
+          "path": "results\\json\\R24_regressor_verification.json",
+          "exists": true,
+          "sha256": "73bf5fba8f0ba5a4625f26fdd09aac0fdf85277567dd8d96657e034f194dc823"
+        },
+        {
+          "path": "results\\json\\R24_regressor_verification.metadata.json",
+          "exists": true,
+          "sha256": "6c0cb7e0b5536bf19e8dc16f1d3dddf4f9b0f720be39ba12765da2ac7ea041cb"
+        },
+        {
+          "path": "figures\\pdf\\R24_regressor_verification.pdf",
+          "exists": true,
+          "sha256": "c5b8d49717cbb5f81ed5a0644ffd7996b50c5293b47b6c7887ff4163b0cf8ffc"
+        },
+        {
+          "path": "figures\\png\\R24_regressor_verification.png",
+          "exists": true,
+          "sha256": "3cf1afadb9deee18b7ae5d9b13701a53257c294673501a996a17513e0ad63bc0"
+        },
+        {
+          "path": "figures\\svg\\R24_regressor_verification.svg",
+          "exists": true,
+          "sha256": "539909c27d4185c42c61d444ff5a49e8afddff3b8aa7d1382bef162e26f99835"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "6a558332780e2179f55dbd5ee0262da4928018baf84edf662247a4555e5a8e0c",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -513,19 +1837,72 @@
       "scientific_question": "Kernel feature state vs. independent contraction",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`MuTAKernel.features`",
+      "layer": "logical",
       "oracle": "independent kron/reshape contraction",
       "oracle_class": "D",
       "metric": "density-matrix error",
       "acceptance_condition": "< 4.4e-14",
+      "result_protocol": "MuTAKernel.features vs. independent kron/tensor-reshape contraction",
+      "result_acceptance_condition": "max density-matrix error < 4.441e-14",
       "result_kind": "exact",
       "estimated_cost": "light",
       "manuscript_destination": "Main (Fig.4)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R25_*.csv",
-        "json": "results/json/R25_*.json",
-        "metadata": "results/json/R25_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Kernel feature state vs. independent contraction",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R25_kernel_feature_state.csv",
+          "exists": true,
+          "sha256": "f4f1a190a3876f1997c3d6f70a259e2c132607286f47341dcef695ef0a487b79"
+        },
+        {
+          "path": "results\\json\\R25_kernel_feature_state.json",
+          "exists": true,
+          "sha256": "6d2dc3749c22c59b832f27c5377e46e2a66a51767fef9d12b891c769cf5f3c70"
+        },
+        {
+          "path": "results\\json\\R25_kernel_feature_state.metadata.json",
+          "exists": true,
+          "sha256": "50a24bffaf3d39103d0df97a1326a7f78479e8d37c34f2abf26af636eea9665e"
+        },
+        {
+          "path": "figures\\pdf\\R25_kernel_feature_state.pdf",
+          "exists": true,
+          "sha256": "8f22d2593a3cc87cd65714a0a869a3e350ff0ad073927763f74c5e5089164025"
+        },
+        {
+          "path": "figures\\png\\R25_kernel_feature_state.png",
+          "exists": true,
+          "sha256": "d590a4bf4093e807d74e9f56fd50ed65262483936035845d2c51da06a5f00423"
+        },
+        {
+          "path": "figures\\svg\\R25_kernel_feature_state.svg",
+          "exists": true,
+          "sha256": "0dc0c612f78bc65e5b5ee050f12b2a58cd71a415be0984856ce7364659a3770f"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "1049288f1f875e022fd7586b7e7ce332aa6fac951219498fe50ec44aa745ff74",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -534,19 +1911,72 @@
       "scientific_question": "Gram symmetry/PSD/conditioning vs. N",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`MuTAKernel.gram_matrix`",
+      "layer": "logical",
       "oracle": "analytic PSD invariant",
       "oracle_class": "A",
       "metric": "symmetry/PSD error",
       "acceptance_condition": "< 2.2e-14",
+      "result_protocol": "MuTAKernel Gram-matrix symmetry/diagonal/PSD/conditioning vs. sample size",
+      "result_acceptance_condition": "max symmetry/diagonal error < 2.220e-14; minimum eigenvalue > -2.220e-14",
       "result_kind": "exact",
       "estimated_cost": "light",
       "manuscript_destination": "Main (Fig.4)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R26_*.csv",
-        "json": "results/json/R26_*.json",
-        "metadata": "results/json/R26_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Gram symmetry/PSD/conditioning vs. N",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R26_kernel_properties.csv",
+          "exists": true,
+          "sha256": "c7e26fa90741a9ce90dec2280aab82e989903430dfe3ba19c4cd8021bd5d2865"
+        },
+        {
+          "path": "results\\json\\R26_kernel_properties.json",
+          "exists": true,
+          "sha256": "3ce81ff25d2339856bbe00376179389eefd1cfd875a7ae95b587c1d796ad3a3e"
+        },
+        {
+          "path": "results\\json\\R26_kernel_properties.metadata.json",
+          "exists": true,
+          "sha256": "9acab8b387160809c229598a6e89e0020813355ae7f32ee9ccc714a795828c0c"
+        },
+        {
+          "path": "figures\\pdf\\R26_kernel_properties.pdf",
+          "exists": true,
+          "sha256": "3bd15e25853ada050ff775db2e2411c9b0a7f361331a4f527bb01d193789179c"
+        },
+        {
+          "path": "figures\\png\\R26_kernel_properties.png",
+          "exists": true,
+          "sha256": "5dacdce7c0af65529c874115a16a17de07f3bb9eb685737a861ebcf921da2b7a"
+        },
+        {
+          "path": "figures\\svg\\R26_kernel_properties.svg",
+          "exists": true,
+          "sha256": "1520660ec5678b16e04cc037430622c479c945ca4b307c2dfe8c18bbed007cc8"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "ceeae3eb90f519597c56fe011bf03b18fd1fa16b79bbdcc6fb3c6889e5dfe403",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -555,19 +1985,81 @@
       "scientific_question": "Kernel-SVM vs. classical baselines, 3 datasets",
       "hypothesis": "descriptive; no directional performance hypothesis",
       "api": "`MuTAKernel`+SVC",
+      "layer": "logical",
       "oracle": "RBF-SVM/logistic baselines",
       "oracle_class": "N/A",
       "metric": "held-out accuracy",
       "acceptance_condition": "structural: finite accuracy and PSD Gram; scientific: descriptive",
+      "result_protocol": "MuTA-kernel SVM vs. RBF-SVM/logistic baselines on circles/moons/blobs, repeated splits",
+      "result_acceptance_condition": "structural: every accuracy in [0,1] and every training Gram matrix PSD within declared tolerance; scientific outcome: descriptive, no performance threshold",
       "result_kind": "statistical",
       "estimated_cost": "moderate",
       "manuscript_destination": "Main (Fig.7)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R27_*.csv",
-        "json": "results/json/R27_*.json",
-        "metadata": "results/json/R27_*.metadata.json"
+      "seed_set": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "descriptive",
+      "claim_supported": "Kernel-SVM vs. classical baselines, 3 datasets",
+      "claim_not_supported": "No general performance claim",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R27_kernel_classification.csv",
+          "exists": true,
+          "sha256": "2fe5c5a81e277373a1fa33aa152309d13af8bd73e86397b34aae31998423cc0c"
+        },
+        {
+          "path": "results\\json\\R27_kernel_classification.json",
+          "exists": true,
+          "sha256": "c5da13589e91891e2efccd964f8bd7f8318c92ef23897c3a096732d5cde29cfc"
+        },
+        {
+          "path": "results\\json\\R27_kernel_classification.metadata.json",
+          "exists": true,
+          "sha256": "171c2c144e47884fb73f4dda53808a7038acb28760d0db64a25a622a0639d380"
+        },
+        {
+          "path": "figures\\pdf\\R27_kernel_classification.pdf",
+          "exists": true,
+          "sha256": "e16c32b0870c47a1da42144b9f1be10c576521e551b46fce9cb347bf9699faaf"
+        },
+        {
+          "path": "figures\\png\\R27_kernel_classification.png",
+          "exists": true,
+          "sha256": "d90f63bf749f5cb743617ac57196a93fb52ae21ea259fa7a75bab8fb479d99c1"
+        },
+        {
+          "path": "figures\\svg\\R27_kernel_classification.svg",
+          "exists": true,
+          "sha256": "fcc6f0da1085da0fd1465d433b9f581db05ff6344856dfce8ce626419b0487c1"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "2a1db58ee2611d32fecd496ea540a3ece400012f21a391a0e0aa4ff908b24a53",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -576,19 +2068,72 @@
       "scientific_question": "Robustness to size/noise/C/scale + leakage-safe selection",
       "hypothesis": "descriptive; no directional performance hypothesis",
       "api": "`MuTAKernel`+SVC",
+      "layer": "logical",
       "oracle": "classical baselines",
       "oracle_class": "N/A",
       "metric": "accuracy vs. axis",
       "acceptance_condition": "structural: valid scores/validation-only selection; scientific: descriptive",
+      "result_protocol": "One-axis-at-a-time robustness sweep + leakage-safe nested C selection, moons dataset",
+      "result_acceptance_condition": "structural: reported accuracies finite and in [0,1]; scientific outcome: descriptive, no performance threshold",
       "result_kind": "statistical",
       "estimated_cost": "moderate",
       "manuscript_destination": "Appendix (Fig.7)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R28_*.csv",
-        "json": "results/json/R28_*.json",
-        "metadata": "results/json/R28_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "descriptive",
+      "claim_supported": "Robustness to size/noise/C/scale + leakage-safe selection",
+      "claim_not_supported": "No general performance claim",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R28_kernel_robustness.csv",
+          "exists": true,
+          "sha256": "c0f4efc8e2db0580e362f4037cbba09f184973478ce9776b56e3a00d84d17a6d"
+        },
+        {
+          "path": "results\\json\\R28_kernel_robustness.json",
+          "exists": true,
+          "sha256": "498acbc30612f6f90ae00c1eb306c2cdb530db824633996be98d94a641d8517e"
+        },
+        {
+          "path": "results\\json\\R28_kernel_robustness.metadata.json",
+          "exists": true,
+          "sha256": "1187de3a05dee42d136d19298552384f6e3b6a0b5ea4c2442ce252057ef4e475"
+        },
+        {
+          "path": "figures\\pdf\\R28_kernel_robustness.pdf",
+          "exists": true,
+          "sha256": "de75ae107d54a54e94b1f2108a3873a42b9988d1420351b53b6268336d980485"
+        },
+        {
+          "path": "figures\\png\\R28_kernel_robustness.png",
+          "exists": true,
+          "sha256": "70d21c3188d49e4818a40a42eb23adbbea1ecc38b96a64b7c128df5d7d9451fd"
+        },
+        {
+          "path": "figures\\svg\\R28_kernel_robustness.svg",
+          "exists": true,
+          "sha256": "f18caa4aeee35f258cf02b214e9f57f720588bb53c0419e64487359d1b095232"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "0e92194368449c7fabc255fb2f7fc8fb6c36732421a755fc48e94f36351b8bb7",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -597,19 +2142,72 @@
       "scientific_question": "Instrument trace preservation/branch completeness",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`QuantumInstrumentModel`",
+      "layer": "logical",
       "oracle": "self (trace=1 invariant)",
       "oracle_class": "E",
       "metric": "\u03a3p-1",
       "acceptance_condition": "< 2.2e-13",
+      "result_protocol": "QuantumInstrumentModel trace preservation, branch completeness, negligible-branch convention",
+      "result_acceptance_condition": "max probability-sum error < 2.220e-14; always 2 branches; None iff probability<1e-15",
       "result_kind": "exact",
       "estimated_cost": "light",
       "manuscript_destination": "Appendix",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R29_*.csv",
-        "json": "results/json/R29_*.json",
-        "metadata": "results/json/R29_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Instrument trace preservation/branch completeness",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R29_instrument_diagnostics.csv",
+          "exists": true,
+          "sha256": "03725af490aeb651a834258bc3a139c4c3fdfca10ab54f34d76348560d979c09"
+        },
+        {
+          "path": "results\\json\\R29_instrument_diagnostics.json",
+          "exists": true,
+          "sha256": "0f2046fa856028becc8ecba9dc1268cdd35cd5f835866df17216fd9ef87cacb7"
+        },
+        {
+          "path": "results\\json\\R29_instrument_diagnostics.metadata.json",
+          "exists": true,
+          "sha256": "52cd226da1c82ad4f095b7c6c1b7fe814aa2437178cfa7591dab09c705815ec9"
+        },
+        {
+          "path": "figures\\pdf\\R29_instrument_diagnostics.pdf",
+          "exists": true,
+          "sha256": "21f88968040f6d037f3b1c5aeb0c6639f7ed601a0cf718c4a45a17e23043849b"
+        },
+        {
+          "path": "figures\\png\\R29_instrument_diagnostics.png",
+          "exists": true,
+          "sha256": "4f88ebbfe17e05905906b0582f04d6297e5efc32fec7daa640927bda7811bd5a"
+        },
+        {
+          "path": "figures\\svg\\R29_instrument_diagnostics.svg",
+          "exists": true,
+          "sha256": "2d7e704adf260d22519489ebbfabbd09a84247e4cb60710c5e0fe6579614e1bf"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "894ef87c640150ebd8985aa6360b4e4f2d033a9404b630c4c69f02b1ae842e34",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -618,19 +2216,72 @@
       "scientific_question": "Concurrence vs. Wootters spin-flip formula",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`diagnostics.concurrence`",
+      "layer": "logical",
       "oracle": "spin-flip formula (fresh code)",
       "oracle_class": "A",
       "metric": "error",
       "acceptance_condition": "< 2.2e-14",
+      "result_protocol": "diagnostics.concurrence vs. independent Wootters spin-flip formula",
+      "result_acceptance_condition": "max error < 2.220e-14; separable concurrence < tol; Bell concurrence within tol of 1",
       "result_kind": "exact",
       "estimated_cost": "light",
       "manuscript_destination": "Appendix",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R30_*.csv",
-        "json": "results/json/R30_*.json",
-        "metadata": "results/json/R30_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Concurrence vs. Wootters spin-flip formula",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R30_concurrence.csv",
+          "exists": true,
+          "sha256": "0934bbd71020b364eb67ad4affb0d6d037a0876e72ef217cc089ba30ec78d1f1"
+        },
+        {
+          "path": "results\\json\\R30_concurrence.json",
+          "exists": true,
+          "sha256": "bc3104446885c683671a1c2d16806ecc280c6baca4022664c9cecc4f7ac411db"
+        },
+        {
+          "path": "results\\json\\R30_concurrence.metadata.json",
+          "exists": true,
+          "sha256": "dfb0fe179c2f876a2df1b0021d3b58a8fc21db635db476cdde13075ff4a68c7c"
+        },
+        {
+          "path": "figures\\pdf\\R30_concurrence.pdf",
+          "exists": true,
+          "sha256": "205aa872922079c3ad76cdded2633f0bb6616bffa583e47c622110bd0bb1df96"
+        },
+        {
+          "path": "figures\\png\\R30_concurrence.png",
+          "exists": true,
+          "sha256": "ad3c08eeeb570aacb0c45804dc1ba91831ea474ca4abef2e949be88eac63df4d"
+        },
+        {
+          "path": "figures\\svg\\R30_concurrence.svg",
+          "exists": true,
+          "sha256": "c6823d93449d1b58fffdd7adb30cd353c498511cdca6822ad1c1597fab97faa8"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "84fd16124f5d386052dda554b592a2cdace951bb1a89ebb4f457533146b8c493",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -639,19 +2290,72 @@
       "scientific_question": "QFI vs. independent trace formula for 4\u00b7Var(H)",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`diagnostics.pure_qfi`",
+      "layer": "logical",
       "oracle": "density-matrix trace formula",
       "oracle_class": "A",
       "metric": "error",
       "acceptance_condition": "< 4.4e-12",
+      "result_protocol": "diagnostics.pure_qfi vs. independent density-matrix trace formula for 4*Var(H)",
+      "result_acceptance_condition": "max error < 8.882e-14",
       "result_kind": "exact",
       "estimated_cost": "light",
       "manuscript_destination": "Appendix",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R31_*.csv",
-        "json": "results/json/R31_*.json",
-        "metadata": "results/json/R31_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "QFI vs. independent trace formula for 4\u00b7Var(H)",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R31_qfi.csv",
+          "exists": true,
+          "sha256": "679d62db951781ec46434b24064fe9c4856606254a03a17974c92ab8bdf40513"
+        },
+        {
+          "path": "results\\json\\R31_qfi.json",
+          "exists": true,
+          "sha256": "d219de27c06ffc9f233a194f43c98354edc30d6dda8bae4b6c69b834a69c01f0"
+        },
+        {
+          "path": "results\\json\\R31_qfi.metadata.json",
+          "exists": true,
+          "sha256": "87d33a317ce1bc2cff29cb66a2fec6dcc570187bb46059d7213b5d400ee803f2"
+        },
+        {
+          "path": "figures\\pdf\\R31_qfi.pdf",
+          "exists": true,
+          "sha256": "c70f1db65e96ad8c704ce00aa3e03215c1bb3ca21a7cbcf7fa6f423e04c3abf3"
+        },
+        {
+          "path": "figures\\png\\R31_qfi.png",
+          "exists": true,
+          "sha256": "ea460b3b83c8d387ad8c84c995bb095591a761acf55b3e75bd29dda6d3108b86"
+        },
+        {
+          "path": "figures\\svg\\R31_qfi.svg",
+          "exists": true,
+          "sha256": "28d18e7dfaff1ca33bba80128235040b77151047ee4fce46242f60a3084c1ac8"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "d83a5cbf2b3ce64ecbd5f8d2633319a2409723c0e2197d073c4ef600f8f4cb68",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -660,19 +2364,72 @@
       "scientific_question": "Lie-closure dimension vs. matrix-commutator closure",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`expressivity.pauli_lie_dimension`",
+      "layer": "logical",
       "oracle": "matrix-commutator/rank closure (fresh code)",
       "oracle_class": "A",
       "metric": "dimension error",
       "acceptance_condition": "0",
+      "result_protocol": "pauli_lie_dimension vs. independent matrix-commutator/rank closure",
+      "result_acceptance_condition": "|production - independent| == 0 for every declared case",
       "result_kind": "exact",
       "estimated_cost": "light",
       "manuscript_destination": "Appendix/Table IV",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R32_*.csv",
-        "json": "results/json/R32_*.json",
-        "metadata": "results/json/R32_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Lie-closure dimension vs. matrix-commutator closure",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R32_lie_closure.csv",
+          "exists": true,
+          "sha256": "0778459c78f031673baa8aa85bc4feb481e0a6706fd70bd60e88a683871efa4c"
+        },
+        {
+          "path": "results\\json\\R32_lie_closure.json",
+          "exists": true,
+          "sha256": "741de4a213917803c8b80a60d3f4225638507496241e1336b644bbff615971c2"
+        },
+        {
+          "path": "results\\json\\R32_lie_closure.metadata.json",
+          "exists": true,
+          "sha256": "6b257d20df3148f6c1dcc3d26f6cc9d7bba040157a9883b83c1dc3cc6256d539"
+        },
+        {
+          "path": "figures\\pdf\\R32_lie_closure.pdf",
+          "exists": true,
+          "sha256": "617e53cdac6031875d1ecf88805600d20db42d5617d3000eac8af26302f7bc32"
+        },
+        {
+          "path": "figures\\png\\R32_lie_closure.png",
+          "exists": true,
+          "sha256": "242da9a17355f0db5b2041809d9f6b682d7dedc5859815fed622ef119b43e70b"
+        },
+        {
+          "path": "figures\\svg\\R32_lie_closure.svg",
+          "exists": true,
+          "sha256": "08d8412f5e3f659dd6075684cd7e71f7c6f055569f43f63b0adbc872833bb0fe"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "614f59d333b9fd4b947ac682301287d050580cd8deef51fd9f9905f3cb9bec5e",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -681,19 +2438,72 @@
       "scientific_question": "Local Fisher PSD + step convergence + rank scaling",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`expressivity.state_fisher`",
+      "layer": "logical",
       "oracle": "analytic PSD invariant",
       "oracle_class": "A/E",
       "metric": "min eigenvalue",
       "acceptance_condition": "> -4.4e-9",
+      "result_protocol": "state_fisher PSD check and step-convergence, plus rank/conditioning vs wires/depth",
+      "result_acceptance_condition": "min eigenvalue > -8.882e-12; convergence error monotonically decreases from step=1e-2 to 1e-5",
       "result_kind": "exact/approximate",
       "estimated_cost": "light",
       "manuscript_destination": "Appendix (Fig.8)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R33_*.csv",
-        "json": "results/json/R33_*.json",
-        "metadata": "results/json/R33_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Local Fisher PSD + step convergence + rank scaling",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R33_fisher_spectra.csv",
+          "exists": true,
+          "sha256": "d54d0bcf7f13741cc4ab3ef445ec809ac6d203a4cc8e08ec4384ce36c35e8299"
+        },
+        {
+          "path": "results\\json\\R33_fisher_spectra.json",
+          "exists": true,
+          "sha256": "101460bbb0f6b773fa1bfc28bc6dfcad70bee46dc9a5d2641495b83c5095ece7"
+        },
+        {
+          "path": "results\\json\\R33_fisher_spectra.metadata.json",
+          "exists": true,
+          "sha256": "e56a92bacc2ddb9eab106c897059505b6e06c1fd38c65c9e31915f83b113582c"
+        },
+        {
+          "path": "figures\\pdf\\R33_fisher_spectra.pdf",
+          "exists": true,
+          "sha256": "22bd1a88a6b5926a7e9f44b30150520e9c135c237c4c148e616facf50877cf09"
+        },
+        {
+          "path": "figures\\png\\R33_fisher_spectra.png",
+          "exists": true,
+          "sha256": "758da32273c7704c90ab0f5238ca04589228dd79f9ca936fc93a0c9144d2ab5b"
+        },
+        {
+          "path": "figures\\svg\\R33_fisher_spectra.svg",
+          "exists": true,
+          "sha256": "6c36fa6cc09dd695246943a07479c9cc9648525dd4a2fc0deac9a0411059d10e"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "d37a6a313cda6fa5c73506b9a8657ca08109e92d2bf48e41be7012394f211ac7",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -702,19 +2512,72 @@
       "scientific_question": "Captured weight/overlap/Gram PSD vs. cutoff/grid",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`GKPBridge.diagnostics`",
+      "layer": "resource",
       "oracle": "analytic Gram-PSD invariant",
       "oracle_class": "A/E",
       "metric": "weights in [0,1], min eigenvalue",
       "acceptance_condition": "> -2.2e-11",
+      "result_protocol": "GKPBridge.diagnostics vs. cutoff/grid_points refinement, Gram PSD invariant",
+      "result_acceptance_condition": "captured weights in [0,1]; Gram matrix PSD; physical_muta_validated always False",
       "result_kind": "exact/statistical",
       "estimated_cost": "light-moderate",
       "manuscript_destination": "Main (Fig.8)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R34_*.csv",
-        "json": "results/json/R34_*.json",
-        "metadata": "results/json/R34_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Captured weight/overlap/Gram PSD vs. cutoff/grid",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R34_gkp_codeword_projection.csv",
+          "exists": true,
+          "sha256": "766a26200c97528271beb747de5b78e767b2e0d302d18b1b9a58372dce8758ae"
+        },
+        {
+          "path": "results\\json\\R34_gkp_codeword_projection.json",
+          "exists": true,
+          "sha256": "61c5f312f275a640a29c426129f4b4d7a46e94d71448037e1516407ddce8d31d"
+        },
+        {
+          "path": "results\\json\\R34_gkp_codeword_projection.metadata.json",
+          "exists": true,
+          "sha256": "6952a208092e7249432ca14396d29a718318cc3d32011fbfdcc4cf2788eacdec"
+        },
+        {
+          "path": "figures\\pdf\\R34_gkp_codeword_projection.pdf",
+          "exists": true,
+          "sha256": "66cc07549af178a3fa89f04e8202dfea74f1aac9c44f6a5c0252d0f464588faf"
+        },
+        {
+          "path": "figures\\png\\R34_gkp_codeword_projection.png",
+          "exists": true,
+          "sha256": "df27b3e9a7e423eae2cc795b980cb5fd713ddb659199f4fba904fff9795e1d47"
+        },
+        {
+          "path": "figures\\svg\\R34_gkp_codeword_projection.svg",
+          "exists": true,
+          "sha256": "e45d5312e5afff5859690ae665176294b0b4dde029e35388a7b3c0ba5235b97a"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "a1d23ad226cb796271f1ce8939dab68a91315c32b06cd190327b3d2c0a82ea36",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -723,19 +2586,72 @@
       "scientific_question": "Capability boundary at the 0/pi 1e-14 tolerance",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`physical_capabilities`",
+      "layer": "physical",
       "oracle": "documented upstream tolerance",
       "oracle_class": "E",
       "metric": "misclassifications",
       "acceptance_condition": "0",
+      "result_protocol": "physical_capabilities classification at and around the 0/pi upstream tolerance boundary",
+      "result_acceptance_condition": "classification matches documented 1e-14 boundary for every declared case",
       "result_kind": "exact",
       "estimated_cost": "light",
       "manuscript_destination": "Main (Fig.9)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R35_*.csv",
-        "json": "results/json/R35_*.json",
-        "metadata": "results/json/R35_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Capability boundary at the 0/pi 1e-14 tolerance",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R35_capability_map.csv",
+          "exists": true,
+          "sha256": "c964d1dc50cd8efee8275942403daa90cf7c9c8c3e9034d99b0f28b1ed808b4c"
+        },
+        {
+          "path": "results\\json\\R35_capability_map.json",
+          "exists": true,
+          "sha256": "c93a5681b3791c9a6ad091f2de0f31ef0a158d95d72271f5bed79160b267fa3f"
+        },
+        {
+          "path": "results\\json\\R35_capability_map.metadata.json",
+          "exists": true,
+          "sha256": "43d3ca081a7ef2212dc1c00e2124d5c2bf5257948ed51cb15a3f6f3a190d3056"
+        },
+        {
+          "path": "figures\\pdf\\R35_capability_map.pdf",
+          "exists": true,
+          "sha256": "e77f42a6e4a348b5994ca11cb16cc42ea0dae822b65ab354afe79e0f8953bc26"
+        },
+        {
+          "path": "figures\\png\\R35_capability_map.png",
+          "exists": true,
+          "sha256": "b68113afdf8bc8f731ae35a116adb7ee684f0d81b5e93f8e6ea0242f237dad46"
+        },
+        {
+          "path": "figures\\svg\\R35_capability_map.svg",
+          "exists": true,
+          "sha256": "39bbcef20b92fa2e8b472e6b5913107aa78086ee828f6b45049eaf6f24800b7a"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "46a133c0fb6bc5ba643c7d4e2650dd05af2beb56f1452537e6177aab799a3448",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -744,19 +2660,72 @@
       "scientific_question": "Lowering preserves vertices/edges/I-O/Fock dim",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`lower_muta_to_gkp`",
+      "layer": "physical",
       "oracle": "analytic Fock-dim formula + self-consistency",
       "oracle_class": "A/E",
       "metric": "violations",
       "acceptance_condition": "0",
+      "result_protocol": "lower_muta_to_gkp structural preservation + analytic Fock-dimension cross-check",
+      "result_acceptance_condition": "0 violations in every category; Fock dimension exact match; pattern validates",
       "result_kind": "exact",
       "estimated_cost": "light-moderate",
       "manuscript_destination": "Appendix (Fig.9)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R36_*.csv",
-        "json": "results/json/R36_*.json",
-        "metadata": "results/json/R36_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Lowering preserves vertices/edges/I-O/Fock dim",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R36_lowering_preservation.csv",
+          "exists": true,
+          "sha256": "ce3efa393c23f96fa1b14b69f52da39751b89b87cd7ec3d6f36635f69a0275db"
+        },
+        {
+          "path": "results\\json\\R36_lowering_preservation.json",
+          "exists": true,
+          "sha256": "a7344480b6bf8461d32d367e213a57a383d76fcda13224abd2c3cc8b5e79dd78"
+        },
+        {
+          "path": "results\\json\\R36_lowering_preservation.metadata.json",
+          "exists": true,
+          "sha256": "c89495a6700cc46b0054576ea1126d1175a58c53636dc0c0c7bde4cbafbb132b"
+        },
+        {
+          "path": "figures\\pdf\\R36_lowering_preservation.pdf",
+          "exists": true,
+          "sha256": "b0a86290c9f3c9f7df47a777f9ce34b1302c39c936467c13e22a90b6d8f2ff26"
+        },
+        {
+          "path": "figures\\png\\R36_lowering_preservation.png",
+          "exists": true,
+          "sha256": "cbd0344010d90751ec0944defae60cdc178c852b987b1ff1416443954cfbae98"
+        },
+        {
+          "path": "figures\\svg\\R36_lowering_preservation.svg",
+          "exists": true,
+          "sha256": "08526649192fd7311774f91340e68c3875011efc7cd1739a27cd596080b8d33d"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "70993f5f9ee9da742056dfe220a8c7c048e7c13d863659ca95d2ba70b3e5e33a",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -765,19 +2734,72 @@
       "scientific_question": "Exhaustive 256-branch Pauli-frame validation",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`lowering.node_frame`",
+      "layer": "physical",
       "oracle": "independent branch contraction (fresh code)",
       "oracle_class": "D",
       "metric": "max branch error",
       "acceptance_condition": "< 2.2e-13",
+      "result_protocol": "Exhaustive raw-branch contraction + node_frame correction vs. MuTA.run target, 2-wire signed-X",
+      "result_acceptance_condition": "max error over all 256 branches < 2.220e-14",
       "result_kind": "exact",
       "estimated_cost": "light",
       "manuscript_destination": "Main (Fig.9)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R37_*.csv",
-        "json": "results/json/R37_*.json",
-        "metadata": "results/json/R37_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Exhaustive 256-branch Pauli-frame validation",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R37_pauli_frame_validation.csv",
+          "exists": true,
+          "sha256": "6eb4379a83ac7fcae646cc7e7f5017db99cdab05eecb6a3613b4718cee04817b"
+        },
+        {
+          "path": "results\\json\\R37_pauli_frame_validation.json",
+          "exists": true,
+          "sha256": "2630483b09e9b5959b30df03996108a8ef850c09210cda71b9ff32d907596abc"
+        },
+        {
+          "path": "results\\json\\R37_pauli_frame_validation.metadata.json",
+          "exists": true,
+          "sha256": "066623a03796f8de12097494d8012e7e47f8b10d07cb2f5b5ebde395ce381e97"
+        },
+        {
+          "path": "figures\\pdf\\R37_pauli_frame_validation.pdf",
+          "exists": true,
+          "sha256": "8ccc8ce83f0eea24c7d5bda42701b922c07227b42c38bd14b30183f4b794ad09"
+        },
+        {
+          "path": "figures\\png\\R37_pauli_frame_validation.png",
+          "exists": true,
+          "sha256": "32b01d85ee28157c207db205f27d459e02e31a581bda24042d3708fc295c88da"
+        },
+        {
+          "path": "figures\\svg\\R37_pauli_frame_validation.svg",
+          "exists": true,
+          "sha256": "80ea9ed9862f693a55358a5bdff9b92d28621161a2998177de8a7347194eec64"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "707979b0652a509c93e86fa986f6e16c4955daa22755348f0ecc20b9f6968d08",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -786,19 +2808,72 @@
       "scientific_question": "PhysicalMuTA vs. independently assembled Pattern (no lowering helper)",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`PhysicalMuTA.run`",
+      "layer": "physical",
       "oracle": "independent public-API Pattern",
       "oracle_class": "C",
       "metric": "probability error",
       "acceptance_condition": "< 2.2e-10",
+      "result_protocol": "PhysicalMuTA(1) physical-conditional vs. independently assembled public Pattern",
+      "result_acceptance_condition": "max joint-probability difference < 2.220e-10",
       "result_kind": "exact",
       "estimated_cost": "moderate",
       "manuscript_destination": "Main (Fig.10)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R38_*.csv",
-        "json": "results/json/R38_*.json",
-        "metadata": "results/json/R38_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "PhysicalMuTA vs. independently assembled Pattern (no lowering helper)",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R38_public_pattern_comparison.csv",
+          "exists": true,
+          "sha256": "89867c33e917c6fccdbcbb9663fcd1e0f3aef9885c416a42911cf4b8fa5a62e0"
+        },
+        {
+          "path": "results\\json\\R38_public_pattern_comparison.json",
+          "exists": true,
+          "sha256": "5d40239d36b7532d09f60ee8c6a82e6dc20249ef81b41296ecbd3312c093ca9d"
+        },
+        {
+          "path": "results\\json\\R38_public_pattern_comparison.metadata.json",
+          "exists": true,
+          "sha256": "1c5971e584ebeb3f091c676e69c93bd2862c15af3616eb54314f2cafc5393db1"
+        },
+        {
+          "path": "figures\\pdf\\R38_public_pattern_comparison.pdf",
+          "exists": true,
+          "sha256": "4835d20b994ca1483cb2ceca9cdfdec37a85b58cb299d0d10ac95a0ff207c0a6"
+        },
+        {
+          "path": "figures\\png\\R38_public_pattern_comparison.png",
+          "exists": true,
+          "sha256": "c236395268741cd273a4fa16e12b07e6f1ee8d7d81b9a08c1d622d21f09234ee"
+        },
+        {
+          "path": "figures\\svg\\R38_public_pattern_comparison.svg",
+          "exists": true,
+          "sha256": "b29f2926728422ddd659eb4aa09eb4d92ed3a5d9b799f97fe962484180b2416c"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "8de55d33b4a286f4b45c8f520ccd440d35c2dfceb55eee569d3ffcd5a2273684",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -807,19 +2882,72 @@
       "scientific_question": "GKP amplitudes vs. raw Piquasso state prep",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`GKPCode.plus`",
+      "layer": "physical",
       "oracle": "raw `piquasso.FockStateVector`",
       "oracle_class": "C",
       "metric": "infidelity",
       "acceptance_condition": "< 2.2e-10",
+      "result_protocol": "GKPCode.plus() Fock amplitudes vs. raw Piquasso PureFockSimulator state preparation",
+      "result_acceptance_condition": "max |1-fidelity| < 2.220e-12",
       "result_kind": "exact",
       "estimated_cost": "light",
       "manuscript_destination": "Main (Fig.10)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R39_*.csv",
-        "json": "results/json/R39_*.json",
-        "metadata": "results/json/R39_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "GKP amplitudes vs. raw Piquasso state prep",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R39_raw_piquasso_state_prep.csv",
+          "exists": true,
+          "sha256": "5365922224c341950a00a2e759818379b82e2cd61b1ccb1e5753474417b791d1"
+        },
+        {
+          "path": "results\\json\\R39_raw_piquasso_state_prep.json",
+          "exists": true,
+          "sha256": "4a839d4a59e7a0f16fa2a4ba9e70be318c93cedec8d8bb382d2f8ae1b6e08aea"
+        },
+        {
+          "path": "results\\json\\R39_raw_piquasso_state_prep.metadata.json",
+          "exists": true,
+          "sha256": "ea17e7d2f375091cbcb7d80ed4d3a94a627e2d2e0ab15d317d392ccbda2a1d1e"
+        },
+        {
+          "path": "figures\\pdf\\R39_raw_piquasso_state_prep.pdf",
+          "exists": true,
+          "sha256": "0a90eed968fa5be9adfaac561ff98d53072f46d582e37e38098f984ed26c6f9b"
+        },
+        {
+          "path": "figures\\png\\R39_raw_piquasso_state_prep.png",
+          "exists": true,
+          "sha256": "c3d0a0a4b83c87dad889fad6b3e3ad04648aebdb43a826a11b21c2de79c05699"
+        },
+        {
+          "path": "figures\\svg\\R39_raw_piquasso_state_prep.svg",
+          "exists": true,
+          "sha256": "7a81c5eb3144bc6ca9056d0073f2e09543855d7b4c62516f172648a32c28ffba"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "35ab38fa995661d98b79b14fac5e3d5b1741fce757856b0ff5456a50d1201d51",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -828,19 +2956,72 @@
       "scientific_question": "GKPCode CZ vs. raw `piquasso.GaussianTransform`",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "backend CZ dispatch",
+      "layer": "physical",
       "oracle": "raw Piquasso gate call",
       "oracle_class": "C",
       "metric": "amplitude error",
       "acceptance_condition": "< 2.2e-10",
+      "result_protocol": "Raw piquasso.GaussianTransform CZ vs. GKPCode.logical_cz through full Pattern/pg.simulate",
+      "result_acceptance_condition": "max amplitude-vector error < 2.220e-12",
       "result_kind": "exact",
       "estimated_cost": "light-moderate",
       "manuscript_destination": "Main (Fig.10)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R40_*.csv",
-        "json": "results/json/R40_*.json",
-        "metadata": "results/json/R40_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "GKPCode CZ vs. raw `piquasso.GaussianTransform`",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R40_raw_piquasso_cz.csv",
+          "exists": true,
+          "sha256": "a62a878789f84a1b3eddbb63956b386e7ba17c83d5672d7035b2704ac860abb8"
+        },
+        {
+          "path": "results\\json\\R40_raw_piquasso_cz.json",
+          "exists": true,
+          "sha256": "c43650983f4744c9fab6cab1dd77bb34ff0ef5efd760bcd6ca93f75e7a74fa54"
+        },
+        {
+          "path": "results\\json\\R40_raw_piquasso_cz.metadata.json",
+          "exists": true,
+          "sha256": "31bbacbd1fb1437f5b10f98b48e0960e68ed2bc0995b0928ebf870addb2828c9"
+        },
+        {
+          "path": "figures\\pdf\\R40_raw_piquasso_cz.pdf",
+          "exists": true,
+          "sha256": "cd6dc7277f13f3936344bfabf7b5eefbb0d2dfa3193e6dcc4651e0e3f05b4e02"
+        },
+        {
+          "path": "figures\\png\\R40_raw_piquasso_cz.png",
+          "exists": true,
+          "sha256": "d00e7b4619ae1793037f7e8f55f56dbd993632e824e96adc25ce14bf4bed2663"
+        },
+        {
+          "path": "figures\\svg\\R40_raw_piquasso_cz.svg",
+          "exists": true,
+          "sha256": "642611163806a0d18d81e952bfcc70ba65e27730daf90e20a062d82b2ec183c6"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "9adb684456effea56d8b1c6ab86ddf6779cab88a217339990fba9a8ba3ff68f2",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -849,40 +3030,146 @@
       "scientific_question": "Fixed-outcome execution agreement, several conditioning vectors/angles",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`PhysicalMuTA.run`",
+      "layer": "physical",
       "oracle": "independent public-API Pattern",
       "oracle_class": "C",
       "metric": "probability error",
       "acceptance_condition": "< 2.2e-10",
+      "result_protocol": "PhysicalMuTA(1) physical-conditional vs. independently assembled Pattern, several conditioning vectors/angles",
+      "result_acceptance_condition": "max joint-probability difference < 2.220e-10",
       "result_kind": "exact",
       "estimated_cost": "moderate",
       "manuscript_destination": "Appendix (Fig.10)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R41_*.csv",
-        "json": "results/json/R41_*.json",
-        "metadata": "results/json/R41_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Fixed-outcome execution agreement, several conditioning vectors/angles",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R41_conditional_execution_comparison.csv",
+          "exists": true,
+          "sha256": "91140808396a8254ab5280c40889b5c621db792bde3023f4a2df3c270e588aff"
+        },
+        {
+          "path": "results\\json\\R41_conditional_execution_comparison.json",
+          "exists": true,
+          "sha256": "bbd72d189a80a3ba92fe0780e97c8e5e7d492847a1ca1e74948e2c6d40cf24b8"
+        },
+        {
+          "path": "results\\json\\R41_conditional_execution_comparison.metadata.json",
+          "exists": true,
+          "sha256": "4245a3c20c05b351f304784270f785b3e142af63018dff8d4a9012e307de4cae"
+        },
+        {
+          "path": "figures\\pdf\\R41_conditional_execution_comparison.pdf",
+          "exists": true,
+          "sha256": "9e4b3b400475ee88168d841b33adf425d88d6cf19532b5842e99ea25039713af"
+        },
+        {
+          "path": "figures\\png\\R41_conditional_execution_comparison.png",
+          "exists": true,
+          "sha256": "bf0d46b6271babc416b549a6b243e37540370b93da60f642bc64064813d96eee"
+        },
+        {
+          "path": "figures\\svg\\R41_conditional_execution_comparison.svg",
+          "exists": true,
+          "sha256": "2e891d02f1ab7af788ce2c08325ec61068003d42e3ebb92bd225c5b1081767a3"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "c76430fb92bc649d883185c0a8e17fbe0425726d900ab335e7a3755341bbd5a6",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
       "experiment_id": "R42",
       "script": "09_piquasso_validation/42_abstraction_overhead.py",
       "scientific_question": "Timing breakdown across abstraction layers",
-      "hypothesis": "the stated implementation contract agrees with the declared oracle",
+      "hypothesis": "descriptive; no directional performance hypothesis",
       "api": "`PhysicalMuTA.run` vs. direct/raw",
+      "layer": "physical",
       "oracle": "N/A",
-      "oracle_class": "n/a",
+      "oracle_class": "N/A",
       "metric": "median seconds",
       "acceptance_condition": "n/a",
+      "result_protocol": "Matched one-wire physical-conditional workload timed across PhotoGraphiQML/direct PhotoGraphiQ/raw Piquasso",
+      "result_acceptance_condition": "N/A (descriptive performance measurement); all timings finite and positive",
       "result_kind": "statistical",
       "estimated_cost": "moderate",
       "manuscript_destination": "Appendix/Fig.13",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R42_*.csv",
-        "json": "results/json/R42_*.json",
-        "metadata": "results/json/R42_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "descriptive",
+      "claim_supported": "Timing breakdown across abstraction layers",
+      "claim_not_supported": "No general performance claim",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R42_abstraction_overhead.csv",
+          "exists": true,
+          "sha256": "a222e56fd08679fc28c9585763376e47aa08a7524a95d86ad9aec5749d022bdf"
+        },
+        {
+          "path": "results\\json\\R42_abstraction_overhead.json",
+          "exists": true,
+          "sha256": "0a0344bf2f06f3132cf1422be3765adc3995eddd57b4a4e92ba5cc85fed60d39"
+        },
+        {
+          "path": "results\\json\\R42_abstraction_overhead.metadata.json",
+          "exists": true,
+          "sha256": "4e20d1ad27dd756d98d4677a1319f95f88f409193831a8f81da795776ee492e6"
+        },
+        {
+          "path": "figures\\pdf\\R42_abstraction_overhead.pdf",
+          "exists": true,
+          "sha256": "098bb487112a097d9bda5f88dd2ed09d77f99b83e6a279d687c7917d436f1857"
+        },
+        {
+          "path": "figures\\png\\R42_abstraction_overhead.png",
+          "exists": true,
+          "sha256": "d41a0ad496fba55194eef1a18822baf7ea429c1d18356ef202e2454f39c013ba"
+        },
+        {
+          "path": "figures\\svg\\R42_abstraction_overhead.svg",
+          "exists": true,
+          "sha256": "51f1d20b80714a6183ac81bfea37989587f35b32383f6b877280b2fa03154bd8"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "1848b3322fb6c5c6c5493a6e453852a3aeee8b1e878e2716fc4335744c12360c",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -891,19 +3178,72 @@
       "scientific_question": "Logical-vs-physical TV distance, leakage, no invented fidelity",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`compare_logical_physical`",
+      "layer": "physical",
       "oracle": "self (documented contract)",
       "oracle_class": "E",
       "metric": "TV/leakage range",
       "acceptance_condition": "[0,1]",
+      "result_protocol": "compare_logical_physical contract check, 1- and 2-wire zero-angle physical-conditional cases",
+      "result_acceptance_condition": "TV distance and leakage in [0,1]; finite_state_fidelity always None; convergence never silently certified",
       "result_kind": "exact",
       "estimated_cost": "moderate",
       "manuscript_destination": "Main (Fig.11)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R43_*.csv",
-        "json": "results/json/R43_*.json",
-        "metadata": "results/json/R43_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Logical-vs-physical TV distance, leakage, no invented fidelity",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R43_decoded_statistics.csv",
+          "exists": true,
+          "sha256": "74ba12944fb50bcc242630b84c17ac5bd41b19fb59d88e54059bfa5a341b5ceb"
+        },
+        {
+          "path": "results\\json\\R43_decoded_statistics.json",
+          "exists": true,
+          "sha256": "1d78e3b53cffb64231cb759e8477aa30c718bb4bc87401eb4e5a2087cdf65623"
+        },
+        {
+          "path": "results\\json\\R43_decoded_statistics.metadata.json",
+          "exists": true,
+          "sha256": "cb65393c819d8f680bcaa60bdd12e9f6aaa586e4d59fb1cce6d4e2b890e1a4f7"
+        },
+        {
+          "path": "figures\\pdf\\R43_decoded_statistics.pdf",
+          "exists": true,
+          "sha256": "47db8e7c8c335af6563a86ba3ff777216316f3210e0609128421893667177f92"
+        },
+        {
+          "path": "figures\\png\\R43_decoded_statistics.png",
+          "exists": true,
+          "sha256": "7efbc1ec6e92db4494d6ca0e0cd2b008942da582ce9ce7c0c3129d43990f84b6"
+        },
+        {
+          "path": "figures\\svg\\R43_decoded_statistics.svg",
+          "exists": true,
+          "sha256": "230bb19e542b2016b3fa3e8cc06fd8a819f060ff2161004ee96c5639c2d82121"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "43f305fb01755d7ad7702af6b34ef031e168bfd24e7791e04df137cae4693f9e",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -912,19 +3252,72 @@
       "scientific_question": "RB/empirical SE shot convergence + coverage",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`PhysicalMuTA.run` shots",
+      "layer": "physical",
       "oracle": "self-consistency + coverage",
       "oracle_class": "E",
       "metric": "SE decrease, coverage rate",
       "acceptance_condition": "shots=32<shots=4; coverage in [0.5,1]",
+      "result_protocol": "Rao-Blackwell and empirical standard-error shot convergence + coverage check",
+      "result_acceptance_condition": "shots=32 SE < shots=4 SE; coverage rate in [0.5,1.0] (loose n=8 sanity band)",
       "result_kind": "statistical",
       "estimated_cost": "heavy",
       "manuscript_destination": "Main (Fig.11)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R44_*.csv",
-        "json": "results/json/R44_*.json",
-        "metadata": "results/json/R44_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "RB/empirical SE shot convergence + coverage",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R44_shot_convergence.csv",
+          "exists": true,
+          "sha256": "4271c243b19b075143ad0cd6420e74737ba0a28919a5f79f8dfdcbd699798528"
+        },
+        {
+          "path": "results\\json\\R44_shot_convergence.json",
+          "exists": true,
+          "sha256": "67f0a8c359e38bb56befe9003249b0c285d922d01e190defca378d4a516124fb"
+        },
+        {
+          "path": "results\\json\\R44_shot_convergence.metadata.json",
+          "exists": true,
+          "sha256": "af4b800a2f488f3984d43c6e5228dfcb3e1b5faa79d6be092a1eea9fb3a91d8b"
+        },
+        {
+          "path": "figures\\pdf\\R44_shot_convergence.pdf",
+          "exists": true,
+          "sha256": "992c9d15857e06dcb8f0e7543d43f2b0adba6f29e2c60477eb6a52259a914dbb"
+        },
+        {
+          "path": "figures\\png\\R44_shot_convergence.png",
+          "exists": true,
+          "sha256": "b3d26c37920792fd5fc30caef42739e031c05635df39615ae60d6c8e9086c1ab"
+        },
+        {
+          "path": "figures\\svg\\R44_shot_convergence.svg",
+          "exists": true,
+          "sha256": "daad0864a0b6070e62f9924fe0cd685c68bdd11e86f024117a490e1ae08f97cd"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "a3127f4545ee46c3ae6b61bfa42814f1ed2650e5163757b308887b4c21c8f7fc",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -933,19 +3326,72 @@
       "scientific_question": "Joint \u2260 product of marginals; correlation cross-check",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`PhysicalMuTA.run` (2-wire)",
+      "layer": "physical",
       "oracle": "independent correlation formula",
       "oracle_class": "A/E",
       "metric": "correlation error, TV",
       "acceptance_condition": "< 2.2e-14; > 0",
+      "result_protocol": "Independent connected-correlation recomputation + joint-vs-product-of-marginals check, 2-wire",
+      "result_acceptance_condition": "correlation error < 2.220e-14; product-of-marginals TV distance > 0",
       "result_kind": "exact",
       "estimated_cost": "moderate",
       "manuscript_destination": "Main (Fig.11)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R45_*.csv",
-        "json": "results/json/R45_*.json",
-        "metadata": "results/json/R45_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Joint \u2260 product of marginals; correlation cross-check",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R45_joint_readout_correlations.csv",
+          "exists": true,
+          "sha256": "eeb2fe561cd04375058ed53bb695e969e22116129193f4fdd71d4a2d290a6f1c"
+        },
+        {
+          "path": "results\\json\\R45_joint_readout_correlations.json",
+          "exists": true,
+          "sha256": "906009b0cdcbcde3e12b49642e2ca98549b2cb0d9de73a02cf29a5bdf22de0a0"
+        },
+        {
+          "path": "results\\json\\R45_joint_readout_correlations.metadata.json",
+          "exists": true,
+          "sha256": "abd58101edc0e37674886e37e7011d7f88c23e3df4e79f977b17210f620ce6fa"
+        },
+        {
+          "path": "figures\\pdf\\R45_joint_readout_correlations.pdf",
+          "exists": true,
+          "sha256": "efaf9a00166214553c24a1c13f47983789aca4be34475aca691d6cd2e453132b"
+        },
+        {
+          "path": "figures\\png\\R45_joint_readout_correlations.png",
+          "exists": true,
+          "sha256": "3073a2a245493c6f02e80ee24442dc4c2e2203000bc60e9e47cc6da44925c8b9"
+        },
+        {
+          "path": "figures\\svg\\R45_joint_readout_correlations.svg",
+          "exists": true,
+          "sha256": "40fd9c1a3c8854f98c17d082c2938bfdab9925b2a1e7f62a59436824b5610dcd"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "91fa4961fb995e03828a20b887c122db3f668b7be6d42806010a091e4585e39f",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -954,19 +3400,72 @@
       "scientific_question": "Hard vs. soft decoder calibration + rejection-before-allocation",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`NearestCellDecoder`/`SoftDecisionDecoder`",
+      "layer": "physical",
       "oracle": "self (documented contract)",
       "oracle_class": "E",
       "metric": "confidence trend, rejection",
       "acceptance_condition": "monotonic; rejected",
+      "result_protocol": "NearestCellDecoder vs SoftDecisionDecoder calibration sweep + soft-decoder rejection audit",
+      "result_acceptance_condition": "nearest confidence always None; soft confidence non-increasing toward boundary; soft rejected before allocation",
       "result_kind": "exact",
       "estimated_cost": "light",
       "manuscript_destination": "Appendix (Fig.11)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R46_*.csv",
-        "json": "results/json/R46_*.json",
-        "metadata": "results/json/R46_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "Hard vs. soft decoder calibration + rejection-before-allocation",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R46_hard_vs_soft_decoding.csv",
+          "exists": true,
+          "sha256": "e15b87658ab6ff3d83ce393300c6a150e55a3f0a2f8e910b8632e888525741f6"
+        },
+        {
+          "path": "results\\json\\R46_hard_vs_soft_decoding.json",
+          "exists": true,
+          "sha256": "9cf0e99164e155d973b75c31c0e4b6ffaef88e6a3581c774e31840642e1f4d53"
+        },
+        {
+          "path": "results\\json\\R46_hard_vs_soft_decoding.metadata.json",
+          "exists": true,
+          "sha256": "80f58a6e52dd3e86a0adf79b430b58da44c1255c842130e851a17ccc86b54508"
+        },
+        {
+          "path": "figures\\pdf\\R46_hard_vs_soft_decoding.pdf",
+          "exists": true,
+          "sha256": "5c945092c868acef4be344b2416ad063afad80c673769c057d99c9842abaabe9"
+        },
+        {
+          "path": "figures\\png\\R46_hard_vs_soft_decoding.png",
+          "exists": true,
+          "sha256": "480ed9aca2ef9c9557b3a14a02e0a35b2c1226215c4431f9f6c85179933985cf"
+        },
+        {
+          "path": "figures\\svg\\R46_hard_vs_soft_decoding.svg",
+          "exists": true,
+          "sha256": "dba882be42f4d4aec49a742cf9728a8263c9925b4a76addf3125545ad35e1f7a"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "441dc03255e3dc05b7f386487366cfebd77704478e46f981cf6b77d2e990176c",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -975,19 +3474,72 @@
       "scientific_question": "One-axis-at-a-time convergence, 5 axes",
       "hypothesis": "the stated implementation contract agrees with the declared oracle",
       "api": "`PhysicalMuTA.physical_convergence`",
+      "layer": "resource",
       "oracle": "self-consistency",
       "oracle_class": "E",
       "metric": "max prob delta trend",
       "acceptance_condition": "decreasing (numerical axes)",
+      "result_protocol": "One-axis-at-a-time physical_convergence study, 5 axes, one-wire zero-angle baseline",
+      "result_acceptance_condition": "certified False for every axis; numerical axes (cutoff, grid_points) show decreasing successive-point delta",
       "result_kind": "statistical",
       "estimated_cost": "heavy",
       "manuscript_destination": "Main (Fig.12)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R47_*.csv",
-        "json": "results/json/R47_*.json",
-        "metadata": "results/json/R47_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "positive",
+      "claim_supported": "One-axis-at-a-time convergence, 5 axes",
+      "claim_not_supported": "",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R47_resource_axis_convergence.csv",
+          "exists": true,
+          "sha256": "0b84933ae9d3164f57ca7ccaf1649d54c2370b576b05a890c5d5a1d0a8b9ef09"
+        },
+        {
+          "path": "results\\json\\R47_resource_axis_convergence.json",
+          "exists": true,
+          "sha256": "6c72a6f23ae09e2ea80ffdf8cb7b1678d970300b38ef207c310f660aafcaa40a"
+        },
+        {
+          "path": "results\\json\\R47_resource_axis_convergence.metadata.json",
+          "exists": true,
+          "sha256": "0fbe178101016f45b0a1a84bb41ec8102285fd969d210ac89a08640fac96be1b"
+        },
+        {
+          "path": "figures\\pdf\\R47_resource_axis_convergence.pdf",
+          "exists": true,
+          "sha256": "cfb44cf5fd599d392d4747c6aeff0cea95379bf32f76e39afad76e6bcf179348"
+        },
+        {
+          "path": "figures\\png\\R47_resource_axis_convergence.png",
+          "exists": true,
+          "sha256": "b2c2dfb0a3b5c94ad54c72feea317d9fa53cfad3e0565ca27769c69fe8f073b6"
+        },
+        {
+          "path": "figures\\svg\\R47_resource_axis_convergence.svg",
+          "exists": true,
+          "sha256": "fdbad4bf83fec84c7b79d15aece50c4703960e8153a33f7d2c64b4498d53227c"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "30d1afcacc3dab95f0175655ba37788d877457a06afce047c1539391d2f7fc44",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -996,19 +3548,72 @@
       "scientific_question": "Discrete physical training stability, 6 seeds",
       "hypothesis": "descriptive; no directional performance hypothesis",
       "api": "`DiscreteSearch`+`MuTAClassifier`",
+      "layer": "physical",
       "oracle": "self (documents instability)",
       "oracle_class": "N/A",
       "metric": "instability rate",
       "acceptance_condition": "n/a (descriptive)",
+      "result_protocol": "DiscreteSearch classifier stability across training seeds, fresh-trajectory re-evaluation",
+      "result_acceptance_condition": "all accuracies finite and in [0,1]; every selected configuration exactly categorical {0,pi}",
       "result_kind": "statistical",
       "estimated_cost": "heavy",
       "manuscript_destination": "Main (Fig.12)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R48_*.csv",
-        "json": "results/json/R48_*.json",
-        "metadata": "results/json/R48_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "descriptive",
+      "claim_supported": "Discrete physical training stability, 6 seeds",
+      "claim_not_supported": "No general performance claim",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R48_physical_training_stability.csv",
+          "exists": true,
+          "sha256": "b0b5d37ed9786bb6a0a33e4873fa6c3a4643412ab5a6a2624073f002beddc0c1"
+        },
+        {
+          "path": "results\\json\\R48_physical_training_stability.json",
+          "exists": true,
+          "sha256": "b3ba01a4aa041393ca4f9f2abb571f10b8d88431905d312ecae3c4bfd726e21f"
+        },
+        {
+          "path": "results\\json\\R48_physical_training_stability.metadata.json",
+          "exists": true,
+          "sha256": "966834f62ab61c3f5ba5828f342ffa6d44feaa455e45de4f557bdb898de9b067"
+        },
+        {
+          "path": "figures\\pdf\\R48_physical_training_stability.pdf",
+          "exists": true,
+          "sha256": "e74d14686a2782734c142a809ae4c461eb32d94d8fcb414b6e0d5fe4c6794878"
+        },
+        {
+          "path": "figures\\png\\R48_physical_training_stability.png",
+          "exists": true,
+          "sha256": "6ebcdea64391ad4a75abf604951df7c09cdfb9bb1147eea983fdc80b2c3a154e"
+        },
+        {
+          "path": "figures\\svg\\R48_physical_training_stability.svg",
+          "exists": true,
+          "sha256": "1fd25053f4937c2afde2a19bf378df48d72f6869dcfa2c124949d48d1dd23f25"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "2ddede7a5b97ed33169352a67e4aa29ccdb37138728c6b41aa0a3efbe8b0a3d0",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     },
     {
@@ -1017,19 +3622,72 @@
       "scientific_question": "Aggregate performance figure (reproduces from saved R13/R36/R42/R47 JSON)",
       "hypothesis": "descriptive; no directional performance hypothesis",
       "api": "n/a",
+      "layer": "logical",
       "oracle": "n/a",
       "oracle_class": "N/A",
       "metric": "n/a",
       "acceptance_condition": "4/4 sources present",
+      "result_protocol": "Aggregate R13/R36/R42/R47 performance figure from saved evidence",
+      "result_acceptance_condition": "all four source JSON files exist and are readable",
       "result_kind": "n/a",
       "estimated_cost": "negligible",
       "manuscript_destination": "Main (Fig.13)",
       "index_status": "Pass",
-      "seed_set": "recorded by the executed script result; N/A for deterministic checks",
-      "result_paths": {
-        "csv": "results/csv/R_PERF_*.csv",
-        "json": "results/json/R_PERF_*.json",
-        "metadata": "results/json/R_PERF_*.metadata.json"
+      "seed_set": "N/A for deterministic checks",
+      "configuration": {},
+      "execution_status": "completed",
+      "structural_status": "pass",
+      "scientific_outcome": "descriptive",
+      "claim_supported": "the figure faithfully aggregates its available sources",
+      "claim_not_supported": "no cross-machine performance conclusion",
+      "artifacts": [
+        {
+          "path": "results\\csv\\R_PERF_aggregate_performance.csv",
+          "exists": true,
+          "sha256": "b163024fa6457cd68fd537ba34f2521324ef6cb4690ada271764bc75b13861eb"
+        },
+        {
+          "path": "results\\json\\R_PERF_aggregate_performance.json",
+          "exists": true,
+          "sha256": "bba61c97f24cb9616016242285573ff036ff6503e1b14a73a9e6f1418069f57b"
+        },
+        {
+          "path": "results\\json\\R_PERF_aggregate_performance.metadata.json",
+          "exists": true,
+          "sha256": "4917c0dee6d5e83f2e41825f100a0fadc751dec8c7f9ad2c74a48cdf8692d836"
+        },
+        {
+          "path": "figures\\pdf\\R_PERF_aggregate_performance.pdf",
+          "exists": true,
+          "sha256": "f843ad223a5faeaa95a4cc661f18dbd33c2fc346db3043d65a0473e58afd07f5"
+        },
+        {
+          "path": "figures\\png\\R_PERF_aggregate_performance.png",
+          "exists": true,
+          "sha256": "cc03daec02a0c324e24c60b53bdb75949cf3d34bbc3109613664b8608ee674f3"
+        },
+        {
+          "path": "figures\\svg\\R_PERF_aggregate_performance.svg",
+          "exists": true,
+          "sha256": "1139c0a66955b5706b9dc087595a06af4ee7af65bb4e830194e3a5d307cedf50"
+        }
+      ],
+      "source_fingerprint": {
+        "photographiqml_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+        "script_sha256": "adc71b4605056f86c537594e1db2a869ac3c2f785fd367fa45186b7bca90f4b2",
+        "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+        "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+        "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+        "package_versions": {
+          "photographiqml": "0.2.0",
+          "photographiq": "0.3.1",
+          "mentpy": "0.1.0a15",
+          "piquasso": "8.0.1",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+        "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       }
     }
   ]

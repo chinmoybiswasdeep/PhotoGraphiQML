@@ -182,17 +182,19 @@ def main():
     plt.close(fig)
 
     sources_present = sum(x is not None for x in (r13, r36, r42, r47))
-    common.save_json(
-        {
-            "sources_present": sources_present,
-            "sources_total": 4,
-            "oracle_class": "N/A",
-            "status": "pass" if sources_present == 4 else "partial",
-        },
+    common.save_result(
+        [{"sources_present": sources_present, "sources_total": 4}],
         "R_PERF_aggregate_performance",
-    )
-    common.write_metadata(
-        "R_PERF_aggregate_performance", experiment_id=EXPERIMENT_ID, oracle_class="N/A"
+        extra={
+            "protocol": "Aggregate R13/R36/R42/R47 performance figure from saved evidence",
+            "oracle_class": "N/A",
+            "status_category": "descriptive",
+            "acceptance_condition": "all four source JSON files exist and are readable",
+            "status": "pass" if sources_present == 4 else "fail",
+            "claim_supported": "the figure faithfully aggregates its available sources",
+            "claim_not_supported": "no cross-machine performance conclusion",
+        },
+        meta_extra={"experiment_id": EXPERIMENT_ID, "oracle_class": "N/A"},
     )
     common.print_summary(
         "R_PERF aggregate performance figure", sources_present=sources_present, sources_total=4

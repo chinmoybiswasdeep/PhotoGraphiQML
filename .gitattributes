@@ -1,0 +1,2 @@
+# Matplotlib emits significant SVG path whitespace; do not treat it as source formatting.
+*.svg whitespace=-trailing-space
