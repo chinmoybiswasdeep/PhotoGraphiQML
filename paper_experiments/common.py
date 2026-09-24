@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import csv
 import importlib.util
+import io
 import sys
 import time
 from math import comb
@@ -37,6 +38,7 @@ sys.path.insert(0, str(_EXPERIMENT_ROOT))
 import json as _json  # noqa: E402
 
 import metadata  # noqa: E402
+import publication  # noqa: E402
 
 ROOT = _EXPERIMENT_ROOT
 RESULTS = ROOT / "results"
@@ -53,6 +55,7 @@ for _d in (CSV_DIR, JSON_DIR, RAW_DIR, LOG_DIR, FIG_PDF, FIG_PNG, FIG_SVG, TABLE
     _d.mkdir(parents=True, exist_ok=True)
 
 ORACLE_CLASSES = metadata.ORACLE_CLASSES
+CANONICAL_R2_TOLERANCE = float(10 * np.finfo(float).eps)
 
 # ---------------------------------------------------------------------------
 # Reference colors: consistent role -> color across every figure in the suite.
@@ -165,21 +168,21 @@ def save_csv(rows: list[dict], name: str) -> Path:
     """Write a list of flat dict rows as CSV under results/csv/<name>.csv."""
     path = CSV_DIR / f"{name}.csv"
     if not rows:
-        path.write_text("", encoding="utf-8")
+        publication.atomic_write_text(path, "")
         return path
     fieldnames = list(dict.fromkeys(k for row in rows for k in row))
-    with path.open("w", newline="", encoding="utf-8") as fh:
-        writer = csv.DictWriter(fh, fieldnames=fieldnames)
-        writer.writeheader()
-        for row in rows:
-            writer.writerow(row)
+    buffer = io.StringIO(newline="")
+    writer = csv.DictWriter(buffer, fieldnames=fieldnames, lineterminator="\n")
+    writer.writeheader()
+    writer.writerows(rows)
+    publication.atomic_write_text(path, buffer.getvalue())
     return path
 
 
 def save_json(obj, name: str) -> Path:
     """Write an object as pretty JSON under results/json/<name>.json."""
     path = JSON_DIR / f"{name}.json"
-    path.write_text(_json.dumps(obj, indent=2, default=_json_default), encoding="utf-8")
+    publication.atomic_write_text(path, _json.dumps(obj, indent=2, default=_json_default) + "\n")
     return path
 
 
@@ -187,7 +190,7 @@ def save_raw(text: str, name: str) -> Path:
     """Write raw text (e.g. serialized patterns/logs) under results/raw/<name>."""
     path = RAW_DIR / name
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(text, encoding="utf-8")
+    publication.atomic_write_text(path, text)
     return path
 
 
@@ -211,18 +214,43 @@ def save_result(
     descriptive = extra.get("oracle_class") == "N/A"
     outcome = extra.get("scientific_outcome")
     if outcome is None:
-        outcome = "negative" if name.startswith("R48_") else "descriptive" if descriptive else "positive" if structural == "pass" else "inconclusive"
+        outcome = (
+            "negative"
+            if name.startswith("R48_")
+            else "descriptive"
+            if descriptive
+            else "positive"
+            if structural == "pass"
+            else "inconclusive"
+        )
     extra.setdefault("execution_status", "completed")
     extra.setdefault("structural_status", structural)
     extra.setdefault("scientific_outcome", outcome)
-    extra.setdefault("claim_supported", "structural contract only" if descriptive else "declared experiment contract")
-    extra.setdefault("claim_not_supported", "no scientific performance conclusion" if descriptive else "no claim beyond declared protocol")
+    extra.setdefault(
+        "claim_supported",
+        "structural contract only" if descriptive else "declared experiment contract",
+    )
+    extra.setdefault(
+        "claim_not_supported",
+        "no scientific performance conclusion"
+        if descriptive
+        else "no claim beyond declared protocol",
+    )
     meta_extra = dict(meta_extra or {})
-    meta_extra.update({
-        "execution_status": extra["execution_status"],
-        "structural_status": extra["structural_status"],
-        "scientific_outcome": extra["scientific_outcome"],
-    })
+    meta_extra.update(
+        {
+            "execution_status": extra["execution_status"],
+            "structural_status": extra["structural_status"],
+            "scientific_outcome": extra["scientific_outcome"],
+        }
+    )
+    if "seeds" in extra:
+        meta_extra.setdefault("seed_set", extra["seeds"])
+        meta_extra.setdefault("n_repetitions", len(extra["seeds"]))
+    if "n_repetitions" in extra:
+        meta_extra.setdefault("n_repetitions", extra["n_repetitions"])
+    if "uncertainty_method" in extra:
+        meta_extra.setdefault("uncertainty_method", extra["uncertainty_method"])
     save_csv(rows, name)
     save_json({"rows": rows, **extra}, name)
     write_metadata(name, **meta_extra)
@@ -297,7 +325,9 @@ def declare_tolerance(
 # ---------------------------------------------------------------------------
 # Statistics: bootstrap CIs for multi-seed / multi-split studies
 # ---------------------------------------------------------------------------
-def bootstrap_ci(values, *, statistic, n_boot: int = 2000, alpha: float = 0.05, seed: int = 0) -> dict:
+def bootstrap_ci(
+    values, *, statistic, n_boot: int = 2000, alpha: float = 0.05, seed: int = 0
+) -> dict:
     """Percentile bootstrap CI for an explicitly selected 1-D statistic.
 
     ``statistic`` is deliberately required: a mean CI must not be presented
@@ -305,8 +335,14 @@ def bootstrap_ci(values, *, statistic, n_boot: int = 2000, alpha: float = 0.05, 
     """
     values = np.asarray(values, dtype=float)
     if len(values) == 0:
-        return {"point": None, "low": None, "high": None, "n_boot": n_boot, "n": 0,
-                "statistic": getattr(statistic, "__name__", str(statistic))}
+        return {
+            "point": None,
+            "low": None,
+            "high": None,
+            "n_boot": n_boot,
+            "n": 0,
+            "statistic": getattr(statistic, "__name__", str(statistic)),
+        }
     generator = np.random.default_rng(seed)
     idx = generator.integers(0, len(values), size=(n_boot, len(values)))
     boots = statistic(values[idx], axis=1)

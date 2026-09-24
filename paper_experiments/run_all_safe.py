@@ -15,7 +15,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 
-# (relative path, skip reason or None). Order matches R1..R48 + R_PERF.
+# (relative path, skip reason or None). Order matches R1..R48, R_PERF, R50..R59.
 SCRIPTS = [
     ("01_logical_foundations/01_triangle_anatomy.py", None),
     ("01_logical_foundations/02_table_one_identities.py", None),
@@ -102,6 +102,16 @@ SCRIPTS = [
         "heavy (6 seeds x DiscreteSearch x physical shots, several minutes)",
     ),
     ("12_performance/49_aggregate_performance_figure.py", None),
+    ("13_extended/50_canonical_reproduction.py", None),
+    ("13_extended/51_expanded_gate_learning.py", "moderate (32 optimization runs)"),
+    ("13_extended/52_comprehensive_classification.py", "moderate (repeated model fitting)"),
+    ("13_extended/53_comprehensive_regression.py", "moderate (repeated model fitting)"),
+    ("13_extended/54_kernel_ablations.py", "moderate (108 kernel/SVC fits)"),
+    ("13_extended/55_expressivity_trainability.py", "moderate (QFI and optimization sweeps)"),
+    ("13_extended/56_logical_physical_gap.py", "heavy (physical Fock simulations)"),
+    ("13_extended/57_physical_training_evaluation.py", "heavy (fresh-shot physical training)"),
+    ("13_extended/58_physical_resource_boundary.py", "heavy (physical resource sweep)"),
+    ("13_extended/59_end_to_end_scaling.py", "moderate (end-to-end benchmarks)"),
 ]
 
 

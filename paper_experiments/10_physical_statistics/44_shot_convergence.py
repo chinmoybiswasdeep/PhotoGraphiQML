@@ -123,6 +123,7 @@ def main():
             "reference_shots": 64,
             "coverage_shots": coverage_shots,
             "coverage_rate": coverage_rate,
+            "seeds": [2026, 999, *range(1000, 1008)],
             "acceptance_condition": "shots=32 SE < shots=4 SE; coverage rate in [0.5,1.0] (loose n=8 sanity band)",
             "status": status,
         },

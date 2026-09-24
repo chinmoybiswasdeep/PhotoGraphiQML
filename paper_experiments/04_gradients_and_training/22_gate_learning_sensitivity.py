@@ -116,6 +116,7 @@ def main():
             "status_category": "statistical",
             "failure_threshold": FAILURE_THRESHOLD,
             "n_seeds_per_cell": len(SEEDS),
+            "seeds": list(SEEDS),
             "acceptance_condition": "every grid cell has a well-defined failure rate in [0,1] (descriptive sensitivity study)",
             "status": status,
         },

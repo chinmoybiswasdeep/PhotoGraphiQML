@@ -1,2 +1,10 @@
-# Matplotlib emits significant SVG path whitespace; do not treat it as source formatting.
-*.svg whitespace=-trailing-space
+# Cross-platform publication evidence: normalized text, explicit binary assets.
+.gitattributes text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.svg text eol=lf whitespace=-trailing-space
+*.ipynb text eol=lf
+*.pdf binary
+*.png binary

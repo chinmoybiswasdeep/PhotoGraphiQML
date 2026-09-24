@@ -108,10 +108,14 @@ def main():
         "R23_classifier_verification",
         extra={
             "protocol": "MuTAClassifier on the one-dimensional threshold y=1[x < pi/2], repeated stratified splits",
-            "point_estimates": {"accuracy_mean": float(np.mean(accuracies)), "accuracy_median": float(np.median(accuracies))},
+            "point_estimates": {
+                "accuracy_mean": float(np.mean(accuracies)),
+                "accuracy_median": float(np.median(accuracies)),
+            },
             "oracle_class": "A",
             "status_category": "statistical",
             "n_splits": N_SPLITS,
+            "seeds": list(range(N_SPLITS)),
             "accuracy_bootstrap_ci": ci,
             "paired_difference_vs_majority_baseline_ci": paired_ci,
             "confusion_matrix": confusions.tolist(),

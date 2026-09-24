@@ -116,8 +116,12 @@ def main():
             "muta_ci": common.bootstrap_ci(muta_acc, statistic=np.median, seed=0),
             "rbf_svm_ci": common.bootstrap_ci(rbf_acc, statistic=np.median, seed=0),
             "logistic_ci": common.bootstrap_ci(log_acc, statistic=np.median, seed=0),
-            "muta_minus_rbf_ci": common.paired_difference_ci(muta_acc, rbf_acc, statistic=np.median, seed=0),
-            "muta_minus_logistic_ci": common.paired_difference_ci(muta_acc, log_acc, statistic=np.median, seed=0),
+            "muta_minus_rbf_ci": common.paired_difference_ci(
+                muta_acc, rbf_acc, statistic=np.median, seed=0
+            ),
+            "muta_minus_logistic_ci": common.paired_difference_ci(
+                muta_acc, log_acc, statistic=np.median, seed=0
+            ),
         }
 
     all_finite = all(0 <= r[k] <= 1 for r in rows for k in r if k.startswith("accuracy_"))
@@ -141,7 +145,12 @@ def main():
             "acceptance_condition": "structural: every accuracy in [0,1] and every training Gram matrix PSD within declared tolerance; scientific outcome: descriptive, no performance threshold",
             "status": structural_status,
         },
-        meta_extra={"experiment_id": EXPERIMENT_ID, "oracle_class": "N/A", "status": structural_status, "scientific_outcome": scientific_outcome},
+        meta_extra={
+            "experiment_id": EXPERIMENT_ID,
+            "oracle_class": "N/A",
+            "status": structural_status,
+            "scientific_outcome": scientific_outcome,
+        },
     )
 
     fig, axes = plt.subplots(1, 3, figsize=(12, 3.8))

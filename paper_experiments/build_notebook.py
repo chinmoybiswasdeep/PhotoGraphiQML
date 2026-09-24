@@ -13,6 +13,7 @@ import sys
 from pathlib import Path
 
 import nbformat as nbf
+from publication import atomic_write_text
 
 ROOT = Path(__file__).resolve().parent
 NOTEBOOK_PATH = ROOT / "PhotoGraphiQML_Manuscript_Experiments.ipynb"
@@ -55,7 +56,7 @@ def main():
             "# PhotoGraphiQML manuscript experiment suite\n\n"
             "Self-contained notebook assembled directly from the scripts in "
             "`paper_experiments/`. Each section below is one experiment "
-            "(R1-R48 plus the aggregate performance figure): its scientific "
+            "(R1-R48, R_PERF, and R50-R59): its scientific "
             "question, theory, oracle class and acceptance condition are in "
             "the markdown cell (from the script's own docstring); running "
             "the code cell reproduces its figures, CSV/JSON and metadata."
@@ -108,7 +109,7 @@ def main():
         "language_info": {"name": "python", "version": sys.version.split()[0]},
     }
     nbf.validate(nb)
-    NOTEBOOK_PATH.write_text(nbf.writes(nb), encoding="utf-8")
+    atomic_write_text(NOTEBOOK_PATH, nbf.writes(nb))
     print(f"Wrote {NOTEBOOK_PATH} ({len(cells)} cells)")
 
 

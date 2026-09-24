@@ -1,5 +1,7 @@
+import os
 import subprocess
 import sys
+from pathlib import Path
 
 
 def test_core_without_mentpy_import():
@@ -15,4 +17,6 @@ import photographiqml as p
 assert p.MuTA(1).run([1,0]).probabilities[0] > 0.999
 assert 'mentpy' not in sys.modules
 """
-    subprocess.run([sys.executable, "-c", code], check=True)
+    source = str(Path(__file__).resolve().parents[2] / "src")
+    environment = dict(os.environ, PYTHONPATH=source)
+    subprocess.run([sys.executable, "-c", code], check=True, env=environment)

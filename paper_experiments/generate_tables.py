@@ -8,12 +8,14 @@ saved results change.
 """
 
 import csv
+import io
 import json
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import JSON_DIR, TABLES  # noqa: E402
+from publication import atomic_write_text  # noqa: E402
 
 
 def load(name):
@@ -26,15 +28,16 @@ def load(name):
 
 def write_table(name, fieldnames, rows):
     csv_path = TABLES / f"{name}.csv"
-    with csv_path.open("w", newline="", encoding="utf-8") as fh:
-        writer = csv.DictWriter(fh, fieldnames=fieldnames)
-        writer.writeheader()
-        for row in rows:
-            writer.writerow(row)
+    buffer = io.StringIO(newline="")
+    writer = csv.DictWriter(buffer, fieldnames=fieldnames, lineterminator="\n")
+    writer.writeheader()
+    for row in rows:
+        writer.writerow(row)
+    atomic_write_text(csv_path, buffer.getvalue())
     md_lines = [f"| {' | '.join(fieldnames)} |", f"|{'|'.join(['---'] * len(fieldnames))}|"]
     for row in rows:
         md_lines.append(f"| {' | '.join(str(row.get(f, '')) for f in fieldnames)} |")
-    (TABLES / f"{name}.md").write_text("\n".join(md_lines), encoding="utf-8")
+    atomic_write_text(TABLES / f"{name}.md", "\n".join(md_lines) + "\n")
     print(f"  wrote {name}.csv / {name}.md ({len(rows)} rows)")
 
 

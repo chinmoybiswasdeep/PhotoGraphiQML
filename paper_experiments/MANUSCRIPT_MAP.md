@@ -20,6 +20,11 @@ numbers below match the `Destination` column of `EXPERIMENT_INDEX.md`.
 | Fig. 11 | R43, R44, R45 | Decoded logical-vs-physical statistics, shot convergence, and joint-readout correlations. |
 | Fig. 12 | R47, R48 | Resource-axis convergence and discrete physical-training instability (an explicit negative/instability result). |
 | Fig. 13 | R13, R42, R_PERF | Aggregate runtime/resource-scaling and abstraction-overhead figure. |
+| Fig. 14 | R51 | Expanded local/nonlocal gate-family learning, with failures retained. |
+| Fig. 15 | R52 | Leakage-safe repeated classification against majority, linear, and nonlinear baselines. |
+| Fig. 16 | R53 | Regression interpolation, extrapolation, residuals, and classical baselines. |
+| Fig. 19 | R56 | Supported logical-to-physical probability and observable gaps. |
+| Fig. 20 | R57 | Disjoint-shot physical selection, validation, and fresh-test evaluation. |
 
 ## Tables
 
@@ -29,6 +34,7 @@ numbers below match the `Destination` column of `EXPERIMENT_INDEX.md`.
 | Table II | R7, R8 | MentPy semantic-topology and flow-agreement summary. |
 | Table III | R16 | Fail-fast invalid-input capability matrix. |
 | Table IV | R32 | Pauli Lie-closure dimension cross-check (known generator sets). |
+| Table V | R50 | Canonical Euler/Ising-XX reproduction and explicit unsupported source-paper claims. |
 
 ## Appendices
 
@@ -43,6 +49,8 @@ numbers below match the `Destination` column of `EXPERIMENT_INDEX.md`.
 | G. Physical lowering | R36 |
 | H. Piquasso validation (broader coverage) | R41, R42 |
 | I. Physical statistics and decoding | R46 |
+| J. Kernel and expressivity ablations | R54, R55 |
+| K. Physical/resource boundaries and scaling | R58, R59 |
 
 ## What NOT to claim
 
@@ -81,3 +89,12 @@ numbers below match the `Destination` column of `EXPERIMENT_INDEX.md`.
   arbitrary composite decision boundaries.
 - R27/R28's kernel-classification results make **no quantum-advantage
   claim**; classical baselines are fit on the identical raw coordinates.
+- R50 reproduces only source-paper configurations that map unambiguously to
+  the public API; unmapped learning curves are listed as unsupported.
+- R54 does not invent kernel depth, triangle, shot, or physical-noise axes:
+  the fixed Eq. 5 feature map does not expose them.
+- R55's finite-system gradient samples are not evidence of an asymptotic
+  barren plateau. R59's empirical fits apply only to the measured ranges.
+- R56-R58 exercise the restricted signed-X physical path only. They do not
+  imply support for arbitrary angles, loss, detector inefficiency, or soft
+  adaptive decoding.

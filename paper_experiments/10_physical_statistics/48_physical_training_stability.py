@@ -123,9 +123,23 @@ def main():
             "distinct_selected_configurations": distinct_selections,
             "acceptance_condition": "all accuracies finite and in [0,1]; every selected configuration exactly categorical {0,pi}",
             "finding": "Selected configurations and their fresh-trajectory accuracy vary across training seeds; this documents instability, not a robust classifier-performance claim (per docs/physical/physical-training.md).",
+            "structural_status": status,
+            "scientific_outcome": "negative",
+            "claim_supported": "Fresh-trajectory physical-training instability was observed under the declared six-seed protocol.",
+            "claim_not_supported": "Robust physical classifier performance is not demonstrated.",
+            "seeds": list(SEEDS),
+            "uncertainty_method": "six-seed empirical instability rate (small-n; no population CI claim)",
             "status": status,
         },
-        meta_extra={"experiment_id": EXPERIMENT_ID, "oracle_class": "N/A", "status": status},
+        meta_extra={
+            "experiment_id": EXPERIMENT_ID,
+            "oracle_class": "N/A",
+            "status": status,
+            "scientific_outcome": "negative",
+            "seed_set": list(SEEDS),
+            "n_repetitions": len(SEEDS),
+            "uncertainty_method": "six-seed empirical instability rate",
+        },
     )
 
     fig, ax = plt.subplots(figsize=(8, 4.2))

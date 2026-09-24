@@ -104,6 +104,7 @@ def main():
             "oracle_class": "A",
             "status_category": "statistical",
             "n_splits": N_SPLITS,
+            "seeds": list(range(N_SPLITS)),
             "r_squared_bootstrap_ci": ci,
             "mean_residual": mean_residual,
             "residual_prediction_correlation": correlation,

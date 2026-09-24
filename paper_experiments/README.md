@@ -1,6 +1,6 @@
 # PhotoGraphiQML manuscript experiment suite
 
-Reproducible experiments (R1–R48, plus an aggregate performance figure)
+Reproducible experiments (R1–R48, R_PERF, and R50–R59; 59 total)
 supporting a QUANTUM-journal manuscript on PhotoGraphiQML: ideal logical
 MuTA (validated against MentPy), the restricted signed-X physical GKP
 bridge (validated against Piquasso and independently assembled
@@ -31,16 +31,19 @@ paper_experiments/
 ├── 10_physical_statistics/      R43-R46, R48  decoded statistics, shot convergence, decoding, training stability
 ├── 11_convergence/              R47     resource-axis convergence studies
 ├── 12_performance/              aggregate performance figure (reproduced from saved results)
+├── 13_extended/                 R50-R59 reproduction, ML, physical, and scaling studies
 ├── results/{csv,json,raw,logs}/ machine-readable outputs
 ├── figures/{pdf,png,svg}/       publication figures
 ├── tables/                      generated CSV+Markdown summary tables
 ├── common.py, metadata.py       shared utilities (see their own docstrings)
 ├── EXPERIMENT_INDEX.md          one row per experiment: question, oracle class, acceptance, status
+├── EXPERIMENT_CONTRACTS.json    canonical machine-readable experiment contracts
 ├── STATUS.md                    latest real execution record
 ├── ISSUES_FOUND.md              genuine findings (not silently patched)
 ├── MANUSCRIPT_MAP.md            proposed figure/table/claim mapping + anti-claims
 ├── run_all_safe.py              light/deterministic subset, subprocess-isolated
 ├── run_all_full.py              complete suite, resumable, filterable
+├── verify_evidence.py           independent schema/provenance/hash verifier
 ├── generate_tables.py           CSV+Markdown summary tables from saved results
 ├── build_notebook.py            assembles one notebook from these scripts
 └── PhotoGraphiQML_Manuscript_Experiments.ipynb

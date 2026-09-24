@@ -11,13 +11,15 @@ paper_experiments/README.md and section 5 of the manuscript-experiments task):
 
 from __future__ import annotations
 
-import json
 import importlib.util
+import json
 import platform
 import subprocess
 from datetime import datetime, timezone
 from importlib.metadata import PackageNotFoundError, version
 from pathlib import Path
+
+import publication
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
@@ -53,6 +55,7 @@ def _sibling_git(name: str) -> dict:
         "commit": commit.stdout.strip() if commit.returncode == 0 else None,
         "dirty": bool(dirty.stdout.strip()) if dirty.returncode == 0 else None,
     }
+
 
 ORACLE_CLASSES = {
     "A": "independent analytic oracle",
@@ -109,11 +112,19 @@ def _package_locations() -> dict:
 
 def collect() -> dict:
     status = _git("status", "--porcelain")
+    source = publication.source_tree_fingerprint()
     return {
         "timestamp_utc": datetime.now(timezone.utc).isoformat(),
         "git_commit": _git("rev-parse", "HEAD"),
         "git_branch": _git("rev-parse", "--abbrev-ref", "HEAD"),
-        "git_dirty": bool(status),
+        # Generated evidence is expected to change during a run; the legacy
+        # key therefore records scientific-source dirtiness for acceptance.
+        "git_dirty": bool(publication.source_dirty_paths()),
+        "worktree_dirty": bool(status),
+        "source_dirty": bool(publication.source_dirty_paths()),
+        "source_dirty_paths": publication.source_dirty_paths(),
+        "source_tree_fingerprint": source["sha256"],
+        "provenance_schema_version": publication.SCHEMA_VERSION,
         "python_version": platform.python_version(),
         "platform": platform.platform(),
         "cpu_model": _cpu_model(),

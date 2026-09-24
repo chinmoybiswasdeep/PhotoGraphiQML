@@ -27,8 +27,9 @@ Exact/approximate/statistical status: exact, up to floating-point roundoff.
 Primary metric: max Frobenius-norm error between MuTA.unitary and the
 Table-I analytic prediction, over a grid of random angle triples.
 
-Declared acceptance condition: max Frobenius error < tol, with
-tol = declare_tolerance(scale=1) computed before the sweep (see common.py).
+Declared acceptance condition: max Frobenius error < the single canonical
+``common.CANONICAL_R2_TOLERANCE`` (10 times binary64 epsilon), shared by the
+script, index, contract, metadata, manifest and consistency tests.
 
 Expected cost: light.
 
@@ -56,7 +57,7 @@ Z_REF = np.diag([1, -1]).astype(complex)
 
 def main():
     plt = common.setup_style()
-    tol = common.declare_tolerance(scale=1.0)
+    tol = common.CANONICAL_R2_TOLERANCE
     generator = common.rng(0)
     n_trials = 40
     rows = []
@@ -127,7 +128,12 @@ def main():
             "max_single_column_error": max_single_error,
             "status": status,
         },
-        meta_extra={"experiment_id": EXPERIMENT_ID, "oracle_class": "A", "status": status},
+        meta_extra={
+            "experiment_id": EXPERIMENT_ID,
+            "oracle_class": "A",
+            "status": status,
+            "tolerance": common.CANONICAL_R2_TOLERANCE,
+        },
     )
 
     fig, axes = plt.subplots(1, 2, figsize=(9, 3.6))

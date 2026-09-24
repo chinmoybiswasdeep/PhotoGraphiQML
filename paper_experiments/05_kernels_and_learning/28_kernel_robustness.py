@@ -144,6 +144,8 @@ def main():
         "R28_kernel_robustness",
         extra={
             "protocol": "One-axis-at-a-time robustness sweep + leakage-safe nested C selection, moons dataset",
+            "seeds": list(SEEDS_NESTED),
+            "sweep_seeds": list(SEEDS_SWEEP),
             "oracle_class": "N/A",
             "status_category": "statistical",
             "structural_status": structural_status,
@@ -153,7 +155,12 @@ def main():
             "acceptance_condition": "structural: reported accuracies finite and in [0,1]; scientific outcome: descriptive, no performance threshold",
             "status": structural_status,
         },
-        meta_extra={"experiment_id": EXPERIMENT_ID, "oracle_class": "N/A", "status": structural_status, "scientific_outcome": scientific_outcome},
+        meta_extra={
+            "experiment_id": EXPERIMENT_ID,
+            "oracle_class": "N/A",
+            "status": structural_status,
+            "scientific_outcome": scientific_outcome,
+        },
     )
 
     fig, axes = plt.subplots(1, 5, figsize=(16, 3.4))
@@ -175,7 +182,9 @@ def main():
         ylabel="test accuracy",
         ylim=(0, 1.05),
     )
-    fig.suptitle(f"R28: kernel-SVM robustness sweep (structural={structural_status}; outcome={scientific_outcome})")
+    fig.suptitle(
+        f"R28: kernel-SVM robustness sweep (structural={structural_status}; outcome={scientific_outcome})"
+    )
     common.save_figure(fig, "R28_kernel_robustness")
     plt.close(fig)
 
