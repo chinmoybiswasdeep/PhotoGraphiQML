@@ -99,15 +99,16 @@ def main():
 
     accuracies = [r["accuracy"] for r in rows]
     baselines = [r["majority_baseline_accuracy"] for r in rows]
-    ci = common.bootstrap_ci(accuracies, seed=0)
-    paired_ci = common.paired_difference_ci(accuracies, baselines, seed=0)
+    ci = common.bootstrap_ci(accuracies, statistic=np.median, seed=0)
+    paired_ci = common.paired_difference_ci(accuracies, baselines, statistic=np.median, seed=0)
     status = "pass" if (ci["point"] >= 0.85 and paired_ci["point"] > 0) else "fail"
 
     common.save_result(
         rows,
         "R23_classifier_verification",
         extra={
-            "protocol": "MuTAClassifier on synthetic cos(x0)+cos(x1)>0 boundary, repeated stratified splits",
+            "protocol": "MuTAClassifier on the one-dimensional threshold y=1[x < pi/2], repeated stratified splits",
+            "point_estimates": {"accuracy_mean": float(np.mean(accuracies)), "accuracy_median": float(np.median(accuracies))},
             "oracle_class": "A",
             "status_category": "statistical",
             "n_splits": N_SPLITS,

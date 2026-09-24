@@ -27,11 +27,9 @@ Primary metric: held-out test accuracy vs. each swept axis value (median
 across seeds); for the nested-selection demonstration, the C chosen per
 split (via validation accuracy only) and the resulting test accuracy.
 
-Declared acceptance condition: every reported accuracy is finite and in
-[0,1]; in the nested-selection demonstration, the C selected for each split
-is chosen using only that split's validation fold (verified structurally:
-the selection code path never reads test_x/test_y before its own accuracy
-is recorded).
+Structural acceptance condition: every reported accuracy is finite and in
+[0,1], and nested selection is confined to validation data. Scientific
+outcome: descriptive; no observed accuracy is a performance pass condition.
 
 Expected cost: moderate (4 axes x 3 values x 4 seeds, plus 6 nested splits).
 
@@ -138,7 +136,8 @@ def main():
     all_finite = all(0 <= r["median_accuracy"] <= 1 for r in rows) and all(
         0 <= r["test_accuracy"] <= 1 for r in nested_rows
     )
-    status = "pass" if all_finite else "fail"
+    structural_status = "pass" if all_finite else "fail"
+    scientific_outcome = "descriptive"
 
     common.save_result(
         rows + [{"nested_demonstration": True, **r} for r in nested_rows],
@@ -147,12 +146,14 @@ def main():
             "protocol": "One-axis-at-a-time robustness sweep + leakage-safe nested C selection, moons dataset",
             "oracle_class": "N/A",
             "status_category": "statistical",
+            "structural_status": structural_status,
+            "scientific_outcome": scientific_outcome,
             "baseline": BASELINE,
             "nested_selection_rows": nested_rows,
-            "acceptance_condition": "every reported accuracy finite and in [0,1]",
-            "status": status,
+            "acceptance_condition": "structural: reported accuracies finite and in [0,1]; scientific outcome: descriptive, no performance threshold",
+            "status": structural_status,
         },
-        meta_extra={"experiment_id": EXPERIMENT_ID, "oracle_class": "N/A", "status": status},
+        meta_extra={"experiment_id": EXPERIMENT_ID, "oracle_class": "N/A", "status": structural_status, "scientific_outcome": scientific_outcome},
     )
 
     fig, axes = plt.subplots(1, 5, figsize=(16, 3.4))
@@ -174,7 +175,7 @@ def main():
         ylabel="test accuracy",
         ylim=(0, 1.05),
     )
-    fig.suptitle(f"R28: kernel-SVM robustness sweep (status={status})")
+    fig.suptitle(f"R28: kernel-SVM robustness sweep (structural={structural_status}; outcome={scientific_outcome})")
     common.save_figure(fig, "R28_kernel_robustness")
     plt.close(fig)
 
@@ -182,9 +183,10 @@ def main():
         "R28 kernel robustness",
         n_sweep_points=len(rows),
         n_nested_splits=len(nested_rows),
-        status=status,
+        structural_status=structural_status,
+        scientific_outcome=scientific_outcome,
     )
-    if status != "pass":
+    if structural_status != "pass":
         raise AssertionError("R28 failed: some reported accuracy was out of [0,1] or non-finite")
 
 

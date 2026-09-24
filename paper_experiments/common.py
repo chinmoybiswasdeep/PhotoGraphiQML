@@ -27,12 +27,18 @@ from pathlib import Path
 
 import numpy as np
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
+_EXPERIMENT_ROOT = Path(__file__).resolve().parent
+# Execute against this checkout even if an unrelated ``photographiqml``
+# distribution is installed in the active interpreter (a common research
+# workstation configuration).  This is intentionally before any package
+# import, and is recorded by each result's provenance metadata.
+sys.path.insert(0, str(_EXPERIMENT_ROOT.parent / "src"))
+sys.path.insert(0, str(_EXPERIMENT_ROOT))
 import json as _json  # noqa: E402
 
 import metadata  # noqa: E402
 
-ROOT = Path(__file__).resolve().parent
+ROOT = _EXPERIMENT_ROOT
 RESULTS = ROOT / "results"
 CSV_DIR = RESULTS / "csv"
 JSON_DIR = RESULTS / "json"
@@ -270,13 +276,16 @@ def declare_tolerance(
 # ---------------------------------------------------------------------------
 # Statistics: bootstrap CIs for multi-seed / multi-split studies
 # ---------------------------------------------------------------------------
-def bootstrap_ci(
-    values, *, n_boot: int = 2000, alpha: float = 0.05, seed: int = 0, statistic=np.mean
-) -> dict:
-    """Percentile bootstrap confidence interval for a 1-D sample."""
+def bootstrap_ci(values, *, statistic, n_boot: int = 2000, alpha: float = 0.05, seed: int = 0) -> dict:
+    """Percentile bootstrap CI for an explicitly selected 1-D statistic.
+
+    ``statistic`` is deliberately required: a mean CI must not be presented
+    as a median CI (or conversely).
+    """
     values = np.asarray(values, dtype=float)
     if len(values) == 0:
-        return {"point": None, "low": None, "high": None, "n_boot": n_boot, "n": 0}
+        return {"point": None, "low": None, "high": None, "n_boot": n_boot, "n": 0,
+                "statistic": getattr(statistic, "__name__", str(statistic))}
     generator = np.random.default_rng(seed)
     idx = generator.integers(0, len(values), size=(n_boot, len(values)))
     boots = statistic(values[idx], axis=1)
@@ -288,6 +297,7 @@ def bootstrap_ci(
         "n_boot": n_boot,
         "alpha": alpha,
         "n": int(len(values)),
+        "statistic": getattr(statistic, "__name__", str(statistic)),
     }
 
 

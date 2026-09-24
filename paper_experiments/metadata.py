@@ -12,6 +12,7 @@ paper_experiments/README.md and section 5 of the manuscript-experiments task):
 from __future__ import annotations
 
 import json
+import importlib.util
 import platform
 import subprocess
 from datetime import datetime, timezone
@@ -31,6 +32,27 @@ _PACKAGES = (
     "matplotlib",
     "scikit-learn",
 )
+
+
+def _sibling_git(name: str) -> dict:
+    """Return immutable provenance for a sibling source checkout, if present."""
+    root = REPO_ROOT.parent / name
+    if not (root / ".git").exists():
+        return {"path": str(root), "commit": None, "dirty": None}
+    try:
+        commit = subprocess.run(
+            ["git", "rev-parse", "HEAD"], cwd=root, capture_output=True, text=True, timeout=10
+        )
+        dirty = subprocess.run(
+            ["git", "status", "--porcelain"], cwd=root, capture_output=True, text=True, timeout=10
+        )
+    except (OSError, subprocess.TimeoutExpired):
+        return {"path": str(root), "commit": None, "dirty": None}
+    return {
+        "path": str(root),
+        "commit": commit.stdout.strip() if commit.returncode == 0 else None,
+        "dirty": bool(dirty.stdout.strip()) if dirty.returncode == 0 else None,
+    }
 
 ORACLE_CLASSES = {
     "A": "independent analytic oracle",
@@ -76,6 +98,15 @@ def _package_versions() -> dict:
     return out
 
 
+def _package_locations() -> dict:
+    """Record import origins to detect accidental execution against another checkout."""
+    locations = {}
+    for name in ("photographiqml", "photographiq", "mentpy", "piquasso"):
+        spec = importlib.util.find_spec(name)
+        locations[name] = str(spec.origin) if spec and spec.origin else None
+    return locations
+
+
 def collect() -> dict:
     status = _git("status", "--porcelain")
     return {
@@ -87,6 +118,8 @@ def collect() -> dict:
         "platform": platform.platform(),
         "cpu_model": _cpu_model(),
         "packages": _package_versions(),
+        "package_import_origins": _package_locations(),
+        "upstream_repositories": {"PhotoGraphiQ": _sibling_git("PhotoGraphiQ")},
     }
 
 

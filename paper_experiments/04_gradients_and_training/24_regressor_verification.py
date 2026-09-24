@@ -86,7 +86,7 @@ def main():
         )
 
     r_squared_values = [r["r_squared"] for r in rows]
-    ci = common.bootstrap_ci(r_squared_values, seed=0)
+    ci = common.bootstrap_ci(r_squared_values, statistic=np.median, seed=0)
     mean_residual = float(np.mean(all_residuals))
     correlation = float(np.corrcoef(all_residuals, all_predictions)[0, 1])
     overall_mse = float(np.mean(np.square(all_residuals)))

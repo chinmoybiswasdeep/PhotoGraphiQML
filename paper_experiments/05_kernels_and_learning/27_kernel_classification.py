@@ -27,10 +27,10 @@ differences vs. each baseline with their own CIs).
 Primary metric: held-out accuracy per (dataset, model, split); paired
 accuracy difference (MuTA - baseline) with bootstrap 95% CI.
 
-Declared acceptance condition: none required against a correctness oracle
-(N/A); the only enforced pass/fail is that every held-out accuracy is a
-finite value in [0,1] and every Gram matrix stays PSD within R26's declared
-tolerance (a structural sanity floor, not a performance claim).
+Structural acceptance condition: every held-out accuracy is finite and in
+[0,1], and every Gram matrix is PSD within R26's declared tolerance.
+Scientific outcome: descriptive; no observed performance is classified as a
+scientific pass merely because these structural checks succeed.
 
 Expected cost: moderate (3 datasets x 8 seeds x 3 models).
 
@@ -113,15 +113,16 @@ def main():
         rbf_acc = [r["accuracy_rbf_svm"] for r in subset]
         log_acc = [r["accuracy_logistic"] for r in subset]
         summary[name] = {
-            "muta_ci": common.bootstrap_ci(muta_acc, seed=0),
-            "rbf_svm_ci": common.bootstrap_ci(rbf_acc, seed=0),
-            "logistic_ci": common.bootstrap_ci(log_acc, seed=0),
-            "muta_minus_rbf_ci": common.paired_difference_ci(muta_acc, rbf_acc, seed=0),
-            "muta_minus_logistic_ci": common.paired_difference_ci(muta_acc, log_acc, seed=0),
+            "muta_ci": common.bootstrap_ci(muta_acc, statistic=np.median, seed=0),
+            "rbf_svm_ci": common.bootstrap_ci(rbf_acc, statistic=np.median, seed=0),
+            "logistic_ci": common.bootstrap_ci(log_acc, statistic=np.median, seed=0),
+            "muta_minus_rbf_ci": common.paired_difference_ci(muta_acc, rbf_acc, statistic=np.median, seed=0),
+            "muta_minus_logistic_ci": common.paired_difference_ci(muta_acc, log_acc, statistic=np.median, seed=0),
         }
 
     all_finite = all(0 <= r[k] <= 1 for r in rows for k in r if k.startswith("accuracy_"))
-    status = "pass" if (all_finite and min_gram_eigenvalue > -tol) else "fail"
+    structural_status = "pass" if (all_finite and min_gram_eigenvalue > -tol) else "fail"
+    scientific_outcome = "descriptive"
 
     common.save_result(
         rows,
@@ -130,15 +131,17 @@ def main():
             "protocol": "MuTA-kernel SVM vs. RBF-SVM/logistic baselines on circles/moons/blobs, repeated splits",
             "oracle_class": "N/A",
             "status_category": "statistical",
+            "structural_status": structural_status,
+            "scientific_outcome": scientific_outcome,
             "seeds": list(SEEDS),
             "svm_C": SVM_C,
             "summary": summary,
             "confusion_matrices": {k: v.tolist() for k, v in confusions.items()},
             "min_gram_eigenvalue_overall": min_gram_eigenvalue,
-            "acceptance_condition": "every accuracy in [0,1]; every training Gram matrix PSD within declared tolerance",
-            "status": status,
+            "acceptance_condition": "structural: every accuracy in [0,1] and every training Gram matrix PSD within declared tolerance; scientific outcome: descriptive, no performance threshold",
+            "status": structural_status,
         },
-        meta_extra={"experiment_id": EXPERIMENT_ID, "oracle_class": "N/A", "status": status},
+        meta_extra={"experiment_id": EXPERIMENT_ID, "oracle_class": "N/A", "status": structural_status, "scientific_outcome": scientific_outcome},
     )
 
     fig, axes = plt.subplots(1, 3, figsize=(12, 3.8))
@@ -166,7 +169,7 @@ def main():
         ax.bar(labels, points, yerr=errs, color=colors, capsize=4)
         ax.set(title=name, ylabel="held-out accuracy", ylim=(0, 1.05))
     fig.suptitle(
-        f"R27: kernel classification, median +/- 95% bootstrap CI, {len(SEEDS)} seeds (status={status})"
+        f"R27: kernel classification, median +/- 95% bootstrap CI, {len(SEEDS)} seeds (structural={structural_status}; outcome={scientific_outcome})"
     )
     common.save_figure(fig, "R27_kernel_classification")
     plt.close(fig)
@@ -176,9 +179,10 @@ def main():
         n_datasets=len(DATASETS),
         n_seeds=len(SEEDS),
         min_gram_eigenvalue=min_gram_eigenvalue,
-        status=status,
+        structural_status=structural_status,
+        scientific_outcome=scientific_outcome,
     )
-    if status != "pass":
+    if structural_status != "pass":
         raise AssertionError(
             f"R27 failed: all_finite={all_finite} min_gram_eigenvalue={min_gram_eigenvalue}"
         )

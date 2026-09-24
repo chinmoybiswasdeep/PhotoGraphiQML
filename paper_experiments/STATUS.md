@@ -1,5 +1,25 @@
 # Suite execution status
 
+## Evidence-status warning (2026-09-24)
+
+The historical per-experiment table below was generated while the repository
+was dirty and must **not** be treated as final publication evidence.  The
+active checkout is also dirty because the user has uncommitted notebook
+changes and the experiment-suite corrections under review.  A fresh
+subprocess-isolated safe run on this checkout completed on 2026-09-24 with
+**36 passed, 0 failed, and 13 explicitly skipped heavy experiments** in
+389.6 s; its raw runner output is
+`results/logs/safe_validation_20260924.stdout.log` and machine-readable
+summary is `results/json/run_all_safe_summary.json`.  This establishes
+current runnable logical/resource/lowering coverage, but is deliberately
+not a clean-commit full-publication run.  The 13 named skips require the
+full runner; they remain execution work, not positive results.
+
+The current provenance records PhotoGraphiQ commit
+`6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e`, package versions, and import
+origins so an unrelated installed `photographiqml` checkout cannot be
+mistaken for the system under test.
+
 Latest real execution on this host (Windows 11, Python 3.14.4, `.venv`),
 branch `manuscript-experiments`, commit as recorded in each experiment's own
 `<name>.metadata.json` (git was dirty throughout authoring, since these are

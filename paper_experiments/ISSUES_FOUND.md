@@ -110,6 +110,14 @@ begin with.
 
 ## Not filed as issues (environment/tooling notes, no scientific content)
 
+- The active `.venv` initially resolved `photographiqml` to the unrelated
+  sibling `cv-mb-qrc` checkout rather than this repository. This caused all
+  direct manuscript-script invocations to fail before experiment execution;
+  it is a reproducibility defect, not a scientific result. `common.py` now
+  puts this checkout's `src/` first before importing the public API, and the
+  affected scripts are rerun with the resolved module path recorded in their
+  metadata.
+
 - Two-mode raw-Piquasso CZ on **pure** `|mu>|nu>` basis codewords (R40)
   needed a materially higher cutoff (48+) than the 1-wire single-mode
   preparation case (R39, cutoff 16 sufficient) or than typical

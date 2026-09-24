@@ -104,7 +104,7 @@ def main():
         )
 
     final_test = [r["final_test_infidelity"] for r in rows]
-    ci = common.bootstrap_ci(final_test, seed=0)
+    ci = common.bootstrap_ci(final_test, statistic=np.median, seed=0)
     status = "pass" if (ci["point"] < 0.05 and max_checkpoint_error < tol) else "fail"
 
     common.save_result(

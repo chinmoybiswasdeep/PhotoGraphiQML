@@ -1,6 +1,6 @@
 {
-  "timestamp_utc": "2026-09-17T02:03:30.996735+00:00",
-  "git_commit": "9c08023d07005ebc0150324c539ea942b8c8ba01",
+  "timestamp_utc": "2026-09-24T16:31:45.840055+00:00",
+  "git_commit": "31c7d734cb8f4abf29687168300de3b2ed9f1673",
   "git_branch": "manuscript-experiments",
   "git_dirty": true,
   "python_version": "3.14.4",
@@ -16,6 +16,13 @@
     "networkx": "3.6.1",
     "matplotlib": "3.11.1",
     "scikit-learn": "1.9.1"
+  },
+  "upstream_repositories": {
+    "PhotoGraphiQ": {
+      "path": "D:\\Research\\QML\\results_1\\cvqc\\thesis_part_2\\softwares\\PhotoGraphiQ",
+      "commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+      "dirty": false
+    }
   },
   "experiment_id": "R16",
   "oracle_class": "E",

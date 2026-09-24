@@ -3,97 +3,97 @@
     {
       "script": "01_logical_foundations/01_triangle_anatomy.py",
       "status": "passed",
-      "seconds": 4.0673357999985456,
+      "seconds": 4.290155699942261,
       "returncode": 0
     },
     {
       "script": "01_logical_foundations/02_table_one_identities.py",
       "status": "passed",
-      "seconds": 4.884343700003228,
+      "seconds": 5.112388800014742,
       "returncode": 0
     },
     {
       "script": "01_logical_foundations/03_entangling_identity.py",
       "status": "passed",
-      "seconds": 4.059437199997774,
+      "seconds": 4.671310400008224,
       "returncode": 0
     },
     {
       "script": "01_logical_foundations/04_adaptive_branches.py",
       "status": "passed",
-      "seconds": 4.984496299999591,
+      "seconds": 4.791122899972834,
       "returncode": 0
     },
     {
       "script": "01_logical_foundations/05_brute_force_agreement.py",
       "status": "passed",
-      "seconds": 4.104428600003303,
+      "seconds": 4.425962999928743,
       "returncode": 0
     },
     {
       "script": "01_logical_foundations/06_batch_consistency.py",
       "status": "passed",
-      "seconds": 3.3293477000042913,
+      "seconds": 3.9750172999920323,
       "returncode": 0
     },
     {
       "script": "02_mentpy_validation/07_semantic_topology.py",
       "status": "passed",
-      "seconds": 9.491513500004658,
+      "seconds": 7.433704599970952,
       "returncode": 0
     },
     {
       "script": "02_mentpy_validation/08_flow_dependency_order.py",
       "status": "passed",
-      "seconds": 11.40465039999981,
+      "seconds": 6.8017166999634355,
       "returncode": 0
     },
     {
       "script": "02_mentpy_validation/09_state_density_agreement.py",
       "status": "passed",
-      "seconds": 10.96557909999683,
+      "seconds": 7.198966299998574,
       "returncode": 0
     },
     {
       "script": "02_mentpy_validation/10_trainability_audit.py",
       "status": "passed",
-      "seconds": 10.879958999998053,
+      "seconds": 7.246552900061943,
       "returncode": 0
     },
     {
       "script": "02_mentpy_validation/11_kernel_gram_agreement.py",
       "status": "passed",
-      "seconds": 11.681077200002619,
+      "seconds": 7.8769214999629185,
       "returncode": 0
     },
     {
       "script": "02_mentpy_validation/12_instrument_agreement.py",
       "status": "passed",
-      "seconds": 11.646954700001515,
+      "seconds": 7.30750320001971,
       "returncode": 0
     },
     {
       "script": "02_mentpy_validation/13_runtime_scaling.py",
       "status": "passed",
-      "seconds": 11.267393600006471,
+      "seconds": 7.248969599953853,
       "returncode": 0
     },
     {
       "script": "03_parameters_and_contracts/14_parameter_contracts.py",
       "status": "passed",
-      "seconds": 3.6100541000050725,
+      "seconds": 4.071497099939734,
       "returncode": 0
     },
     {
       "script": "03_parameters_and_contracts/15_persistence_roundtrip.py",
       "status": "passed",
-      "seconds": 3.361495000004652,
+      "seconds": 3.8054092000238597,
       "returncode": 0
     },
     {
       "script": "03_parameters_and_contracts/16_invalid_input_matrix.py",
       "status": "passed",
-      "seconds": 5.615904500002216,
+      "seconds": 4.369056100025773,
       "returncode": 0
     },
     {
@@ -105,25 +105,25 @@
     {
       "script": "04_gradients_and_training/18_parameter_shift_vs_fd.py",
       "status": "passed",
-      "seconds": 7.161144000005152,
+      "seconds": 5.054742599953897,
       "returncode": 0
     },
     {
       "script": "04_gradients_and_training/19_optimizer_convergence.py",
       "status": "passed",
-      "seconds": 5.147214399999939,
+      "seconds": 4.940859399968758,
       "returncode": 0
     },
     {
       "script": "04_gradients_and_training/20_haar_gate_learning.py",
       "status": "passed",
-      "seconds": 166.47562389999803,
+      "seconds": 47.19999450002797,
       "returncode": 0
     },
     {
       "script": "04_gradients_and_training/21_ising_gate_learning.py",
       "status": "passed",
-      "seconds": 168.13813669999945,
+      "seconds": 47.493306100019254,
       "returncode": 0
     },
     {
@@ -135,25 +135,25 @@
     {
       "script": "04_gradients_and_training/23_classifier_verification.py",
       "status": "passed",
-      "seconds": 87.7054386000018,
+      "seconds": 23.57263629999943,
       "returncode": 0
     },
     {
       "script": "04_gradients_and_training/24_regressor_verification.py",
       "status": "passed",
-      "seconds": 411.5761141999974,
+      "seconds": 98.39612399996258,
       "returncode": 0
     },
     {
       "script": "05_kernels_and_learning/25_kernel_feature_state.py",
       "status": "passed",
-      "seconds": 4.653444599993236,
+      "seconds": 4.528726399992593,
       "returncode": 0
     },
     {
       "script": "05_kernels_and_learning/26_kernel_properties.py",
       "status": "passed",
-      "seconds": 4.80465269999695,
+      "seconds": 5.37981019995641,
       "returncode": 0
     },
     {
@@ -171,55 +171,55 @@
     {
       "script": "06_expressivity_and_diagnostics/29_instrument_diagnostics.py",
       "status": "passed",
-      "seconds": 3.313034200000402,
+      "seconds": 4.40129089995753,
       "returncode": 0
     },
     {
       "script": "06_expressivity_and_diagnostics/30_concurrence.py",
       "status": "passed",
-      "seconds": 3.5574753999972017,
+      "seconds": 8.151119200047106,
       "returncode": 0
     },
     {
       "script": "06_expressivity_and_diagnostics/31_qfi.py",
       "status": "passed",
-      "seconds": 3.432500099996105,
+      "seconds": 4.740554200019687,
       "returncode": 0
     },
     {
       "script": "06_expressivity_and_diagnostics/32_lie_closure.py",
       "status": "passed",
-      "seconds": 3.2888850000017555,
+      "seconds": 4.352878000005148,
       "returncode": 0
     },
     {
       "script": "06_expressivity_and_diagnostics/33_fisher_spectra.py",
       "status": "passed",
-      "seconds": 4.956169200006116,
+      "seconds": 5.117662800010294,
       "returncode": 0
     },
     {
       "script": "07_gkp_resources/34_gkp_codeword_projection.py",
       "status": "passed",
-      "seconds": 18.433172700002615,
+      "seconds": 8.594750500051305,
       "returncode": 0
     },
     {
       "script": "08_physical_lowering/35_capability_map.py",
       "status": "passed",
-      "seconds": 3.495579300004465,
+      "seconds": 4.22976550005842,
       "returncode": 0
     },
     {
       "script": "08_physical_lowering/36_lowering_preservation.py",
       "status": "passed",
-      "seconds": 3.188147000000754,
+      "seconds": 4.739464699989185,
       "returncode": 0
     },
     {
       "script": "08_physical_lowering/37_pauli_frame_validation.py",
       "status": "passed",
-      "seconds": 3.721161800000118,
+      "seconds": 4.416725400020368,
       "returncode": 0
     },
     {
@@ -231,7 +231,7 @@
     {
       "script": "09_piquasso_validation/39_raw_piquasso_state_prep.py",
       "status": "passed",
-      "seconds": 8.480717299993557,
+      "seconds": 5.585901699960232,
       "returncode": 0
     },
     {
@@ -273,7 +273,7 @@
     {
       "script": "10_physical_statistics/46_hard_vs_soft_decoding.py",
       "status": "passed",
-      "seconds": 4.129461399999855,
+      "seconds": 4.616598900058307,
       "returncode": 0
     },
     {
@@ -291,7 +291,7 @@
     {
       "script": "12_performance/49_aggregate_performance_figure.py",
       "status": "passed",
-      "seconds": 2.680293299999903,
+      "seconds": 3.4993317999178544,
       "returncode": 0
     }
   ],
@@ -299,5 +299,5 @@
   "passed": 36,
   "failed": 0,
   "skipped": 13,
-  "total_wall_seconds": 1033.6939620999983
+  "total_wall_seconds": 389.63957699993625
 }

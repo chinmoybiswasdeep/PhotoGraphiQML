@@ -36,12 +36,13 @@
   "status_category": "statistical",
   "n_splits": 5,
   "r_squared_bootstrap_ci": {
-    "point": 0.9999963547341298,
-    "low": 0.9999917141148762,
-    "high": 0.999998967591848,
+    "point": 0.9999985856921942,
+    "low": 0.9999872224572443,
+    "high": 0.9999991820303686,
     "n_boot": 2000,
     "alpha": 0.05,
-    "n": 5
+    "n": 5,
+    "statistic": "median"
   },
   "mean_residual": -2.386408337254797e-05,
   "residual_prediction_correlation": 0.5660156782074457,

@@ -72,7 +72,12 @@ independently.
   recorded in the saved JSON — never chosen after inspecting results.
 - **Multi-seed studies** use >=20 seeds for logical gate-learning claims
   (R20, R21), report individual trajectories plus median and bootstrap 95%
-  CIs (`common.bootstrap_ci`), and never cherry-pick a "representative" seed.
+  CIs (`common.bootstrap_ci(..., statistic=np.median)`), and never
+  cherry-pick a "representative" seed. The statistic is mandatory and is
+  persisted in each CI object.
+- Every experiment imports this checkout's `src/` before the public API, so
+  an unrelated installed package with the same name cannot silently supply
+  the implementation under test.
 - **Physical/shot statistics** distinguish conditional POVM probabilities
   (Rao–Blackwell estimator) from empirical sampled-bit frequencies, each
   with its own standard error, per `docs/physical/execution-modes.md`.
