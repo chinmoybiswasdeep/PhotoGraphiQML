@@ -116,5 +116,10 @@
   "max_order_violations": 0,
   "max_correction_mismatches": 0,
   "status": "pass",
-  "convention_note": "MentPy's raw correction_op Z-part includes a formal self-correction on the measured node itself; this is subtracted before comparison (see self_correction_dropped per row) as documented in the docstring, not treated as a defect"
+  "convention_note": "MentPy's raw correction_op Z-part includes a formal self-correction on the measured node itself; this is subtracted before comparison (see self_correction_dropped per row) as documented in the docstring, not treated as a defect",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

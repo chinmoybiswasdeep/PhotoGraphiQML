@@ -1,6 +1,6 @@
 {
-  "timestamp_utc": "2026-09-24T17:26:40.924911+00:00",
-  "git_commit": "b2afd24376ef37665c36f04416601ca4f99fa65b",
+  "timestamp_utc": "2026-09-24T17:30:33.201866+00:00",
+  "git_commit": "5109f7fe7d37b8efb3191fd2be08c398424dadda",
   "git_branch": "manuscript-experiments",
   "git_dirty": true,
   "python_version": "3.14.4",

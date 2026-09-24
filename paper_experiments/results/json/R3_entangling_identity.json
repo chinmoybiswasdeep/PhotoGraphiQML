@@ -435,5 +435,10 @@
   "acceptance_condition": "max Frobenius error and max concurrence error < 2.220e-15",
   "max_unitary_error": 1.91063762397906e-15,
   "max_concurrence_error": 1.7763568394002505e-15,
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

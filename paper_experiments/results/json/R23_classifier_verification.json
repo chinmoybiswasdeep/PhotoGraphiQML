@@ -68,5 +68,10 @@
     ]
   ],
   "acceptance_condition": "median accuracy >= 0.85 and paired improvement over majority baseline > 0",
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

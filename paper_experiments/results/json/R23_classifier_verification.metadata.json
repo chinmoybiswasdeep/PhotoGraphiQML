@@ -1,6 +1,6 @@
 {
-  "timestamp_utc": "2026-09-24T16:33:54.116017+00:00",
-  "git_commit": "31c7d734cb8f4abf29687168300de3b2ed9f1673",
+  "timestamp_utc": "2026-09-24T17:40:49.872393+00:00",
+  "git_commit": "5109f7fe7d37b8efb3191fd2be08c398424dadda",
   "git_branch": "manuscript-experiments",
   "git_dirty": true,
   "python_version": "3.14.4",
@@ -32,5 +32,8 @@
   },
   "experiment_id": "R23",
   "oracle_class": "A",
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive"
 }

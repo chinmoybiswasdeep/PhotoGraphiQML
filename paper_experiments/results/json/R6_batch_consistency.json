@@ -78,5 +78,10 @@
   "status_category": "exact",
   "acceptance_condition": "max_error == 0 (bitwise) and all output shapes correct",
   "max_error": 0.0,
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

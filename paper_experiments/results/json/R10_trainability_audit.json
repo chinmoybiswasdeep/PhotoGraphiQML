@@ -104,5 +104,10 @@
   "n_configs_mentpy_restriction_actually_effective": 0,
   "n_configs_total": 8,
   "status": "pass",
-  "finding": "MentPy's restrict_trainable only ever fixes the Ment angle (not just the list) when neither add_edge nor hstack runs afterward, i.e. n_wires==1 and n_layers==1; PhotoGraphiQML never relies on MentPy's list convention and freezes column-3 parameters directly and robustly in every configuration."
+  "finding": "MentPy's restrict_trainable only ever fixes the Ment angle (not just the list) when neither add_edge nor hstack runs afterward, i.e. n_wires==1 and n_layers==1; PhotoGraphiQML never relies on MentPy's list convention and freezes column-3 parameters directly and robustly in every configuration.",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

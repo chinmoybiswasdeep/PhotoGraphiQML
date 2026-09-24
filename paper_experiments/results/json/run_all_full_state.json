@@ -1,0 +1,600 @@
+{
+  "01_logical_foundations/01_triangle_anatomy.py": {
+    "fingerprint": {
+      "photographiqml_commit": "5109f7fe7d37b8efb3191fd2be08c398424dadda",
+      "script_sha256": "787d61ffdc5b73e81ad51883e5467865bb86d7d983f0734cf0a86dca50e46675",
+      "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+      "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+      "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+      "package_versions": {
+        "photographiqml": "0.2.0",
+        "photographiq": "0.3.1",
+        "mentpy": "0.1.0a15",
+        "piquasso": "8.0.1",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1"
+      },
+      "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+      "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
+    },
+    "fingerprint_sha256": "1535540c51d9eb43d2ae0cfb1ffb4e8b1b8991c36db33276b60023e32061d024",
+    "script": "01_logical_foundations/01_triangle_anatomy.py",
+    "execution_status": "completed",
+    "reason": "restart requested",
+    "seconds": 4.910693799960427,
+    "returncode": 0,
+    "log": "results\\logs\\01_triangle_anatomy.log"
+  },
+  "01_logical_foundations/02_table_one_identities.py": {
+    "fingerprint": {
+      "photographiqml_commit": "5109f7fe7d37b8efb3191fd2be08c398424dadda",
+      "script_sha256": "2b1b89ed239425aba5f5c9e7eb68fb65686716bd73b932d5905ce9e7e03288d9",
+      "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+      "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+      "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+      "package_versions": {
+        "photographiqml": "0.2.0",
+        "photographiq": "0.3.1",
+        "mentpy": "0.1.0a15",
+        "piquasso": "8.0.1",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1"
+      },
+      "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+      "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
+    },
+    "fingerprint_sha256": "3d733fc4ab8b95ae7ce4b42488feb161615cdae6c5a841fe573837eb5495a521",
+    "script": "01_logical_foundations/02_table_one_identities.py",
+    "execution_status": "completed",
+    "reason": "restart requested",
+    "seconds": 7.9738450000295416,
+    "returncode": 0,
+    "log": "results\\logs\\02_table_one_identities.log"
+  },
+  "01_logical_foundations/03_entangling_identity.py": {
+    "fingerprint": {
+      "photographiqml_commit": "5109f7fe7d37b8efb3191fd2be08c398424dadda",
+      "script_sha256": "04f207e721275719151d601ed4336e78b4c1cfb1c163452f995e63f99f64e84f",
+      "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+      "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+      "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+      "package_versions": {
+        "photographiqml": "0.2.0",
+        "photographiq": "0.3.1",
+        "mentpy": "0.1.0a15",
+        "piquasso": "8.0.1",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1"
+      },
+      "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+      "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
+    },
+    "fingerprint_sha256": "d1f8e0ea175bc1bca8b65935619c90ec64984ca2821826be6fec8db9aecfc300",
+    "script": "01_logical_foundations/03_entangling_identity.py",
+    "execution_status": "completed",
+    "reason": "restart requested",
+    "seconds": 5.827083999989554,
+    "returncode": 0,
+    "log": "results\\logs\\03_entangling_identity.log"
+  },
+  "01_logical_foundations/04_adaptive_branches.py": {
+    "fingerprint": {
+      "photographiqml_commit": "5109f7fe7d37b8efb3191fd2be08c398424dadda",
+      "script_sha256": "988e78cfc5c3d131a1b41998a48692128d4b53f861e0a40a226155e6f3fd7381",
+      "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+      "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+      "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+      "package_versions": {
+        "photographiqml": "0.2.0",
+        "photographiq": "0.3.1",
+        "mentpy": "0.1.0a15",
+        "piquasso": "8.0.1",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1"
+      },
+      "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+      "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
+    },
+    "fingerprint_sha256": "65dbc13f8d7041e2e91989c33deb66d18a6b008e7fb68bcbe1839812c7fc7879",
+    "script": "01_logical_foundations/04_adaptive_branches.py",
+    "execution_status": "completed",
+    "reason": "restart requested",
+    "seconds": 5.856748700025491,
+    "returncode": 0,
+    "log": "results\\logs\\04_adaptive_branches.log"
+  },
+  "01_logical_foundations/05_brute_force_agreement.py": {
+    "fingerprint": {
+      "photographiqml_commit": "5109f7fe7d37b8efb3191fd2be08c398424dadda",
+      "script_sha256": "de34e8f09b834e66c4c3f3fb8dd131aee173eae87ba85efaef18e1b0812ef497",
+      "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+      "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+      "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+      "package_versions": {
+        "photographiqml": "0.2.0",
+        "photographiq": "0.3.1",
+        "mentpy": "0.1.0a15",
+        "piquasso": "8.0.1",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1"
+      },
+      "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+      "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
+    },
+    "fingerprint_sha256": "08b0e9efd358df649d6c20e4656a93efcae43cdc9fc44e08b53e34e2ad923d99",
+    "script": "01_logical_foundations/05_brute_force_agreement.py",
+    "execution_status": "completed",
+    "reason": "restart requested",
+    "seconds": 6.844893500092439,
+    "returncode": 0,
+    "log": "results\\logs\\05_brute_force_agreement.log"
+  },
+  "01_logical_foundations/06_batch_consistency.py": {
+    "fingerprint": {
+      "photographiqml_commit": "5109f7fe7d37b8efb3191fd2be08c398424dadda",
+      "script_sha256": "258abe8fbbfc850fbee6b0b1ea624d9dd5ac75f0e444c23ac34b483bc3b5451f",
+      "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+      "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+      "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+      "package_versions": {
+        "photographiqml": "0.2.0",
+        "photographiq": "0.3.1",
+        "mentpy": "0.1.0a15",
+        "piquasso": "8.0.1",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1"
+      },
+      "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+      "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
+    },
+    "fingerprint_sha256": "f211931d506dd4286e62d40aa0cc83d8ea7ee90b37a078ead420d265651f05fb",
+    "script": "01_logical_foundations/06_batch_consistency.py",
+    "execution_status": "completed",
+    "reason": "restart requested",
+    "seconds": 5.164012499968521,
+    "returncode": 0,
+    "log": "results\\logs\\06_batch_consistency.log"
+  },
+  "02_mentpy_validation/07_semantic_topology.py": {
+    "fingerprint": {
+      "photographiqml_commit": "5109f7fe7d37b8efb3191fd2be08c398424dadda",
+      "script_sha256": "79adbdcf64199be13d926804ed53ef957c00e2aac7ae272ecf28ea120c4f8aed",
+      "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+      "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+      "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+      "package_versions": {
+        "photographiqml": "0.2.0",
+        "photographiq": "0.3.1",
+        "mentpy": "0.1.0a15",
+        "piquasso": "8.0.1",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1"
+      },
+      "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+      "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
+    },
+    "fingerprint_sha256": "40eb1a34bdcf433aaa44bf07df38bbed91f8525fe4e2b56cfbdaee20eae8bd4d",
+    "script": "02_mentpy_validation/07_semantic_topology.py",
+    "execution_status": "completed",
+    "reason": "restart requested",
+    "seconds": 9.518926199991256,
+    "returncode": 0,
+    "log": "results\\logs\\07_semantic_topology.log"
+  },
+  "02_mentpy_validation/08_flow_dependency_order.py": {
+    "fingerprint": {
+      "photographiqml_commit": "5109f7fe7d37b8efb3191fd2be08c398424dadda",
+      "script_sha256": "8217e19b097cf2c47b4bea3870dfdabe0b5b646d959a91c1a702e25fc735848c",
+      "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+      "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+      "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+      "package_versions": {
+        "photographiqml": "0.2.0",
+        "photographiq": "0.3.1",
+        "mentpy": "0.1.0a15",
+        "piquasso": "8.0.1",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1"
+      },
+      "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+      "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
+    },
+    "fingerprint_sha256": "665ee96b97acfd1a6224fb23ec16e40b11869ce686e9e55d0820a4bdd31c103f",
+    "script": "02_mentpy_validation/08_flow_dependency_order.py",
+    "execution_status": "completed",
+    "reason": "restart requested",
+    "seconds": 8.468127999920398,
+    "returncode": 0,
+    "log": "results\\logs\\08_flow_dependency_order.log"
+  },
+  "02_mentpy_validation/09_state_density_agreement.py": {
+    "fingerprint": {
+      "photographiqml_commit": "5109f7fe7d37b8efb3191fd2be08c398424dadda",
+      "script_sha256": "1ea3126f6dcd45d1fa8b5af77abe52ba71977e958021c483cde5b4a28e740c02",
+      "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+      "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+      "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+      "package_versions": {
+        "photographiqml": "0.2.0",
+        "photographiq": "0.3.1",
+        "mentpy": "0.1.0a15",
+        "piquasso": "8.0.1",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1"
+      },
+      "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+      "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
+    },
+    "fingerprint_sha256": "765fb2b3e9e9baaf0eb23c05a87f4eda3e5defe07695be8823b6cead3df05e5e",
+    "script": "02_mentpy_validation/09_state_density_agreement.py",
+    "execution_status": "completed",
+    "reason": "restart requested",
+    "seconds": 7.000379299977794,
+    "returncode": 0,
+    "log": "results\\logs\\09_state_density_agreement.log"
+  },
+  "02_mentpy_validation/10_trainability_audit.py": {
+    "fingerprint": {
+      "photographiqml_commit": "5109f7fe7d37b8efb3191fd2be08c398424dadda",
+      "script_sha256": "c24ee6973e858c9ee48b89c679f9bb73812809a73f4e7003be30f39291e74d5e",
+      "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+      "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+      "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+      "package_versions": {
+        "photographiqml": "0.2.0",
+        "photographiq": "0.3.1",
+        "mentpy": "0.1.0a15",
+        "piquasso": "8.0.1",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1"
+      },
+      "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+      "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
+    },
+    "fingerprint_sha256": "49b61352fd3a4d3a4429dd500f58038456424fccf5a99b7cd76701be187d143d",
+    "script": "02_mentpy_validation/10_trainability_audit.py",
+    "execution_status": "completed",
+    "reason": "restart requested",
+    "seconds": 6.11893809994217,
+    "returncode": 0,
+    "log": "results\\logs\\10_trainability_audit.log"
+  },
+  "02_mentpy_validation/11_kernel_gram_agreement.py": {
+    "fingerprint": {
+      "photographiqml_commit": "5109f7fe7d37b8efb3191fd2be08c398424dadda",
+      "script_sha256": "56c46fadd1af6c5c66c43b05533ec50bc5df2bafb07faf731aefd65c50312a74",
+      "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+      "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+      "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+      "package_versions": {
+        "photographiqml": "0.2.0",
+        "photographiq": "0.3.1",
+        "mentpy": "0.1.0a15",
+        "piquasso": "8.0.1",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1"
+      },
+      "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+      "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
+    },
+    "fingerprint_sha256": "fdef55d92f59eb398961cadb7641626cc14019c2754b75bb3e63aae5f180e49c",
+    "script": "02_mentpy_validation/11_kernel_gram_agreement.py",
+    "execution_status": "completed",
+    "reason": "restart requested",
+    "seconds": 6.825045999954455,
+    "returncode": 0,
+    "log": "results\\logs\\11_kernel_gram_agreement.log"
+  },
+  "02_mentpy_validation/12_instrument_agreement.py": {
+    "fingerprint": {
+      "photographiqml_commit": "5109f7fe7d37b8efb3191fd2be08c398424dadda",
+      "script_sha256": "a250a99225334e333079cded614c079c074050e7aebc53ccdc4616db8edd8d58",
+      "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+      "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+      "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+      "package_versions": {
+        "photographiqml": "0.2.0",
+        "photographiq": "0.3.1",
+        "mentpy": "0.1.0a15",
+        "piquasso": "8.0.1",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1"
+      },
+      "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+      "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
+    },
+    "fingerprint_sha256": "a9840369b50ded0b8c20e49d364107f773741f0a942ce2cf75d0a303907e747c",
+    "script": "02_mentpy_validation/12_instrument_agreement.py",
+    "execution_status": "completed",
+    "reason": "restart requested",
+    "seconds": 6.609830199973658,
+    "returncode": 0,
+    "log": "results\\logs\\12_instrument_agreement.log"
+  },
+  "02_mentpy_validation/13_runtime_scaling.py": {
+    "fingerprint": {
+      "photographiqml_commit": "5109f7fe7d37b8efb3191fd2be08c398424dadda",
+      "script_sha256": "e0634cc7e9586d43217d394cb2b0e6eef939ca266abf6a916cedf5cdce3aa17f",
+      "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+      "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+      "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+      "package_versions": {
+        "photographiqml": "0.2.0",
+        "photographiq": "0.3.1",
+        "mentpy": "0.1.0a15",
+        "piquasso": "8.0.1",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1"
+      },
+      "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+      "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
+    },
+    "fingerprint_sha256": "f833fc4eae36f7f4cae4d4bd0d7bb37900a46a7325a89304d27fd35753c4d262",
+    "script": "02_mentpy_validation/13_runtime_scaling.py",
+    "execution_status": "completed",
+    "reason": "restart requested",
+    "seconds": 8.046780499978922,
+    "returncode": 0,
+    "log": "results\\logs\\13_runtime_scaling.log"
+  },
+  "03_parameters_and_contracts/14_parameter_contracts.py": {
+    "fingerprint": {
+      "photographiqml_commit": "5109f7fe7d37b8efb3191fd2be08c398424dadda",
+      "script_sha256": "78b07db1cf4dc766a145e8f36e67c001170834812ec0c239c1e3a204992a3040",
+      "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+      "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+      "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+      "package_versions": {
+        "photographiqml": "0.2.0",
+        "photographiq": "0.3.1",
+        "mentpy": "0.1.0a15",
+        "piquasso": "8.0.1",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1"
+      },
+      "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+      "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
+    },
+    "fingerprint_sha256": "a9aaaf370e3743ff501ab67aaf906a86b92672ada067b676a118733fb6624289",
+    "script": "03_parameters_and_contracts/14_parameter_contracts.py",
+    "execution_status": "completed",
+    "reason": "restart requested",
+    "seconds": 5.648433999973349,
+    "returncode": 0,
+    "log": "results\\logs\\14_parameter_contracts.log"
+  },
+  "03_parameters_and_contracts/15_persistence_roundtrip.py": {
+    "fingerprint": {
+      "photographiqml_commit": "5109f7fe7d37b8efb3191fd2be08c398424dadda",
+      "script_sha256": "1c818a8282ac9e1ac634be91e77a3aba0f691d3aaa2f3ab33d89a65cdb169569",
+      "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+      "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+      "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+      "package_versions": {
+        "photographiqml": "0.2.0",
+        "photographiq": "0.3.1",
+        "mentpy": "0.1.0a15",
+        "piquasso": "8.0.1",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1"
+      },
+      "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+      "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
+    },
+    "fingerprint_sha256": "eec9ffbc271716ee86413bd009932bc6bdb25ea3f4a52644d006789a883ccd20",
+    "script": "03_parameters_and_contracts/15_persistence_roundtrip.py",
+    "execution_status": "completed",
+    "reason": "restart requested",
+    "seconds": 4.962454600026831,
+    "returncode": 0,
+    "log": "results\\logs\\15_persistence_roundtrip.log"
+  },
+  "03_parameters_and_contracts/16_invalid_input_matrix.py": {
+    "fingerprint": {
+      "photographiqml_commit": "5109f7fe7d37b8efb3191fd2be08c398424dadda",
+      "script_sha256": "ab777234142c2a611c25ea972068f4485fce78aacea72f5a7f47eec20211beaa",
+      "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+      "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+      "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+      "package_versions": {
+        "photographiqml": "0.2.0",
+        "photographiq": "0.3.1",
+        "mentpy": "0.1.0a15",
+        "piquasso": "8.0.1",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1"
+      },
+      "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+      "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
+    },
+    "fingerprint_sha256": "8f90a77a8611040fabaa2a6643ea5a13ae4a69f4f2da18eae75a8c124c6c4c07",
+    "script": "03_parameters_and_contracts/16_invalid_input_matrix.py",
+    "execution_status": "completed",
+    "reason": "restart requested",
+    "seconds": 5.27019129996188,
+    "returncode": 0,
+    "log": "results\\logs\\16_invalid_input_matrix.log"
+  },
+  "03_parameters_and_contracts/17_seeded_reproducibility.py": {
+    "fingerprint": {
+      "photographiqml_commit": "5109f7fe7d37b8efb3191fd2be08c398424dadda",
+      "script_sha256": "008c9f5fa3de40edb8f5f56f5ba6429c103f3eb35f1bda080466e3b0da91a849",
+      "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+      "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+      "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+      "package_versions": {
+        "photographiqml": "0.2.0",
+        "photographiq": "0.3.1",
+        "mentpy": "0.1.0a15",
+        "piquasso": "8.0.1",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1"
+      },
+      "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+      "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
+    },
+    "fingerprint_sha256": "9b75a6ddc653b97ad5bbf91ffc27387138d9f29c012fefe73f62c3b380d63b7d",
+    "script": "03_parameters_and_contracts/17_seeded_reproducibility.py",
+    "execution_status": "completed",
+    "reason": "restart requested",
+    "seconds": 198.83373509999365,
+    "returncode": 0,
+    "log": "results\\logs\\17_seeded_reproducibility.log"
+  },
+  "04_gradients_and_training/18_parameter_shift_vs_fd.py": {
+    "fingerprint": {
+      "photographiqml_commit": "5109f7fe7d37b8efb3191fd2be08c398424dadda",
+      "script_sha256": "baf2ddf8977379dce9b491d18979e537f320f6912dbd56cad318c0ece50c207d",
+      "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+      "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+      "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+      "package_versions": {
+        "photographiqml": "0.2.0",
+        "photographiq": "0.3.1",
+        "mentpy": "0.1.0a15",
+        "piquasso": "8.0.1",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1"
+      },
+      "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+      "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
+    },
+    "fingerprint_sha256": "9bd54499152dc344c6b89aaa95f2d00b73433d8300a52ee29dd3a1d53b794fa8",
+    "script": "04_gradients_and_training/18_parameter_shift_vs_fd.py",
+    "execution_status": "completed",
+    "reason": "restart requested",
+    "seconds": 4.219745400012471,
+    "returncode": 0,
+    "log": "results\\logs\\18_parameter_shift_vs_fd.log"
+  },
+  "04_gradients_and_training/19_optimizer_convergence.py": {
+    "fingerprint": {
+      "photographiqml_commit": "5109f7fe7d37b8efb3191fd2be08c398424dadda",
+      "script_sha256": "61cb70c37719f0d0153f41d623efa1103104e45a6767343f13be290eb6a2597c",
+      "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+      "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+      "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+      "package_versions": {
+        "photographiqml": "0.2.0",
+        "photographiq": "0.3.1",
+        "mentpy": "0.1.0a15",
+        "piquasso": "8.0.1",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1"
+      },
+      "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+      "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
+    },
+    "fingerprint_sha256": "aac31d3dbdaab6a1610a2fa30bd6033966766df89f69438bd480c15aabbf58e1",
+    "script": "04_gradients_and_training/19_optimizer_convergence.py",
+    "execution_status": "completed",
+    "reason": "restart requested",
+    "seconds": 4.118841300019994,
+    "returncode": 0,
+    "log": "results\\logs\\19_optimizer_convergence.log"
+  },
+  "04_gradients_and_training/20_haar_gate_learning.py": {
+    "fingerprint": {
+      "photographiqml_commit": "5109f7fe7d37b8efb3191fd2be08c398424dadda",
+      "script_sha256": "67d909e03f2a7abde9c35c31923fd4e528aa9795d01a8559ef8679257f0c657f",
+      "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+      "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+      "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+      "package_versions": {
+        "photographiqml": "0.2.0",
+        "photographiq": "0.3.1",
+        "mentpy": "0.1.0a15",
+        "piquasso": "8.0.1",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1"
+      },
+      "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+      "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
+    },
+    "fingerprint_sha256": "4ed4b660cc3b21227aab44f4c6159b33aaf7e2e6a8303ba3cefaf42fa11372f9",
+    "script": "04_gradients_and_training/20_haar_gate_learning.py",
+    "execution_status": "completed",
+    "reason": "restart requested",
+    "seconds": 40.45265250001103,
+    "returncode": 0,
+    "log": "results\\logs\\20_haar_gate_learning.log"
+  },
+  "04_gradients_and_training/21_ising_gate_learning.py": {
+    "fingerprint": {
+      "photographiqml_commit": "5109f7fe7d37b8efb3191fd2be08c398424dadda",
+      "script_sha256": "074bcb9aa1f2b1d1953fbb84e29a67830bc98c283ce3c4c323475a3f2e63c40a",
+      "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+      "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+      "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+      "package_versions": {
+        "photographiqml": "0.2.0",
+        "photographiq": "0.3.1",
+        "mentpy": "0.1.0a15",
+        "piquasso": "8.0.1",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1"
+      },
+      "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+      "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
+    },
+    "fingerprint_sha256": "56166edde51b93c8548aff83e01749546763a78b72fb778b0eded786b6521abe",
+    "script": "04_gradients_and_training/21_ising_gate_learning.py",
+    "execution_status": "completed",
+    "reason": "restart requested",
+    "seconds": 46.290013700025156,
+    "returncode": 0,
+    "log": "results\\logs\\21_ising_gate_learning.log"
+  },
+  "04_gradients_and_training/22_gate_learning_sensitivity.py": {
+    "fingerprint": {
+      "photographiqml_commit": "5109f7fe7d37b8efb3191fd2be08c398424dadda",
+      "script_sha256": "0a8a24edae05bc213beda9f269174bfbaabd72e9590f0d01d09d9ddb964a0a4d",
+      "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+      "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+      "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+      "package_versions": {
+        "photographiqml": "0.2.0",
+        "photographiq": "0.3.1",
+        "mentpy": "0.1.0a15",
+        "piquasso": "8.0.1",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1"
+      },
+      "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+      "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
+    },
+    "fingerprint_sha256": "870a7e7512c8879c5bf3aaaf4efad9be36229e114bcf219dea6ace184fdb88d2",
+    "script": "04_gradients_and_training/22_gate_learning_sensitivity.py",
+    "execution_status": "completed",
+    "reason": "restart requested",
+    "seconds": 204.72839019994717,
+    "returncode": 0,
+    "log": "results\\logs\\22_gate_learning_sensitivity.log"
+  },
+  "04_gradients_and_training/23_classifier_verification.py": {
+    "fingerprint": {
+      "photographiqml_commit": "5109f7fe7d37b8efb3191fd2be08c398424dadda",
+      "script_sha256": "3adb2e9080ad4339e0cbb8c37443790b179805aa3a51444fe198b0753b53a916",
+      "common_sha256": "e0dbe03e97d5ebeed3df9e5ff79ce61229e353affcd7a0e08b3cfacea09cedaa",
+      "metadata_sha256": "0dab2f1b354972a1d37e0ffb865c418644424651e9deb5c80889edcec06e728d",
+      "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+      "package_versions": {
+        "photographiqml": "0.2.0",
+        "photographiq": "0.3.1",
+        "mentpy": "0.1.0a15",
+        "piquasso": "8.0.1",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1"
+      },
+      "photographiq_commit": "6d49da06fa6ede78bf06ea1df07ccfb3b4f5250e",
+      "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
+    },
+    "fingerprint_sha256": "7761ecc7170bef79fe91d9b899acf2280375e8a239449302bbd63a3b1e344c81",
+    "script": "04_gradients_and_training/23_classifier_verification.py",
+    "execution_status": "completed",
+    "reason": "restart requested",
+    "seconds": 23.177532900008373,
+    "returncode": 0,
+    "log": "results\\logs\\23_classifier_verification.log"
+  }
+}

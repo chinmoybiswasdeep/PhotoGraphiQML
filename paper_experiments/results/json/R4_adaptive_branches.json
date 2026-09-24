@@ -63,5 +63,10 @@
   "max_branch_error": 1.4392217307494033e-15,
   "max_probability_sum_error": 1.9984014443252818e-15,
   "min_branch_probability": 0.003906249999999986,
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

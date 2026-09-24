@@ -295,5 +295,10 @@
   "failure_threshold": 0.2,
   "n_seeds_per_cell": 6,
   "acceptance_condition": "every grid cell has a well-defined failure rate in [0,1] (descriptive sensitivity study)",
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

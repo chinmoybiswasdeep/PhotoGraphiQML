@@ -39,5 +39,10 @@
   "acceptance_condition": "max_execution_error == 0; all config/values/frozen match; unsupported schema raises ValueError",
   "max_execution_error": 0.0,
   "unsupported_schema_rejected": true,
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

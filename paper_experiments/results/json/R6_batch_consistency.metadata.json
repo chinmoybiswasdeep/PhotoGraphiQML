@@ -1,6 +1,6 @@
 {
-  "timestamp_utc": "2026-09-24T16:30:42.899034+00:00",
-  "git_commit": "31c7d734cb8f4abf29687168300de3b2ed9f1673",
+  "timestamp_utc": "2026-09-24T17:30:58.488926+00:00",
+  "git_commit": "5109f7fe7d37b8efb3191fd2be08c398424dadda",
   "git_branch": "manuscript-experiments",
   "git_dirty": true,
   "python_version": "3.14.4",
@@ -17,6 +17,12 @@
     "matplotlib": "3.11.1",
     "scikit-learn": "1.9.1"
   },
+  "package_import_origins": {
+    "photographiqml": "D:\\Research\\QML\\results_1\\cvqc\\thesis_part_2\\softwares\\PhotoGraphiQML\\src\\photographiqml\\__init__.py",
+    "photographiq": "D:\\Research\\QML\\results_1\\cvqc\\thesis_part_2\\softwares\\PhotoGraphiQ\\src\\photographiq\\__init__.py",
+    "mentpy": "D:\\Research\\QML\\results_1\\cvqc\\thesis_part_2\\softwares\\PhotoGraphiQML\\.references\\mentpy\\mentpy\\__init__.py",
+    "piquasso": "D:\\Research\\QML\\results_1\\cvqc\\thesis_part_2\\softwares\\PhotoGraphiQML\\.venv\\Lib\\site-packages\\piquasso\\__init__.py"
+  },
   "upstream_repositories": {
     "PhotoGraphiQ": {
       "path": "D:\\Research\\QML\\results_1\\cvqc\\thesis_part_2\\softwares\\PhotoGraphiQ",
@@ -26,5 +32,8 @@
   },
   "experiment_id": "R6",
   "oracle_class": "E",
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive"
 }

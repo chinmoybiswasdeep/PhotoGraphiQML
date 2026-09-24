@@ -59,5 +59,10 @@
   "acceptance_condition": "0 failed sub-checks",
   "n_checks": 13,
   "n_failed": 0,
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

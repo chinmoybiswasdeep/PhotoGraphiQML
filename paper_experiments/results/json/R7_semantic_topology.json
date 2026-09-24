@@ -318,5 +318,10 @@
   "status_category": "exact",
   "acceptance_condition": "symmetric_difference == 0 and input/output ordering matches for every configuration",
   "max_symmetric_difference": 0,
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

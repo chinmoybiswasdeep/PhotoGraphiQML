@@ -345,5 +345,10 @@
   "acceptance_condition": "max density-matrix error < 2.220e-13",
   "max_error": 3.4416956180491725e-15,
   "n_seeds_per_config": 8,
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

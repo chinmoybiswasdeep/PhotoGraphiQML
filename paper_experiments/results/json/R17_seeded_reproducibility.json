@@ -38,5 +38,10 @@
   "different_seed_logical_init_differs": true,
   "different_seed_physical_tv_distance": 0.0,
   "different_seed_physical_tv_standard_error": 0.08682074519880027,
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }

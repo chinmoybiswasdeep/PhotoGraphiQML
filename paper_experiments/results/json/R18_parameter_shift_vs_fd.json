@@ -382,5 +382,10 @@
   "tolerance": 2.220446049250313e-08,
   "acceptance_condition": "min(fd_error over step grid) < 2.220e-08 for every trial",
   "worst_min_error_across_trials": 1.3261427816442016e-10,
-  "status": "pass"
+  "status": "pass",
+  "execution_status": "completed",
+  "structural_status": "pass",
+  "scientific_outcome": "positive",
+  "claim_supported": "declared experiment contract",
+  "claim_not_supported": "no claim beyond declared protocol"
 }
