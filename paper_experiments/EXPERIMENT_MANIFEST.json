@@ -4,7 +4,7 @@
   "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
   "source_branch": "manuscript-experiments",
   "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
-  "evidence_commit": null,
+  "evidence_commit": "7be58767780c2989ad32a14f6f1582893fda01fb",
   "expected_experiment_ids": [
     "R1",
     "R2",

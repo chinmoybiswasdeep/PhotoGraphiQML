@@ -6,7 +6,7 @@
 - Run identifier: `ea56bf364c71-20260924T235941Z`
 - Source commit: `ea56bf364c71b7f6349a9fb8eb3171a9c4a96058`
 - Source-tree fingerprint: `fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60`
-- Evidence commit: `pending evidence commit`
+- Evidence commit: `7be58767780c2989ad32a14f6f1582893fda01fb`
 - Branch: `manuscript-experiments`
 - Started: `2026-09-24T23:59:41.144971+00:00`
 - Completed: `2026-09-25T00:13:07.178785+00:00`
@@ -15,7 +15,7 @@
 - Hash-resumed: `59`
 - Failed: `0`
 - Skipped: `0`
-- Manifest SHA-256: `fee8b36594bfb4721ecffb12256a1228181249291fe944972593a3908f4e7fd3`
+- Manifest SHA-256: `d721ee870de72875d563138c2f9b08f3742b019d78bbabc96ac4bee10f702d60`
 
 ## Scientific outcomes
 
