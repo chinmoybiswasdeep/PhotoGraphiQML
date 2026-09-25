@@ -1,19 +1,19 @@
 {
   "schema_version": 3,
-  "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-  "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+  "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+  "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
   "experiments": {
     "01_logical_foundations/01_triangle_anatomy.py": {
       "experiment_id": "R1",
       "script": "01_logical_foundations/01_triangle_anatomy.py",
-      "execution_status": "completed",
-      "runtime_seconds": 4.313679300015792,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "787d61ffdc5b73e81ad51883e5467865bb86d7d983f0734cf0a86dca50e46675",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -39,7 +39,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "677e1e16fa04fab029245debf73e288f02fcf93dee9ae04ea5b7da2ca5e75a52",
+      "fingerprint_sha256": "0929346d4cce78c35c5ed9dd625d1b635361ea32ec639f26fdd85aba3deb67dd",
       "artifacts": [
         {
           "path": "results/csv/R1_triangle_anatomy.csv",
@@ -54,12 +54,12 @@
         {
           "path": "results/json/R1_triangle_anatomy.metadata.json",
           "size": 1780,
-          "sha256": "7690ccbdd0aff20b658ee607e1dddcbb750eb6c9e239da4080e76f48a0b6ebcd"
+          "sha256": "7f5f25d8d165f8217dfca181b956aa1e6ae627a3e8e1490bd7f6e8b9c5a2f003"
         },
         {
           "path": "figures/pdf/R1_triangle_anatomy.pdf",
           "size": 18017,
-          "sha256": "426b180059c21b28f1010352471cb269b52b9e64e0ae088159b5bbe41cebd2f9"
+          "sha256": "7ddef6fb3728092e1def491b11a5fb2804e9e146e927548a11e3bb4dfc058624"
         },
         {
           "path": "figures/png/R1_triangle_anatomy.png",
@@ -69,7 +69,7 @@
         {
           "path": "figures/svg/R1_triangle_anatomy.svg",
           "size": 69801,
-          "sha256": "9769bc84bcb407643ed702a2264173acb1fb8f84b8c2321c7f2c5c773f7885b3"
+          "sha256": "28cfa4e3617aac15c1ca602eb7572880080460b8f27c4a5b682369ca2b758d1b"
         }
       ],
       "log": "results/logs/01_triangle_anatomy.log"
@@ -77,14 +77,14 @@
     "01_logical_foundations/02_table_one_identities.py": {
       "experiment_id": "R2",
       "script": "01_logical_foundations/02_table_one_identities.py",
-      "execution_status": "completed",
-      "runtime_seconds": 5.137758600059897,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "05283f2072081d84c1b0f98be50947208567c21bdfb307d0afc1c1f5db8ad156",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -110,7 +110,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "4b37fcaddef0ef5a3d0712a933f8d5eeb7222e2de721223116d22a26c1bfeb56",
+      "fingerprint_sha256": "68a90d52179908dc3e821433d7f916632d1cdc0c6ecf3e3e8a42b0340d3dcd62",
       "artifacts": [
         {
           "path": "results/csv/R2_table_one_identities.csv",
@@ -125,12 +125,12 @@
         {
           "path": "results/json/R2_table_one_identities.metadata.json",
           "size": 1818,
-          "sha256": "fa50c3dafcc91b1aaa0db2a3e5e732c23a685402fe812bf8a79fa918f74045b9"
+          "sha256": "b15e6c71f94845da4359a59e4d3118a125ffd1b1359bb498ac748f24048ffa3e"
         },
         {
           "path": "figures/pdf/R2_table_one_identities.pdf",
           "size": 22301,
-          "sha256": "dac105b3a3b92438746b63706b61e017ef20f946031955bb286a0172fed07dd3"
+          "sha256": "31b7c3466fa1eb20a79c8a89b287f3cb41c6afb9e2ba52d4c92cefe3c9ee922b"
         },
         {
           "path": "figures/png/R2_table_one_identities.png",
@@ -140,7 +140,7 @@
         {
           "path": "figures/svg/R2_table_one_identities.svg",
           "size": 88634,
-          "sha256": "cdfaeaf42a920b7609b53439a1df0c7aa727d1443ce64d227b20afc88a27bb00"
+          "sha256": "b42a54346212562aa99337e49f2a747b4b399c4a2a43a72d6a53be8d0ae3c2b7"
         }
       ],
       "log": "results/logs/02_table_one_identities.log"
@@ -148,14 +148,14 @@
     "01_logical_foundations/03_entangling_identity.py": {
       "experiment_id": "R3",
       "script": "01_logical_foundations/03_entangling_identity.py",
-      "execution_status": "completed",
-      "runtime_seconds": 4.894266399904154,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "04f207e721275719151d601ed4336e78b4c1cfb1c163452f995e63f99f64e84f",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -181,7 +181,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "fd8c9a338cfb70ad77c4a30e6df81d3fed9d3d162b2a849dcad246da82ab5e25",
+      "fingerprint_sha256": "60c76d288dc67864f5e47b46f4de9033c68bdc30000b5fd441138c6945fb9656",
       "artifacts": [
         {
           "path": "results/csv/R3_entangling_identity.csv",
@@ -196,12 +196,12 @@
         {
           "path": "results/json/R3_entangling_identity.metadata.json",
           "size": 1780,
-          "sha256": "f4f2a9b8c9b24b511081b96e4becb694fca990f69dc186e230911e53fc60a787"
+          "sha256": "e3f53f3fda5d6b4af650d443fc05cc7abfd3772a3c552e03ed2c13437d3990fe"
         },
         {
           "path": "figures/pdf/R3_entangling_identity.pdf",
           "size": 20628,
-          "sha256": "e5c483e29e893e24a56c94dc4f6df475ab8d9c4517c948240f6dd6ee22cf9ce9"
+          "sha256": "25f36e2c4b890f377428a039f5892174c2a5a21584d3b311fd467c8313affee4"
         },
         {
           "path": "figures/png/R3_entangling_identity.png",
@@ -211,7 +211,7 @@
         {
           "path": "figures/svg/R3_entangling_identity.svg",
           "size": 58175,
-          "sha256": "9bd65d0dce9ad7ac4f61aed2c4ce6c9127d3da32a497695ca863d23a39c2f371"
+          "sha256": "2b1b49f769888ad1e81b36c80b1a5bb1dbd085ac89e53a2a91320057392ea451"
         }
       ],
       "log": "results/logs/03_entangling_identity.log"
@@ -219,14 +219,14 @@
     "01_logical_foundations/04_adaptive_branches.py": {
       "experiment_id": "R4",
       "script": "01_logical_foundations/04_adaptive_branches.py",
-      "execution_status": "completed",
-      "runtime_seconds": 5.103241499979049,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "988e78cfc5c3d131a1b41998a48692128d4b53f861e0a40a226155e6f3fd7381",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -252,7 +252,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "7e3478f1558028c140ed13e50dea4701fe81f5e1b53d7e12a259839086e9559c",
+      "fingerprint_sha256": "6dd4e4f7c12553e407eb34a7da5d38c374d877c48323de9e566af13009908184",
       "artifacts": [
         {
           "path": "results/csv/R4_adaptive_branches.csv",
@@ -267,12 +267,12 @@
         {
           "path": "results/json/R4_adaptive_branches.metadata.json",
           "size": 1780,
-          "sha256": "5ec9b676d937848cc80465b1a5532e693a1bebe9d03878a304b25ae8bc42edba"
+          "sha256": "1e45ae67e62bc84e56f49d052550e1d52c4886cce08b5858cd3af3eeffb8c7c7"
         },
         {
           "path": "figures/pdf/R4_adaptive_branches.pdf",
           "size": 17107,
-          "sha256": "aaff68a60ac5a89e496da4985476ca217c44676b16ae8e595b1f441528c0404b"
+          "sha256": "8c51b49513a62d9a666f5b64282e146b821c9f349234164575c6478c33c3ca0a"
         },
         {
           "path": "figures/png/R4_adaptive_branches.png",
@@ -282,7 +282,7 @@
         {
           "path": "figures/svg/R4_adaptive_branches.svg",
           "size": 47230,
-          "sha256": "c76fb8a5da61c3a8aa3f7514b53f49d5bf217de640c350160c7d252389b53983"
+          "sha256": "82875d31737af7d422ea975a479a7e25d1f0f1915eef3d09a793b4e527d2ed12"
         }
       ],
       "log": "results/logs/04_adaptive_branches.log"
@@ -290,14 +290,14 @@
     "01_logical_foundations/05_brute_force_agreement.py": {
       "experiment_id": "R5",
       "script": "01_logical_foundations/05_brute_force_agreement.py",
-      "execution_status": "completed",
-      "runtime_seconds": 4.698353599989787,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "de34e8f09b834e66c4c3f3fb8dd131aee173eae87ba85efaef18e1b0812ef497",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -323,7 +323,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "c8158a04a412fb36cbee884e3d6bc6bfdc86d746f93db7b3706b28b7e9a0b12d",
+      "fingerprint_sha256": "9807c147a93a5e7a7148876d77c977fc1bf2cd7a484a459314a009b212cb9224",
       "artifacts": [
         {
           "path": "results/csv/R5_brute_force_agreement.csv",
@@ -338,12 +338,12 @@
         {
           "path": "results/json/R5_brute_force_agreement.metadata.json",
           "size": 1780,
-          "sha256": "ab73ee9bd147359167b7fffa4085b1531cd8d5c64184f1c084e31c13b19a94b9"
+          "sha256": "4d2311e8406dfd0c55fc33b8dfb2bdc1488afa59554b6d98f433649f210f0d18"
         },
         {
           "path": "figures/pdf/R5_brute_force_agreement.pdf",
           "size": 16839,
-          "sha256": "7e21fcb84688658d6187c2919e5f54611bf0946da77cf0d8a3536742252690d8"
+          "sha256": "81b88c85521f64d8a46ebacd3b41ae6fa96785f839c055fac411778c8cb1e095"
         },
         {
           "path": "figures/png/R5_brute_force_agreement.png",
@@ -353,7 +353,7 @@
         {
           "path": "figures/svg/R5_brute_force_agreement.svg",
           "size": 57928,
-          "sha256": "c017f7792d2e5c848144774d08b62dc23d75cffe1b39bf7a5f1a0f28d34d47f6"
+          "sha256": "e9fe3f039cd77ac601fd0ae92a212f1b4aefa032cb3c501b863e6a3c84e9945b"
         }
       ],
       "log": "results/logs/05_brute_force_agreement.log"
@@ -361,14 +361,14 @@
     "01_logical_foundations/06_batch_consistency.py": {
       "experiment_id": "R6",
       "script": "01_logical_foundations/06_batch_consistency.py",
-      "execution_status": "completed",
-      "runtime_seconds": 4.316501499968581,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "258abe8fbbfc850fbee6b0b1ea624d9dd5ac75f0e444c23ac34b483bc3b5451f",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -394,7 +394,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "e5e44de7c1122f2674b1c4a3346a121717f1cde61bb5c10be0edbdd0bd5ed090",
+      "fingerprint_sha256": "42bcb2d8e8af0c7ef595b52f85517bf25685fa1f77fd3bea9582593c1f000b26",
       "artifacts": [
         {
           "path": "results/csv/R6_batch_consistency.csv",
@@ -409,12 +409,12 @@
         {
           "path": "results/json/R6_batch_consistency.metadata.json",
           "size": 1780,
-          "sha256": "488859391635c214e158ab3f55e8c5ba0d3234ff74d1e524f0ff8e0656db5059"
+          "sha256": "3748a7d118f701b9ff76aa86d1f37bddbce823836c95063463e96207783aa224"
         },
         {
           "path": "figures/pdf/R6_batch_consistency.pdf",
           "size": 14611,
-          "sha256": "5cab667b5b891ea5b43736d2d3b6807c0249401e9d8c43fa9adbc91db706f747"
+          "sha256": "a417d0549c4c8ca0d406ae7b884b79e65eb2289be22782aa79123de0ccfb2bf0"
         },
         {
           "path": "figures/png/R6_batch_consistency.png",
@@ -424,7 +424,7 @@
         {
           "path": "figures/svg/R6_batch_consistency.svg",
           "size": 32916,
-          "sha256": "8681d3b80856a9a3081b429b628f8d7bda2c30691631ce44286ce4c830214048"
+          "sha256": "237ed3c4ab3a86f4d9dfc77a5b22c9e9f7fcb4a02fa7de8cbc189db9574aef53"
         }
       ],
       "log": "results/logs/06_batch_consistency.log"
@@ -432,14 +432,14 @@
     "02_mentpy_validation/07_semantic_topology.py": {
       "experiment_id": "R7",
       "script": "02_mentpy_validation/07_semantic_topology.py",
-      "execution_status": "completed",
-      "runtime_seconds": 8.185327099985443,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "79adbdcf64199be13d926804ed53ef957c00e2aac7ae272ecf28ea120c4f8aed",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -465,7 +465,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "7a2fefa70788dc87b36cc9bf5ad3bf58ec26e4afae519103b4a1ce13ec2d7fb4",
+      "fingerprint_sha256": "e367f38953bc1b1838b3665e880318d830cf5c2056cfd4fad907b8d64f200209",
       "artifacts": [
         {
           "path": "results/csv/R7_semantic_topology.csv",
@@ -480,12 +480,12 @@
         {
           "path": "results/json/R7_semantic_topology.metadata.json",
           "size": 1780,
-          "sha256": "0f7819eedb623435433c24f288e5ba3dabc7557aa803867976108b0e7ee76a0b"
+          "sha256": "f53d4588065e3543d276a4b0dc8d374d07ba3d19c286531dfd8ec934281d794a"
         },
         {
           "path": "figures/pdf/R7_semantic_topology.pdf",
           "size": 16709,
-          "sha256": "5bcdfe3cb7d288118b7094be9ef15bf4e29fe60b1fa6572feda5942d5bdca436"
+          "sha256": "49786780b3669623fd47e2eb97824b5449ebc1bbbbfb4b00053316a56032f3f2"
         },
         {
           "path": "figures/png/R7_semantic_topology.png",
@@ -495,7 +495,7 @@
         {
           "path": "figures/svg/R7_semantic_topology.svg",
           "size": 51879,
-          "sha256": "dfab94a5746c0d7077e8cd5ef9b4dad2ab6777e49df3738a33cf77231c75d9be"
+          "sha256": "57bcd2176397ad0b1f1f42275c05cc303f9663053d67bcac84a9cc2c57980dc2"
         }
       ],
       "log": "results/logs/07_semantic_topology.log"
@@ -503,14 +503,14 @@
     "02_mentpy_validation/08_flow_dependency_order.py": {
       "experiment_id": "R8",
       "script": "02_mentpy_validation/08_flow_dependency_order.py",
-      "execution_status": "completed",
-      "runtime_seconds": 6.93780469999183,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "8217e19b097cf2c47b4bea3870dfdabe0b5b646d959a91c1a702e25fc735848c",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -536,7 +536,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "fb4dfdf7a75b81097900c20e8812fa361945405d4e49661a21c5b9d019bc8b58",
+      "fingerprint_sha256": "c214f1512703e38dcc9e935db2ee85c0aad439a1c5a3f9f1b2dc1e9420445bc4",
       "artifacts": [
         {
           "path": "results/csv/R8_flow_dependency_order.csv",
@@ -551,12 +551,12 @@
         {
           "path": "results/json/R8_flow_dependency_order.metadata.json",
           "size": 1780,
-          "sha256": "8ffd1210d385d635d4e6cb38d5bbd18746162730cae5354b5bff02e0b3328a74"
+          "sha256": "ed43d8c78cebab871cabf3081f7865c9b0a3203ff9e4120aafcfe81ed1b8155b"
         },
         {
           "path": "figures/pdf/R8_flow_dependency_order.pdf",
           "size": 17861,
-          "sha256": "c36cda02495d9938c19ec133aa51d217e983bda15568a855e98d16c7a8f34198"
+          "sha256": "dd43eea333f00ed9eaf8a5c4eb20559f421cd54c1193c2a639ed498a25113870"
         },
         {
           "path": "figures/png/R8_flow_dependency_order.png",
@@ -566,7 +566,7 @@
         {
           "path": "figures/svg/R8_flow_dependency_order.svg",
           "size": 59265,
-          "sha256": "8ed469ca38ad49b5e49ef2de91532501c7374a237a240cd8962a29a47d58aaf6"
+          "sha256": "92e0aa5eccf312696f674f7bcfc030cddfd39ecb0a1dbc4b056dc84d03998303"
         }
       ],
       "log": "results/logs/08_flow_dependency_order.log"
@@ -574,14 +574,14 @@
     "02_mentpy_validation/09_state_density_agreement.py": {
       "experiment_id": "R9",
       "script": "02_mentpy_validation/09_state_density_agreement.py",
-      "execution_status": "completed",
-      "runtime_seconds": 7.145650199963711,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "1ea3126f6dcd45d1fa8b5af77abe52ba71977e958021c483cde5b4a28e740c02",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -607,7 +607,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "83c2b1e83cf42f747d025ac4aa66f972eadb052643b0812fb71aeea212adbcef",
+      "fingerprint_sha256": "3db5c141644b00039f44e2f3b2e52fb3f28b1ba1830c30317d50e4d5c6b234cb",
       "artifacts": [
         {
           "path": "results/csv/R9_state_density_agreement.csv",
@@ -622,12 +622,12 @@
         {
           "path": "results/json/R9_state_density_agreement.metadata.json",
           "size": 1780,
-          "sha256": "5d87187037ee04be747328ec8ded07380e8c35c0f444415d5d40c57aa39fa184"
+          "sha256": "d42555d5fd7fd64f20ab67f58339a20f9dc90a9ed1a1fa30188359ec790d9c64"
         },
         {
           "path": "figures/pdf/R9_state_density_agreement.pdf",
           "size": 19369,
-          "sha256": "370e6700c13920af352e85ef19d54946e858f3e6ad851a3dec9a29cfc639dfd1"
+          "sha256": "0a04b2c9478967ad1d848556f52c17c9b697da6923c7913070a23f09e8734b74"
         },
         {
           "path": "figures/png/R9_state_density_agreement.png",
@@ -637,7 +637,7 @@
         {
           "path": "figures/svg/R9_state_density_agreement.svg",
           "size": 44367,
-          "sha256": "aacef075df0c9e65a5baab0c5274f49a42a634613bbd83f8046aa645b7d7ec1b"
+          "sha256": "436ab0d3974de3f5b178e7a0cc79a96b709cdc14d0a0c79d8d26a9f9df3b1fa5"
         }
       ],
       "log": "results/logs/09_state_density_agreement.log"
@@ -645,14 +645,14 @@
     "02_mentpy_validation/10_trainability_audit.py": {
       "experiment_id": "R10",
       "script": "02_mentpy_validation/10_trainability_audit.py",
-      "execution_status": "completed",
-      "runtime_seconds": 6.784966299892403,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "c24ee6973e858c9ee48b89c679f9bb73812809a73f4e7003be30f39291e74d5e",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -678,7 +678,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "8e913aed44239e8cf208dad759e710a847f053a70f32986eb4537c58680f5152",
+      "fingerprint_sha256": "68bfe459f2d843db5d860cf330f43edf791c9f676b138b6a1ead8a773ba4ae5d",
       "artifacts": [
         {
           "path": "results/csv/R10_trainability_audit.csv",
@@ -693,12 +693,12 @@
         {
           "path": "results/json/R10_trainability_audit.metadata.json",
           "size": 1783,
-          "sha256": "d64c60e575a4989386b90e0684aca937e0f2ebf030137adc0de92ab56bc48bfe"
+          "sha256": "bd072b08952bf2eacd6d58f910bda4334e972e7dc11afab8d4c372a437cb9505"
         },
         {
           "path": "figures/pdf/R10_trainability_audit.pdf",
           "size": 18660,
-          "sha256": "96a091a5fe2590c211c0fa59ff1953ed72831703ca7e6477edef7427f016f179"
+          "sha256": "8bce47dbe9468dfc46bb2e26221088887b9c2d61de78bc4f22dab46212a25274"
         },
         {
           "path": "figures/png/R10_trainability_audit.png",
@@ -708,7 +708,7 @@
         {
           "path": "figures/svg/R10_trainability_audit.svg",
           "size": 57237,
-          "sha256": "7b70c73a5ba03e31e4a117693afd39b7fd9f2a9cbefe5e66e1998b7d6247ec0e"
+          "sha256": "8f624dbb282a1ca97d6c46534fcb25737cbb5401b56d68a743236e08ae59ca20"
         }
       ],
       "log": "results/logs/10_trainability_audit.log"
@@ -716,14 +716,14 @@
     "02_mentpy_validation/11_kernel_gram_agreement.py": {
       "experiment_id": "R11",
       "script": "02_mentpy_validation/11_kernel_gram_agreement.py",
-      "execution_status": "completed",
-      "runtime_seconds": 7.748270799987949,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "56c46fadd1af6c5c66c43b05533ec50bc5df2bafb07faf731aefd65c50312a74",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -749,7 +749,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "782523b1cea43f5779cd6302d2eed5d5101f11b7dd83e0bd12330c4bddce575e",
+      "fingerprint_sha256": "a0e3a6e8746598942f3c591f7e9a9e29264c8aa4df78e416ae3a90bfba4e1ac7",
       "artifacts": [
         {
           "path": "results/csv/R11_kernel_gram_agreement.csv",
@@ -764,12 +764,12 @@
         {
           "path": "results/json/R11_kernel_gram_agreement.metadata.json",
           "size": 1781,
-          "sha256": "a2171c36bb50706d8bb84fb1b3a08403a7773fe4c44869a2b98384ca90c1303c"
+          "sha256": "40c39b7290744d492fb6f66e5d61e0346e7c6387f24b42b7730bf49758fa4998"
         },
         {
           "path": "figures/pdf/R11_kernel_gram_agreement.pdf",
           "size": 33927,
-          "sha256": "c846e571b76a03f1a8e2ef14b62a4e858e544959043cd47bca5f7c4f4aa3d7ca"
+          "sha256": "bf5a6bf41086948309d079a7c23bf24d5565fe883f067911539b67368b770001"
         },
         {
           "path": "figures/png/R11_kernel_gram_agreement.png",
@@ -779,7 +779,7 @@
         {
           "path": "figures/svg/R11_kernel_gram_agreement.svg",
           "size": 76268,
-          "sha256": "d3147d1a469e889f796e998623b92893817867e228b5513738f8fc7730b50b8b"
+          "sha256": "3a8665a38ed9e2ead33b5b0852682545f2aacfe94a97bea45ac4484ff1236c85"
         }
       ],
       "log": "results/logs/11_kernel_gram_agreement.log"
@@ -787,14 +787,14 @@
     "02_mentpy_validation/12_instrument_agreement.py": {
       "experiment_id": "R12",
       "script": "02_mentpy_validation/12_instrument_agreement.py",
-      "execution_status": "completed",
-      "runtime_seconds": 7.912207699962892,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "a250a99225334e333079cded614c079c074050e7aebc53ccdc4616db8edd8d58",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -820,7 +820,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "22a34cc7f4a862e0c21c064cea79b298527316a8a3a063fd99d8b085b0d1c149",
+      "fingerprint_sha256": "e4d184ea651d7d153f3cde13559928d6868986a0ef900c7d64a221ac67300b65",
       "artifacts": [
         {
           "path": "results/csv/R12_instrument_agreement.csv",
@@ -835,12 +835,12 @@
         {
           "path": "results/json/R12_instrument_agreement.metadata.json",
           "size": 1781,
-          "sha256": "7a7036ba2bc3149074484210035b162b46cf661bed0912629eb1d9d0dec0f51d"
+          "sha256": "f89743a0219133968d9913a0d1f3d346ab27562c4182ca723c312df6bb87b500"
         },
         {
           "path": "figures/pdf/R12_instrument_agreement.pdf",
           "size": 21988,
-          "sha256": "7c0dbd0e47393c8506e1fe168feaa6eb584456d07b6e4ffc9febd34bf305ee51"
+          "sha256": "31273a5daea37260f38c3360a1427536e7213129195799dc380e56a2edc5fef2"
         },
         {
           "path": "figures/png/R12_instrument_agreement.png",
@@ -850,7 +850,7 @@
         {
           "path": "figures/svg/R12_instrument_agreement.svg",
           "size": 70476,
-          "sha256": "04b8d6f7c8b61c0f400123c118b7cc3b1e023781dde8e4f959cff5e183c4fd67"
+          "sha256": "45475518297df7438814d06375fa377b7d9bffa1aa9788f3f7a9a42d54e323b1"
         }
       ],
       "log": "results/logs/12_instrument_agreement.log"
@@ -858,14 +858,14 @@
     "02_mentpy_validation/13_runtime_scaling.py": {
       "experiment_id": "R13",
       "script": "02_mentpy_validation/13_runtime_scaling.py",
-      "execution_status": "completed",
-      "runtime_seconds": 7.650630200048909,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "e0634cc7e9586d43217d394cb2b0e6eef939ca266abf6a916cedf5cdce3aa17f",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -891,37 +891,37 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "9ade4db368e61d8d6a30c941876edb9e93d1465573502009dd3db846f4696ba6",
+      "fingerprint_sha256": "f2de35ade52fd7914b6c9fcba5a020a2f6877c3878d22856b47273688e651762",
       "artifacts": [
         {
           "path": "results/csv/R13_runtime_scaling.csv",
-          "size": 798,
-          "sha256": "8fa7a9f8e997bbae7bea27394a74b7651ca0297e24a4bd769ef7464599067632"
+          "size": 793,
+          "sha256": "3af30d18afc7ba63474a8e46e8185db5c172494854d036903632225436b03e01"
         },
         {
           "path": "results/json/R13_runtime_scaling.json",
-          "size": 2281,
-          "sha256": "0ad6bdac7c13777e53d498a5e37f351d712d14189dd22a25b2fb31ee791623bb"
+          "size": 2276,
+          "sha256": "c80047569366df32fdab203393bb27a566b79dd1ecb0e0578ccd324aff181714"
         },
         {
           "path": "results/json/R13_runtime_scaling.metadata.json",
           "size": 1786,
-          "sha256": "50981b1dd5b845ee728dec126ae87ad7815c47c76a1d4cd500376894d40b19fb"
+          "sha256": "9403a6b53389a4a63195481290da955f8fc530857b97ae128de8e071ff2495d7"
         },
         {
           "path": "figures/pdf/R13_runtime_scaling.pdf",
-          "size": 21310,
-          "sha256": "cf8568621dfc40d4daa041150d315e74932634d9cb8b19dca03dedd21845fee2"
+          "size": 21327,
+          "sha256": "6cdfbc7f6773d37456d74ee16bc727b39da9202d62145baf7eb73faa1524aa09"
         },
         {
           "path": "figures/png/R13_runtime_scaling.png",
-          "size": 174233,
-          "sha256": "9d3ccfedcd43b4e37c56f8eb1fb7726211fd8ed8b0e511cdda7655ca21463996"
+          "size": 171734,
+          "sha256": "76dc69954aee46f8b52357280630e8af01ab32b0bd7bf0071c777d99912aa26f"
         },
         {
           "path": "figures/svg/R13_runtime_scaling.svg",
-          "size": 58525,
-          "sha256": "d7a54f8ce683d39a8a13041e87e8556e68363a17914da7a12cc480bba3865995"
+          "size": 58729,
+          "sha256": "7dd95b756a63b0e669dea32e54e6b4a484ec2e94d5f1e8e6fcb5268c76abf7a5"
         }
       ],
       "log": "results/logs/13_runtime_scaling.log"
@@ -929,14 +929,14 @@
     "03_parameters_and_contracts/14_parameter_contracts.py": {
       "experiment_id": "R14",
       "script": "03_parameters_and_contracts/14_parameter_contracts.py",
-      "execution_status": "completed",
-      "runtime_seconds": 4.526682899915613,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "78b07db1cf4dc766a145e8f36e67c001170834812ec0c239c1e3a204992a3040",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -962,7 +962,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "7c961d70ce0ac5a8fef70ae9d311c4cbecedc47fe8c0a1af232e1302f1bb2c34",
+      "fingerprint_sha256": "ac29bd04bb98988aafbb938020d77776a7d3fbaacc5e5ce8b0a95430e07da65d",
       "artifacts": [
         {
           "path": "results/csv/R14_parameter_contracts.csv",
@@ -977,12 +977,12 @@
         {
           "path": "results/json/R14_parameter_contracts.metadata.json",
           "size": 1781,
-          "sha256": "57258fb772fe5e1061f7d96466b1a5d8c93dc8549215904aa142aaad4e301a8f"
+          "sha256": "c784e923caa8db46773030ad736c747c2291b4124bacea5d6b39399488c7cad7"
         },
         {
           "path": "figures/pdf/R14_parameter_contracts.pdf",
           "size": 15710,
-          "sha256": "45070ac1a032312b708c6201528a2ec633230da4df5b3a9572a0641f4f5470f4"
+          "sha256": "198e4f3b58df8efe82e27d4ad0e7fdde5d10b3a9ea3f67b78725f549defde8de"
         },
         {
           "path": "figures/png/R14_parameter_contracts.png",
@@ -992,7 +992,7 @@
         {
           "path": "figures/svg/R14_parameter_contracts.svg",
           "size": 57089,
-          "sha256": "b0ba33193a333229099b146326e4f2a97474f8808b5233681a49dd9f70fee63c"
+          "sha256": "732eebabd07760279d462798039279fb116e788e9ca3f0de930602cc06d3d212"
         }
       ],
       "log": "results/logs/14_parameter_contracts.log"
@@ -1000,14 +1000,14 @@
     "03_parameters_and_contracts/15_persistence_roundtrip.py": {
       "experiment_id": "R15",
       "script": "03_parameters_and_contracts/15_persistence_roundtrip.py",
-      "execution_status": "completed",
-      "runtime_seconds": 4.493025399977341,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "1c818a8282ac9e1ac634be91e77a3aba0f691d3aaa2f3ab33d89a65cdb169569",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -1033,7 +1033,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "af16daf0c600c385413abb0220972baece4ee9927f49943be82fc6d9ab044337",
+      "fingerprint_sha256": "e3dca3d2b5e2a24ca5d408b568247cd21f664c969982fb1fb5e4f46fb17ab41f",
       "artifacts": [
         {
           "path": "results/csv/R15_persistence_roundtrip.csv",
@@ -1048,12 +1048,12 @@
         {
           "path": "results/json/R15_persistence_roundtrip.metadata.json",
           "size": 1781,
-          "sha256": "9f13a32f9cf7f7821a5ab1f7b3f2443ea073e6c9c6d85d276395fbd98646053f"
+          "sha256": "a7d9fb380595c36a00ca171fcd93ad802265e8de8aac71ab1b11692b876ac656"
         },
         {
           "path": "figures/pdf/R15_persistence_roundtrip.pdf",
           "size": 15779,
-          "sha256": "83d46358495462fd0221fe48da0e08dc787b42553eecf874d6a3eca067347df7"
+          "sha256": "cde2b21e616e7141b3ee195a4ebc23cca6b547300591746b9dfa5dc4f3f814e2"
         },
         {
           "path": "figures/png/R15_persistence_roundtrip.png",
@@ -1063,7 +1063,7 @@
         {
           "path": "figures/svg/R15_persistence_roundtrip.svg",
           "size": 32904,
-          "sha256": "ec4cd34e376ccac60d30f0560624ec0872d940d7d337c7817c228877685d7c52"
+          "sha256": "94ac6e15a09676673d917624b33f3b3139780ef337ba4d65b66e54f5db9dcb0e"
         }
       ],
       "log": "results/logs/15_persistence_roundtrip.log"
@@ -1071,14 +1071,14 @@
     "03_parameters_and_contracts/16_invalid_input_matrix.py": {
       "experiment_id": "R16",
       "script": "03_parameters_and_contracts/16_invalid_input_matrix.py",
-      "execution_status": "completed",
-      "runtime_seconds": 5.210137799964286,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "ab777234142c2a611c25ea972068f4485fce78aacea72f5a7f47eec20211beaa",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -1104,7 +1104,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "11beaaa10ec4e7260b4f9c591e4ca4de600da6954ac14a72d5a18f5c4c0d7606",
+      "fingerprint_sha256": "fbf5282daf326d637783699485973a6db74472faf93eac5d93b95d2b11594f35",
       "artifacts": [
         {
           "path": "results/csv/R16_invalid_input_matrix.csv",
@@ -1119,12 +1119,12 @@
         {
           "path": "results/json/R16_invalid_input_matrix.metadata.json",
           "size": 1781,
-          "sha256": "321fc4032700a86c87cf9a6250d96cbaab590199d25dc374048d4068be93b37a"
+          "sha256": "36d4e0fba9ac8bc3a150818ccd6015b0961bedbe6eec3bb66a40385522abaec9"
         },
         {
           "path": "figures/pdf/R16_invalid_input_matrix.pdf",
           "size": 17164,
-          "sha256": "f9502b2503cb1ba2a55d557bfb5d3426e1be0cc82e233e02a44802d83cf7855b"
+          "sha256": "82f458601a4b2735879eec752d0aa6a804c2816639ba00414caf2a137b8bc045"
         },
         {
           "path": "figures/png/R16_invalid_input_matrix.png",
@@ -1134,7 +1134,7 @@
         {
           "path": "figures/svg/R16_invalid_input_matrix.svg",
           "size": 88032,
-          "sha256": "bdd29ef7939d5cacb5b4deee6e278b09f1dc5ac0f54cb9fa6603e0ac12633278"
+          "sha256": "df84b89280220ebfc16e50511136a8bc7e2ac70862814a2c20a0a6c9cb6cb363"
         }
       ],
       "log": "results/logs/16_invalid_input_matrix.log"
@@ -1142,14 +1142,14 @@
     "03_parameters_and_contracts/17_seeded_reproducibility.py": {
       "experiment_id": "R17",
       "script": "03_parameters_and_contracts/17_seeded_reproducibility.py",
-      "execution_status": "completed",
-      "runtime_seconds": 202.53880589990877,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "008c9f5fa3de40edb8f5f56f5ba6429c103f3eb35f1bda080466e3b0da91a849",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -1175,7 +1175,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "d02be890c233e830ee6507177fc13faa9977cb0ce00f2647886b84912624d634",
+      "fingerprint_sha256": "b8de5fe1a68cc45ceef7a0717d2f27ea65f15473ba5112b4a8cba5205034301b",
       "artifacts": [
         {
           "path": "results/csv/R17_seeded_reproducibility.csv",
@@ -1190,12 +1190,12 @@
         {
           "path": "results/json/R17_seeded_reproducibility.metadata.json",
           "size": 1781,
-          "sha256": "8bebad543b2ded063a26667f022eaa657bb18cb0bd2614090b3abb109deb8ec1"
+          "sha256": "4bc208246abd723be7a00e700b8ba98a3e62135887cdff3c629d998f73fbacb6"
         },
         {
           "path": "figures/pdf/R17_seeded_reproducibility.pdf",
           "size": 17131,
-          "sha256": "1e152d6def3a47b4da1cae41e01d541ba81a863b9716d1eea6912ea19b0269ef"
+          "sha256": "8562255f721cb834c293cb7627a4c5edb7cacff564e3525523561f5d807755a9"
         },
         {
           "path": "figures/png/R17_seeded_reproducibility.png",
@@ -1205,7 +1205,7 @@
         {
           "path": "figures/svg/R17_seeded_reproducibility.svg",
           "size": 46214,
-          "sha256": "14b43166fbd2682dce17dcc6884e43b8132aac71be013bcc17fe4fcc196d7de5"
+          "sha256": "09ff37388e1efc4f6992c283e897e7615e47c26de98a8fb134dca1ddb3ac983f"
         }
       ],
       "log": "results/logs/17_seeded_reproducibility.log"
@@ -1213,14 +1213,14 @@
     "04_gradients_and_training/18_parameter_shift_vs_fd.py": {
       "experiment_id": "R18",
       "script": "04_gradients_and_training/18_parameter_shift_vs_fd.py",
-      "execution_status": "completed",
-      "runtime_seconds": 5.295426300028339,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "baf2ddf8977379dce9b491d18979e537f320f6912dbd56cad318c0ece50c207d",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -1246,7 +1246,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "4f0989003fcab3d96df65a82ddf8355fe9bb19307a84173fa7c78023c7052144",
+      "fingerprint_sha256": "cbaf20dfb1d9175bb8fc693052c7a763af2a2209f360d63b87d2e03ff75016b9",
       "artifacts": [
         {
           "path": "results/csv/R18_parameter_shift_vs_fd.csv",
@@ -1261,12 +1261,12 @@
         {
           "path": "results/json/R18_parameter_shift_vs_fd.metadata.json",
           "size": 1781,
-          "sha256": "4a7d113fc1daca167b4c935e6cfad81501bf4435552ec1f535bd710e7ddc260e"
+          "sha256": "6f539818ec98f3ebddab3c81095a925d291b3aca8e309bd96841338b516d5d1b"
         },
         {
           "path": "figures/pdf/R18_parameter_shift_vs_fd.pdf",
           "size": 22514,
-          "sha256": "a8c815c0519086e3fd632d33976179f72e224e170cdeb00e25ac5ae1d809ba55"
+          "sha256": "c8111e996ebfed3196e2dbc823c1d8d6d59d8a73a7e8665edc74fdc3d5966e0b"
         },
         {
           "path": "figures/png/R18_parameter_shift_vs_fd.png",
@@ -1276,7 +1276,7 @@
         {
           "path": "figures/svg/R18_parameter_shift_vs_fd.svg",
           "size": 88030,
-          "sha256": "6097014790d4151990b8aff6bd66db98383fe4cc65c4769a982fd9cb9836f32a"
+          "sha256": "919715e6a52509ac52b135644b782efa33f57dcc1886b92d2f13734ea68498d2"
         }
       ],
       "log": "results/logs/18_parameter_shift_vs_fd.log"
@@ -1284,14 +1284,14 @@
     "04_gradients_and_training/19_optimizer_convergence.py": {
       "experiment_id": "R19",
       "script": "04_gradients_and_training/19_optimizer_convergence.py",
-      "execution_status": "completed",
-      "runtime_seconds": 5.381712000002153,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "61cb70c37719f0d0153f41d623efa1103104e45a6767343f13be290eb6a2597c",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -1317,7 +1317,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "f85841792f21a624767b9f95436ec0084f3effc2c8e6bc31204bc75c13f9e0ae",
+      "fingerprint_sha256": "0922f9a899cc2e4c4f53b7711181514abe5638ffad7fad495af8ea406bc111ba",
       "artifacts": [
         {
           "path": "results/csv/R19_optimizer_convergence.csv",
@@ -1332,12 +1332,12 @@
         {
           "path": "results/json/R19_optimizer_convergence.metadata.json",
           "size": 1781,
-          "sha256": "3a450486bfae7f050151d616771e0b37a543ccc10186f8f00b212fb94501898d"
+          "sha256": "3ea9ddf60db7dcec7ec5586edeb911fb5bb7547a7f7f00cffb73605b1b150ba0"
         },
         {
           "path": "figures/pdf/R19_optimizer_convergence.pdf",
           "size": 20379,
-          "sha256": "d6750abfbf094f2c851bcef49a43751b5e7478763fb7a2e1ef276c2b65d20696"
+          "sha256": "f655eeb09ab9661ee96c4af77edb4d9b87c400c4df01f8ddffcde8c2da95c25f"
         },
         {
           "path": "figures/png/R19_optimizer_convergence.png",
@@ -1347,7 +1347,7 @@
         {
           "path": "figures/svg/R19_optimizer_convergence.svg",
           "size": 59152,
-          "sha256": "125048870f141823e09ddf3b509e75dbca65c2f8619afa5ac47ee395cf11cba3"
+          "sha256": "3fea5251216d674e1f93f91dd0dfcb2041f258f91c871d71f0789ad83273aa98"
         }
       ],
       "log": "results/logs/19_optimizer_convergence.log"
@@ -1355,14 +1355,14 @@
     "04_gradients_and_training/20_haar_gate_learning.py": {
       "experiment_id": "R20",
       "script": "04_gradients_and_training/20_haar_gate_learning.py",
-      "execution_status": "completed",
-      "runtime_seconds": 47.53456569998525,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "67d909e03f2a7abde9c35c31923fd4e528aa9795d01a8559ef8679257f0c657f",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -1388,27 +1388,27 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "e1f7196696e5d6bbffd9d0f83edf85c0249079a5796b8ab28f6b25902b45426f",
+      "fingerprint_sha256": "bc5cbaef0c0033c86f9688a7ad2d5a8e6059b41b4af2032d8a9f234424daebd4",
       "artifacts": [
         {
           "path": "results/csv/R20_haar_gate_learning.csv",
-          "size": 1852,
-          "sha256": "2ac00ab68e0d8780588e354861937af5cbfd59a5db1a1bc0a89d8d33a3704135"
+          "size": 1847,
+          "sha256": "a5e250d75d1ccb2b09febbe04954eb10f2e397158e13194b98ceda25b24c1c15"
         },
         {
           "path": "results/json/R20_haar_gate_learning.json",
-          "size": 5861,
-          "sha256": "e912e283efa683c226a2b2c3acefd49e17012f066e707b2180e082b47a3ad647"
+          "size": 5856,
+          "sha256": "635ae83f33cc056eaeb3f6024ba3a5f30c8f0b177ae51b6a14addbec43ba25de"
         },
         {
           "path": "results/json/R20_haar_gate_learning.metadata.json",
           "size": 1976,
-          "sha256": "0a41a2ae118eb3eb69d56dc0cd406a774a38910806cb65de91dfc04a96490789"
+          "sha256": "e5484d8a3fd162f8f833c20812c1fd365873d66d36a9c6116af5491049a57108"
         },
         {
           "path": "figures/pdf/R20_haar_gate_learning.pdf",
           "size": 39979,
-          "sha256": "771dbe113128e9f04a2759ba0a25bd0f0cd18bf11b1efdd0b2503bbe3059cf11"
+          "sha256": "5eed197c2c2e3401a0424559d0689ebc759dc5c4929d6a3467340d7aca3ea3b9"
         },
         {
           "path": "figures/png/R20_haar_gate_learning.png",
@@ -1418,7 +1418,7 @@
         {
           "path": "figures/svg/R20_haar_gate_learning.svg",
           "size": 135613,
-          "sha256": "51e99f95ee1d1816f41c6a2b7843c5ceb0f02c38fc377bb81cad7a63f853ceee"
+          "sha256": "e2a9a88b821c8a6f8745be5db390ef444293a6b65409b15c371d224d9a0f2770"
         }
       ],
       "log": "results/logs/20_haar_gate_learning.log"
@@ -1426,14 +1426,14 @@
     "04_gradients_and_training/21_ising_gate_learning.py": {
       "experiment_id": "R21",
       "script": "04_gradients_and_training/21_ising_gate_learning.py",
-      "execution_status": "completed",
-      "runtime_seconds": 46.488149799988605,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "074bcb9aa1f2b1d1953fbb84e29a67830bc98c283ce3c4c323475a3f2e63c40a",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -1459,27 +1459,27 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "a5fb3d4205752963bae2c04250bd9eda3b6d35d4330aee4a5732d92281e46e52",
+      "fingerprint_sha256": "f544a6bebba4d4c4d1e9a7883877382e3d0501ca1bf718de2e475a0865c297ce",
       "artifacts": [
         {
           "path": "results/csv/R21_ising_gate_learning.csv",
-          "size": 1853,
-          "sha256": "2ae8c49563ed11eba46fcbf89d56a0f6ea3d53d33ab93a0f74d0990d6304b5cd"
+          "size": 1854,
+          "sha256": "35dc76cf2e9affcdef0945f17d1856b123874b7f92b93b4c0d3b77b65dc35fa4"
         },
         {
           "path": "results/json/R21_ising_gate_learning.json",
-          "size": 5853,
-          "sha256": "af5684817f1979ee2e4349e37a2b66b26350c97f5a095966dd8c3b3f63a2e6f0"
+          "size": 5854,
+          "sha256": "2bc1075848cc787576ac8b807ab3cdc934767af89ac2e3245fa86d9fdd4f13cf"
         },
         {
           "path": "results/json/R21_ising_gate_learning.metadata.json",
           "size": 1976,
-          "sha256": "7d444ffe8d3102868cec79e6744ba97c79557f7fb192739c40fc8db9027533f2"
+          "sha256": "98fc508b0598096f556794a09f58a43addf52a1aabf87434a26e56e340f2a747"
         },
         {
           "path": "figures/pdf/R21_ising_gate_learning.pdf",
           "size": 40092,
-          "sha256": "10c28497140370c97cf370b28d2573eb43b9c03a534b587aaa89b7aa0dcaedef"
+          "sha256": "58ec0be91c7735f4f831e83f111f101c34e530a1c49837983fdcf992f203d206"
         },
         {
           "path": "figures/png/R21_ising_gate_learning.png",
@@ -1489,7 +1489,7 @@
         {
           "path": "figures/svg/R21_ising_gate_learning.svg",
           "size": 133242,
-          "sha256": "162b5cf3791c1130aea422b3d3895fc3d0b1c0b3234bf92e06a79f0533a93921"
+          "sha256": "066893bfa41ebd655871f28117e32d6f38be7f4a21b80df7a5d59739320aa069"
         }
       ],
       "log": "results/logs/21_ising_gate_learning.log"
@@ -1497,14 +1497,14 @@
     "04_gradients_and_training/22_gate_learning_sensitivity.py": {
       "experiment_id": "R22",
       "script": "04_gradients_and_training/22_gate_learning_sensitivity.py",
-      "execution_status": "completed",
-      "runtime_seconds": 226.88162840006407,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "3f98941cc5345f7c3e3f9e8ac882d7e15c4f9915cd8b0f54e0781cabdb8fc71e",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -1530,7 +1530,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "b9290821f6e6f2ea9c8d48c0f83d355bc014d9e9fcc16f9f2de526dd8bbcad72",
+      "fingerprint_sha256": "470cb31c2c7e214d9cf066f7ce96b23b01424f32e84b40c96dc88b7938ecfe1b",
       "artifacts": [
         {
           "path": "results/csv/R22_gate_learning_sensitivity.csv",
@@ -1545,12 +1545,12 @@
         {
           "path": "results/json/R22_gate_learning_sensitivity.metadata.json",
           "size": 1865,
-          "sha256": "42edc378ce610b9130c0b76907b583959708b3a8e5de864a81784ea0ae284e9f"
+          "sha256": "396e7135eba4018b94f98f77efaecbcae12e72e0fd1a3dad8b79e80db2b605fb"
         },
         {
           "path": "figures/pdf/R22_gate_learning_sensitivity.pdf",
           "size": 18596,
-          "sha256": "9f7402ec8cc04e7238a875d0e945bfcfba765d7e5c019603181b294e21caa0b0"
+          "sha256": "af808118c04de5e886815dab0b9b7bba6da1888fe1abfd2d50658d8852dcd4bc"
         },
         {
           "path": "figures/png/R22_gate_learning_sensitivity.png",
@@ -1560,7 +1560,7 @@
         {
           "path": "figures/svg/R22_gate_learning_sensitivity.svg",
           "size": 59529,
-          "sha256": "cfbf19b845d857be0208b368e4942ac588e5c24faeeec6532653e736f75ed388"
+          "sha256": "b3aacc386e56fe7d9757b4c5d18e1859f22deffb611f10e8e6fb6f04b87a8e96"
         }
       ],
       "log": "results/logs/22_gate_learning_sensitivity.log"
@@ -1568,14 +1568,14 @@
     "04_gradients_and_training/23_classifier_verification.py": {
       "experiment_id": "R23",
       "script": "04_gradients_and_training/23_classifier_verification.py",
-      "execution_status": "completed",
-      "runtime_seconds": 24.353266600053757,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "17b9bc6e63612c57a119ee91fb10c983fab262e3b1170b0e1511eaf2896cefad",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -1601,7 +1601,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "1c67e5fe55fc43f2418a0a6a0e8d8f9eacf8888073522382fbc4fca52d1fd724",
+      "fingerprint_sha256": "5f2e7f27aef1055c9d22e9bbcb89a5f0b60e07b4d8e69ae29f8461791510de46",
       "artifacts": [
         {
           "path": "results/csv/R23_classifier_verification.csv",
@@ -1616,12 +1616,12 @@
         {
           "path": "results/json/R23_classifier_verification.metadata.json",
           "size": 1858,
-          "sha256": "ac6a60fbe3ed94cc431c98e562a5aeca677bec9217baa554aff9e71fb2286a2f"
+          "sha256": "8b76776aeded60ac0c76776024d1fb9785c45580a246b81cb6d5d161f63556aa"
         },
         {
           "path": "figures/pdf/R23_classifier_verification.pdf",
           "size": 20988,
-          "sha256": "c6afb0f024759987a4b55775c0d2197be4b5f24eafb9aaf44de06d119f43e5c5"
+          "sha256": "86fdf97e3ba6ba2c3e4c2a31228a3afc158dc079a2494cde123ed260d619627e"
         },
         {
           "path": "figures/png/R23_classifier_verification.png",
@@ -1631,7 +1631,7 @@
         {
           "path": "figures/svg/R23_classifier_verification.svg",
           "size": 51615,
-          "sha256": "11807ecd408ffddc668490a234e91f8bd97713ca33505c5c443f46c71a8c50d9"
+          "sha256": "132932b207123d40578b187ab815a4a45f51ac24bae6ca858187acc40a8b9718"
         }
       ],
       "log": "results/logs/23_classifier_verification.log"
@@ -1639,14 +1639,14 @@
     "04_gradients_and_training/24_regressor_verification.py": {
       "experiment_id": "R24",
       "script": "04_gradients_and_training/24_regressor_verification.py",
-      "execution_status": "completed",
-      "runtime_seconds": 100.57316309993621,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "8bbd5fc4d1c7b8b735b719d30295451ad981020ec5deaa27e4451f2e060ae871",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -1672,7 +1672,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "0f78495550535f37b4415aff325af486cd2355cbaca32138d57966a87d59a5d1",
+      "fingerprint_sha256": "55865627d6242ae6ed641074d53980796d1f1c6a2e57397d030cd89d08822c23",
       "artifacts": [
         {
           "path": "results/csv/R24_regressor_verification.csv",
@@ -1687,12 +1687,12 @@
         {
           "path": "results/json/R24_regressor_verification.metadata.json",
           "size": 1858,
-          "sha256": "2c71a7efa67bfd16446651296eba8b19b1024fc3a1ae34880a934a045d515b30"
+          "sha256": "4d961d3ef29aec8a52bbafbd9e8366600967e8242e2534606c2e0ec403c6b1f8"
         },
         {
           "path": "figures/pdf/R24_regressor_verification.pdf",
           "size": 19689,
-          "sha256": "fa897faeb14f031881b27aeda4f8bd13202d161c25d99dde0e4ef0aadd621c59"
+          "sha256": "a90ebeb1caba4b137c13d78b58214909f076fce992d6bfc5f591787af5165d4e"
         },
         {
           "path": "figures/png/R24_regressor_verification.png",
@@ -1702,7 +1702,7 @@
         {
           "path": "figures/svg/R24_regressor_verification.svg",
           "size": 64579,
-          "sha256": "9ab197cc3f304489dd086ff2617b7556264767a26ec9c371f3e0c3ef84e9b910"
+          "sha256": "76d48c78e87a4df519ecf7ed3f0c5fc6131a47bbb2a99b0ae28b35a5c72d71b1"
         }
       ],
       "log": "results/logs/24_regressor_verification.log"
@@ -1710,14 +1710,14 @@
     "05_kernels_and_learning/25_kernel_feature_state.py": {
       "experiment_id": "R25",
       "script": "05_kernels_and_learning/25_kernel_feature_state.py",
-      "execution_status": "completed",
-      "runtime_seconds": 4.209818899980746,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "1049288f1f875e022fd7586b7e7ce332aa6fac951219498fe50ec44aa745ff74",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -1743,7 +1743,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "3d1225bd75cadcb8fce1371838b0738e274e5a41c3d72e5734b21a57d3d77097",
+      "fingerprint_sha256": "a9b6f45870cf781fb670b94152a0c50709770bfbb5e882a34af2185d34b9392d",
       "artifacts": [
         {
           "path": "results/csv/R25_kernel_feature_state.csv",
@@ -1758,12 +1758,12 @@
         {
           "path": "results/json/R25_kernel_feature_state.metadata.json",
           "size": 1781,
-          "sha256": "2bb8be6302c7219fc90223e63cd003efcea62e49dfd95411e9ca1782f74b8d73"
+          "sha256": "2534d647a8e9a69e35959d18ea152622cce1425676396bca7d1b5006ba714d76"
         },
         {
           "path": "figures/pdf/R25_kernel_feature_state.pdf",
           "size": 15378,
-          "sha256": "aa26958f39e99b369029067c3848053f6e2a138a1f269f861d6bd522f51ac5c7"
+          "sha256": "1ecdf6dae68f47b2c044a3b8c5178856929f28eca65bcfb347af2242c70aee97"
         },
         {
           "path": "figures/png/R25_kernel_feature_state.png",
@@ -1773,7 +1773,7 @@
         {
           "path": "figures/svg/R25_kernel_feature_state.svg",
           "size": 32692,
-          "sha256": "d01ab09c6ce0c691844a72516f6f1419658123e254d32e36a6c3c98a071d0d20"
+          "sha256": "ec4c8b607b39a08427e4a26eac60495251ed9d0fdcaac51d7f7e9e7c4b155a8d"
         }
       ],
       "log": "results/logs/25_kernel_feature_state.log"
@@ -1781,14 +1781,14 @@
     "05_kernels_and_learning/26_kernel_properties.py": {
       "experiment_id": "R26",
       "script": "05_kernels_and_learning/26_kernel_properties.py",
-      "execution_status": "completed",
-      "runtime_seconds": 5.719660799950361,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "ceeae3eb90f519597c56fe011bf03b18fd1fa16b79bbdcc6fb3c6889e5dfe403",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -1814,7 +1814,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "b747d801284cb91369bbf60e43e8d0cfbd99a3822824d073c928b82cd379a8e5",
+      "fingerprint_sha256": "cf0738f641fd356de44c3f390cc040f3fdc42ed275ebf1009833115a71c83745",
       "artifacts": [
         {
           "path": "results/csv/R26_kernel_properties.csv",
@@ -1829,12 +1829,12 @@
         {
           "path": "results/json/R26_kernel_properties.metadata.json",
           "size": 1781,
-          "sha256": "527b882773385f6334633199148f672733dda9d1d8440fee090d73f456793a55"
+          "sha256": "1a846a6cdc722cca9b87713f41f81d3dbeabcc710047dc8a065db70dd0c41428"
         },
         {
           "path": "figures/pdf/R26_kernel_properties.pdf",
           "size": 20161,
-          "sha256": "9742f8c0121ac67e55aba5dbc3629901ba6698fd54e101eeb08dff122cd56bb5"
+          "sha256": "21cf38aa25cbb298a7e534ae9bf495521d3d233e60e71a797d5b309add5b6b52"
         },
         {
           "path": "figures/png/R26_kernel_properties.png",
@@ -1844,7 +1844,7 @@
         {
           "path": "figures/svg/R26_kernel_properties.svg",
           "size": 62569,
-          "sha256": "02160089346dd04e5746d745c51837b2caf45854a440a8291171098c6f915d5c"
+          "sha256": "51c306cbcb6af6868b07df9e396507718b27f2f73815c2a9c30f27de6a562f74"
         }
       ],
       "log": "results/logs/26_kernel_properties.log"
@@ -1852,14 +1852,14 @@
     "05_kernels_and_learning/27_kernel_classification.py": {
       "experiment_id": "R27",
       "script": "05_kernels_and_learning/27_kernel_classification.py",
-      "execution_status": "completed",
-      "runtime_seconds": 7.045542099978775,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "d0e7eadf7480d8ef2aa88fe8dff7c592dddea1667084d7d0752cd11701af42c6",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -1885,7 +1885,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "ffcb643ebe4825fe3f737755ddb64d22639ad4de6b0f5797a03ea753430f6fce",
+      "fingerprint_sha256": "a153912354fd2427cd95e8db778ed93cd88de3731c3df3f6801ac297e8aee273",
       "artifacts": [
         {
           "path": "results/csv/R27_kernel_classification.csv",
@@ -1900,12 +1900,12 @@
         {
           "path": "results/json/R27_kernel_classification.metadata.json",
           "size": 1884,
-          "sha256": "4c91c11beed211fff45463f8172a373b00e4bfb89f1b2d100f3e6b6d19982500"
+          "sha256": "4adbaa0595a22d44c7f768d95aa7f8644ce82f0d1dceefc235d78d2b6c4ed466"
         },
         {
           "path": "figures/pdf/R27_kernel_classification.pdf",
           "size": 20726,
-          "sha256": "79ae7b1a042b14d3b6facca090a14cd7ab7c5d5efe655baeac22cb37fca9464a"
+          "sha256": "b4b7d5b60d1186663d23b026fdd348d05b4a95d91e2be7c12463e75bf4da9c16"
         },
         {
           "path": "figures/png/R27_kernel_classification.png",
@@ -1915,7 +1915,7 @@
         {
           "path": "figures/svg/R27_kernel_classification.svg",
           "size": 58865,
-          "sha256": "cded9f20b43ed00f87032a7f0be7e9039b7cf2d69c7312e60acf3f3c2b8cdefe"
+          "sha256": "fec14fa1749e25bdd2e05520ff1f2e34fed65e6f39affaead58960489c25c35e"
         }
       ],
       "log": "results/logs/27_kernel_classification.log"
@@ -1923,14 +1923,14 @@
     "05_kernels_and_learning/28_kernel_robustness.py": {
       "experiment_id": "R28",
       "script": "05_kernels_and_learning/28_kernel_robustness.py",
-      "execution_status": "completed",
-      "runtime_seconds": 8.279497899929993,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "85308375b9b88b6fb53b72b146e99f7e1145bf5600f9dd61dfbf4abd12380dd2",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -1956,7 +1956,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "39bae541c3d2f1637e31fb22c8b1bc9f857c5d48dbfb303871c868d69f36c23a",
+      "fingerprint_sha256": "276e4c916c71dac550b30f350ee1db1cea28637e21839d4df51aedf4ee6077ae",
       "artifacts": [
         {
           "path": "results/csv/R28_kernel_robustness.csv",
@@ -1971,12 +1971,12 @@
         {
           "path": "results/json/R28_kernel_robustness.metadata.json",
           "size": 1870,
-          "sha256": "b91fc00d44c1fa42e0c409056170690d187dd1c0df00873f9bd763f3d9c69f07"
+          "sha256": "6949b7ab3b7474334c9b1648afba196543670a8eac2caff18e6d73a008a27a81"
         },
         {
           "path": "figures/pdf/R28_kernel_robustness.pdf",
           "size": 18876,
-          "sha256": "ad02c057249b2e87033c2527d69c6d1dd9ab0854a369fd422e03d4a3a90867d2"
+          "sha256": "6f95eb0a1916e425611cf129ed504defd0f3c411fab0d1f3e7a772ad34f39951"
         },
         {
           "path": "figures/png/R28_kernel_robustness.png",
@@ -1986,7 +1986,7 @@
         {
           "path": "figures/svg/R28_kernel_robustness.svg",
           "size": 72964,
-          "sha256": "e968abe87f2747414596be562d39aa1e3ec04ac7f2c9abd5447e46e3b8113b2b"
+          "sha256": "4c7d2a34db035d472e749714801ee2f33919966d3a936009261b765c1fc48e37"
         }
       ],
       "log": "results/logs/28_kernel_robustness.log"
@@ -1994,14 +1994,14 @@
     "06_expressivity_and_diagnostics/29_instrument_diagnostics.py": {
       "experiment_id": "R29",
       "script": "06_expressivity_and_diagnostics/29_instrument_diagnostics.py",
-      "execution_status": "completed",
-      "runtime_seconds": 4.453496000031009,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "894ef87c640150ebd8985aa6360b4e4f2d033a9404b630c4c69f02b1ae842e34",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -2027,7 +2027,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "aeb5c5c1e5f4c5d74222bd4e89efb7c0652ebc4a593fef260e7b1891e7c99c15",
+      "fingerprint_sha256": "40deaefdac7f7f3f146e23684923fa09227df504a6ce42c72c1ce3bcb3be2021",
       "artifacts": [
         {
           "path": "results/csv/R29_instrument_diagnostics.csv",
@@ -2042,12 +2042,12 @@
         {
           "path": "results/json/R29_instrument_diagnostics.metadata.json",
           "size": 1781,
-          "sha256": "113b8ba91ed20d2ac37db1855ee5506d35102d9bb5da0e5109719ba6b68f92c8"
+          "sha256": "d5bb82025d00ccbe0b2543da18358aab2b2f801bd7652293235c26c991c8ddac"
         },
         {
           "path": "figures/pdf/R29_instrument_diagnostics.pdf",
           "size": 14798,
-          "sha256": "25f987865dacd302f6a38e7f6c99a5c6452ba32bf777be9c91ee64661a5e2636"
+          "sha256": "3b9930c7d4d99dafa7d9076bdc1297ef9bfc2df7093bbb8f0c47ad0c9eaede11"
         },
         {
           "path": "figures/png/R29_instrument_diagnostics.png",
@@ -2057,7 +2057,7 @@
         {
           "path": "figures/svg/R29_instrument_diagnostics.svg",
           "size": 35232,
-          "sha256": "7681b00a12de85c85fedf3a7117a9b30c417de5d9cff0e2bc1efb551053a92b5"
+          "sha256": "a921e0f68d93f187d3fdc90c5298586706dbe43a956ea8fd08b92ec80fe73f8c"
         }
       ],
       "log": "results/logs/29_instrument_diagnostics.log"
@@ -2065,14 +2065,14 @@
     "06_expressivity_and_diagnostics/30_concurrence.py": {
       "experiment_id": "R30",
       "script": "06_expressivity_and_diagnostics/30_concurrence.py",
-      "execution_status": "completed",
-      "runtime_seconds": 4.704232700052671,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "84fd16124f5d386052dda554b592a2cdace951bb1a89ebb4f457533146b8c493",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -2098,7 +2098,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "e25cfd8f7afc81870470ad3a55e4d3b22c58186525d93cc9bbd97e53541f2dc9",
+      "fingerprint_sha256": "848361db0d4ff064343a6b547c62e63f950e7080bfcc041f69718a24361b6ec4",
       "artifacts": [
         {
           "path": "results/csv/R30_concurrence.csv",
@@ -2113,12 +2113,12 @@
         {
           "path": "results/json/R30_concurrence.metadata.json",
           "size": 1781,
-          "sha256": "1a4b45318f1c6842e70c4389b01cc8bded2c201dfd68b537666f0ca6196d8a0f"
+          "sha256": "7a6a63d9eeb87dbbc37f99c8cb64f686385d653ca9dadde08bb026c07f189271"
         },
         {
           "path": "figures/pdf/R30_concurrence.pdf",
           "size": 18260,
-          "sha256": "0c1802072eb37225dd0a9cc7f05eddc140d96052f7522df90d4776546fbfd73d"
+          "sha256": "50b1ac73d2d66da13f4d4a65bc83e8f076580f9ebae9806d94d2e8e042c44c64"
         },
         {
           "path": "figures/png/R30_concurrence.png",
@@ -2128,7 +2128,7 @@
         {
           "path": "figures/svg/R30_concurrence.svg",
           "size": 52295,
-          "sha256": "eb93eb79989fa210ce31c9be41b62d7de9f47f78dafa0c0abd2907ffccc80f77"
+          "sha256": "41bb63786719cea1c4759fb7d54776a4324f5760fc3d9e0f3ec597cab9a84698"
         }
       ],
       "log": "results/logs/30_concurrence.log"
@@ -2136,14 +2136,14 @@
     "06_expressivity_and_diagnostics/31_qfi.py": {
       "experiment_id": "R31",
       "script": "06_expressivity_and_diagnostics/31_qfi.py",
-      "execution_status": "completed",
-      "runtime_seconds": 4.731364000006579,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "d83a5cbf2b3ce64ecbd5f8d2633319a2409723c0e2197d073c4ef600f8f4cb68",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -2169,7 +2169,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "eb58553cfdd35d32f11da4c4ff991f95b056b3e6c76b30c54b543d71e5cbc8df",
+      "fingerprint_sha256": "4002407677eac7acf6c45f191fad1523457da4ef5eb9205a300ddb39b58363c0",
       "artifacts": [
         {
           "path": "results/csv/R31_qfi.csv",
@@ -2184,12 +2184,12 @@
         {
           "path": "results/json/R31_qfi.metadata.json",
           "size": 1781,
-          "sha256": "b66481c0fb65747818149982f3c90b31c6047d7221acae9ef5b49fc61aad3f45"
+          "sha256": "1d94dff8f91d8148ebc5d7178a58f7b79b380942ee91c433d9c7d3d684f869d0"
         },
         {
           "path": "figures/pdf/R31_qfi.pdf",
           "size": 18813,
-          "sha256": "e01a982c4d1eb0cd599ab40047ecb983ca4e576d7b6497ce7a84c2cce2141a5d"
+          "sha256": "3db7d098dc126fab801dbc736f5851143cd1c752884826cd074b3f4015ad1482"
         },
         {
           "path": "figures/png/R31_qfi.png",
@@ -2199,7 +2199,7 @@
         {
           "path": "figures/svg/R31_qfi.svg",
           "size": 44977,
-          "sha256": "c37e3b40de16a7f41f9fc170ad28a92a55cc459866109b195831bf4568eabae4"
+          "sha256": "cd4d073c675914a5b85af5ac991eadb4120694fb8dcf4d03adc299853215f89b"
         }
       ],
       "log": "results/logs/31_qfi.log"
@@ -2207,14 +2207,14 @@
     "06_expressivity_and_diagnostics/32_lie_closure.py": {
       "experiment_id": "R32",
       "script": "06_expressivity_and_diagnostics/32_lie_closure.py",
-      "execution_status": "completed",
-      "runtime_seconds": 4.326510800048709,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "614f59d333b9fd4b947ac682301287d050580cd8deef51fd9f9905f3cb9bec5e",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -2240,7 +2240,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "4a0bb56e1c691057de7a659375ec70862298d0f2fe6467106e7432b821a60fce",
+      "fingerprint_sha256": "ac8a3e4de972e1339a7d990b178af69d9373d8abd453ba7674a7a8a5c85eee77",
       "artifacts": [
         {
           "path": "results/csv/R32_lie_closure.csv",
@@ -2255,12 +2255,12 @@
         {
           "path": "results/json/R32_lie_closure.metadata.json",
           "size": 1781,
-          "sha256": "d4474ff493531dc032ec0ae42dc11a1ae8a366dfbe77dd174c5fd8f7fdf4d7ff"
+          "sha256": "2d1475583d0f1110cdebb220b925ccf8aa509322bee13dd17c81772a4407d1cf"
         },
         {
           "path": "figures/pdf/R32_lie_closure.pdf",
           "size": 15963,
-          "sha256": "89f15697183d15fee9aac57e995c4f533647ddfa13fca5c25d46b0d6175cda2a"
+          "sha256": "fae02f7fd07c49daace5a5833dc67d86ba3d67555dba77e5d4985df0d96f74f3"
         },
         {
           "path": "figures/png/R32_lie_closure.png",
@@ -2270,7 +2270,7 @@
         {
           "path": "figures/svg/R32_lie_closure.svg",
           "size": 45429,
-          "sha256": "270781ade7a876a02164c3f9088742020eb95f46f1a6ff7cdacf5cbb413605e6"
+          "sha256": "2d1308e11dfc27c170ee2c48af39b57181bd4d4593d918221aef72a1d7fa430f"
         }
       ],
       "log": "results/logs/32_lie_closure.log"
@@ -2278,14 +2278,14 @@
     "06_expressivity_and_diagnostics/33_fisher_spectra.py": {
       "experiment_id": "R33",
       "script": "06_expressivity_and_diagnostics/33_fisher_spectra.py",
-      "execution_status": "completed",
-      "runtime_seconds": 5.070922200102359,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "d37a6a313cda6fa5c73506b9a8657ca08109e92d2bf48e41be7012394f211ac7",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -2311,7 +2311,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "fa016587f1db152b7aced0ffa9801c96e0b5fe7f3f49bbc3749a844806da8f5c",
+      "fingerprint_sha256": "2210f9479e768330eba2131366863338431bfdc1ba70dbdfc425599575a7a47d",
       "artifacts": [
         {
           "path": "results/csv/R33_fisher_spectra.csv",
@@ -2326,12 +2326,12 @@
         {
           "path": "results/json/R33_fisher_spectra.metadata.json",
           "size": 1783,
-          "sha256": "6047db293ed0d630913d3b3808fde3eb9c319951d0c05214f69f578b7fb177a8"
+          "sha256": "9fe20afd7ab6e7bca43f55bafb89a68126428ec3879eda3976cbdc3b013a89e1"
         },
         {
           "path": "figures/pdf/R33_fisher_spectra.pdf",
           "size": 20450,
-          "sha256": "6a525044939b379a0fa7341f014ca2126695ec63d424431c8294ebcd0b36e111"
+          "sha256": "e1518256875eac5052d2effe2710119ed55bee9d635862ba18eacb45b1359654"
         },
         {
           "path": "figures/png/R33_fisher_spectra.png",
@@ -2341,7 +2341,7 @@
         {
           "path": "figures/svg/R33_fisher_spectra.svg",
           "size": 70731,
-          "sha256": "fa52cafc663d86d3d88b6b1fb72d0a083fb345f765a5b0380e0ee6b2f90f7f5f"
+          "sha256": "7037ce17a969990595921547bbe070f05dcc0b131654a9ecf62a41af536835dd"
         }
       ],
       "log": "results/logs/33_fisher_spectra.log"
@@ -2349,14 +2349,14 @@
     "07_gkp_resources/34_gkp_codeword_projection.py": {
       "experiment_id": "R34",
       "script": "07_gkp_resources/34_gkp_codeword_projection.py",
-      "execution_status": "completed",
-      "runtime_seconds": 9.338539400021546,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "a1d23ad226cb796271f1ce8939dab68a91315c32b06cd190327b3d2c0a82ea36",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -2382,7 +2382,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "e3eee5d46bbada1202875dd55e4df35b718ade3b60508542cc41e246ba686c1f",
+      "fingerprint_sha256": "fb8af01c1b5e127cc80482a49cc89918d53d89e326bf7df9679388d219ae57a3",
       "artifacts": [
         {
           "path": "results/csv/R34_gkp_codeword_projection.csv",
@@ -2397,12 +2397,12 @@
         {
           "path": "results/json/R34_gkp_codeword_projection.metadata.json",
           "size": 1783,
-          "sha256": "6f1a942d444cca92e835aafe8cf44c7771976da3bd560ed362dff96781988ff7"
+          "sha256": "aabc5ec6e4ef07192b07f2c1d8adc22df256240ac18183c3db98b5ebecdf0a0f"
         },
         {
           "path": "figures/pdf/R34_gkp_codeword_projection.pdf",
           "size": 24057,
-          "sha256": "9893eb7e054eb48696c1489bda2420ba0a892019dc325990402ef24881aa127e"
+          "sha256": "43c31e95cc966b3bd8a1a3811f93ace9ab74611e243e5b6e1b6428604d27fabe"
         },
         {
           "path": "figures/png/R34_gkp_codeword_projection.png",
@@ -2412,7 +2412,7 @@
         {
           "path": "figures/svg/R34_gkp_codeword_projection.svg",
           "size": 87957,
-          "sha256": "18305e90496cd7c6a2054b88960a0d559a29a93b5ec9067a0a671a3e45c84b6f"
+          "sha256": "f9cf17621ab388526e61f7ac3372d68bfab6a67a8b002f9bc17617276925ad67"
         }
       ],
       "log": "results/logs/34_gkp_codeword_projection.log"
@@ -2420,14 +2420,14 @@
     "08_physical_lowering/35_capability_map.py": {
       "experiment_id": "R35",
       "script": "08_physical_lowering/35_capability_map.py",
-      "execution_status": "completed",
-      "runtime_seconds": 4.774392100051045,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "46a133c0fb6bc5ba643c7d4e2650dd05af2beb56f1452537e6177aab799a3448",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -2453,7 +2453,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "ff2aaf521c1732e24cb9595dbad7251bd938fe8dc7f9b92794893315f1f88c75",
+      "fingerprint_sha256": "bc7fcff3b2ed6070366fa8325fe6d63691bd25936f762122fc7db2af1b4fa86e",
       "artifacts": [
         {
           "path": "results/csv/R35_capability_map.csv",
@@ -2468,12 +2468,12 @@
         {
           "path": "results/json/R35_capability_map.metadata.json",
           "size": 1781,
-          "sha256": "ed7e45ffb923803df25d39ccbbbfd28e2e740d25c62c4b4f7c276aaee3885832"
+          "sha256": "01d1d56b5ab0e9bf80f7f3b156b81aa69f6361f40d2904774de49f7e8c90f5f3"
         },
         {
           "path": "figures/pdf/R35_capability_map.pdf",
           "size": 15875,
-          "sha256": "fdf2fef65fadc89044377aaad44d2750f0db092eeb258a5040cf13d490028dad"
+          "sha256": "7039c772eeae8b84414034ade28c43513121f45e1b547af0883ecfbfab0b72fb"
         },
         {
           "path": "figures/png/R35_capability_map.png",
@@ -2483,7 +2483,7 @@
         {
           "path": "figures/svg/R35_capability_map.svg",
           "size": 45667,
-          "sha256": "847691d0d6b2b148f167028a36340dfee94d8820ad2bafa1a8658b651a3dfaa8"
+          "sha256": "26ef8623ab46f987f88f0cc3c11b760e91981404db6a70941328ee9a230174dd"
         }
       ],
       "log": "results/logs/35_capability_map.log"
@@ -2491,14 +2491,14 @@
     "08_physical_lowering/36_lowering_preservation.py": {
       "experiment_id": "R36",
       "script": "08_physical_lowering/36_lowering_preservation.py",
-      "execution_status": "completed",
-      "runtime_seconds": 4.76841790007893,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "70993f5f9ee9da742056dfe220a8c7c048e7c13d863659ca95d2ba70b3e5e33a",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -2524,7 +2524,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "7fd93d74a93ac9fef6fe1cb46170c71eca85ac354eee682cb013104cbae708a6",
+      "fingerprint_sha256": "f004c783fd0d546482064f14b9063ebe6267c99834844127b18768fbfce5c6e4",
       "artifacts": [
         {
           "path": "results/csv/R36_lowering_preservation.csv",
@@ -2539,12 +2539,12 @@
         {
           "path": "results/json/R36_lowering_preservation.metadata.json",
           "size": 1783,
-          "sha256": "7cb1afdd525a892ea5069faa6eb37ab2b1c2ece65b7a89e3bd414d8f55838a05"
+          "sha256": "8bbe572628484320cadc0cd33c5b7d8f8873388662bedeb7870531223f097c9f"
         },
         {
           "path": "figures/pdf/R36_lowering_preservation.pdf",
           "size": 17764,
-          "sha256": "b5a4116686ed38d5ad4e3df99f9c6b088acab0bca235471575e32be09af7ab06"
+          "sha256": "0f880a2d0e6b7d2d52c4439f03db8bf7c691bf6c0d623338d1492a2ab8898bce"
         },
         {
           "path": "figures/png/R36_lowering_preservation.png",
@@ -2554,7 +2554,7 @@
         {
           "path": "figures/svg/R36_lowering_preservation.svg",
           "size": 39201,
-          "sha256": "d0d20edc7deaed41aee5194edd6f3bfadce4b75e20362613cabe0427f050c9b0"
+          "sha256": "362b672edc1c2e26f8bc93fa9200e08893f0f0099034f59a930ce7196decace7"
         }
       ],
       "log": "results/logs/36_lowering_preservation.log"
@@ -2562,14 +2562,14 @@
     "08_physical_lowering/37_pauli_frame_validation.py": {
       "experiment_id": "R37",
       "script": "08_physical_lowering/37_pauli_frame_validation.py",
-      "execution_status": "completed",
-      "runtime_seconds": 4.311197999981232,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "707979b0652a509c93e86fa986f6e16c4955daa22755348f0ecc20b9f6968d08",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -2595,7 +2595,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "60accc674bd8bc4624e43b4f74b2e2265db99e669f762623b9aaebcec9faa1bf",
+      "fingerprint_sha256": "91362929e9f7b22e6d9c496051380725df78340510ee374a68fc5778039e17f4",
       "artifacts": [
         {
           "path": "results/csv/R37_pauli_frame_validation.csv",
@@ -2610,12 +2610,12 @@
         {
           "path": "results/json/R37_pauli_frame_validation.metadata.json",
           "size": 1781,
-          "sha256": "291997eb3362012b50810c36afe99b4e4e1ffd2559cbf0a353e9f613c06d5765"
+          "sha256": "3b2f6bd9a3171b7f1096878e674bcab45dd2683529cb83cbeb56ed6717f6c01d"
         },
         {
           "path": "figures/pdf/R37_pauli_frame_validation.pdf",
           "size": 16518,
-          "sha256": "82606d9b264176e407593d30c368eceaca10dd4cd51e9f878afaf212778b7be7"
+          "sha256": "35f1f0c688e03b8f1f4a5a1213901bcd01e7c59ee16743ccd8cf18d823c87ae7"
         },
         {
           "path": "figures/png/R37_pauli_frame_validation.png",
@@ -2625,7 +2625,7 @@
         {
           "path": "figures/svg/R37_pauli_frame_validation.svg",
           "size": 33567,
-          "sha256": "0c07129648686727975728d62a5119e65879a8260d77a8a39219dc201a211540"
+          "sha256": "e2497041dba2b4a24c50467d6bf3a992b19943789b4559ff8d13734c8dca9a14"
         }
       ],
       "log": "results/logs/37_pauli_frame_validation.log"
@@ -2633,14 +2633,14 @@
     "08_physical_lowering/38_public_pattern_comparison.py": {
       "experiment_id": "R38",
       "script": "08_physical_lowering/38_public_pattern_comparison.py",
-      "execution_status": "completed",
-      "runtime_seconds": 5.138693300075829,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "8de55d33b4a286f4b45c8f520ccd440d35c2dfceb55eee569d3ffcd5a2273684",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -2666,7 +2666,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "9e2833cd52b6d98cdc98e59ec3503c9a8ebda2a71a501f4326219c785e621a9b",
+      "fingerprint_sha256": "4098c3d2d0113c8581907718a66db6fc58f91c7be2e98901439ab5bbb5f81412",
       "artifacts": [
         {
           "path": "results/csv/R38_public_pattern_comparison.csv",
@@ -2681,12 +2681,12 @@
         {
           "path": "results/json/R38_public_pattern_comparison.metadata.json",
           "size": 1781,
-          "sha256": "345598bb02d337e802f6e639e3c863b13a305ffcd6085d8c0e1435dc6c6f90e8"
+          "sha256": "1cdce22da5cff99954a59a24212e7e44dde02d73b2d54837e74a29f41b057a37"
         },
         {
           "path": "figures/pdf/R38_public_pattern_comparison.pdf",
           "size": 15858,
-          "sha256": "ab081e9ec7464945ef83c8b068772a0d91e546f10102e334acc2905e29cd8f7a"
+          "sha256": "5b39712ade905413ada982a242cae219b7718ac1d6145e39b9b740dd60639c09"
         },
         {
           "path": "figures/png/R38_public_pattern_comparison.png",
@@ -2696,7 +2696,7 @@
         {
           "path": "figures/svg/R38_public_pattern_comparison.svg",
           "size": 33537,
-          "sha256": "bcab123b22ff4d255bec0dbb1b382f001ec57afc0ac3cbf15a991670a8bc8273"
+          "sha256": "f7228aef5436e854bea90f6fb47e07dfc5a37bd3743d6fdcbd387880c12f4530"
         }
       ],
       "log": "results/logs/38_public_pattern_comparison.log"
@@ -2704,14 +2704,14 @@
     "09_piquasso_validation/39_raw_piquasso_state_prep.py": {
       "experiment_id": "R39",
       "script": "09_piquasso_validation/39_raw_piquasso_state_prep.py",
-      "execution_status": "completed",
-      "runtime_seconds": 5.949143399950117,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "35ab38fa995661d98b79b14fac5e3d5b1741fce757856b0ff5456a50d1201d51",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -2737,7 +2737,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "6dfd12db043403310393550ec286222a30e50047996b7b148b505c8d04741e11",
+      "fingerprint_sha256": "770980d26a215e6d73ba7e5888f231b43007a5c4fb7b4a76f980acc11059cdb7",
       "artifacts": [
         {
           "path": "results/csv/R39_raw_piquasso_state_prep.csv",
@@ -2752,12 +2752,12 @@
         {
           "path": "results/json/R39_raw_piquasso_state_prep.metadata.json",
           "size": 1781,
-          "sha256": "4e01a4dc13db19e0b1b0268af9b41d24588001c9450cd703ae664cc0ce40e333"
+          "sha256": "27518c6f4f306c65a39e7a242f2192217e85c490464774ab12eb8209c105fc91"
         },
         {
           "path": "figures/pdf/R39_raw_piquasso_state_prep.pdf",
           "size": 17087,
-          "sha256": "0922ed5ebc2bf53c48a0a2da32f07e799069e55c78954e3988870bfb87f04756"
+          "sha256": "6b331e27516fbfaa63ccc8c7b29993382a278c46fe12cbb01b385a694213e72d"
         },
         {
           "path": "figures/png/R39_raw_piquasso_state_prep.png",
@@ -2767,7 +2767,7 @@
         {
           "path": "figures/svg/R39_raw_piquasso_state_prep.svg",
           "size": 45933,
-          "sha256": "0642f4bbbf61e516010d6757fcd6131fdf9b47459e2325432f37a6ee47fd5cc6"
+          "sha256": "76e61ae2cecf208461af012abf203b3e042810e22365d7d1ed7deb0cf73091c0"
         }
       ],
       "log": "results/logs/39_raw_piquasso_state_prep.log"
@@ -2775,14 +2775,14 @@
     "09_piquasso_validation/40_raw_piquasso_cz.py": {
       "experiment_id": "R40",
       "script": "09_piquasso_validation/40_raw_piquasso_cz.py",
-      "execution_status": "completed",
-      "runtime_seconds": 76.226201799931,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "9adb684456effea56d8b1c6ab86ddf6779cab88a217339990fba9a8ba3ff68f2",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -2808,7 +2808,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "7917482c24dcf946e98d6fc6401a3da342db656cb121619925d424f3f942b4a1",
+      "fingerprint_sha256": "81d94d3554a216ce5bae233d17cd1413abe3eca0de1a1b764badbdf11797481e",
       "artifacts": [
         {
           "path": "results/csv/R40_raw_piquasso_cz.csv",
@@ -2823,12 +2823,12 @@
         {
           "path": "results/json/R40_raw_piquasso_cz.metadata.json",
           "size": 1781,
-          "sha256": "d842ccbefcdb5f79f5c1f0bb36b9260356b844608178897ebc1aeb2be51ab6c6"
+          "sha256": "f331d40fa6eb342c455d923c414a521dc1206389bdab46f9d6b34e17f19a16f2"
         },
         {
           "path": "figures/pdf/R40_raw_piquasso_cz.pdf",
           "size": 17541,
-          "sha256": "30917375f83479daa4b260bdcc44b6b501ef122d944fb9915daf3c8b12cc4f10"
+          "sha256": "5a00e42d3cf6c762def27709c4c672792e513926d2862e5288b657eb72cc084c"
         },
         {
           "path": "figures/png/R40_raw_piquasso_cz.png",
@@ -2838,7 +2838,7 @@
         {
           "path": "figures/svg/R40_raw_piquasso_cz.svg",
           "size": 54918,
-          "sha256": "1d7c6ddf98441ffefd9f0a96c75b56b95c80478bc92bd76f3e733b271aa0b09a"
+          "sha256": "c25e9414ffaa0aa7019c18072216450463a7519b036b7c9b97a380819da03c0b"
         }
       ],
       "log": "results/logs/40_raw_piquasso_cz.log"
@@ -2846,14 +2846,14 @@
     "09_piquasso_validation/41_conditional_execution_comparison.py": {
       "experiment_id": "R41",
       "script": "09_piquasso_validation/41_conditional_execution_comparison.py",
-      "execution_status": "completed",
-      "runtime_seconds": 8.442006599972956,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "c76430fb92bc649d883185c0a8e17fbe0425726d900ab335e7a3755341bbd5a6",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -2879,7 +2879,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "0fd2a01e33ff4a2ff65dfb6c29e40a51e9e3e923e48e1ccc8d8882c579b09e40",
+      "fingerprint_sha256": "2c9dc835ea362376993f6db52330bf3e45319bcdae138bf5c96799dd5cb41a96",
       "artifacts": [
         {
           "path": "results/csv/R41_conditional_execution_comparison.csv",
@@ -2894,12 +2894,12 @@
         {
           "path": "results/json/R41_conditional_execution_comparison.metadata.json",
           "size": 1781,
-          "sha256": "b0305638e526d317864cc5dd0199da759f1b37566acfa77eac399356fa0df5c3"
+          "sha256": "c5cb7970537adb5b596bb70ec93ba104356cb28fc9eac17f3a11dd4e2f28c86c"
         },
         {
           "path": "figures/pdf/R41_conditional_execution_comparison.pdf",
           "size": 16443,
-          "sha256": "0526165b7b6aea00a14263090d8e4b06d1ed85dbe1dcdbbdc2ec2b7d28e3a16e"
+          "sha256": "8e8664f12f135ef0d392fcdb117db8660f51aeb7fd19021b93c67ebb9db34378"
         },
         {
           "path": "figures/png/R41_conditional_execution_comparison.png",
@@ -2909,7 +2909,7 @@
         {
           "path": "figures/svg/R41_conditional_execution_comparison.svg",
           "size": 48866,
-          "sha256": "adb19a1e2eb6e42069bdc8735c0d84d86bbc10d68ff22172c14c332718ea150e"
+          "sha256": "4287b11aaa3fe06d96889bad08e11112f9399e03cb1cf21467acdfbfc81ec49a"
         }
       ],
       "log": "results/logs/41_conditional_execution_comparison.log"
@@ -2917,14 +2917,14 @@
     "09_piquasso_validation/42_abstraction_overhead.py": {
       "experiment_id": "R42",
       "script": "09_piquasso_validation/42_abstraction_overhead.py",
-      "execution_status": "completed",
-      "runtime_seconds": 10.724557600100525,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "1848b3322fb6c5c6c5493a6e453852a3aeee8b1e878e2716fc4335744c12360c",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -2950,37 +2950,37 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "2c6a0667d16d25a87cefbab14e061cb9b03650a13be51f874a34bd95500a4df1",
+      "fingerprint_sha256": "32a775ce0b52d414145d0527ae7cef7cf4b26fc1437f35e4a1757a585d207fab",
       "artifacts": [
         {
           "path": "results/csv/R42_abstraction_overhead.csv",
-          "size": 510,
-          "sha256": "b214367993a00156701ecdf7f1c5e7eb019dffaec1e816ee2810834841cdb82c"
+          "size": 509,
+          "sha256": "3b4080b7cdc6ec0d61d3ad0cbcd651090095b59d0a2fea78862e21884f896838"
         },
         {
           "path": "results/json/R42_abstraction_overhead.json",
-          "size": 1695,
-          "sha256": "3a90123be4f23340faa522c5b92df3fd0ddd1d3d82e469b58355823a2b28a1fc"
+          "size": 1693,
+          "sha256": "2d07353980adb0af0366a82d9aa4e5dad0eba1a121942b09f158f1e3003c2d08"
         },
         {
           "path": "results/json/R42_abstraction_overhead.metadata.json",
           "size": 1786,
-          "sha256": "3f688b17700024886abe78c3ac8d43d8b7f004b7d8d3badd82cc51649bdfc4b5"
+          "sha256": "7f3130cc1482d758244769212a4060d570085ed6ff9689ed4f413a5c6a700abb"
         },
         {
           "path": "figures/pdf/R42_abstraction_overhead.pdf",
-          "size": 15609,
-          "sha256": "e6f7ad3cfeafa8864c32a1d2567ff51fe53fa472c10e3b65b25869da9972cebc"
+          "size": 15554,
+          "sha256": "741f7a65c5042e5e780698b97ebb6738fb3baabd715db88c0a8cdea1b4703741"
         },
         {
           "path": "figures/png/R42_abstraction_overhead.png",
-          "size": 117155,
-          "sha256": "be074e38e11fdb1c75f0663e2e5acc1d7831e9836c5c50a19405d294fd1de59c"
+          "size": 118395,
+          "sha256": "b1d8da7884e319b10e47af8c75f973090d5bfd6d7080f0167a853d0a3454932b"
         },
         {
           "path": "figures/svg/R42_abstraction_overhead.svg",
-          "size": 41019,
-          "sha256": "53f5147244fc94acbe4f13b358ee8b4bbc50650080fc8e5d2bd902891999b425"
+          "size": 41406,
+          "sha256": "3075340d34913f5afd93944641066a42219135d80e082950f8280edcfd4a8f79"
         }
       ],
       "log": "results/logs/42_abstraction_overhead.log"
@@ -2988,14 +2988,14 @@
     "10_physical_statistics/43_decoded_statistics.py": {
       "experiment_id": "R43",
       "script": "10_physical_statistics/43_decoded_statistics.py",
-      "execution_status": "completed",
-      "runtime_seconds": 18.094853300019167,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "43f305fb01755d7ad7702af6b34ef031e168bfd24e7791e04df137cae4693f9e",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -3021,7 +3021,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "7bce6e1f4301224337b2fd7ee872be4b4e033bc9d1ce8d78ba697009e3b2d2ac",
+      "fingerprint_sha256": "bd8805f53771d2d976e379fee832630a9c4321215d6e0864457193cabdd969fc",
       "artifacts": [
         {
           "path": "results/csv/R43_decoded_statistics.csv",
@@ -3036,12 +3036,12 @@
         {
           "path": "results/json/R43_decoded_statistics.metadata.json",
           "size": 1781,
-          "sha256": "97905a984f780053bc46eca6a9445599c24d001cda6c65de305c702bb33d4890"
+          "sha256": "8be826b734ef62078ca8362ef0da76fd16da0f22959aac4f00e95fbba66ad109"
         },
         {
           "path": "figures/pdf/R43_decoded_statistics.pdf",
           "size": 15412,
-          "sha256": "d812d7b6228c38445d33637e1daa1d058ee2395032d259a8121baba523859d72"
+          "sha256": "f2d09bdb57fc9faac687c3d6910e5695431e76cfdefbe4b346d9628d1d99fe33"
         },
         {
           "path": "figures/png/R43_decoded_statistics.png",
@@ -3051,7 +3051,7 @@
         {
           "path": "figures/svg/R43_decoded_statistics.svg",
           "size": 42315,
-          "sha256": "4f7fd7665ef3954d7b7c6a7b18ff77bde09467e9fd561e26ed70e21008431944"
+          "sha256": "704446a40b91fc934c52da01d96c11eae749fa47c28a7cebdd8f0bbcd83c5607"
         }
       ],
       "log": "results/logs/43_decoded_statistics.log"
@@ -3059,14 +3059,14 @@
     "10_physical_statistics/44_shot_convergence.py": {
       "experiment_id": "R44",
       "script": "10_physical_statistics/44_shot_convergence.py",
-      "execution_status": "completed",
-      "runtime_seconds": 519.8371953999158,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "07a75678f9f64df4e4850c15c060fa844f97970a171ebc5aa878e608f521b82e",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -3092,7 +3092,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "57362a8864789cf3109bc8202f5829c8d132d1ee4342f32d93c469f0d9da3f1e",
+      "fingerprint_sha256": "5973d7f968ece88230bc4bdb167719de10eed7f4ad1acc74e889d0139ae6a712",
       "artifacts": [
         {
           "path": "results/csv/R44_shot_convergence.csv",
@@ -3107,12 +3107,12 @@
         {
           "path": "results/json/R44_shot_convergence.metadata.json",
           "size": 1923,
-          "sha256": "147118ad565569b3dac9fe581cf397d386edb5bda7ac14524ad3654131c4c117"
+          "sha256": "deebdb2c1cf2846d0d064b24074b3564c23e335481e4f14a790e51fb26157223"
         },
         {
           "path": "figures/pdf/R44_shot_convergence.pdf",
           "size": 21389,
-          "sha256": "dba947519554b39aa9fbf7217b6153d06e0ed0c622b359d9cfefae52131818da"
+          "sha256": "67eaf2b8b1039cf402a782ac9661bc257d611c429e5871b37d4d028b4ea39176"
         },
         {
           "path": "figures/png/R44_shot_convergence.png",
@@ -3122,7 +3122,7 @@
         {
           "path": "figures/svg/R44_shot_convergence.svg",
           "size": 59350,
-          "sha256": "c0070217289e78f972279c75360df452ad71717b12a9e8c4ee599994d0af5532"
+          "sha256": "f5d7b31603033f3e082f22f84febd574acdff0f7bf9e9b24e948d55238d7de35"
         }
       ],
       "log": "results/logs/44_shot_convergence.log"
@@ -3130,14 +3130,14 @@
     "10_physical_statistics/45_joint_readout_correlations.py": {
       "experiment_id": "R45",
       "script": "10_physical_statistics/45_joint_readout_correlations.py",
-      "execution_status": "completed",
-      "runtime_seconds": 18.381479799980298,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "91fa4961fb995e03828a20b887c122db3f668b7be6d42806010a091e4585e39f",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -3163,7 +3163,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "3ce16a47f85d8915604e0e29db2823f5f1eb0f7872041f8fe20bd53d1917e062",
+      "fingerprint_sha256": "c5356220d473aa4deddf7aa30819cd7c5d984b6286c98e5ff5c7f325e55c8fbb",
       "artifacts": [
         {
           "path": "results/csv/R45_joint_readout_correlations.csv",
@@ -3178,12 +3178,12 @@
         {
           "path": "results/json/R45_joint_readout_correlations.metadata.json",
           "size": 1783,
-          "sha256": "8018d6e170f99bd866e0b1465aec7b80aa137e9b1206ca5c30b829177032e0d4"
+          "sha256": "f76ff0230ebb5371ff055274bcc60574a9bcb7d4ba193073fca4096b9f629918"
         },
         {
           "path": "figures/pdf/R45_joint_readout_correlations.pdf",
           "size": 16546,
-          "sha256": "ed81824bf3a671c6e98a272c2f9543b1377420653ba9f21235c923eeee48847e"
+          "sha256": "7af35196bf409ad8ad165de86fb62cc8fac62963b44281df655e4b3ce4e45c61"
         },
         {
           "path": "figures/png/R45_joint_readout_correlations.png",
@@ -3193,7 +3193,7 @@
         {
           "path": "figures/svg/R45_joint_readout_correlations.svg",
           "size": 49681,
-          "sha256": "8e9fbfe6a3c3d53e661fb16cef5d6f60ec75f511cddd6f284f9b65df09d18c24"
+          "sha256": "57a48e75a913d2eb31518eb674a0eca07bf5687d372d1f3f2e51b20acad62a21"
         }
       ],
       "log": "results/logs/45_joint_readout_correlations.log"
@@ -3201,14 +3201,14 @@
     "10_physical_statistics/46_hard_vs_soft_decoding.py": {
       "experiment_id": "R46",
       "script": "10_physical_statistics/46_hard_vs_soft_decoding.py",
-      "execution_status": "completed",
-      "runtime_seconds": 4.526903999969363,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "441dc03255e3dc05b7f386487366cfebd77704478e46f981cf6b77d2e990176c",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -3234,7 +3234,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "eae6068f98cb09c769174f486394d538bc2601e6a6b98a45fd447a76fd976170",
+      "fingerprint_sha256": "fc26c1548c5045b9b8af8ea52c312219d4d977b87055b7ffd8c3267aa3a0e23e",
       "artifacts": [
         {
           "path": "results/csv/R46_hard_vs_soft_decoding.csv",
@@ -3249,12 +3249,12 @@
         {
           "path": "results/json/R46_hard_vs_soft_decoding.metadata.json",
           "size": 1781,
-          "sha256": "1061aadf796b57bd36196331ab869f997b0d93fcf822e2b4f071d8269edaf554"
+          "sha256": "28af33d74f584a7557442fba22323d7b7360ba61d66ced2c80433769dec2e7d4"
         },
         {
           "path": "figures/pdf/R46_hard_vs_soft_decoding.pdf",
           "size": 17121,
-          "sha256": "4f618ccbd705e8ed0007ce1b2418eccadbd0dcb5c3460c6d2a514df36b867a46"
+          "sha256": "c5127bf5cc99bb15f9065000d371d2b17d0d652d8f0da07336e886766d515436"
         },
         {
           "path": "figures/png/R46_hard_vs_soft_decoding.png",
@@ -3264,7 +3264,7 @@
         {
           "path": "figures/svg/R46_hard_vs_soft_decoding.svg",
           "size": 35988,
-          "sha256": "c1b13c8e0c7e9d3c5d75c31a5ec60e841510f9d5ed27d90567328f52d457dbe8"
+          "sha256": "2c3254b730f611d5f829c703489a8c141e2ba53e65e8fcace3cf6955714855a7"
         }
       ],
       "log": "results/logs/46_hard_vs_soft_decoding.log"
@@ -3272,14 +3272,14 @@
     "11_convergence/47_resource_axis_convergence.py": {
       "experiment_id": "R47",
       "script": "11_convergence/47_resource_axis_convergence.py",
-      "execution_status": "completed",
-      "runtime_seconds": 12.675901200040244,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "30d1afcacc3dab95f0175655ba37788d877457a06afce047c1539391d2f7fc44",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -3305,7 +3305,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "acc36b2ec859ce3710b2f721961396b3de191d0e215217ffd16fea3bae4112cf",
+      "fingerprint_sha256": "5e965d39efa9dfc60d7611de32016a3587125ed387a2f350aab0dad89b3f086a",
       "artifacts": [
         {
           "path": "results/csv/R47_resource_axis_convergence.csv",
@@ -3320,12 +3320,12 @@
         {
           "path": "results/json/R47_resource_axis_convergence.metadata.json",
           "size": 1781,
-          "sha256": "ec30ec221920f894f606ecb40ecc2baf27abaea4e05ae98c09ed4b2e1c7fc1e5"
+          "sha256": "de9cc1eeb7349368a49579fc7711f19a1d2088e19d7ec17064f296aad1e60318"
         },
         {
           "path": "figures/pdf/R47_resource_axis_convergence.pdf",
           "size": 20962,
-          "sha256": "a28aa4b43f0a31d00eab343c74f0e42afb1ba417fbfb40bd043c904f526e4be8"
+          "sha256": "76b4861919da2a8d48b8dbd472fcea8d42f9f2253f9315978404d5d9f4d1e355"
         },
         {
           "path": "figures/png/R47_resource_axis_convergence.png",
@@ -3335,7 +3335,7 @@
         {
           "path": "figures/svg/R47_resource_axis_convergence.svg",
           "size": 81921,
-          "sha256": "4d07bfa322cb5b250d3cbe4bf54a99e5de7b178bc693b7fa339fa950b5f88367"
+          "sha256": "a2c718f70d1a51e2af19866811eed6eccaff781ed1002d559f8d6650bc2a1cae"
         }
       ],
       "log": "results/logs/47_resource_axis_convergence.log"
@@ -3343,14 +3343,14 @@
     "10_physical_statistics/48_physical_training_stability.py": {
       "experiment_id": "R48",
       "script": "10_physical_statistics/48_physical_training_stability.py",
-      "execution_status": "completed",
-      "runtime_seconds": 743.0703923999099,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "f01d68a9eb85436470b308df61919b659be7bc1e90bdceccf42b4d0c67d18eea",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -3376,7 +3376,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "dadd25df253735eff24e49906dd4e6928bff0c5a54cf964d78dae3954991a1b8",
+      "fingerprint_sha256": "1e6d41ce3a970bd2507060c9d1877c090290f4dcca60bb971d81a4b6bb7666ec",
       "artifacts": [
         {
           "path": "results/csv/R48_physical_training_stability.csv",
@@ -3391,12 +3391,12 @@
         {
           "path": "results/json/R48_physical_training_stability.metadata.json",
           "size": 1936,
-          "sha256": "920a12afbe73b4def1c7b15c722c0d5079c3113e5902c0823d999911d2e4765e"
+          "sha256": "cffb65e16fa1310d483a7a8bc9fe6f2c8a72bfcc1e00b79333526ecd90f914a7"
         },
         {
           "path": "figures/pdf/R48_physical_training_stability.pdf",
           "size": 17037,
-          "sha256": "323e06c62f3e3aaee92981408e86de5bd1957dbd823a26ec9822ddb31973f3d3"
+          "sha256": "5ab64e3ef374dfcb7a619bf9da02ae1ac559536a2a1ed567126ec592cca350cf"
         },
         {
           "path": "figures/png/R48_physical_training_stability.png",
@@ -3406,7 +3406,7 @@
         {
           "path": "figures/svg/R48_physical_training_stability.svg",
           "size": 42842,
-          "sha256": "338d503f6718b5f7034e4fc05d789dc98be17bb362804cc14e9e4f024ad29476"
+          "sha256": "aa11466a4ee463938e4a99595bf38df8b7526d5c53974669a87780f7fcd78f03"
         }
       ],
       "log": "results/logs/48_physical_training_stability.log"
@@ -3414,14 +3414,14 @@
     "12_performance/49_aggregate_performance_figure.py": {
       "experiment_id": "R_PERF",
       "script": "12_performance/49_aggregate_performance_figure.py",
-      "execution_status": "completed",
-      "runtime_seconds": 3.811948399990797,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "adc71b4605056f86c537594e1db2a869ac3c2f785fd367fa45186b7bca90f4b2",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -3447,7 +3447,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "b3ea95b6380428fc203e416b0e670132effd56e00ad19700f7c22c657aa0e06f",
+      "fingerprint_sha256": "998b2c294c7b3133815d4471053f8901e0e7d60aa121b946e18267f5f58d04bb",
       "artifacts": [
         {
           "path": "results/csv/R_PERF_aggregate_performance.csv",
@@ -3462,22 +3462,22 @@
         {
           "path": "results/json/R_PERF_aggregate_performance.metadata.json",
           "size": 1769,
-          "sha256": "ea3f7dd26b493ce62761c8cf217f029dc27ec904fdb2f42ddc2b6e2bac4c32db"
+          "sha256": "c81f744a7b3d88cac837c8d7c648b453a43ec0699b37973835c00dbfaaf0ea3c"
         },
         {
           "path": "figures/pdf/R_PERF_aggregate_performance.pdf",
-          "size": 30790,
-          "sha256": "1ae28e5ad26750c594ac064f3209745587a0068658d13ce1b3a37e049b15bb16"
+          "size": 30832,
+          "sha256": "715e532084e85ffc4b426c741bd95fa59fafa721d85eb2ce217dea5fd9a3841b"
         },
         {
           "path": "figures/png/R_PERF_aggregate_performance.png",
-          "size": 377692,
-          "sha256": "51d1c255cd3035dae9f85614d3c6f2789b1fa75ee04552edfee9e4964ac14f63"
+          "size": 376168,
+          "sha256": "9e2b5db4969ac77a74a67f6857131fcb4a92bdfdc0cc8571ea881773fafc164a"
         },
         {
           "path": "figures/svg/R_PERF_aggregate_performance.svg",
-          "size": 120795,
-          "sha256": "5523d7edd7965097d8668c7815605d5f57b2957ef27103795184ea792210ccf1"
+          "size": 121526,
+          "sha256": "ed0c58026e3309c75dc9ca75081cf39f249a526451f71bda5b5ac0d03f367594"
         }
       ],
       "log": "results/logs/49_aggregate_performance_figure.log"
@@ -3485,14 +3485,14 @@
     "13_extended/50_canonical_reproduction.py": {
       "experiment_id": "R50",
       "script": "13_extended/50_canonical_reproduction.py",
-      "execution_status": "completed",
-      "runtime_seconds": 5.969037599978037,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "0dd6a611582622e34d88e1b54ccbbbf221754dd2b6b0339d111ee63bdd59d581",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -3518,7 +3518,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "e98784e96000f54076cac310d1d62c5938bcebca3aac425be4b736a53d7254c3",
+      "fingerprint_sha256": "32acf84fdf811c31ff55102cb523c199dc33cfc7f70a8c30ee2c596108cdabd7",
       "artifacts": [
         {
           "path": "results/csv/R50_canonical_reproduction.csv",
@@ -3533,12 +3533,12 @@
         {
           "path": "results/json/R50_canonical_reproduction.metadata.json",
           "size": 1918,
-          "sha256": "7379dee3cc2028997bc1021bbb1580dfe6cf94f429fbc166dfdf26d34a725500"
+          "sha256": "19e424c7f67d25808e5d776fd0ae5f2cefb6e6425bd1c864c5d3c5105900970d"
         },
         {
           "path": "figures/pdf/R50_canonical_reproduction.pdf",
           "size": 16156,
-          "sha256": "d716835695d01f899dd598c0a75e4e63a7583f5e3382d486970988c9a8f11032"
+          "sha256": "66d2d53d0006a53727d0ea3b0b3817231dc3888675b857d45ae0ef588758bf75"
         },
         {
           "path": "figures/png/R50_canonical_reproduction.png",
@@ -3548,7 +3548,7 @@
         {
           "path": "figures/svg/R50_canonical_reproduction.svg",
           "size": 35463,
-          "sha256": "13797eae274111e33cafb59c3b5e446633b11c222d24c92faa9a883ec4f4fac9"
+          "sha256": "8229cfb42bac97814e1891d6b0936b5c9157bd0b046c952f727eab167b81e60d"
         }
       ],
       "log": "results/logs/50_canonical_reproduction.log"
@@ -3556,14 +3556,14 @@
     "13_extended/51_expanded_gate_learning.py": {
       "experiment_id": "R51",
       "script": "13_extended/51_expanded_gate_learning.py",
-      "execution_status": "completed",
-      "runtime_seconds": 25.229442300042138,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "760544814feef54e8b7c7fe0df5d28d37405160b6f0fa8839955e5250c818867",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -3589,27 +3589,27 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "7afd9c994a6950488b45d33fc9d7369963eef24d4ca62069040a5afd582b345e",
+      "fingerprint_sha256": "a62fd73aa36e7310e25fc3f8434884fe7061ec44f72e2b3c08aea0aa973de0fe",
       "artifacts": [
         {
           "path": "results/csv/R51_expanded_gate_learning.csv",
-          "size": 3016,
-          "sha256": "3afd6a080385ac680877baa7a90d09f12e142dbd1130b8f8c5a62294bf0957b0"
+          "size": 3009,
+          "sha256": "3224bb4e813017388ca42d64050f600ca3a9e190b922823221f02c6e8f1ed759"
         },
         {
           "path": "results/json/R51_expanded_gate_learning.json",
-          "size": 11418,
-          "sha256": "b54797a2d56d670b47abc5cb4be8ebf648032297cba4d2bcc7393be8cbe4ff5c"
+          "size": 11411,
+          "sha256": "38d0936fb9cfaaad58261c76861afac4817bf623f5ab4c028109b50821a3f143"
         },
         {
           "path": "results/json/R51_expanded_gate_learning.metadata.json",
           "size": 1917,
-          "sha256": "4bab2d120df9186fbcbd4ce82b6daa0404d4fda432162110508a8d94b0b2714f"
+          "sha256": "0f40f3d207a2d21114825de983c4508b01ed79ab82e805ec66e6dbc3a1c31bdc"
         },
         {
           "path": "figures/pdf/R51_expanded_gate_learning.pdf",
           "size": 81580,
-          "sha256": "0166ecdbe250c15051a6841800ef6445c369dec94b031e920ac4ca8d66a99bde"
+          "sha256": "754aac14a4d8e62ec6c176b2e4d3c2d29d2ac5bf97880c011e71783325c596a9"
         },
         {
           "path": "figures/png/R51_expanded_gate_learning.png",
@@ -3619,7 +3619,7 @@
         {
           "path": "figures/svg/R51_expanded_gate_learning.svg",
           "size": 265098,
-          "sha256": "00ecd38b84904971ae06a634c1f3042c2a2feef769be4ecee325e88b027e2013"
+          "sha256": "db84b6c90700e37afe537a69a4cae1e3a286976260d566bf2d97203585e0a329"
         }
       ],
       "log": "results/logs/51_expanded_gate_learning.log"
@@ -3627,14 +3627,14 @@
     "13_extended/52_comprehensive_classification.py": {
       "experiment_id": "R52",
       "script": "13_extended/52_comprehensive_classification.py",
-      "execution_status": "completed",
-      "runtime_seconds": 318.7006871999474,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "ec8397e74d2e12e0427b578de75626a74b5957403898ead9e3e91c2b4fb09365",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -3660,7 +3660,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "4ba7f702fec7308531748e4f6951b29b82e4da65171316f502a7d637284f589b",
+      "fingerprint_sha256": "1726797ffcb555963097925172b22b1dfecd22a82e9eb7aa4d761a367014e309",
       "artifacts": [
         {
           "path": "results/csv/R52_comprehensive_classification.csv",
@@ -3675,12 +3675,12 @@
         {
           "path": "results/json/R52_comprehensive_classification.metadata.json",
           "size": 1931,
-          "sha256": "6635e193cbae4f1c671fa4a479fa4c9f774143f3710ac3edc7f56c220e69f579"
+          "sha256": "c7233b8233dcf099514fa8b18d284a13a8f5cfb5273b144668b5bd05eb4c996e"
         },
         {
           "path": "figures/pdf/R52_comprehensive_classification.pdf",
           "size": 16070,
-          "sha256": "7acfe2d0f594f2e64e971cb599d66df55b5a68fb5215e8f3c376101c5d817b8e"
+          "sha256": "57dc2158ce32992ce9c952f44a9659e2c66f0250fab2ecbc35b209d5e7ad3e87"
         },
         {
           "path": "figures/png/R52_comprehensive_classification.png",
@@ -3690,7 +3690,7 @@
         {
           "path": "figures/svg/R52_comprehensive_classification.svg",
           "size": 53600,
-          "sha256": "723102bad923ff3d25ecb2faddc0d0eb6b8186ee2f52f4fb6fbaff1c86bdb4e6"
+          "sha256": "e0fe8ad421c5e32919c6c918457b9d7fd9000ec47fcdfee2e0abd69bfda97d21"
         }
       ],
       "log": "results/logs/52_comprehensive_classification.log"
@@ -3698,14 +3698,14 @@
     "13_extended/53_comprehensive_regression.py": {
       "experiment_id": "R53",
       "script": "13_extended/53_comprehensive_regression.py",
-      "execution_status": "completed",
-      "runtime_seconds": 107.01313430001028,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "4177f8a99205fe94567ea45ba49d3cd2ecdc93896a8bc529bd57f21101dfc382",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -3731,7 +3731,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "450cfddcff729b2037b59954d7cf1cc6feb69cb05d99577e8a394e7d98bb31cb",
+      "fingerprint_sha256": "ad2de86e8023f93304f54296180acb34e732f0bb4b9ea60127e9e85e6fd680c7",
       "artifacts": [
         {
           "path": "results/csv/R53_comprehensive_regression.csv",
@@ -3746,12 +3746,12 @@
         {
           "path": "results/json/R53_comprehensive_regression.metadata.json",
           "size": 1923,
-          "sha256": "00aa2d7f4b823498661c98f9804e5069e025bef1c6c6ce150c0f399bc63ed98d"
+          "sha256": "06d540957ff8a8f6dd6f07f09b725b9cb79b6a177fb3de38587a07288e088692"
         },
         {
           "path": "figures/pdf/R53_comprehensive_regression.pdf",
           "size": 18809,
-          "sha256": "dfb4af865ea469e7c269dd0609b3ba082112a7819ecfd30c0d61dc43de4e6acb"
+          "sha256": "49f5abf193851613fc1c08fe25d54cdf0c7e339a4022d4ba26b7406cc8fa5f2c"
         },
         {
           "path": "figures/png/R53_comprehensive_regression.png",
@@ -3761,7 +3761,7 @@
         {
           "path": "figures/svg/R53_comprehensive_regression.svg",
           "size": 51661,
-          "sha256": "9ab1f0ebf3a81876157a4c280defa61305e0305bc1a7fb46691f4213413e3d41"
+          "sha256": "d88e3e4ff81242f56b870cd132cfc29232924424a6e5c3089097fd4d43446c78"
         }
       ],
       "log": "results/logs/53_comprehensive_regression.log"
@@ -3769,14 +3769,14 @@
     "13_extended/54_kernel_ablations.py": {
       "experiment_id": "R54",
       "script": "13_extended/54_kernel_ablations.py",
-      "execution_status": "completed",
-      "runtime_seconds": 9.431286700069904,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "e01439021eacc2a280e831240dc278779e506ca0b62408484e5b8786ca03c4d1",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -3802,7 +3802,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "d109eb55d54231ed71ba5f6f0cda7255a5cc9bd05912c20946b917fb263bb687",
+      "fingerprint_sha256": "3a3350c5bb6a476c51fc024f114a438e39685992bef0d7ce02f473da3bedcf27",
       "artifacts": [
         {
           "path": "results/csv/R54_kernel_ablations.csv",
@@ -3817,12 +3817,12 @@
         {
           "path": "results/json/R54_kernel_ablations.metadata.json",
           "size": 1925,
-          "sha256": "5edcfd55c3dae9141fc76fae9aa47bf326a718cdf9628ed72ac824fe44a47fdd"
+          "sha256": "4f033e666bc59b6e7fadb517f35d9ee05cd345408063766e0b752767f88f3706"
         },
         {
           "path": "figures/pdf/R54_kernel_ablations.pdf",
           "size": 18451,
-          "sha256": "6f332edf5cddf2667294dc0b8da9bcd232bddd0fb1dbac3fcd80a9a6ce73715d"
+          "sha256": "d1bfe8a513b38374606559e0912a3fc79f7fc49c2b48c75e0e50709081e072d7"
         },
         {
           "path": "figures/png/R54_kernel_ablations.png",
@@ -3832,7 +3832,7 @@
         {
           "path": "figures/svg/R54_kernel_ablations.svg",
           "size": 64494,
-          "sha256": "20a454d9a6d527d9cb2e1b86ff9dbb4e87608ace53c5f17377a2d81e88992f23"
+          "sha256": "ad910fa63d429c628ea3dcb6b21e2709475b1fe967ece99f28d37ddbd3f95b8d"
         }
       ],
       "log": "results/logs/54_kernel_ablations.log"
@@ -3840,14 +3840,14 @@
     "13_extended/55_expressivity_trainability.py": {
       "experiment_id": "R55",
       "script": "13_extended/55_expressivity_trainability.py",
-      "execution_status": "completed",
-      "runtime_seconds": 6.981396600021981,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "74e4e52e1954420a7d0fdca2cc24a1a3ba5e0ebdfb36b39356d0d011b4642371",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -3873,7 +3873,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "737ec12d523aa1caf9d5a810c33c08374b8ec7edcb62a093659c6d4563632483",
+      "fingerprint_sha256": "3cfb81a4a884b6a75d83f9a06e631081e6aa17f6868eb325d70ae7f9f2f71ade",
       "artifacts": [
         {
           "path": "results/csv/R55_expressivity_trainability.csv",
@@ -3888,12 +3888,12 @@
         {
           "path": "results/json/R55_expressivity_trainability.metadata.json",
           "size": 1931,
-          "sha256": "cfab3aa1f537fb2cd9d82f285726f98f36fb1c79d5c46d9058fccd14492f93bf"
+          "sha256": "fc76b44805cb9cce5fdad59623852c3b1a7f5bb81e81ded08839d56d2771a0f0"
         },
         {
           "path": "figures/pdf/R55_expressivity_trainability.pdf",
           "size": 17663,
-          "sha256": "f9789f93382ac4ce817116861464ba431d2da8b41fdaee100d1fbbc470dd8ff0"
+          "sha256": "7a98ceaddc8e38696a6b14cf6d8526302ef2ec9452a0a7eb3234eca68c116d05"
         },
         {
           "path": "figures/png/R55_expressivity_trainability.png",
@@ -3903,7 +3903,7 @@
         {
           "path": "figures/svg/R55_expressivity_trainability.svg",
           "size": 49104,
-          "sha256": "e032ffac9075820a812aa45e2fa2af04032d805214d983ea19997e55e4f5477e"
+          "sha256": "d50be7e3c1e586ebf722944a83172779740f0f3710d7eb55e3ea7200a07356d5"
         }
       ],
       "log": "results/logs/55_expressivity_trainability.log"
@@ -3911,14 +3911,14 @@
     "13_extended/56_logical_physical_gap.py": {
       "experiment_id": "R56",
       "script": "13_extended/56_logical_physical_gap.py",
-      "execution_status": "completed",
-      "runtime_seconds": 26.857518200064078,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "929920815020b58cff5f1ec8cf1f2f7b2e07cc5f6e6cc63682a4afb832bb7bdf",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -3944,27 +3944,27 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "086eb9d12a4fed3444339c51df43e79a599fc800de5efd4ebfb935ee00c49f13",
+      "fingerprint_sha256": "5a45d6cdfdabad0152e1f9572b2fb73a23e4a2ae944a331e735081492d8366b1",
       "artifacts": [
         {
           "path": "results/csv/R56_logical_physical_gap.csv",
-          "size": 601,
-          "sha256": "9896574ea77254f2e95a62cebfadc1370745ea6071edae52a03af0621cffe19b"
+          "size": 602,
+          "sha256": "a39364805375c41f7592e4abfae239b1e3eec5300c34a06701adbbad95d2bc3f"
         },
         {
           "path": "results/json/R56_logical_physical_gap.json",
-          "size": 2487,
-          "sha256": "50a0cee58559ebaeed3928408014b1b576a9dc9b200610f849b6e4b6d06f011f"
+          "size": 2488,
+          "sha256": "4723a1c28d86e2a5e2429a324445f9afaffe1ecda0e6ec5bd40c66ed90ced66e"
         },
         {
           "path": "results/json/R56_logical_physical_gap.metadata.json",
           "size": 1910,
-          "sha256": "b61b0a7f85591170850829f8cc6f57b2ba7161b4736b75bb8dd23cec2b2599ba"
+          "sha256": "426db9fb8cf263c618d71a85caaaf3607fd677b7055359f74d212ebdbf4a4559"
         },
         {
           "path": "figures/pdf/R56_logical_physical_gap.pdf",
           "size": 14638,
-          "sha256": "c033d3f7c4600ee30db771567dd07baaa4668828f48467fd672deeb7edee3097"
+          "sha256": "6b5b3f83592966604150280d4d7d9d4a40162558b15486e98b1e40ec3b837c38"
         },
         {
           "path": "figures/png/R56_logical_physical_gap.png",
@@ -3974,7 +3974,7 @@
         {
           "path": "figures/svg/R56_logical_physical_gap.svg",
           "size": 40311,
-          "sha256": "08c3fe871110b8a0648af02d24ad451d3952ca39b20d6616a036ba0a6e7cc976"
+          "sha256": "5cef15b7b4bdc8c8657a66cee909057b15593f1b79032cb81676700617bc8651"
         }
       ],
       "log": "results/logs/56_logical_physical_gap.log"
@@ -3982,14 +3982,14 @@
     "13_extended/57_physical_training_evaluation.py": {
       "experiment_id": "R57",
       "script": "13_extended/57_physical_training_evaluation.py",
-      "execution_status": "completed",
-      "runtime_seconds": 449.7155094000045,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "3c1498c3b43f0f0fb9ef1eb36df69deb9fc5c2df42ada5835af7b1550056f013",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -4015,27 +4015,27 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "20079eb45c34308ae2cb346974086c3dcbae180d725006922797ea05ea708ae6",
+      "fingerprint_sha256": "cd16f450bbc37b35dd7959c9f1ac1a320f4ae504c35d34631504826a7139bb87",
       "artifacts": [
         {
           "path": "results/csv/R57_physical_training_evaluation.csv",
-          "size": 515,
-          "sha256": "855c05eff9b7c033d2775472c69be38cb29b097adb95b82999e6f496665dade0"
+          "size": 514,
+          "sha256": "c339e0b0b856cc09348c003c31925f9c921e4ca0f1037eaab1528c676633fbfb"
         },
         {
           "path": "results/json/R57_physical_training_evaluation.json",
-          "size": 2836,
-          "sha256": "5dc285cb7ae695672f97e242d36bd6c11a6e69c780d7f17ec06fb719f6e2a63f"
+          "size": 2835,
+          "sha256": "f8bae1086d07b2785c3ca840b471f07707c288131f016569f17699680296b5f9"
         },
         {
           "path": "results/json/R57_physical_training_evaluation.metadata.json",
           "size": 1920,
-          "sha256": "ee290a54d870cc4992fbca4bc715159ac5f094f30419fbc1efa27b7ea54f051b"
+          "sha256": "078d1766c1c6adf6dae58731cc879f3dcbbaeab0428019ed3f7b7a274ce4ad25"
         },
         {
           "path": "figures/pdf/R57_physical_training_evaluation.pdf",
           "size": 13924,
-          "sha256": "fa98121f6eeab4d377090f9f6763e43d40b4c1d5d2a65569fa2da5e4119eafa4"
+          "sha256": "726fcdce50904c96a5d99c173c19f13daa3ccb51fd00632d38cf221827d76d2a"
         },
         {
           "path": "figures/png/R57_physical_training_evaluation.png",
@@ -4045,7 +4045,7 @@
         {
           "path": "figures/svg/R57_physical_training_evaluation.svg",
           "size": 32304,
-          "sha256": "ccd3a44fe71a5947bb04d47d1e571997fc8581b24f0e5f77a6e4b0e04fa0ab5b"
+          "sha256": "37e80ac1b219a96b49a8eac24aa0cd336b6899d2ad49b21c0482cd89620a9795"
         }
       ],
       "log": "results/logs/57_physical_training_evaluation.log"
@@ -4053,14 +4053,14 @@
     "13_extended/58_physical_resource_boundary.py": {
       "experiment_id": "R58",
       "script": "13_extended/58_physical_resource_boundary.py",
-      "execution_status": "completed",
-      "runtime_seconds": 10.714104700018652,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "8c6a559316b1e278455197d8b08e4a8d9fc6d940fe8345d64fb09fb0f80706e5",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -4086,7 +4086,7 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "8eeaf98a51ac687faf7d735bede10be19673a5051713c56285d7e2c9ed4e50cf",
+      "fingerprint_sha256": "c17429c42813cd0e7ddf8062b4ae3a577346c07bce694814f27de57c65c1975e",
       "artifacts": [
         {
           "path": "results/csv/R58_physical_resource_boundary.csv",
@@ -4101,12 +4101,12 @@
         {
           "path": "results/json/R58_physical_resource_boundary.metadata.json",
           "size": 1878,
-          "sha256": "3676643e7b8a1d9f7413247e4875e830173f43528358527f028aa9ac5d3885fb"
+          "sha256": "3e89b06cabf75d49e0df0a843d8c32dea78c874596d9dcb197fe2a6bd45e7f7c"
         },
         {
           "path": "figures/pdf/R58_physical_resource_boundary.pdf",
           "size": 17175,
-          "sha256": "aee5cdfc67738be18a1a01331eeacb198af83d12689e80d5bd62d88e33615fd5"
+          "sha256": "07460b7954d4fc8433cf125300c3099d43ad0e0b936050573320e66e748e9d0a"
         },
         {
           "path": "figures/png/R58_physical_resource_boundary.png",
@@ -4116,7 +4116,7 @@
         {
           "path": "figures/svg/R58_physical_resource_boundary.svg",
           "size": 39033,
-          "sha256": "6d6229778f40785b7a2181b3ef109e23bb39f52c04c003c902457b9199f90ae0"
+          "sha256": "c2ab84a806b29cfb0b4c4cd4d3977e61492a22903f7f040ff291a86ed9286a34"
         }
       ],
       "log": "results/logs/58_physical_resource_boundary.log"
@@ -4124,14 +4124,14 @@
     "13_extended/59_end_to_end_scaling.py": {
       "experiment_id": "R59",
       "script": "13_extended/59_end_to_end_scaling.py",
-      "execution_status": "completed",
-      "runtime_seconds": 14.595588900032453,
+      "execution_status": "resumed",
+      "runtime_seconds": 0.0,
       "returncode": 0,
-      "reason": "executed because restart was requested or fingerprint/artifact hashes differed",
+      "reason": "complete fingerprint and every artifact hash matched",
       "fingerprint": {
         "schema_version": 3,
-        "source_commit": "864af1b907a9c2875965744c352ae373f15cb3ea",
-        "source_tree_fingerprint": "60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b",
+        "source_commit": "ea56bf364c71b7f6349a9fb8eb3171a9c4a96058",
+        "source_tree_fingerprint": "fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60",
         "script_sha256": "2b7cd9eb0fb4eaa31759ecabf10f20dffe5c20b8bd237b5a50146c0950cba3c9",
         "common_sha256": "28c1d0c699ebcb34ac90d2c285efd7d0af09605ba54abc0716aae4b74dd0aa5e",
         "metadata_sha256": "4779052b19f4cf0f19bbb22ee0efeb080e2507fdb962c69fd4fdd2f153755484",
@@ -4157,37 +4157,37 @@
         "photographiq_dirty": false,
         "mentpy_commit": "63c3d83e495696b4491c9d376dab7e3e6cf6c863"
       },
-      "fingerprint_sha256": "9b2ebb79357d1a1be4fc1ec4fbd6dfba95b5c5e1efd29da225254209c973ebc0",
+      "fingerprint_sha256": "bcf3f10b1f458a0b4c5ad51c9a5332a6315b78062ff5eccefe5bd76616681f9b",
       "artifacts": [
         {
           "path": "results/csv/R59_end_to_end_scaling.csv",
-          "size": 1154,
-          "sha256": "97d4dd05ea55f3786b2009111d102202a6c83aa1ea0e31cd4fdfceb9d3d8f5bd"
+          "size": 1149,
+          "sha256": "6af3243c46a66167be6471cddee5dd361c73b3fb3ebcb263b69de2d1fd160e13"
         },
         {
           "path": "results/json/R59_end_to_end_scaling.json",
-          "size": 5641,
-          "sha256": "10c880e734edc4e2145eb12479da6b0ad8215f52e6b012677db04ef1d6a8bdb1"
+          "size": 5634,
+          "sha256": "2c56000dca14e07a9f421b2362b3d075ae5c856d021163fdedc9f2831874e92d"
         },
         {
           "path": "results/json/R59_end_to_end_scaling.metadata.json",
           "size": 1880,
-          "sha256": "86c3840e818da77e21bfdee58c21c74f790505eab40c5c39aa8965df1704003f"
+          "sha256": "dfef3ee9dce4a869b5b93de34ee289b1c38c317bc8aab88e1d1886e97d81fdcf"
         },
         {
           "path": "figures/pdf/R59_end_to_end_scaling.pdf",
-          "size": 20978,
-          "sha256": "19395616f9bfd9da0f4e441783ef8fe6815c106bb06e160744279353b840810b"
+          "size": 20967,
+          "sha256": "91bbce440a85411e7519c3456af35bfb869e66705c96f3b522555c4d7f337362"
         },
         {
           "path": "figures/png/R59_end_to_end_scaling.png",
-          "size": 157392,
-          "sha256": "76b62cc4a71d299178717240bdd0259228ac59627ed19628b02429ca819483d9"
+          "size": 158616,
+          "sha256": "a5cfb9ba3fc830184e870f3f227e652e9e294bee8e9d777c76ea2116b6a26fd5"
         },
         {
           "path": "figures/svg/R59_end_to_end_scaling.svg",
-          "size": 72471,
-          "sha256": "a190ec1d9037c37af7e795ee810e6001048320b366f33467dc71b531f6c67cce"
+          "size": 72488,
+          "sha256": "a4c9044abc3ae365f3053ab5cbd8f2647445e1d6843ff4f7f256dfb32c7262cb"
         }
       ],
       "log": "results/logs/59_end_to_end_scaling.log"

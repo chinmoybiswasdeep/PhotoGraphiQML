@@ -3,19 +3,19 @@
 ## Accepted publication evidence
 
 - Accepted: `True`
-- Run identifier: `864af1b907a9-20260924T211728Z`
-- Source commit: `864af1b907a9c2875965744c352ae373f15cb3ea`
-- Source-tree fingerprint: `60874c92aca19e1bd542303e432ec9b16c2e781c37e240c4ab3174b56fa8c88b`
-- Evidence commit: `02c41761043e91ebb3e2ed65fcb5bb71d3bbc184`
+- Run identifier: `ea56bf364c71-20260924T235941Z`
+- Source commit: `ea56bf364c71b7f6349a9fb8eb3171a9c4a96058`
+- Source-tree fingerprint: `fa50e5937a17ad6876583a018efc559f8b2bc42e9a1aa830a2ac09a0478cdf60`
+- Evidence commit: `pending evidence commit`
 - Branch: `manuscript-experiments`
-- Started: `2026-09-24T21:17:28.563557+00:00`
-- Completed: `2026-09-24T22:13:53.573068+00:00`
+- Started: `2026-09-24T23:59:41.144971+00:00`
+- Completed: `2026-09-25T00:13:07.178785+00:00`
 - Experiments completed or hash-resumed: `59` / `59`
-- Executed in this run: `59`
-- Hash-resumed: `0`
+- Executed in this run: `0`
+- Hash-resumed: `59`
 - Failed: `0`
 - Skipped: `0`
-- Manifest SHA-256: `590cd80fa7bdbb9a38928f80b80fb4d95c0069a29de4bd053e5cd6b1565e643f`
+- Manifest SHA-256: `fee8b36594bfb4721ecffb12256a1228181249291fe944972593a3908f4e7fd3`
 
 ## Scientific outcomes
 
@@ -28,14 +28,14 @@ R48 retains the observed physical-training instability as a negative result.
 
 ## Quality gates
 
-- `generate_tables`: `pass` (0.3 s; log `results/logs/publication_generate_tables.log`)
+- `generate_tables`: `pass` (0.4 s; log `results/logs/publication_generate_tables.log`)
 - `build_notebook`: `pass` (0.5 s; log `results/logs/publication_build_notebook.log`)
-- `build_manifest`: `pass` (1.1 s; log `results/logs/publication_build_manifest.log`)
-- `verify_evidence_pre_status`: `pass` (0.7 s; log `results/logs/publication_verify_evidence_pre_status.log`)
-- `repository_validation`: `pass` (118.2 s; log `results/logs/publication_repository_validation.log`)
-- `notebook_validation`: `pass` (0.3 s; log `results/logs/publication_notebook_validation.log`)
-- `clean_install`: `pass` (6.7 s; log `results/logs/publication_clean_install.log`)
-- `installed_import_smoke`: `pass` (2.4 s; log `results/logs/publication_installed_import_smoke.log`)
+- `build_manifest`: `pass` (11.2 s; log `results/logs/publication_build_manifest.log`)
+- `verify_evidence_pre_status`: `pass` (12.4 s; log `results/logs/publication_verify_evidence_pre_status.log`)
+- `repository_validation`: `pass` (150.9 s; log `results/logs/publication_repository_validation.log`)
+- `notebook_validation`: `pass` (0.4 s; log `results/logs/publication_notebook_validation.log`)
+- `clean_install`: `pass` (6.3 s; log `results/logs/publication_clean_install.log`)
+- `installed_import_smoke`: `pass` (2.9 s; log `results/logs/publication_installed_import_smoke.log`)
 
 ## Capability boundary
 

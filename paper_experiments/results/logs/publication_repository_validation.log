@@ -1,4 +1,4 @@
-$ D:\Research\QML\results_1\cvqc\thesis_part_2\softwares\PhotoGraphiQML\.venv\Scripts\python.exe scripts/validate_release.py --output-dir D:\Research\QML\results_1\cvqc\thesis_part_2\softwares\PhotoGraphiQML\paper_experiments\results\validation\864af1b907a9-20260924T211728Z
+$ D:\Research\QML\results_1\cvqc\thesis_part_2\softwares\PhotoGraphiQML\.venv\Scripts\python.exe scripts/validate_release.py --output-dir D:\Research\QML\results_1\cvqc\thesis_part_2\softwares\PhotoGraphiQML\paper_experiments\results\validation\ea56bf364c71-20260924T235941Z
 
 --- stdout ---
 ============================= test session starts =============================
@@ -7,7 +7,7 @@ rootdir: D:\Research\QML\results_1\cvqc\thesis_part_2\softwares\PhotoGraphiQML
 configfile: pyproject.toml
 testpaths: tests
 plugins: cov-7.1.0
-collected 141 items
+collected 142 items
 
 tests\cross_layer\test_contract.py ..                                    [  1%]
 tests\cross_layer\test_discrete.py ....                                  [  4%]
@@ -15,14 +15,14 @@ tests\cross_layer\test_frames.py .                                       [  4%]
 tests\cross_layer\test_physical_execution.py ........                    [ 10%]
 tests\gkp\test_bridge.py ...                                             [ 12%]
 tests\lowering\test_preflight.py ........................                [ 29%]
-tests\mentpy_reference\test_derived_outputs.py ..                        [ 31%]
-tests\mentpy_reference\test_reference.py ............................... [ 53%]
+tests\mentpy_reference\test_derived_outputs.py ..                        [ 30%]
+tests\mentpy_reference\test_reference.py ............................... [ 52%]
 .                                                                        [ 53%]
 tests\muta\test_core_dependency.py .                                     [ 54%]
-tests\muta\test_logical.py ...................................           [ 79%]
+tests\muta\test_logical.py ...................................           [ 78%]
 tests\muta\test_parameters.py ..                                         [ 80%]
-tests\muta\test_visualization.py .                                       [ 81%]
-tests\paper_experiments\test_experiment_consistency.py ..............    [ 91%]
+tests\muta\test_visualization.py .                                       [ 80%]
+tests\paper_experiments\test_experiment_consistency.py ...............   [ 91%]
 tests\training\test_contracts.py ...                                     [ 93%]
 tests\training\test_diagnostics.py ..                                    [ 95%]
 tests\training\test_learning.py .......                                  [100%]
@@ -237,9 +237,9 @@ src\photographiqml\training.py               64      3    95%   40, 42, 44
 src\photographiqml\validation.py             72      6    92%   18, 22, 59-60, 62, 77
 -----------------------------------------------------------------------
 TOTAL                                       993     24    98%
-Coverage JSON written to file D:\Research\QML\results_1\cvqc\thesis_part_2\softwares\PhotoGraphiQML\paper_experiments\results\validation\864af1b907a9-20260924T211728Z\coverage.json
+Coverage JSON written to file D:\Research\QML\results_1\cvqc\thesis_part_2\softwares\PhotoGraphiQML\paper_experiments\results\validation\ea56bf364c71-20260924T235941Z\coverage.json
 Required test coverage of 90% reached. Total coverage: 97.58%
-====================== 141 passed, 59 warnings in 48.80s ======================
+================= 142 passed, 59 warnings in 66.63s (0:01:06) =================
 All checks passed!
 171 files already formatted
 Success: no issues found in 16 source files
@@ -384,8 +384,8 @@ notebooks\05_gkp_resources.ipynb
   - hatchling==1.32.4
 * Building wheel...
 INFO    -  Cleaning site directory
-INFO    -  Building documentation to directory: D:\Research\QML\results_1\cvqc\thesis_part_2\softwares\PhotoGraphiQML\paper_experiments\results\validation\864af1b907a9-20260924T211728Z\site
-INFO    -  Documentation built in 0.33 seconds
+INFO    -  Building documentation to directory: D:\Research\QML\results_1\cvqc\thesis_part_2\softwares\PhotoGraphiQML\paper_experiments\results\validation\ea56bf364c71-20260924T235941Z\site
+INFO    -  Documentation built in 0.43 seconds
 examples\tutorials\19.py:3: DeprecationWarning: Legacy 'gkp' remains resource-only. Use 'gkp-resource' or explicitly construct PhysicalMuTA for the supported physical subset.
   m = pqml.MuTA(1, representation="gkp")
 D:\Research\QML\results_1\cvqc\thesis_part_2\softwares\PhotoGraphiQ\src\photographiq\backends\fock.py:465: RuntimeWarning: GaussianTransform: retained Fock norm 0.99998277; test a larger cutoff

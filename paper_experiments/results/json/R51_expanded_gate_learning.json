@@ -9,7 +9,7 @@
       "mean_state_fidelity": 0.9999999999999997,
       "success": true,
       "n_parameters": 4,
-      "runtime_seconds": 0.10403160005807877,
+      "runtime_seconds": 0.2375613999320194,
       "optimizer_success": false
     },
     {
@@ -21,7 +21,7 @@
       "mean_state_fidelity": 0.999999999999999,
       "success": true,
       "n_parameters": 4,
-      "runtime_seconds": 0.11379770003259182,
+      "runtime_seconds": 0.22333299997262657,
       "optimizer_success": false
     },
     {
@@ -33,7 +33,7 @@
       "mean_state_fidelity": 0.9999999999999988,
       "success": true,
       "n_parameters": 4,
-      "runtime_seconds": 0.10819830000400543,
+      "runtime_seconds": 0.2102792999939993,
       "optimizer_success": false
     },
     {
@@ -45,7 +45,7 @@
       "mean_state_fidelity": 0.999999999999999,
       "success": true,
       "n_parameters": 4,
-      "runtime_seconds": 0.09000129997730255,
+      "runtime_seconds": 0.17702370008919388,
       "optimizer_success": true
     },
     {
@@ -57,7 +57,7 @@
       "mean_state_fidelity": 0.9999999999999997,
       "success": true,
       "n_parameters": 4,
-      "runtime_seconds": 0.0689966999925673,
+      "runtime_seconds": 0.13663219998124987,
       "optimizer_success": true
     },
     {
@@ -69,7 +69,7 @@
       "mean_state_fidelity": 0.999999999999999,
       "success": true,
       "n_parameters": 4,
-      "runtime_seconds": 0.0843348999042064,
+      "runtime_seconds": 0.20406019990332425,
       "optimizer_success": true
     },
     {
@@ -81,7 +81,7 @@
       "mean_state_fidelity": 0.9999999999999997,
       "success": true,
       "n_parameters": 4,
-      "runtime_seconds": 0.10557909996714443,
+      "runtime_seconds": 0.23969710001256317,
       "optimizer_success": false
     },
     {
@@ -93,7 +93,7 @@
       "mean_state_fidelity": 0.9999999999999992,
       "success": true,
       "n_parameters": 4,
-      "runtime_seconds": 0.08650370000395924,
+      "runtime_seconds": 0.17614979995414615,
       "optimizer_success": true
     },
     {
@@ -105,7 +105,7 @@
       "mean_state_fidelity": 0.9999999998783625,
       "success": false,
       "n_parameters": 8,
-      "runtime_seconds": 0.12100389995612204,
+      "runtime_seconds": 0.24976130004506558,
       "optimizer_success": true
     },
     {
@@ -117,7 +117,7 @@
       "mean_state_fidelity": 0.9999999999999901,
       "success": true,
       "n_parameters": 8,
-      "runtime_seconds": 0.22839780000504106,
+      "runtime_seconds": 0.5195481000700966,
       "optimizer_success": true
     },
     {
@@ -129,7 +129,7 @@
       "mean_state_fidelity": 0.9999999999893755,
       "success": true,
       "n_parameters": 8,
-      "runtime_seconds": 0.14232119999360293,
+      "runtime_seconds": 0.26688519993331283,
       "optimizer_success": true
     },
     {
@@ -141,7 +141,7 @@
       "mean_state_fidelity": 0.9999999862249606,
       "success": false,
       "n_parameters": 8,
-      "runtime_seconds": 0.13050710002426058,
+      "runtime_seconds": 0.24632789997849613,
       "optimizer_success": true
     },
     {
@@ -153,7 +153,7 @@
       "mean_state_fidelity": 0.9999999999999987,
       "success": true,
       "n_parameters": 8,
-      "runtime_seconds": 0.5757893000263721,
+      "runtime_seconds": 1.0863548000343144,
       "optimizer_success": true
     },
     {
@@ -165,7 +165,7 @@
       "mean_state_fidelity": 0.9999999999999983,
       "success": true,
       "n_parameters": 8,
-      "runtime_seconds": 0.7446374000282958,
+      "runtime_seconds": 1.1925461000064388,
       "optimizer_success": true
     },
     {
@@ -177,7 +177,7 @@
       "mean_state_fidelity": 0.999999999999999,
       "success": true,
       "n_parameters": 8,
-      "runtime_seconds": 0.7580151000292972,
+      "runtime_seconds": 1.3488333000568673,
       "optimizer_success": false
     },
     {
@@ -189,7 +189,7 @@
       "mean_state_fidelity": 0.9999999999999987,
       "success": true,
       "n_parameters": 8,
-      "runtime_seconds": 0.8406575999688357,
+      "runtime_seconds": 0.9963212000438944,
       "optimizer_success": true
     },
     {
@@ -201,7 +201,7 @@
       "mean_state_fidelity": 0.9999999999999986,
       "success": true,
       "n_parameters": 8,
-      "runtime_seconds": 0.41074780002236366,
+      "runtime_seconds": 0.5508390999166295,
       "optimizer_success": false
     },
     {
@@ -213,7 +213,7 @@
       "mean_state_fidelity": 0.9999999999999978,
       "success": true,
       "n_parameters": 8,
-      "runtime_seconds": 0.2586583000374958,
+      "runtime_seconds": 0.5722703000064939,
       "optimizer_success": false
     },
     {
@@ -225,7 +225,7 @@
       "mean_state_fidelity": 0.9999999999999983,
       "success": true,
       "n_parameters": 8,
-      "runtime_seconds": 0.3975280999438837,
+      "runtime_seconds": 0.5410104000475258,
       "optimizer_success": false
     },
     {
@@ -237,7 +237,7 @@
       "mean_state_fidelity": 0.9999999999999987,
       "success": true,
       "n_parameters": 8,
-      "runtime_seconds": 0.26015740004368126,
+      "runtime_seconds": 0.5001348999794573,
       "optimizer_success": false
     },
     {
@@ -249,7 +249,7 @@
       "mean_state_fidelity": 0.9999999999999986,
       "success": true,
       "n_parameters": 8,
-      "runtime_seconds": 0.2057661999715492,
+      "runtime_seconds": 0.44096939999144524,
       "optimizer_success": true
     },
     {
@@ -261,7 +261,7 @@
       "mean_state_fidelity": 0.9999999999999981,
       "success": true,
       "n_parameters": 8,
-      "runtime_seconds": 0.2840545999351889,
+      "runtime_seconds": 0.6120416999328882,
       "optimizer_success": false
     },
     {
@@ -273,7 +273,7 @@
       "mean_state_fidelity": 0.9999999999999986,
       "success": true,
       "n_parameters": 8,
-      "runtime_seconds": 0.19804070005193353,
+      "runtime_seconds": 0.4777381999883801,
       "optimizer_success": true
     },
     {
@@ -285,7 +285,7 @@
       "mean_state_fidelity": 0.999999999999999,
       "success": true,
       "n_parameters": 8,
-      "runtime_seconds": 0.2534170999424532,
+      "runtime_seconds": 0.5789857000345364,
       "optimizer_success": false
     },
     {
@@ -297,7 +297,7 @@
       "mean_state_fidelity": 0.9999999893065782,
       "success": false,
       "n_parameters": 16,
-      "runtime_seconds": 0.5874173999764025,
+      "runtime_seconds": 1.045569800073281,
       "optimizer_success": true
     },
     {
@@ -309,7 +309,7 @@
       "mean_state_fidelity": 0.9999999988787082,
       "success": false,
       "n_parameters": 16,
-      "runtime_seconds": 0.5534600999671966,
+      "runtime_seconds": 1.2775684000225738,
       "optimizer_success": true
     },
     {
@@ -321,7 +321,7 @@
       "mean_state_fidelity": 0.9999999840243304,
       "success": false,
       "n_parameters": 16,
-      "runtime_seconds": 0.4874472999945283,
+      "runtime_seconds": 0.9748274999437854,
       "optimizer_success": true
     },
     {
@@ -333,7 +333,7 @@
       "mean_state_fidelity": 0.9999999945869545,
       "success": false,
       "n_parameters": 16,
-      "runtime_seconds": 0.5184957999736071,
+      "runtime_seconds": 1.133540700073354,
       "optimizer_success": true
     },
     {
@@ -345,7 +345,7 @@
       "mean_state_fidelity": 0.999999907666798,
       "success": true,
       "n_parameters": 16,
-      "runtime_seconds": 1.6316248999210075,
+      "runtime_seconds": 3.3836860000155866,
       "optimizer_success": false
     },
     {
@@ -357,7 +357,7 @@
       "mean_state_fidelity": 0.9999999999999959,
       "success": true,
       "n_parameters": 16,
-      "runtime_seconds": 1.9839759999886155,
+      "runtime_seconds": 4.591488600010052,
       "optimizer_success": false
     },
     {
@@ -369,7 +369,7 @@
       "mean_state_fidelity": 0.9999999999999899,
       "success": true,
       "n_parameters": 16,
-      "runtime_seconds": 2.4230244000209495,
+      "runtime_seconds": 4.3019843000220135,
       "optimizer_success": false
     },
     {
@@ -381,7 +381,7 @@
       "mean_state_fidelity": 0.9999999999999968,
       "success": true,
       "n_parameters": 16,
-      "runtime_seconds": 3.3575219999765977,
+      "runtime_seconds": 6.380155300023034,
       "optimizer_success": true
     }
   ],
