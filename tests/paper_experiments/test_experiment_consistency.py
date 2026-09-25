@@ -11,6 +11,7 @@ import subprocess
 import sys
 from pathlib import Path
 
+import nbformat
 import pytest
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -58,6 +59,39 @@ def test_exact_59_indexed_scripts_and_contracts():
         )
         assert contract["uncertainty_method"]
         assert contract["supported_claim"] and contract["unsupported_claims"]
+
+
+def test_colab_notebook_has_complete_experiment_and_plot_structure():
+    notebook_path = EXPERIMENTS / "PhotoGraphiQML_Manuscript_Experiments.ipynb"
+    notebook = nbformat.read(notebook_path, as_version=4)
+    nbformat.validate(notebook)
+
+    code_cells = [
+        (index, cell) for index, cell in enumerate(notebook.cells) if cell.cell_type == "code"
+    ]
+    experiment_cells = [
+        cell for _, cell in code_cells if "experiment" in cell.metadata.get("tags", [])
+    ]
+    plot_cells = [
+        cell for _, cell in code_cells if "data-complete-plot" in cell.metadata.get("tags", [])
+    ]
+
+    def experiment_id(cell):
+        return next(tag for tag in cell.metadata["tags"] if tag.startswith("R"))
+
+    assert tuple(map(experiment_id, experiment_cells)) == publication.EXPECTED_IDS
+    assert tuple(map(experiment_id, plot_cells)) == publication.EXPECTED_IDS
+    assert all(
+        index > 0 and notebook.cells[index - 1].cell_type == "markdown" for index, _ in code_cells
+    )
+    assert all("#" in cell.source for _, cell in code_cells)
+    assert all(
+        "Mathematical model and declared contract" in notebook.cells[index - 1].source
+        for index, cell in code_cells
+        if "experiment" in cell.metadata.get("tags", [])
+    )
+    for index, cell in code_cells:
+        compile(cell.source, f"{notebook_path.name}:cell-{index}", "exec")
 
 
 def test_generated_evidence_agrees_when_schema_v3_manifest_exists():

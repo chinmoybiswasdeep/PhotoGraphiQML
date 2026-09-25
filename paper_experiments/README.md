@@ -59,6 +59,13 @@ paper_experiments/
 .venv/Scripts/python.exe paper_experiments/build_notebook.py   # rebuild the notebook
 ```
 
+The generated manuscript notebook is also directly runnable in Google Colab. It embeds every
+canonical experiment, places its mathematical contract and algorithm immediately before the code,
+and follows each run with an interactive data atlas. The atlas covers every CSV cell and every
+result, metadata, and raw-JSON leaf, using complete-cell heatmaps plus adaptive relationship views
+(including trajectories, scatter matrices, radar profiles, violins, ECDFs, and parallel
+coordinates) rather than relying only on bar charts or histograms.
+
 Or run any single script directly, e.g.
 `.venv/Scripts/python.exe paper_experiments/01_logical_foundations/01_triangle_anatomy.py`.
 Every script is self-contained (imports only `common`/`metadata` plus public
